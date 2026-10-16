@@ -2,7 +2,7 @@ name: Mentora Intelligence Factory
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 * * * *'  # Fallback heartbeat cron (runs every hour just in case)
   workflow_dispatch:
 
 concurrency:
@@ -56,23 +56,35 @@ jobs:
         run: |
           if [ -n "$DRIVE_TOKEN_CONTENT" ]; then
             printf '%s' "$DRIVE_TOKEN_CONTENT" > token.json
+            chmod 600 token.json
             echo "Successfully wrote token.json from GitHub Secret."
           else
-            echo "WARNING: GOOGLE_DRIVE_TOKEN_JSON secret is empty."
+            echo "::error::GOOGLE_DRIVE_TOKEN_JSON secret is empty."
+            exit 1
           fi
-      - id: pipeline
-        run: python -m src.pipeline --max-pages 50 --time-budget-seconds 900
-      - name: Commit status
+      - name: Run Pipeline Batch
+        id: pipeline
+        run: |
+          python -m src.pipeline --max-pages 50 --time-budget-seconds 900
+          # Check if there is more work remaining in the ledger/corpus
+          # (Modify this check if your pipeline writes an output variable differently, 
+          # e.g., checking STATUS.md changes or a ledger status file)
+          if git status --porcelain | grep -q "ledger" || [ -f "STATUS.md" ]; then
+            echo "has_more_work=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_more_work=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Commit status & Ledger
         run: |
           git config user.name "mentora-factory[bot]"
           git config user.email "mentora-factory[bot]@users.noreply.github.com"
-          git add STATUS.md
-          git diff --cached --quiet || git commit -m "chore: update intelligence factory status [skip ci]"
+          git add STATUS.md data/ledger.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "chore: update intelligence factory status & ledger [skip ci]"
           git push
-      - name: Trigger next autonomous batch
-        if: steps.pipeline.outputs.has_more_work == 'true'
+      - name: Trigger next autonomous batch immediately
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          sleep 10
+          echo "Current batch complete. Launching next autonomous batch immediately..."
+          sleep 5
           gh workflow run intelligence_factory.yml --ref main
