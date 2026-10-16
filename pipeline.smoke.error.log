@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\utils\_http.py", line 808, in hf_raise_for_status
+    response.raise_for_status()
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://huggingface.co/api/datasets/ambnig86/mentora-intelligence-vault/commit/main'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\AITeacher\Teaching Intelligence\src\pipeline.py", line 148, in <module>
+    item.gate = max(item.gate, 2)
+           ^^^^^^
+  File "D:\AITeacher\Teaching Intelligence\src\pipeline.py", line 145, in main
+    for diagram_index, diagram in enumerate(diagrams, start=1):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AITeacher\Teaching Intelligence\src\pipeline.py", line 131, in run
+    continue
+    ^^^^^^^^^
+  File "D:\AITeacher\Teaching Intelligence\src\cloud\hf_vault.py", line 52, in checkpoint_ledger
+    self.upload_bytes("state/corpus_ledger.json", ledger_json.encode("utf-8"), message)
+  File "D:\AITeacher\Teaching Intelligence\src\cloud\hf_vault.py", line 26, in upload_bytes
+    HfApi(token=self.token).upload_file(path_or_fileobj=str(path), path_in_repo=destination, repo_id=self.repo_id, repo_type="dataset", commit_message=message)
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\hf_api.py", line 2153, in _inner
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\hf_api.py", line 5807, in upload_file
+    return self.create_commit(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\hf_api.py", line 2153, in _inner
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\hf_api.py", line 5341, in create_commit
+    commit_info = _send_commit(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\_commit_api.py", line 1062, in _send_commit
+    hf_raise_for_status(response, endpoint_name="commit")
+  File "C:\Users\ambri\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\utils\_http.py", line 929, in hf_raise_for_status
+    raise _format(HfHubHTTPError, message, response) from e
+huggingface_hub.errors.HfHubHTTPError: (Request ID: Root=1-6ad1ffec-6bdcb8184b04b8bc76de6bc1;3b564cf2-c50e-4f60-9e0c-1e5309e427b1)
+
+429 Too Many Requests for url: https://huggingface.co/api/datasets/ambnig86/mentora-intelligence-vault/commit/main.
+You have exceeded the rate limit for repository commit creation (128 per hour). You can retry this action in about 1 hour. To reduce the number of commits, you can upload entire folders at once using the Hub Python library: https://huggingface.co/docs/huggingface_hub/guides/upload#upload-a-folder or for large folders: https://huggingface.co/docs/huggingface_hub/guides/upload#upload-a-large-folder. To increase your rate limit for this action, you can upgrade to a paid plan at https://huggingface.co/pricing.

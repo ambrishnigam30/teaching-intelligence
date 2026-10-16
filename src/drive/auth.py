@@ -9,11 +9,12 @@ READONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
 
 
 def _token_payload(token_json: str | None = None, token_path: str | None = None) -> tuple[dict[str, Any], Path | None]:
-    raw = token_json or os.getenv("GOOGLE_DRIVE_TOKEN_JSON")
-    if raw:
+    raw = token_json if token_json is not None else os.getenv("GOOGLE_DRIVE_TOKEN_JSON", "")
+    if raw.strip():
         return json.loads(raw), None
-    path = Path(token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH", "token.json"))
-    if not path.exists():
+    configured_path = token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH") or "token.json"
+    path = Path(configured_path)
+    if not path.is_file():
         raise RuntimeError("Set GOOGLE_DRIVE_TOKEN_JSON or provide GOOGLE_DRIVE_TOKEN_PATH containing token.json")
     return json.loads(path.read_text(encoding="utf-8")), path
 
