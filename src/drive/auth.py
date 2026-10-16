@@ -14,10 +14,11 @@ def _token_payload(token_json: str | None = None, token_path: str | None = None)
     if raw.strip():
         return json.loads(raw), None
 
-    # 2. Search for token.json in current directory or parent directories / absolute paths
+    # 2. Search for token.json considering function parameter, environment variable, and defaults
+    configured_path = token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH")
     candidates = []
-    if token_path:
-        candidates.append(Path(token_path))
+    if configured_path:
+        candidates.append(Path(configured_path))
     candidates.extend([
         Path("token.json"),
         Path(__file__).resolve().parent.parent.parent / "token.json",
