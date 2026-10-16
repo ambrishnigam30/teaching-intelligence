@@ -2,7 +2,7 @@ name: Mentora Intelligence Factory
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Fallback heartbeat cron (runs every hour just in case)
+    - cron: '0 * * * *'  # Runs automatically every hour on the hour
   workflow_dispatch:
 
 concurrency:
@@ -16,7 +16,7 @@ permissions:
 jobs:
   compile:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       HF_DATASET_REPO: ${{ secrets.HF_DATASET_REPO }}
@@ -36,7 +36,7 @@ jobs:
       GROQ_API_KEY_4: ${{ secrets.GROQ_API_KEY_4 }}
       GROQ_API_KEY_5: ${{ secrets.GROQ_API_KEY_5 }}
       OPENROUTER_API_KEY_1: ${{ secrets.OPENROUTER_API_KEY_1 }}
-      OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
+      OPENROUTER_API_2: ${{ secrets.OPENROUTER_API_2 }}
       OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
       OPENROUTER_API_KEY_4: ${{ secrets.OPENROUTER_API_KEY_4 }}
       OPENROUTER_API_KEY_5: ${{ secrets.OPENROUTER_API_KEY_5 }}
@@ -62,18 +62,13 @@ jobs:
             echo "::error::GOOGLE_DRIVE_TOKEN_JSON secret is empty."
             exit 1
           fi
-      - name: Run Pipeline Batch
-        id: pipeline
+      - name: Run Autonomous Pipeline Batches
         run: |
-          python -m src.pipeline --max-pages 50 --time-budget-seconds 900
-          # Check if there is more work remaining in the ledger/corpus
-          # (Modify this check if your pipeline writes an output variable differently, 
-          # e.g., checking STATUS.md changes or a ledger status file)
-          if git status --porcelain | grep -q "ledger" || [ -f "STATUS.md" ]; then
-            echo "has_more_work=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_more_work=false" >> $GITHUB_OUTPUT
-          fi
+          # Loop to run multiple batches back-to-back within the runner time limit
+          for i in {1..3}; do
+            echo "Starting autonomous batch $i..."
+            python -m src.pipeline --max-pages 50 --time-budget-seconds 600 || break
+          done
       - name: Commit status & Ledger
         run: |
           git config user.name "mentora-factory[bot]"
@@ -81,10 +76,3 @@ jobs:
           git add STATUS.md data/ledger.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "chore: update intelligence factory status & ledger [skip ci]"
           git push
-      - name: Trigger next autonomous batch immediately
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Current batch complete. Launching next autonomous batch immediately..."
-          sleep 5
-          gh workflow run intelligence_factory.yml --ref main
