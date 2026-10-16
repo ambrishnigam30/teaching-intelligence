@@ -5,13 +5,13 @@ from src.config.rights import RightsRegistry
 from src.corpus.chapter_mapper import ChapterMapper
 from src.corpus.classifier import classify_file
 from src.corpus.ledger import WorkItem
-from src.drive.crawler import DriveCrawler, DriveNode
+from src.drive.crawler import DriveCrawler, DriveNode, CrawlStats
 from src.models.contracts import SourceFile
 
-def discover_sources(crawler: DriveCrawler, registry: RightsRegistry | None = None, mapper: ChapterMapper | None = None) -> list[SourceFile]:
+def discover_sources(crawler: DriveCrawler, registry: RightsRegistry | None = None, mapper: ChapterMapper | None = None, nodes: list[DriveNode] | None = None) -> list[SourceFile]:
     registry, mapper = registry or RightsRegistry.load(), mapper or ChapterMapper()
     grouped: dict[str, list[DriveNode]] = defaultdict(list)
-    for node in crawler.crawl(list(registry.roots)):
+    for node in (nodes if nodes is not None else crawler.crawl(list(registry.roots))):
         grouped[node.content_hash or node.file_id].append(node)
     sources = []
     for nodes in grouped.values():
@@ -26,4 +26,4 @@ def discover_sources(crawler: DriveCrawler, registry: RightsRegistry | None = No
     return sources
 
 def work_items_for(sources: list[SourceFile]) -> list[WorkItem]:
-    return [WorkItem(file_id=s.file_id, chapters=s.chapters, virtual_paths=s.virtual_paths) for s in sources if s.rights_status != "UNKNOWN"]
+    return [WorkItem(file_id=s.file_id, chapters=s.chapters, virtual_paths=s.virtual_paths, name=s.name, source_root_id=s.source_root_id, gate=1) for s in sources if s.rights_status != "UNKNOWN"]

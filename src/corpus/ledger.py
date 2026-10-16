@@ -16,6 +16,12 @@ class WorkItem:
     status: str = "PENDING"
     attempts: int = 0
     virtual_paths: list[str] = field(default_factory=list)
+    name: str = ""
+    mime_type: str = "application/pdf"
+    source_root_id: str = ""
+    completed_pages: int = 0
+    total_pages: int | None = None
+    last_error: str | None = None
 
 class CorpusLedger:
     def __init__(self, items: Iterable[WorkItem] = (), mapper: ChapterMapper | None = None):
@@ -23,10 +29,18 @@ class CorpusLedger:
         self.items = {item.file_id: item for item in items}
 
     def upsert(self, item: WorkItem) -> None:
+        previous = self.items.get(item.file_id)
+        if previous:
+            item.gate = max(item.gate, previous.gate)
+            item.status = previous.status
+            item.attempts = previous.attempts
+            item.completed_pages = previous.completed_pages
+            item.total_pages = previous.total_pages
+            item.last_error = previous.last_error
         self.items[item.file_id] = item
 
     def next_batch(self, limit: int) -> list[WorkItem]:
-        candidates = [i for i in self.items.values() if i.status in {"PENDING", "PENDING_QUOTA"}]
+        candidates = [i for i in self.items.values() if i.status in {"PENDING", "PARTIAL", "PENDING_QUOTA"}]
         incomplete = {c for i in candidates for c in i.chapters}
         def key(item: WorkItem):
             chapter_key = self.mapper.work_key([c for c in item.chapters if c in incomplete])
