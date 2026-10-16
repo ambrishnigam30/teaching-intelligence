@@ -119,7 +119,7 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
         vault.commit_bytes(files, message)
 
     recent.append(discovery_message)
-    checkpoint({}, "Discovery checkpoint")
+    render_status()
     node_by_id: dict[str, DriveNode] = {node.file_id: node for node in nodes if node.mime_type == PDF_MIME}
     pool = KeyPool.from_environment()
     extractor = VisionApiExtractor(pool)
@@ -134,7 +134,7 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
             if not node:
                 item.status, item.last_error = "QUARANTINED", "PDF no longer present in Drive discovery"
                 recent.append(f"quarantined {active}: absent from current Drive tree")
-                checkpoint(staged_files, f"Quarantine missing Drive file {item.file_id}"); staged_files = {}
+                render_status()
                 continue
             pdf_path = scratch / f"{item.file_id}.pdf"
             try:
@@ -144,8 +144,8 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
                 item.total_pages = page_count
                 for page_number in range(item.completed_pages, page_count):
                     if stats["pages"] >= max_pages or time.monotonic() - started >= time_budget_seconds: break
-                    page_png, diagrams = extractor.render_page(pdf_path, page_number, dpi=300)
-                    extracted = extractor.extract_png(page_png)
+                    page_png, diagrams, text_clue = extractor.render_page(pdf_path, page_number, dpi=300)
+                    extracted = extractor.extract_png(page_png, text_clue=text_clue)
                     question_count, verification = _verify(extracted)
                     artifact = {"source_file_id": item.file_id, "page_number": page_number + 1, "engine": extracted.engine, "confidence": extracted.confidence, "markdown": extracted.markdown, "latex": extracted.latex, "smiles": extracted.smiles, "questions": extracted.questions, "verification": verification}
                     staged_files[_artifact_path(item, page_number)] = (json.dumps(artifact, ensure_ascii=False) + "\n").encode("utf-8")
@@ -156,8 +156,7 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
                     item.status = "EXTRACTED" if item.completed_pages == page_count else "PARTIAL"
                     item.last_error = None
                     recent.append(f"extracted {active} page {page_number + 1}/{page_count} via {extracted.engine}")
-                    if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED":
-                        checkpoint(staged_files, f"Extraction batch through {item.file_id} page {page_number + 1}"); staged_files = {}
+                    if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED": render_status()
             except QuotaExhausted as exc:
                 item.status, item.last_error = "PENDING_QUOTA", str(exc); recent.append(f"quota pause {active}: {exc}")
             except httpx.HTTPStatusError as exc:
@@ -166,10 +165,10 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
             except Exception as exc:
                 item.attempts += 1; item.status, item.last_error = "PENDING", _safe_error(exc); recent.append(f"retry {active}: {item.last_error}")
             finally:
-                checkpoint(staged_files, f"Batch checkpoint {item.file_id}"); staged_files = {}
+                render_status()
             if blocked_provider: break
     has_more_work = not blocked_provider and bool(ledger.next_batch(1))
-    checkpoint(staged_files, "Final batch checkpoint")
+    checkpoint(staged_files, "Final atomic batch checkpoint")
     _write_action_output(has_more_work)
     return has_more_work
 

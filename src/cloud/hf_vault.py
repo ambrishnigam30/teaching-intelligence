@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import warnings
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from io import BytesIO
@@ -37,7 +38,14 @@ class HuggingFaceVault:
         if not files: return
         from huggingface_hub import CommitOperationAdd, HfApi
         operations = [CommitOperationAdd(path_in_repo=destination, path_or_fileobj=BytesIO(content)) for destination, content in files.items()]
-        HfApi(token=self.token).create_commit(repo_id=self.repo_id, repo_type="dataset", operations=operations, commit_message=message)
+        try:
+            HfApi(token=self.token).create_commit(repo_id=self.repo_id, repo_type="dataset", operations=operations, commit_message=message)
+        except Exception as exc:
+            response = getattr(exc, "response", None)
+            if getattr(response, "status_code", None) == 429:
+                warnings.warn("Hugging Face commit rate limit reached; local ledger and STATUS.md remain available for the next run.", RuntimeWarning)
+                return
+            raise
 
     def download_bytes(self, source: str) -> bytes | None:
         from huggingface_hub import HfApi
