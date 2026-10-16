@@ -19,3 +19,30 @@ def test_readable_page_text_is_a_deterministic_fallback_when_all_vision_calls_fa
     result = extractor.extract_png(b"png", text_clue="Q1. What is the SI unit of force?")
     assert result.engine == "text_fallback"
     assert result.questions[0]["stem"].startswith("Q1")
+
+def test_json_payload_parsing_strips_code_fences_and_normalizes():
+    from src.extraction.dual_path import _parse_json_payload
+    wrapped = "```json\n{\"markdown\": \"# Force\", \"latex\": \"F=ma\", \"questions\": [{\"stem\": \"Q1\"}]}\n```"
+    parsed = _parse_json_payload(wrapped)
+    assert parsed["markdown"] == "# Force"
+    assert parsed["latex"] == ["F=ma"]
+    assert parsed["questions"] == [{"stem": "Q1"}]
+    assert parsed["confidence"] == 0.85
+
+def test_ollama_fallback_when_enabled(monkeypatch):
+    import json
+    import httpx
+    monkeypatch.setenv("ENABLE_LOCAL_OLLAMA", "1")
+    monkeypatch.setenv("OLLAMA_VISION_MODELS", "test-model")
+
+    def mock_post(url, **kwargs):
+        req = httpx.Request("POST", url)
+        resp_data = {"message": {"content": json.dumps({"markdown": "Ollama page", "latex": [], "smiles": [], "questions": []})}}
+        return httpx.Response(200, json=resp_data, request=req)
+
+    monkeypatch.setattr(httpx, "post", mock_post)
+    extractor = VisionApiExtractor(KeyPool([]))
+    result = extractor.extract_png(b"png", text_clue="")
+    assert result.engine == "local:ollama:test-model"
+    assert result.markdown == "Ollama page"
+

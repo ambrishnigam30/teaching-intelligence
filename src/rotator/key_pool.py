@@ -29,10 +29,14 @@ class KeyPool:
     @classmethod
     def from_environment(cls, env: dict[str, str] | None = None) -> "KeyPool":
         env = env or os.environ
-        keys = [ProviderKey(family, ordinal, env[f"{family.upper()}_API_KEY_{ordinal}"])
-                for ordinal in range(1, 6)
-                for family in ("gemini", "groq", "openrouter")
-                if env.get(f"{family.upper()}_API_KEY_{ordinal}")]
+        keys: list[ProviderKey] = []
+        for ordinal in range(1, 21):
+            for family in ("gemini", "groq", "openrouter"):
+                val = env.get(f"{family.upper()}_API_KEY_{ordinal}")
+                if not val and family == "openrouter":
+                    val = env.get(f"OPENROUTER_API_{ordinal}")
+                if val:
+                    keys.append(ProviderKey(family, ordinal, val))
         return cls(keys)
 
     def acquire(self, exclude_family: str | None = None, now: datetime | None = None) -> ProviderKey:
@@ -49,6 +53,17 @@ class KeyPool:
         now = now or datetime.now(timezone.utc)
         key.failures += 1
         key.cooldown_until = now + timedelta(seconds=seconds)
+
+    def shortest_cooldown_wait(self, now: datetime | None = None) -> float:
+        if not self.keys:
+            return 0.0
+        now = now or datetime.now(timezone.utc)
+        if any(k.available(now) for k in self.keys):
+            return 0.0
+        cooling = [k for k in self.keys if k.cooldown_until is not None]
+        if not cooling:
+            return 0.0
+        return max(0.0, (min(k.cooldown_until for k in cooling) - now).total_seconds())
 
     def jitter(self) -> float:
         return random.uniform(*self.jitter_seconds)

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -81,7 +82,15 @@ def _artifact_path(item: WorkItem, page_number: int) -> str:
     return f"intelligence/chapters/{chapter}/{item.file_id}/page-{page_number + 1:04}.jsonl"
 
 
-def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None, skip_discovery: bool = False, checkpoint_pages: int = 5) -> bool:
+def run(
+    max_pages: int,
+    time_budget_seconds: int,
+    root_limit: int | None = None,
+    skip_discovery: bool = False,
+    checkpoint_pages: int = 5,
+    shard_index: int = 0,
+    shard_count: int = 1,
+) -> bool:
     load_env_file()
     started = time.monotonic()
     now = datetime.now(timezone.utc)
@@ -89,6 +98,7 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
     recent: list[str] = []
     active: str | None = None
     blocked_provider = False
+    consecutive_quota_pauses = 0
     ledger_path = Path("state/corpus_ledger.json")
     vault = HuggingFaceVault.from_environment()
     vault.ensure_private()
@@ -96,7 +106,11 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
     ledger = CorpusLedger.from_path(ledger_path)
     service = google_drive_service()
     crawler = DriveCrawler(DriveCrawler.google_client(service))
-    if skip_discovery:
+
+    should_skip_discovery = skip_discovery or (
+        os.getenv("AUTO_SKIP_DISCOVERY_IF_POPULATED", "").lower() in {"1", "true"} and len(ledger.items) >= 100
+    )
+    if should_skip_discovery:
         nodes = [DriveNode(item.file_id, item.name or item.file_id, item.mime_type, item.source_root_id, item.virtual_paths[0] if item.virtual_paths else item.file_id) for item in ledger.items.values()]
         stats.update(files=len(nodes), pdfs=len(nodes))
         discovery_message = f"reused persistent ledger with {len(nodes)} files"
@@ -124,10 +138,16 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
     pool = KeyPool.from_environment()
     extractor = VisionApiExtractor(pool)
     staged_files: dict[str, bytes] = {}
+    continuous_hf = os.getenv("CONTINUOUS_HF_CHECKPOINT", "").lower() in {"1", "true"}
+
     with tempfile.TemporaryDirectory(prefix="mentora-drive-") as scratch_raw:
         scratch = Path(scratch_raw)
         while stats["pages"] < max_pages and time.monotonic() - started < time_budget_seconds:
-            batch = ledger.next_batch(1)
+            if shard_count > 1:
+                candidates = ledger.next_batch(100)
+                batch = [i for i in candidates if (int(hashlib.sha256(i.file_id.encode("utf-8")).hexdigest(), 16) % shard_count) == (shard_index % shard_count)]
+            else:
+                batch = ledger.next_batch(1)
             if not batch: break
             item = batch[0]; active = item.name or item.file_id
             node = node_by_id.get(item.file_id)
@@ -146,6 +166,7 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
                     if stats["pages"] >= max_pages or time.monotonic() - started >= time_budget_seconds: break
                     page_png, diagrams, text_clue = extractor.render_page(pdf_path, page_number, dpi=300)
                     extracted = extractor.extract_png(page_png, text_clue=text_clue)
+                    consecutive_quota_pauses = 0
                     question_count, verification = _verify(extracted)
                     artifact = {"source_file_id": item.file_id, "page_number": page_number + 1, "engine": extracted.engine, "confidence": extracted.confidence, "markdown": extracted.markdown, "latex": extracted.latex, "smiles": extracted.smiles, "questions": extracted.questions, "verification": verification}
                     staged_files[_artifact_path(item, page_number)] = (json.dumps(artifact, ensure_ascii=False) + "\n").encode("utf-8")
@@ -156,9 +177,23 @@ def run(max_pages: int, time_budget_seconds: int, root_limit: int | None = None,
                     item.status = "EXTRACTED" if item.completed_pages == page_count else "PARTIAL"
                     item.last_error = None
                     recent.append(f"extracted {active} page {page_number + 1}/{page_count} via {extracted.engine}")
-                    if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED": render_status()
+                    if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED":
+                        render_status()
+                        if continuous_hf:
+                            checkpoint(staged_files, f"Checkpoint: {stats['pages']} pages processed")
+                            staged_files.clear()
             except QuotaExhausted as exc:
-                item.status, item.last_error = "PENDING_QUOTA", str(exc); recent.append(f"quota pause {active}: {exc}")
+                consecutive_quota_pauses += 1
+                item.status, item.last_error = "PENDING_QUOTA", str(exc)
+                recent.append(f"quota pause {active}: {exc}")
+                if time_budget_seconds >= 60:
+                    wait_sec = min(pool.shortest_cooldown_wait(), 30.0)
+                    if wait_sec > 0:
+                        time.sleep(wait_sec)
+                ollama_enabled = os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}
+                if consecutive_quota_pauses >= 3 and not ollama_enabled:
+                    recent.append(f"quota exhausted: 3 consecutive pauses; breaking batch for next cycle")
+                    break
             except httpx.HTTPStatusError as exc:
                 item.attempts += 1; item.status = "BLOCKED_PROVIDER"; item.last_error = _safe_error(exc)
                 recent.append(f"blocked {active}: {item.last_error}"); blocked_provider = True
@@ -180,11 +215,23 @@ def main() -> None:
     parser.add_argument("--root-limit", type=int, help="Smoke-test-only limit; omit to crawl all 13 founder roots.")
     parser.add_argument("--skip-discovery", action="store_true", help="Process the durable ledger without recrawling Drive; intended only for recovery/smoke runs.")
     parser.add_argument("--checkpoint-pages", type=int, default=5)
+    parser.add_argument("--shard-index", type=int, default=0, help="Shard index for parallel fleet runners.")
+    parser.add_argument("--shard-count", type=int, default=1, help="Total shards in parallel fleet.")
+    parser.add_argument("--checkpoint-every-files", type=int, default=1, help="Frequency of file-level checkpoints.")
     args = parser.parse_args()
     if args.max_pages < 1 or args.time_budget_seconds < 1: parser.error("limits must be positive")
     if args.root_limit is not None and args.root_limit < 1: parser.error("root limit must be positive")
     if args.checkpoint_pages < 1: parser.error("checkpoint pages must be positive")
-    run(args.max_pages, args.time_budget_seconds, args.root_limit, args.skip_discovery, args.checkpoint_pages)
+    if args.shard_index < 0 or args.shard_count < 1: parser.error("shard settings invalid")
+    run(
+        args.max_pages,
+        args.time_budget_seconds,
+        args.root_limit,
+        args.skip_discovery,
+        args.checkpoint_pages,
+        args.shard_index,
+        args.shard_count,
+    )
 
 
 if __name__ == "__main__": main()

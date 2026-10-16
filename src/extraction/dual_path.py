@@ -8,14 +8,85 @@ from pathlib import Path
 from typing import Protocol
 import re
 
+import os
+import re
+
 import httpx
 from src.rotator.key_pool import KeyPool, QuotaExhausted
 
 VISION_PROMPT = """Transcribe this JEE/NEET teaching page faithfully. Return JSON with markdown, latex, smiles, questions, diagrams. Reconcile the supplied PDF text clue with the page image. Never invent unreadable content; use UNKNOWN for uncertain fields."""
-GEMINI_VISION_MODELS = ("gemini-3.8-flash", "gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.5-pro")
+GEMINI_VISION_MODELS = ("gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-3.8-flash", "gemini-2.5-pro")
 GROQ_VISION_MODELS = ("meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct")
 GROQ_TEXT_MODELS = ("llama-3.3-70b-versatile", "qwen/qwen3-32b")
-OPENROUTER_VISION_MODELS = ("google/gemma-4-31b-it:free", "google/gemma-4-26b-a4b-it:free", "qwen/qwen3.8-27b:free", "thinkingmachines/inkling-small:free", "openrouter/free")
+OPENROUTER_VISION_MODELS = ("qwen/qwen2.5-vl-72b-instruct:free", "qwen/qwen2.5-vl-32b-instruct:free", "google/gemma-3-27b-it:free", "mistralai/mistral-small-3.1-24b-instruct:free", "google/gemma-4-31b-it:free", "openrouter/free")
+
+def _prepare_image_bytes(png: bytes, max_bytes: int = 3_000_000) -> tuple[str, str]:
+    if len(png) <= max_bytes:
+        return "image/png", base64.b64encode(png).decode("ascii")
+    try:
+        import fitz
+        pix = fitz.Pixmap(png)
+        if pix.alpha:
+            pix = fitz.Pixmap(fitz.csRGB, pix)
+        jpg = pix.tobytes("jpeg")
+        if len(jpg) <= max_bytes:
+            return "image/jpeg", base64.b64encode(jpg).decode("ascii")
+        try:
+            from PIL import Image
+            img = Image.open(BytesIO(jpg))
+            scale = 0.75
+            while len(jpg) > max_bytes and scale >= 0.25:
+                w, h = max(1, int(img.width * scale)), max(1, int(img.height * scale))
+                resized = img.resize((w, h), Image.Resampling.LANCZOS)
+                buf = BytesIO()
+                resized.save(buf, format="JPEG", quality=75)
+                jpg = buf.getvalue()
+                scale -= 0.25
+        except Exception:
+            pass
+        return "image/jpeg", base64.b64encode(jpg).decode("ascii")
+    except Exception:
+        return "image/png", base64.b64encode(png).decode("ascii")
+
+def _parse_json_payload(raw_text: str) -> dict:
+    text = raw_text.strip()
+    if "```" in text:
+        match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", text)
+        if match:
+            text = match.group(1).strip()
+    if not text.startswith("{"):
+        start = text.find("{")
+        end = text.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            text = text[start:end+1]
+    data = json.loads(text)
+    if not isinstance(data, dict):
+        data = {"markdown": str(data)}
+    markdown = data.get("markdown") or "UNKNOWN"
+    latex = data.get("latex") or []
+    if not isinstance(latex, list): latex = [str(latex)]
+    smiles = data.get("smiles") or []
+    if not isinstance(smiles, list): smiles = [str(smiles)]
+    questions = data.get("questions") or []
+    if not isinstance(questions, list): questions = []
+    diagrams = data.get("diagrams") or []
+    if not isinstance(diagrams, list): diagrams = []
+    conf = data.get("confidence")
+    if conf is None or conf == 0:
+        confidence = 0.85 if (markdown != "UNKNOWN" or questions) else 0.5
+    else:
+        try:
+            confidence = float(conf)
+        except (ValueError, TypeError):
+            confidence = 0.85
+    return {
+        "markdown": str(markdown),
+        "latex": [str(x) for x in latex],
+        "smiles": [str(x) for x in smiles],
+        "questions": [q for q in questions if isinstance(q, dict)],
+        "diagrams": diagrams,
+        "confidence": confidence,
+    }
 
 @dataclass(frozen=True)
 class ExtractionResult:
@@ -33,6 +104,15 @@ class HttpVisionCaller:
     @staticmethod
     def _choose_dynamic_model(response: httpx.Response, family: str) -> str:
         payload = response.json().get("models", response.json().get("data", []))
+        if family == "openrouter":
+            for model in payload:
+                mid = model.get("id", "")
+                modalities = model.get("architecture", {}).get("input_modalities", [])
+                if mid.endswith(":free") and "image" in modalities:
+                    return mid
+            for model in payload:
+                if "image" in model.get("architecture", {}).get("input_modalities", []):
+                    return model["id"]
         for model in payload:
             if family == "gemini":
                 if "generateContent" in model.get("supportedGenerationMethods", []): return model["name"].removeprefix("models/")
@@ -45,16 +125,27 @@ class HttpVisionCaller:
         base = "https://generativelanguage.googleapis.com/v1beta"
         payload = {"contents": [{"parts": parts}], "generationConfig": {"responseMimeType": "application/json"}}
         models = list(GEMINI_VISION_MODELS)
+        last_response: httpx.Response | None = None
+        retryable_codes = {400, 402, 404, 408, 413, 422, 429, 500, 502, 503, 504}
         for dynamic in (False, True):
             for model in models:
-                response = httpx.post(f"{base}/models/{model}:generateContent", headers=headers, json=payload, timeout=90)
-                if response.status_code == 404: continue
-                response.raise_for_status()
-                return json.loads(response.json()["candidates"][0]["content"]["parts"][0]["text"])
+                try:
+                    response = httpx.post(f"{base}/models/{model}:generateContent", headers=headers, json=payload, timeout=90)
+                    last_response = response
+                    if response.status_code in retryable_codes: continue
+                    response.raise_for_status()
+                    candidate_text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
+                    return _parse_json_payload(candidate_text)
+                except (httpx.TransportError, json.JSONDecodeError, KeyError, IndexError):
+                    continue
             if dynamic:
                 break
-            models = [self._choose_dynamic_model(httpx.get(f"{base}/models", headers=headers, timeout=30), "gemini")]
-        response.raise_for_status()
+            try:
+                models = [self._choose_dynamic_model(httpx.get(f"{base}/models", headers=headers, timeout=30), "gemini")]
+            except Exception:
+                break
+        if last_response is not None:
+            last_response.raise_for_status()
         raise RuntimeError("Gemini model fallback exhausted")
 
     def _openai_compatible(self, endpoint: str, models_endpoint: str, key: str, models: tuple[str, ...], parts: list[dict], family: str) -> dict:
@@ -62,24 +153,35 @@ class HttpVisionCaller:
         content = [{"type": "text", "text": VISION_PROMPT + "\n\nPDF text clue:\n" + parts[0]["text"]}, {"type": "image_url", "image_url": {"url": parts[1]["inline_data"]["data"]}}]
         payload = {"response_format": {"type": "json_object"}, "messages": [{"role": "user", "content": content}]}
         candidates = list(models)
+        last_response: httpx.Response | None = None
+        retryable_codes = {400, 402, 404, 408, 413, 422, 429, 500, 502, 503, 504}
         for dynamic in (False, True):
             for model in candidates:
-                response = httpx.post(endpoint, headers=headers, json={**payload, "model": model}, timeout=90)
-                if response.status_code == 404: continue
-                response.raise_for_status()
-                return json.loads(response.json()["choices"][0]["message"]["content"])
+                try:
+                    response = httpx.post(endpoint, headers=headers, json={**payload, "model": model}, timeout=90)
+                    last_response = response
+                    if response.status_code in retryable_codes: continue
+                    response.raise_for_status()
+                    message_text = response.json()["choices"][0]["message"]["content"]
+                    return _parse_json_payload(message_text)
+                except (httpx.TransportError, json.JSONDecodeError, KeyError, IndexError):
+                    continue
             if dynamic: break
-            listing = httpx.get(models_endpoint, headers=headers, timeout=30); listing.raise_for_status()
-            candidates = [self._choose_dynamic_model(listing, family)]
-        response.raise_for_status()
+            try:
+                listing = httpx.get(models_endpoint, headers=headers, timeout=30); listing.raise_for_status()
+                candidates = [self._choose_dynamic_model(listing, family)]
+            except Exception:
+                break
+        if last_response is not None:
+            last_response.raise_for_status()
         raise RuntimeError(f"{family} model fallback exhausted")
 
     def __call__(self, family: str, key: str, png: bytes, text_clue: str = "") -> dict:
-        image = base64.b64encode(png).decode("ascii")
-        parts = [{"text": VISION_PROMPT + "\n\nPDF text clue:\n" + text_clue[:12000]}, {"inline_data": {"mime_type": "image/png", "data": image}}]
+        mime, image = _prepare_image_bytes(png)
+        parts = [{"text": VISION_PROMPT + "\n\nPDF text clue:\n" + text_clue[:12000]}, {"inline_data": {"mime_type": mime, "data": image}}]
         if family == "gemini":
             return self._gemini(key, parts)
-        encoded_parts = [parts[0], {"inline_data": {"data": "data:image/png;base64," + image}}]
+        encoded_parts = [parts[0], {"inline_data": {"data": f"data:{mime};base64," + image}}]
         if family == "groq": return self._openai_compatible("https://api.groq.com/openai/v1/chat/completions", "https://api.groq.com/openai/v1/models", key, GROQ_VISION_MODELS, encoded_parts, "groq")
         return self._openai_compatible("https://openrouter.ai/api/v1/chat/completions", "https://openrouter.ai/api/v1/models", key, OPENROUTER_VISION_MODELS, encoded_parts, "openrouter")
 
@@ -120,24 +222,91 @@ class VisionApiExtractor:
         finally:
             document.close()
 
+    def extract_ollama(self, png: bytes, text_clue: str = "") -> ExtractionResult | None:
+        if os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() not in {"1", "true", "yes"}:
+            return None
+        host = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434").rstrip("/")
+        models_str = os.getenv("OLLAMA_VISION_MODELS", "qwen2.5vl:7b,qwen2.5vl:3b,moondream")
+        models = [m.strip() for m in models_str.split(",") if m.strip()]
+        _mime, b64_img = _prepare_image_bytes(png)
+        prompt = VISION_PROMPT + "\n\nPDF text clue:\n" + text_clue[:12000]
+        for model in models:
+            payload = {
+                "model": model,
+                "stream": False,
+                "format": "json",
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": prompt,
+                        "images": [b64_img],
+                    }
+                ],
+            }
+            try:
+                response = httpx.post(f"{host}/api/chat", json=payload, timeout=180)
+                if response.status_code == 200:
+                    content = response.json().get("message", {}).get("content", "")
+                    data = _parse_json_payload(content)
+                    return ExtractionResult(
+                        markdown=data.get("markdown", "UNKNOWN"),
+                        latex=data.get("latex", []),
+                        smiles=data.get("smiles", []),
+                        questions=data.get("questions", []),
+                        confidence=float(data.get("confidence", 0.82)),
+                        engine=f"local:ollama:{model}",
+                    )
+            except Exception:
+                continue
+        return None
+
     def extract_png(self, png: bytes, author_family: str | None = None, text_clue: str = "") -> ExtractionResult:
         last_error: Exception | None = None
-        # Exhaust the interleaved 15-key pool before deferring a rate-limited visual page.
         for _ in range(len(self.pool.keys)):
-            key = self.pool.acquire(exclude_family=author_family)
+            try:
+                key = self.pool.acquire(exclude_family=author_family)
+            except QuotaExhausted:
+                break
             try:
                 try:
                     data = self.caller(key.family, key.value, png, text_clue)
                 except TypeError:  # Supports pre-existing three-argument test callers.
                     data = self.caller(key.family, key.value, png)
-                return ExtractionResult(markdown=data.get("markdown", "UNKNOWN"), latex=data.get("latex", []), smiles=data.get("smiles", []), questions=data.get("questions", []), confidence=float(data.get("confidence", 0)), engine=f"api:{key.label}")
+                return ExtractionResult(
+                    markdown=data.get("markdown", "UNKNOWN"),
+                    latex=data.get("latex", []),
+                    smiles=data.get("smiles", []),
+                    questions=data.get("questions", []),
+                    confidence=float(data.get("confidence", 0)),
+                    engine=f"api:{key.label}",
+                )
             except httpx.HTTPStatusError as exc:
                 last_error = exc
-                if exc.response.status_code in {400, 401, 403, 404, 429, 500, 503}: self.pool.cooldown(key, seconds=300)
+                if exc.response.status_code in {429, 503}:
+                    self.pool.cooldown(key, seconds=45)
+                elif exc.response.status_code in {401, 403}:
+                    self.pool.cooldown(key, seconds=120)
+                else:
+                    self.pool.cooldown(key, seconds=60)
             except (httpx.TransportError, json.JSONDecodeError, KeyError, RuntimeError) as exc:
-                last_error = exc; self.pool.cooldown(key, seconds=120)
-        if text_clue.strip(): return self.text_fallback(text_clue)
-        if last_error: raise last_error
+                last_error = exc
+                self.pool.cooldown(key, seconds=60)
+
+        # 1. Server-installed local Ollama fallback if enabled
+        if os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}:
+            try:
+                ollama_result = self.extract_ollama(png, text_clue)
+                if ollama_result is not None:
+                    return ollama_result
+            except Exception:
+                pass
+
+        # 2. Text clue fallback
+        if text_clue.strip():
+            return self.text_fallback(text_clue)
+
+        if last_error:
+            raise last_error
         raise QuotaExhausted("No provider key is available for visual extraction")
 
     @staticmethod

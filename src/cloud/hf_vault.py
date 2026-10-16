@@ -37,7 +37,7 @@ class HuggingFaceVault:
         """Atomically checkpoint a page batch in one Hub commit to stay within free-tier commit limits."""
         if not files: return
         from huggingface_hub import CommitOperationAdd, HfApi
-        operations = [CommitOperationAdd(path_in_repo=destination, path_or_fileobj=BytesIO(content)) for destination, content in files.items()]
+        operations = [CommitOperationAdd(path_in_repo=destination, path_or_fileobj=content) for destination, content in files.items()]
         try:
             HfApi(token=self.token).create_commit(repo_id=self.repo_id, repo_type="dataset", operations=operations, commit_message=message)
         except Exception as exc:

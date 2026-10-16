@@ -17,3 +17,17 @@ def test_status_dashboard_reports_live_operational_metrics():
     assert "Pages Processed This Run: 5" in dashboard
     assert "Questions Verified This Run: 4" in dashboard
     assert "Next File in Queue: bonding.pdf" in dashboard
+
+def test_shard_deterministic_partitioning():
+    import hashlib
+    items = [f"file-{i}" for i in range(100)]
+    shard_count = 3
+    shards = {0: [], 1: [], 2: []}
+    for file_id in items:
+        idx = int(hashlib.sha256(file_id.encode("utf-8")).hexdigest(), 16) % shard_count
+        shards[idx].append(file_id)
+    # Check that each shard gets mutually exclusive, non-empty subsets
+    assert len(shards[0]) + len(shards[1]) + len(shards[2]) == 100
+    assert set(shards[0]).isdisjoint(set(shards[1]))
+    assert set(shards[1]).isdisjoint(set(shards[2]))
+

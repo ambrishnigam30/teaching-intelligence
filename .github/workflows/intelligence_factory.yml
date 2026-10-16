@@ -25,6 +25,12 @@ jobs:
       GOOGLE_DRIVE_TOKEN_PATH: token.json
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      KAGGLE_USERNAME_1: ${{ secrets.KAGGLE_USERNAME_1 }}
+      KAGGLE_KEY_1: ${{ secrets.KAGGLE_KEY_1 }}
+      KAGGLE_USERNAME_2: ${{ secrets.KAGGLE_USERNAME_2 }}
+      KAGGLE_KEY_2: ${{ secrets.KAGGLE_KEY_2 }}
+      KAGGLE_USERNAME_3: ${{ secrets.KAGGLE_USERNAME_3 }}
+      KAGGLE_KEY_3: ${{ secrets.KAGGLE_KEY_3 }}
       GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
       GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
       GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
@@ -40,6 +46,10 @@ jobs:
       OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
       OPENROUTER_API_KEY_4: ${{ secrets.OPENROUTER_API_KEY_4 }}
       OPENROUTER_API_KEY_5: ${{ secrets.OPENROUTER_API_KEY_5 }}
+      ENABLE_LOCAL_OLLAMA: "1"
+      OLLAMA_VISION_MODELS: "qwen2.5vl:3b,moondream"
+      AUTO_SKIP_DISCOVERY_IF_POPULATED: "1"
+      CONTINUOUS_HF_CHECKPOINT: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -62,6 +72,17 @@ jobs:
             echo "::error::GOOGLE_DRIVE_TOKEN_JSON secret is empty."
             exit 1
           fi
+      - name: Install & Start Server-Side Local Vision AI (Ollama)
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve > /tmp/ollama.log 2>&1 &
+          sleep 5
+          ollama pull qwen2.5vl:3b || ollama pull moondream || true
+
+      - name: Dispatch Parallel Kaggle GPU Fleet (If Configured)
+        run: |
+          python -c "from src.cloud.kaggle import KaggleDispatcher; from pathlib import Path; KaggleDispatcher(Path('scripts/kaggle_worker')).dispatch_fleet({})" || true
+
       - name: Run Continuous Autonomous Marathon (20 Batches / ~5 Hours)
         run: |
           git config user.name "mentora-factory[bot]"
@@ -72,7 +93,7 @@ jobs:
             python -m src.pipeline --max-pages 50 --time-budget-seconds 900 || true
 
             # Save & push progress after every single batch
-            git add STATUS.md data/ledger.json 2>/dev/null || true
+            git add STATUS.md state/corpus_ledger.json 2>/dev/null || true
             if ! git diff --cached --quiet; then
               git commit -m "chore: update intelligence factory status (batch $i) [skip ci]"
               for retry in {1..5}; do
@@ -80,11 +101,12 @@ jobs:
               done
             fi
           done
-      - name: Trigger next autonomous batch immediately
+
+      - name: Trigger next autonomous marathon immediately
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Marathon complete. Triggering next 5.5-hour autonomous run..."
+          echo "Marathon complete. Triggering next autonomous run..."
           sleep 10
-          gh workflow run intelligence_factory.yml --ref main
+          gh workflow run intelligence_factory.yml --ref main || true
