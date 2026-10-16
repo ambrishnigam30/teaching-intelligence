@@ -14,13 +14,21 @@ def _token_payload(token_json: str | None = None, token_path: str | None = None)
     if raw.strip():
         return json.loads(raw), None
 
-    # 2. Fall back to local disk token path (Actions materialized token.json or local dev file)
-    configured_path = token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH") or "token.json"
-    path = Path(configured_path)
-    if path.is_file():
-        return json.loads(path.read_text(encoding="utf-8")), path
+    # 2. Search for token.json in current directory or parent directories / absolute paths
+    candidates = []
+    if token_path:
+        candidates.append(Path(token_path))
+    candidates.extend([
+        Path("token.json"),
+        Path(__file__).resolve().parent.parent.parent / "token.json",
+        Path.cwd() / "token.json"
+    ])
 
-    raise RuntimeError("Set GOOGLE_DRIVE_TOKEN_JSON or provide GOOGLE_DRIVE_TOKEN_PATH containing token.json")
+    for path in candidates:
+        if path.is_file():
+            return json.loads(path.read_text(encoding="utf-8")), path
+
+    raise RuntimeError("Set GOOGLE_DRIVE_TOKEN_JSON or provide GOOGLE_DRIVE_TOKEN_PATH containing valid token.json")
 
 
 def google_drive_credentials(token_json: str | None = None, token_path: str | None = None) -> Any:
