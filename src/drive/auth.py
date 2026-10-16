@@ -9,14 +9,18 @@ READONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
 
 
 def _token_payload(token_json: str | None = None, token_path: str | None = None) -> tuple[dict[str, Any], Path | None]:
+    # 1. Explicit argument or environment variable secret takes highest precedence
     raw = token_json if token_json is not None else os.getenv("GOOGLE_DRIVE_TOKEN_JSON", "")
     if raw.strip():
         return json.loads(raw), None
+
+    # 2. Fall back to local disk token path (Actions materialized token.json or local dev file)
     configured_path = token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH") or "token.json"
     path = Path(configured_path)
-    if not path.is_file():
-        raise RuntimeError("Set GOOGLE_DRIVE_TOKEN_JSON or provide GOOGLE_DRIVE_TOKEN_PATH containing token.json")
-    return json.loads(path.read_text(encoding="utf-8")), path
+    if path.is_file():
+        return json.loads(path.read_text(encoding="utf-8")), path
+
+    raise RuntimeError("Set GOOGLE_DRIVE_TOKEN_JSON or provide GOOGLE_DRIVE_TOKEN_PATH containing token.json")
 
 
 def google_drive_credentials(token_json: str | None = None, token_path: str | None = None) -> Any:
@@ -29,7 +33,8 @@ def google_drive_credentials(token_json: str | None = None, token_path: str | No
         if not credentials.refresh_token:
             raise RuntimeError("Google Drive token expired and has no refresh token; rerun scripts/auth_google_drive.py")
         credentials.refresh(Request())
-        if local_path: local_path.write_text(credentials.to_json(), encoding="utf-8")
+        if local_path:
+            local_path.write_text(credentials.to_json(), encoding="utf-8")
     return credentials
 
 
