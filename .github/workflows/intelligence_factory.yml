@@ -2,7 +2,7 @@ name: Mentora Intelligence Factory
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs automatically every hour on the hour
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 concurrency:
@@ -16,7 +16,7 @@ permissions:
 jobs:
   compile:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 330  # Run for up to 5.5 hours continuously per job
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       HF_DATASET_REPO: ${{ secrets.HF_DATASET_REPO }}
@@ -36,7 +36,7 @@ jobs:
       GROQ_API_KEY_4: ${{ secrets.GROQ_API_KEY_4 }}
       GROQ_API_KEY_5: ${{ secrets.GROQ_API_KEY_5 }}
       OPENROUTER_API_KEY_1: ${{ secrets.OPENROUTER_API_KEY_1 }}
-      OPENROUTER_API_2: ${{ secrets.OPENROUTER_API_2 }}
+      OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
       OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
       OPENROUTER_API_KEY_4: ${{ secrets.OPENROUTER_API_KEY_4 }}
       OPENROUTER_API_KEY_5: ${{ secrets.OPENROUTER_API_KEY_5 }}
@@ -62,21 +62,29 @@ jobs:
             echo "::error::GOOGLE_DRIVE_TOKEN_JSON secret is empty."
             exit 1
           fi
-      - name: Run Autonomous Pipeline Batches
-        run: |
-          # Loop to run multiple batches back-to-back within the runner time limit
-          for i in {1..3}; do
-            echo "Starting autonomous batch $i..."
-            python -m src.pipeline --max-pages 50 --time-budget-seconds 600 || break
-          done
-      - name: Commit status & Ledger
+      - name: Run Continuous Autonomous Marathon (20 Batches / ~5 Hours)
         run: |
           git config user.name "mentora-factory[bot]"
           git config user.email "mentora-factory[bot]@users.noreply.github.com"
-          git add STATUS.md data/ledger.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "chore: update intelligence factory status & ledger [skip ci]"
-          
-          # Retry loop to safely handle concurrent runs pushing at the same time
-          for i in {1..5}; do
-            git pull --rebase origin main && git push && break || sleep 5
+
+          for i in {1..20}; do
+            echo "=== Starting Autonomous Batch $i of 20 ==="
+            python -m src.pipeline --max-pages 50 --time-budget-seconds 900 || true
+
+            # Save & push progress after every single batch
+            git add STATUS.md data/ledger.json 2>/dev/null || true
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: update intelligence factory status (batch $i) [skip ci]"
+              for retry in {1..5}; do
+                git pull --rebase origin main && git push && break || sleep 5
+              done
+            fi
           done
+      - name: Trigger next autonomous batch immediately
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Marathon complete. Triggering next 5.5-hour autonomous run..."
+          sleep 10
+          gh workflow run intelligence_factory.yml --ref main
