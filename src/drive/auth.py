@@ -9,27 +9,45 @@ READONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
 
 
 def _token_payload(token_json: str | None = None, token_path: str | None = None) -> tuple[dict[str, Any], Path | None]:
-    # 1. Explicit argument or environment variable secret takes highest precedence
-    raw = token_json if token_json is not None else os.getenv("GOOGLE_DRIVE_TOKEN_JSON", "")
-    if raw.strip():
-        return json.loads(raw), None
+    # 1. Check all possible environment variable names for the secret
+    env_candidates = [
+        token_json,
+        os.getenv("GOOGLE_DRIVE_TOKEN_JSON"),
+        os.getenv("GOOGLE_DRIVE_TOKEN"),
+        os.getenv("DRIVE_TOKEN_JSON"),
+        os.getenv("GDRIVE_TOKEN"),
+    ]
+    for raw in env_candidates:
+        if raw and str(raw).strip():
+            try:
+                return json.loads(str(raw)), None
+            except json.JSONDecodeError:
+                pass
 
-    # 2. Search for token.json considering function parameter, environment variable, and defaults
-    configured_path = token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH")
-    candidates = []
+    # 2. Search for token.json across multiple fallback paths
+    configured_path = token_path or os.getenv("GOOGLE_DRIVE_TOKEN_PATH") or os.getenv("DRIVE_TOKEN_PATH")
+    file_candidates = []
     if configured_path:
-        candidates.append(Path(configured_path))
-    candidates.extend([
+        file_candidates.append(Path(configured_path))
+    file_candidates.extend([
         Path("token.json"),
+        Path("config/token.json"),
+        Path("secrets/token.json"),
         Path(__file__).resolve().parent.parent.parent / "token.json",
         Path.cwd() / "token.json"
     ])
 
-    for path in candidates:
+    for path in file_candidates:
         if path.is_file():
-            return json.loads(path.read_text(encoding="utf-8")), path
+            try:
+                return json.loads(path.read_text(encoding="utf-8")), path
+            except Exception:
+                pass
 
-    raise RuntimeError("Set GOOGLE_DRIVE_TOKEN_JSON or provide GOOGLE_DRIVE_TOKEN_PATH containing valid token.json")
+    raise RuntimeError(
+        "Google Drive token not found! Please check that your GitHub Secret "
+        "(GOOGLE_DRIVE_TOKEN_JSON, GOOGLE_DRIVE_TOKEN, etc.) is populated or token.json exists."
+    )
 
 
 def google_drive_credentials(token_json: str | None = None, token_path: str | None = None) -> Any:
