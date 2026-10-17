@@ -6,6 +6,23 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 from io import BytesIO
 
+def is_secret_bearing_file(path_str: str) -> bool:
+    """Detect if a file path or name could carry secrets, tokens, or credentials."""
+    lower = path_str.lower()
+    return any(
+        pattern in lower
+        for pattern in (
+            "secret",
+            "token",
+            "credential",
+            ".env",
+            "password",
+            "api_key",
+            "apikey",
+        )
+    )
+
+
 class HuggingFaceVault:
     """Canonical private Dataset storage for ledgers and generated packages."""
     def __init__(self, repo_id: str, token: str, api: Any = None, spill_dir: Path | None = None):
@@ -17,6 +34,8 @@ class HuggingFaceVault:
     def _save_to_spill(self, files: dict[str, bytes]) -> None:
         self.spill_dir.mkdir(parents=True, exist_ok=True)
         for dest, content in files.items():
+            if is_secret_bearing_file(dest):
+                continue
             spill_file = self.spill_dir / dest.replace("/", "__")
             spill_file.parent.mkdir(parents=True, exist_ok=True)
             spill_file.write_bytes(content)
@@ -65,6 +84,8 @@ class HuggingFaceVault:
 
         # Stage incoming files in spill directory to protect against memory loss / crashes
         for dest, content in files.items():
+            if is_secret_bearing_file(dest):
+                continue
             spill_file = effective_spill / dest.replace("/", "__")
             spill_file.parent.mkdir(parents=True, exist_ok=True)
             spill_file.write_bytes(content)
@@ -73,11 +94,14 @@ class HuggingFaceVault:
         import random
         from huggingface_hub import CommitOperationAdd, HfApi
 
-        # Reconstruct all staged operations from spill directory
+        # Reconstruct all staged operations from spill directory, filtering out forbidden files
         operations = []
         for spill_file in effective_spill.glob("*"):
             if spill_file.is_file():
                 dest = spill_file.name.replace("__", "/")
+                if is_secret_bearing_file(dest):
+                    spill_file.unlink(missing_ok=True)
+                    continue
                 operations.append(CommitOperationAdd(path_in_repo=dest, path_or_fileobj=spill_file.read_bytes()))
 
         if not operations:
@@ -139,13 +163,3 @@ class HuggingFaceVault:
 
     def checkpoint_ledger(self, ledger_json: str, message: str) -> bool:
         return self.commit_bytes({"state/corpus_ledger.json": ledger_json.encode("utf-8")}, message)
-
-    def upload_secret_bundle(self, secrets: dict[str, str], message: str = "Store private runtime secrets") -> bool:
-        import json
-        return self.commit_bytes({"state/.mentora_secrets.json": json.dumps(secrets).encode("utf-8")}, message)
-
-    def download_secret_bundle(self) -> dict[str, str] | None:
-        import json
-        raw = self.download_bytes("state/.mentora_secrets.json")
-        if raw is None: return None
-        return json.loads(raw.decode("utf-8"))

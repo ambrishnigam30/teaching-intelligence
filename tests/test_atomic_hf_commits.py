@@ -47,3 +47,58 @@ def test_spillover_directory_saves_and_clears_on_flush(tmp_path):
     assert mock_api.create_commit.call_count == 1
     # Spill directory should now be empty
     assert len([f for f in spill_dir.glob("*") if f.is_file()]) == 0
+
+
+def test_is_secret_bearing_file_detection():
+    from src.cloud.hf_vault import is_secret_bearing_file
+
+    assert is_secret_bearing_file("state/.mentora_secrets.json")
+    assert is_secret_bearing_file("token.json")
+    assert is_secret_bearing_file("credentials.json")
+    assert is_secret_bearing_file(".env.keys")
+    assert is_secret_bearing_file(".env")
+    assert is_secret_bearing_file("path/to/my_api_key.txt")
+    assert is_secret_bearing_file("gemini_apikey.json")
+    assert is_secret_bearing_file("user_password.hash")
+
+    # Safe files must not trigger detection
+    assert not is_secret_bearing_file("state/corpus_ledger.json")
+    assert not is_secret_bearing_file("intelligence/chapters/kinematics/doc1/page-0001.jsonl")
+    assert not is_secret_bearing_file("STATUS.md")
+    assert not is_secret_bearing_file("AUTONOMOUS_FINAL_REPORT.md")
+
+
+def test_commit_bytes_filters_out_secrets_and_purges_spill(tmp_path):
+    mock_api = MagicMock()
+    spill_dir = tmp_path / "spill_security"
+    spill_dir.mkdir(parents=True, exist_ok=True)
+
+    # Pre-populate spill with an old secret file that might have caused 400 Bad Request
+    old_secret_spill = spill_dir / "state__.mentora_secrets.json"
+    old_secret_spill.write_bytes(b'{"HF_TOKEN": "secret_val"}')
+    assert old_secret_spill.exists()
+
+    vault = HuggingFaceVault("test/repo", "hf_test_token", api=mock_api, spill_dir=spill_dir)
+
+    # Attempt to commit files, including secret-bearing files
+    files = {
+        "state/corpus_ledger.json": b'{"items": []}',
+        "state/.mentora_secrets.json": b'{"HF_TOKEN": "bad_leak"}',
+        "token.json": b'{"refresh_token": "ya29.xyz"}',
+    }
+
+    success = vault.commit_bytes(files, "Safe commit test")
+    assert success is True
+
+    # The offending spill file must have been unlinked/purged
+    assert not old_secret_spill.exists()
+
+    # The commit operations must ONLY contain non-secret files
+    call_kwargs = mock_api.create_commit.call_args[1]
+    operations = call_kwargs["operations"]
+    committed_paths = [op.path_in_repo for op in operations]
+
+    assert "state/corpus_ledger.json" in committed_paths
+    assert "state/.mentora_secrets.json" not in committed_paths
+    assert "token.json" not in committed_paths
+

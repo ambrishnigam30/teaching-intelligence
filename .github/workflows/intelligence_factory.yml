@@ -119,13 +119,41 @@ jobs:
             # Sync reports deterministically
             python scripts/generate_operational_reports.py || true
 
-            # Push telemetry checkpoint
-            git add STATUS.md state/corpus_ledger.json AUTONOMOUS_EXECUTION_STATUS.md SHUTDOWN_READINESS.md 2>/dev/null || true
+            # Stage only verified reports and ledger; verify no secret files staged
+            git add STATUS.md AUTONOMOUS_EXECUTION_STATUS.md AUTONOMOUS_FINAL_REPORT.md SHUTDOWN_READINESS.md state/corpus_ledger.json 2>/dev/null || true
+
+            # Ensure zero secret/token files are accidentally staged
+            for staged_f in $(git diff --cached --name-only); do
+              case "$staged_f" in
+                *secret*|*token*|*credential*|*.env*|*key*|*spill*)
+                  echo "WARNING: Unstaging sensitive artifact: $staged_f"
+                  git reset HEAD "$staged_f" || true
+                  ;;
+              esac
+            done
+
             if ! git diff --cached --quiet; then
               git commit -m "feat(factory): cloud autonomous batch marathon progression (batch $i) [skip ci]" || true
+
+              # Safely preserve any unstaged tracked changes so rebase never fails
+              STASHED=0
+              if ! git diff --quiet; then
+                git stash push -m "runner-workdir-preservation" && STASHED=1 || true
+              fi
+
               for retry in {1..5}; do
-                git pull --rebase origin main && git push origin HEAD:main && break || sleep 5
+                if git pull --rebase origin main && git push origin HEAD:main; then
+                  echo "Successfully pushed batch $i telemetry commit."
+                  break
+                else
+                  echo "Rebase/push retry $retry failed; waiting before retry..."
+                  sleep 5
+                fi
               done
+
+              if [ "$STASHED" -eq 1 ]; then
+                git stash pop || true
+              fi
             fi
           done
 

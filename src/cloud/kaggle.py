@@ -145,18 +145,24 @@ def setup_environment() -> bool:
     if not check_network_connectivity():
         return False
 
-    if token and repo:
-        url = f"https://huggingface.co/datasets/{{repo}}/raw/main/state/.mentora_secrets.json"
-        try:
-            req = urllib.request.Request(url, headers={{"Authorization": f"Bearer {{token}}"}})
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                for k, v in data.items():
-                    if v:
-                        os.environ.setdefault(k, str(v))
-                print(f"[Worker] Ingested {{len(data)}} runtime secrets into memory securely.")
-        except Exception as exc:
-            print(f"[Worker] Vault retrieval note: {{exc}}")
+    try:
+        from kaggle_secrets import UserSecretsClient
+        user_secrets = UserSecretsClient()
+        for sec_name in (
+            "GOOGLE_DRIVE_TOKEN_JSON",
+            "GEMINI_API_KEY_1", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3", "GEMINI_API_KEY_4", "GEMINI_API_KEY_5",
+            "GROQ_API_KEY_1", "GROQ_API_KEY_2", "GROQ_API_KEY_3", "GROQ_API_KEY_4", "GROQ_API_KEY_5",
+            "OPENROUTER_API_KEY_1", "OPENROUTER_API_KEY_2", "OPENROUTER_API_KEY_3", "OPENROUTER_API_KEY_4", "OPENROUTER_API_KEY_5",
+        ):
+            try:
+                sec_val = user_secrets.get_secret(sec_name)
+                if sec_val:
+                    os.environ.setdefault(sec_name, str(sec_val))
+            except Exception:
+                pass
+        print("[Worker] Configured runtime secrets via UserSecretsClient.")
+    except Exception:
+        pass
 
     token_json = os.environ.get("GOOGLE_DRIVE_TOKEN_JSON")
     if token_json:
@@ -305,14 +311,6 @@ class KaggleDispatcher:
         src_b64 = bundle_src_as_base64(self.worker_dir)
         secrets = collect_runtime_secrets(self.worker_dir, env_map)
 
-        hf_token = secrets.get("HF_TOKEN")
-        hf_repo = secrets.get("HF_DATASET_REPO")
-        if hf_token and hf_repo:
-            try:
-                from src.cloud.hf_vault import HuggingFaceVault
-                HuggingFaceVault(hf_repo, hf_token).upload_secret_bundle(secrets)
-            except Exception as exc:
-                print(f"[Dispatcher] Note on HF vault secret upload: {exc}")
         dispatched_outputs: list[str] = []
         for username, key, shard_idx in accounts:
             with TemporaryDirectory(prefix=f"kaggle-shard-{shard_idx}-") as temp_dir_str:
