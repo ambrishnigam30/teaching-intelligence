@@ -20359,7 +20359,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "periodic_properties"
       ],
@@ -20367,13 +20367,13 @@
       "exam_scope": "BOTH",
       "file_id": "1Miq4P9BKj_3pAxF8VXCUziz9YOu4kI9R",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Periodic Properties.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 45,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/DexterChem Chemistry Notes/Periodic Properties.pdf"
       ]
@@ -42332,7 +42332,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -42340,13 +42340,13 @@
       "exam_scope": "BOTH",
       "file_id": "1zg0A56PAHLTYE54uvpjxnwmaaIY3vJyF",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_Atomic_Structure_JH_Sir-3573 (1).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_Atomic_Structure_JH_Sir-3573 (1).pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_Atomic_Structure_JH_Sir-3573.pdf"
@@ -67282,7 +67282,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -67290,13 +67290,13 @@
       "exam_scope": "BOTH",
       "file_id": "1-O4tpg1A0iMeuZpoqQAB6oB_zewiISsG",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "HT-6-Thermodynamics-2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Class tests/TOAS/HT-6-Thermodynamics-2.pdf"
       ]
@@ -75172,7 +75172,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75180,13 +75180,13 @@
       "exam_scope": "BOTH",
       "file_id": "1-w1PDJtao6kU96CHM4p_kemRucYbbwDn",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "04 # Quiz (Eng)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/04 # Quiz (Eng)_KTG & Thermodynamics.pdf"
       ]
@@ -75277,7 +75277,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75285,13 +75285,13 @@
       "exam_scope": "BOTH",
       "file_id": "1-dO9ZDGTWMeyRWg6fPGVXd_or2Xpw1vi",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "05 # Quiz (Eng)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/05 # Quiz (Eng)_KTG & Thermodynamics.pdf"
       ]
@@ -82007,7 +82007,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82015,13 +82015,13 @@
       "exam_scope": "BOTH",
       "file_id": "1xZ1wFj5avbvPxWqdMu27RSqU_TZEcBuA",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Handout@Schrodinger wave model.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/Handout@Schrodinger wave model.pdf"
       ]
@@ -82070,7 +82070,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82078,13 +82078,13 @@
       "exam_scope": "BOTH",
       "file_id": "1tkJVhQOYAuWN17nx4sW-Vt4aFz4Ae8Md",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "2. Atomic Structure--Exerise.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 32,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/2. Atomic Structure--Exerise.pdf"
       ]
@@ -89334,13 +89334,13 @@
       "exam_scope": "BOTH",
       "file_id": "10VLMSlV18nlQmdgneRHrkzx0zo-10pJP",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "C_Ch-05_Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Chemistry/chem_adv_prob/C_Ch-05_Thermodynamics.pdf"
       ]
