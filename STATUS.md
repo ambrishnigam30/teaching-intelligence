@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 23:12:39 UTC` (`2026-10-18 04:42:39 IST`)  
-**Git Commit:** `b0ba1b4` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 23:19:46 UTC` (`2026-10-18 04:49:46 IST`)  
+**Git Commit:** `aa4e734` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **79** | **0** | **0** | **3** | **1,378** | **50/82** |
+| **7,103** | **79** | **0** | **0** | **2** | **1,378** | **50/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -65,9 +65,9 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 03 | `laws_of_motion_friction` | Tier 1 | 57 | 36 | 495 | 🔄 `IN_PROGRESS` | `█████░░░  63.2%` |
 | 04 | `work_energy_power` | Tier 1 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 05 | `circular_motion` | Tier 1 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 06 | `com_collisions` | Tier 1 | 16 | 8 | 269 | 🔄 `IN_PROGRESS` | `████░░░░  50.0%` |
+| 06 | `com_collisions` | Tier 1 | 17 | 8 | 269 | 🔄 `IN_PROGRESS` | `████░░░░  47.1%` |
 | 07 | `rotational_mechanics` | Tier 1 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 08 | `shm` | Tier 0 | 37 | 31 | 491 | 🔄 `IN_PROGRESS` | `███████░  83.8%` |
+| 08 | `shm` | Tier 0 | 38 | 31 | 491 | 🔄 `IN_PROGRESS` | `███████░  81.6%` |
 | 09 | `gravitation` | Tier 2 | 4 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 10 | `properties_of_matter` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 11 | `elasticity` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -131,7 +131,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 61 | `quadratic_equations` | Tier 0 | 10 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 62 | `sequences_series` | Tier 1 | 6 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 63 | `binomial_theorem` | Tier 1 | 22 | 0 | 1 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 64 | `permutations_combinations` | Tier 1 | 18 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 64 | `permutations_combinations` | Tier 1 | 19 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 65 | `mathematical_induction` | Tier 3 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 66 | `matrices_determinants` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 67 | `probability` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1378**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: Maths_Solutions01.pdf**
+- **Next File in Queue: Problems in Physical Chemistry by Narendra Awasthi for JEE (15th edition).pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -183,11 +183,10 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
-- **Quota-Paused Files (3):**
+- **Quota-Paused Files (2):**
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
-  - `Maths_Solutions01.pdf`: No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
-- **Unmapped Files Pending Header Fallback:** `6,698` / `7,103`
+- **Unmapped Files Pending Header Fallback:** `6,696` / `7,103`
 
 ---
 ## 📜 Section I — Recent Batch Activity & Git Commit History
@@ -207,11 +206,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
-| `b0ba1b4` | 2026-10-17 23:07:17 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
-| `4d0db7e` | 2026-10-17 23:01:57 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
-| `cc3f66d` | 2026-10-17 22:56:46 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
-| `db16f96` | 2026-10-17 22:51:29 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `34b6fd3` | 2026-10-17 22:43:38 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
+| `aa4e734` | 2026-10-17 23:12:39 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
 
