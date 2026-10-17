@@ -2,8 +2,8 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 12:27:20 UTC` (`2026-10-17 17:57:20 IST`)  
-**Git Commit:** `6f24323` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 12:31:37 UTC` (`2026-10-17 18:01:37 IST`)  
+**Git Commit:** `fc25148` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
@@ -207,6 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `fc25148` | 2026-10-17 18:01:32 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:31:32 UTC (batch 6) - 78 files done, 7 p | `origin/main` |
 | `6f24323` | 2026-10-17 17:57:15 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:27:15 UTC (batch 5) - 78 files done, 7 p | `origin/main` |
 | `181c10d` | 2026-10-17 17:52:52 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:22:52 UTC (batch 4) - 78 files done, 7 p | `origin/main` |
 | `f7c6a40` | 2026-10-17 17:48:40 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:18:40 UTC (batch 3) - 78 files done, 7 p | `origin/main` |
@@ -216,7 +217,6 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | `4fba3a4` | 2026-10-17 17:32:20 | feat(intelligence): implement verification lifecycle, 11 adversarial tests, 8-axis benchmarks, and visual status dashboa | `origin/main` |
 | `98ca8d4` | 2026-10-17 15:14:46 | feat(factory): batch 5 progress - 2026-10-17 09:44:46 UTC - 78 files done, 7 partial, 0 quarantined [skip ci] | `origin/main` |
 | `ce95264` | 2026-10-17 15:09:23 | feat(factory): batch 4 progress - 2026-10-17 09:39:23 UTC - 78 files done, 7 partial, 0 quarantined [skip ci] | `origin/main` |
-| `4ff1cab` | 2026-10-17 15:03:55 | feat(factory): batch 3 progress - 2026-10-17 09:33:55 UTC - 78 files done, 7 partial, 0 quarantined [skip ci] | `origin/main` |
 
 </details>
 
