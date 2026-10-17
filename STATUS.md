@@ -1,37 +1,37 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T05:42:26.473288+00:00
+Last Run UTC: 2026-10-17T05:43:48.151282+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 39
+Files Completed: 41
 Pages Processed This Run: 50
-Questions Verified This Run: 123
-Active File: Centre_of_Mass.pdf
-Next File in Queue: 11_Assignment # Centre of mass_Eng.pdf
+Questions Verified This Run: 355
+Active File: Centre of Mass Theory.pdf
+Next File in Queue: 2._Exercise_-1_to_3_English_DkzSNa2.pdf
 ## Recent Batch Log
-- extracted Centre_of_Mass.pdf page 18/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 19/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 20/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 21/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 22/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 23/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 24/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 25/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 26/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 27/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 28/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 29/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 30/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 31/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 32/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 33/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 34/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 35/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 36/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 37/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 38/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 39/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 40/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 41/117 via text_fallback
-- extracted Centre_of_Mass.pdf page 42/117 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 26/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 27/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 28/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 29/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 30/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 31/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 32/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 33/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 34/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 35/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 36/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 37/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 38/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 39/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 40/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 41/42 via text_fallback
+- extracted 11_Assignment # Centre of mass_Eng.pdf page 42/42 via text_fallback
+- extracted 31 # GR (Centre of mass and Momentum)_Eng.pdf page 1/5 via text_fallback
+- extracted 31 # GR (Centre of mass and Momentum)_Eng.pdf page 2/5 via text_fallback
+- extracted 31 # GR (Centre of mass and Momentum)_Eng.pdf page 3/5 via text_fallback
+- extracted 31 # GR (Centre of mass and Momentum)_Eng.pdf page 4/5 via text_fallback
+- extracted 31 # GR (Centre of mass and Momentum)_Eng.pdf page 5/5 via text_fallback
+- extracted Centre of Mass Theory.pdf page 1/46 via text_fallback
+- extracted Centre of Mass Theory.pdf page 2/46 via text_fallback
+- extracted Centre of Mass Theory.pdf page 3/46 via text_fallback
