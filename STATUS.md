@@ -2,8 +2,8 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 17:04:52 UTC` (`2026-10-17 22:34:52 IST`)  
-**Git Commit:** `b745c59` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 17:07:08 UTC` (`2026-10-17 22:37:08 IST`)  
+**Git Commit:** `8ab65f4` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
@@ -206,7 +206,16 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `8ab65f4` | 2026-10-17 17:04:52 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `b745c59` | 2026-10-17 22:04:27 | chore(telemetry): record verified batch 1 HF commit 1d0eeb6f and git push 765dbf3 [skip ci] | `origin/main` |
+| `765dbf3` | 2026-10-17 16:32:41 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
+| `96070a2` | 2026-10-17 21:37:31 | chore(telemetry): reflect honest unmapped corpus accounting and pending cloud verification status [skip ci] | `origin/main` |
+| `a13d352` | 2026-10-17 21:29:49 | chore(telemetry): update operational reports for commit 6f6552f [skip ci] | `origin/main` |
+| `6f6552f` | 2026-10-17 21:26:06 | fix(cloud): eliminate HF secret bundle upload, filter spill secrets, and harden runner git synchronization | `origin/main` |
+| `0ed24bb` | 2026-10-17 18:57:12 | chore(telemetry): update operational records to reflect commit 5474bab and active cloud runner [skip ci] | `origin/main` |
+| `5474bab` | 2026-10-17 18:52:55 | feat(factory): deploy cloud autonomy, 82-chapter reconciliation, durable HF sync, and shutdown readiness | `origin/main` |
+| `b547ab7` | 2026-10-17 18:26:43 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:56:43 UTC (batch 12) - 78 files done, 7  | `origin/main` |
+| `54225db` | 2026-10-17 18:22:37 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:52:37 UTC (batch 11) - 78 files done, 7  | `origin/main` |
 
 </details>
 
