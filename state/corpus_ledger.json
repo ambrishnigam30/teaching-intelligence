@@ -26825,18 +26825,22 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "chapters": [
+        "laws_of_motion_friction",
+        "general_organic_chemistry",
+        "vectors"
+      ],
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "1-BfljDpggV5GkrS44WdwyI3F3xWcl83r",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "Nlm hws 2",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PARTIAL",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Physics/NLM/Nlm hws 2"
       ]
@@ -26862,19 +26866,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "attempts": 1,
+      "chapters": [
+        "laws_of_motion_friction"
+      ],
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "1-BcK-EMg7K6IM7yYuY_NMs3KqgWOZQ8R",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Nlm hws 3  timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Nlm hws 3 ",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Physics/NLM/Nlm hws 3 "
       ]
