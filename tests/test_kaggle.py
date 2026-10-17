@@ -96,10 +96,17 @@ def test_dispatch_fleet_gpu_and_cpu_fallback(tmp_path):
     def mock_run(cmd, *args, **kwargs):
         call_env = kwargs.get("env", {})
         u = call_env.get("KAGGLE_USERNAME")
+        k = call_env.get("KAGGLE_KEY")
+        cfg_dir = Path(call_env.get("KAGGLE_CONFIG_DIR", ""))
+        assert cfg_dir.exists(), f"KAGGLE_CONFIG_DIR {cfg_dir} must exist"
+        kaggle_json = json.loads((cfg_dir / "kaggle.json").read_text(encoding="utf-8"))
+        assert kaggle_json["username"] == u
+        assert kaggle_json["key"] == k
+        assert call_env.get("KAGGLE_API_TOKEN") is not None
+
         if u == "user_gpu":
             return subprocess.CompletedProcess(cmd, 0, stdout="Kernel pushed successfully", stderr="")
         elif u == "user_cpu":
-            # Read metadata in kernel dir
             kernel_dir = Path(cmd[cmd.index("-p") + 1])
             meta = json.loads((kernel_dir / "kernel-metadata.json").read_text(encoding="utf-8"))
             if meta.get("enable_gpu") in (True, "true"):

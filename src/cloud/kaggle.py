@@ -192,7 +192,7 @@ class KaggleDispatcher:
 
     @staticmethod
     def discover_accounts(env: dict[str, str] | None = None) -> list[tuple[str, str, int]]:
-        """Collect (username, key, index) from unnumbered and numbered 1..5 env vars, deduplicated by username."""
+        """Collect (username, key, index) from numbered 1..5 and unnumbered env vars, deduplicated by username."""
         env_map = dict(os.environ) if env is None else dict(env)
         if env is None and Path(".env.keys").exists():
             for line in Path(".env.keys").read_text(encoding="utf-8").splitlines():
@@ -204,18 +204,20 @@ class KaggleDispatcher:
         seen_usernames: set[str] = set()
         accounts: list[tuple[str, str, int]] = []
 
-        u = env_map.get("KAGGLE_USERNAME", "").strip()
-        k = env_map.get("KAGGLE_KEY", "").strip()
-        if u and k:
-            seen_usernames.add(u)
-            accounts.append((u, k, 0))
-
+        # Check numbered accounts 1..5 first to guarantee deterministic ordering
         for i in range(1, 6):
             u_i = env_map.get(f"KAGGLE_USERNAME_{i}", "").strip()
             k_i = env_map.get(f"KAGGLE_KEY_{i}", "").strip()
             if u_i and k_i and u_i not in seen_usernames:
                 seen_usernames.add(u_i)
                 accounts.append((u_i, k_i, len(accounts)))
+
+        # Also check unnumbered KAGGLE_USERNAME / KAGGLE_KEY if not already discovered
+        u = env_map.get("KAGGLE_USERNAME", "").strip()
+        k = env_map.get("KAGGLE_KEY", "").strip()
+        if u and k and u not in seen_usernames:
+            seen_usernames.add(u)
+            accounts.append((u, k, len(accounts)))
 
         return accounts
 
@@ -258,7 +260,21 @@ class KaggleDispatcher:
         dispatched_outputs: list[str] = []
         for username, key, shard_idx in accounts:
             with TemporaryDirectory(prefix=f"kaggle-shard-{shard_idx}-") as temp_dir_str:
-                kernel_dir = Path(temp_dir_str)
+                root_temp = Path(temp_dir_str)
+                kernel_dir = root_temp / "kernel"
+                config_dir = root_temp / "config"
+                kernel_dir.mkdir(parents=True, exist_ok=True)
+                config_dir.mkdir(parents=True, exist_ok=True)
+
+                # Isolated kaggle credentials for this specific account
+                (config_dir / "kaggle.json").write_text(
+                    json.dumps({"username": username, "key": key}, indent=2),
+                    encoding="utf-8",
+                )
+                if key.startswith("KGAT_"):
+                    (config_dir / "access_token").write_text(key, encoding="utf-8")
+                    (config_dir / "access_token.txt").write_text(key, encoding="utf-8")
+
                 slug = f"mentora-intelligence-worker-shard-{shard_idx}"
                 metadata = {
                     "id": f"{username}/{slug}",
@@ -285,8 +301,13 @@ class KaggleDispatcher:
                 (kernel_dir / "input_manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
 
                 run_env = os.environ.copy()
+                run_env["KAGGLE_CONFIG_DIR"] = str(config_dir)
                 run_env["KAGGLE_USERNAME"] = username
                 run_env["KAGGLE_KEY"] = key
+                if key.startswith("KGAT_"):
+                    run_env["KAGGLE_API_TOKEN"] = key
+                else:
+                    run_env["KAGGLE_API_TOKEN"] = "bypass_home_token"
 
                 push_cmd = ["kaggle", "kernels", "push", "-p", str(kernel_dir)]
                 try:
