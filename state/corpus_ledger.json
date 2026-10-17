@@ -15443,7 +15443,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -15451,13 +15451,13 @@
       "exam_scope": "BOTH",
       "file_id": "1aP2jKlaT-dYN39IduXxnGi6B1QO1ij3R",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 1.1.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 1.1.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/23 Binomial Theorem/Exercise 1.1.pdf"
       ]
@@ -80492,7 +80492,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -80500,12 +80500,12 @@
       "exam_scope": "BOTH",
       "file_id": "1Zta9wCvDWDwfuCvPqkK0Z5mDcykbJjv7",
       "gate": 1,
-      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "binomial_theorem_sheet.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 49,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/Binomial Theorem/binomial_theorem_sheet.pdf"
@@ -99551,7 +99551,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -99559,20 +99559,20 @@
       "exam_scope": "BOTH",
       "file_id": "1ZxKV-jLNsa8bEuZHWmV9JTDu9CRI0gu0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial_Adv_Sol_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Binomial Theorem Genetry/Binomial_Adv_Sol_Genetry.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -99580,13 +99580,13 @@
       "exam_scope": "BOTH",
       "file_id": "1ecyKzmXOksVK4lUdUBzMwY3hWSM6jOAb",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial_Adv_DPP_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Binomial Theorem Genetry/Binomial_Adv_DPP_Genetry.pdf"
       ]
