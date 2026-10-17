@@ -4771,13 +4771,13 @@
       "exam_scope": "BOTH",
       "file_id": "13SjpGKsAbN4-JnOy5R7Ab4yAZh9-6HT0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "1._CBO-1_Th_E_DZDotO2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/1._CBO-1_Th_E_DZDotO2.pdf"
       ]

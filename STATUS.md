@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 12:03:16 UTC` (`2026-10-17 17:33:16 IST`)  
-**Git Commit:** `4fba3a4` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 12:06:18 UTC` (`2026-10-17 17:36:18 IST`)  
+**Git Commit:** `d90ff16` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **78** | **7** | **0** | **1** | **1,332** | **15/82** |
+| **7,103** | **78** | **7** | **0** | **2** | **1,332** | **15/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -168,9 +168,9 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
 - **Total Drive Files Discovered: 7103**
-- **Pages Processed This Run: 1**
+- **Pages Processed This Run: 0**
 - **Questions Verified This Run: 0**
-- **Active File: Chemical Bonding.pdf**
+- **Active File: 1._CBO-1_Th_E_DZDotO2.pdf**
 - **Next File in Queue: 1._CBO-1_Th_E_DZDotO2.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
@@ -183,7 +183,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
-- **Quota-Paused Files (1):**
+- **Quota-Paused Files (2):**
+  - `1._CBO-1_Th_E_DZDotO2.pdf`: HTTPStatusError: provider returned HTTP 429
   - `Mole Concept.pdf`: No provider key is available for visual extraction
 - **Unmapped Files Pending Header Fallback:** `6,747` / `7,103`
 
@@ -194,8 +195,10 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 <summary><b>🔍 Expand Recent Batch Execution Logs (Last 25 Events)</b></summary>
 
 - reused persistent ledger with 7103 files
-- extracted Chemical Bonding.pdf page 1/30 via api:gemini_1
-- timeout Chemical Bonding.pdf: attempt 1/3 (Processing Chemical Bonding.pdf timed out after 120s)
+- quota pause 1._CBO-1_Th_E_DZDotO2.pdf: HTTPStatusError: provider returned HTTP 429
+- quota pause 1._CBO-1_Th_E_DZDotO2.pdf: HTTPStatusError: provider returned HTTP 429
+- quota pause 1._CBO-1_Th_E_DZDotO2.pdf: HTTPStatusError: provider returned HTTP 429
+- quota exhausted: 3 consecutive pauses; breaking batch for next cycle
 
 </details>
 
@@ -204,6 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `d90ff16` | 2026-10-17 17:35:43 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:05:43 UTC (batch 1) - 78 files done, 7 p | `origin/main` |
 | `4fba3a4` | 2026-10-17 17:32:20 | feat(intelligence): implement verification lifecycle, 11 adversarial tests, 8-axis benchmarks, and visual status dashboa | `origin/main` |
 | `98ca8d4` | 2026-10-17 15:14:46 | feat(factory): batch 5 progress - 2026-10-17 09:44:46 UTC - 78 files done, 7 partial, 0 quarantined [skip ci] | `origin/main` |
 | `ce95264` | 2026-10-17 15:09:23 | feat(factory): batch 4 progress - 2026-10-17 09:39:23 UTC - 78 files done, 7 partial, 0 quarantined [skip ci] | `origin/main` |
@@ -213,7 +217,6 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | `36ad326` | 2026-10-17 14:47:04 | chore(status): sync ledger state prior to autonomous marathon | `origin/main` |
 | `d88d513` | 2026-10-17 14:46:23 | feat(resilience): implement vector optimization, hard timeouts, and poison-pill quarantine | `origin/main` |
 | `fe45a23` | 2026-10-17 14:30:36 | feat(factory): batch 19 progress - 2026-10-17 09:00:36 UTC - 78 files done, 7 partial [skip ci] | `origin/main` |
-| `cd5cf21` | 2026-10-17 14:25:09 | feat(factory): batch 18 progress - 2026-10-17 08:55:09 UTC - 78 files done, 7 partial [skip ci] | `origin/main` |
 
 </details>
 
