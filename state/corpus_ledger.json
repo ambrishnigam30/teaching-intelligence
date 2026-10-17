@@ -21709,13 +21709,13 @@
       "exam_scope": "BOTH",
       "file_id": "1vqPvIs1uF6yE6RXW26Qpe9T4sZv96vGY",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Thermodynamics 1 [IITian Notes_Kota].pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 40,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/IITian Notes Kota/Chemistry/Thermodynamics 1 [IITian Notes_Kota].pdf"
       ]
@@ -32837,7 +32837,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -32845,12 +32845,12 @@
       "exam_scope": "BOTH",
       "file_id": "1uuKNjd2aaVutERckhKr8Wo93r-XfRbHB",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "2. O-2-N-Ph-KTG _ Thermodynamics_Solution.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 45,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/2. O-2-N-Ph-KTG _ Thermodynamics_Solution.pdf"
