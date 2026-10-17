@@ -1,16 +1,16 @@
 # ⚡ MENTORA — TEACHING INTELLIGENCE FACTORY
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
-> ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
+> 🟢 `SYSTEM ACTIVE` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 21:13:53 UTC` (`2026-10-18 02:43:53 IST`)  
-**Git Commit:** `3d13c14` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 21:22:29 UTC` (`2026-10-18 02:52:29 IST`)  
+**Git Commit:** `6b10e62` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **78** | **0** | **0** | **1** | **1,340** | **15/82** |
+| **7,103** | **78** | **0** | **0** | **0** | **1,340** | **15/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1340**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: HLP_GYt39SM.pdf**
+- **Next File in Queue: ENTHUSIAST SCORE-I 2022-23.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -183,8 +183,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
-- **Quota-Paused Files (1):**
-  - `HLP_GYt39SM.pdf`: No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window
+- **Quota-Paused Files (0):**
+  - `None. Provider key rotations healthy.`
 - **Unmapped Files Pending Header Fallback:** `6,747` / `7,103`
 
 ---
@@ -205,6 +205,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `6b10e62` | 2026-10-17 21:13:53 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `3d13c14` | 2026-10-17 21:06:30 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
