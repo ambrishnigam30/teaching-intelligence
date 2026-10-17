@@ -1,37 +1,37 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T06:45:41.442348+00:00
+Last Run UTC: 2026-10-17T06:46:50.086584+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 75
-Pages Processed This Run: 50
-Questions Verified This Run: 177
-Active File: Mole concept.pdf
-Next File in Queue: 1. Mole Concept--Theory.pdf
+Files Completed: 76
+Pages Processed This Run: 26
+Questions Verified This Run: 82
+Active File: General Topics & Mole Concept.pdf
+Next File in Queue: Copy of DPP_02_Mole_Concept_JH_Sir-3572.pdf
 ## Recent Batch Log
-- extracted Mole concept.pdf page 11/36 via text_fallback
-- extracted Mole concept.pdf page 12/36 via text_fallback
-- extracted Mole concept.pdf page 13/36 via text_fallback
-- extracted Mole concept.pdf page 14/36 via text_fallback
-- extracted Mole concept.pdf page 15/36 via text_fallback
-- extracted Mole concept.pdf page 16/36 via text_fallback
-- extracted Mole concept.pdf page 17/36 via text_fallback
-- extracted Mole concept.pdf page 18/36 via text_fallback
-- extracted Mole concept.pdf page 19/36 via text_fallback
-- extracted Mole concept.pdf page 20/36 via text_fallback
-- extracted Mole concept.pdf page 21/36 via text_fallback
-- extracted Mole concept.pdf page 22/36 via text_fallback
-- extracted Mole concept.pdf page 23/36 via text_fallback
-- extracted Mole concept.pdf page 24/36 via text_fallback
-- extracted Mole concept.pdf page 25/36 via text_fallback
-- extracted Mole concept.pdf page 26/36 via text_fallback
-- extracted Mole concept.pdf page 27/36 via text_fallback
-- extracted Mole concept.pdf page 28/36 via text_fallback
-- extracted Mole concept.pdf page 29/36 via text_fallback
-- extracted Mole concept.pdf page 30/36 via text_fallback
-- extracted Mole concept.pdf page 31/36 via text_fallback
-- extracted Mole concept.pdf page 32/36 via text_fallback
-- extracted Mole concept.pdf page 33/36 via text_fallback
-- extracted Mole concept.pdf page 34/36 via text_fallback
-- extracted Mole concept.pdf page 35/36 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 4/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 5/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 6/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 7/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 8/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 9/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 10/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 11/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 12/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 13/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 14/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 15/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 16/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 17/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 18/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 19/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 20/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 21/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 22/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 23/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 24/25 via text_fallback
+- extracted 1. Mole Concept--Theory.pdf page 25/25 via text_fallback
+- extracted Mole Concept.pdf page 1/25 via text_fallback
+- quota pause Mole Concept.pdf: No provider key is available for visual extraction
+- blocked General Topics & Mole Concept.pdf: HTTPStatusError: provider returned HTTP 429
