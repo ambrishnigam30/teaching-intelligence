@@ -9726,7 +9726,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -9734,13 +9734,13 @@
       "exam_scope": "BOTH",
       "file_id": "1ubgjE3ecWiTgBwImvpUgaZSpzGZAPbgt",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial Theorem.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Mathematics/Binomial Theorem.pdf"
       ]
@@ -11951,7 +11951,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -11959,13 +11959,13 @@
       "exam_scope": "BOTH",
       "file_id": "1n-tMC-om2tW5j8Tsu0HvND78wz0ZnK8h",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial Theorem and its Simple Applications - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 157,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Mathematics/Binomial Theorem and its Simple Applications - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -15338,7 +15338,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -15346,13 +15346,13 @@
       "exam_scope": "BOTH",
       "file_id": "180_ujpt2HEeDcUSHYF3dLyUgHBVDuRj1",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 1.0.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 1.0.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/24 Permutation and Combination/Exercise 1.0.pdf"
       ]
@@ -52800,7 +52800,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -52808,13 +52808,13 @@
       "exam_scope": "BOTH",
       "file_id": "1xCCmI-kH0kPiygdKHCm4Zt1RmyGR9QsI",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial Theorem_(Additional Excerise)_Student Copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Binomial Theorem_(Additional Excerise)_Student Copy.pdf"
       ]
@@ -86009,7 +86009,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -86017,13 +86017,13 @@
       "exam_scope": "BOTH",
       "file_id": "1648NyyHo4lCyPZr6k5zIDENVpy7CI8sf",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-04_Permutations and Combinations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_prob/M_Ch-04_Permutations and Combinations.pdf"
       ]
@@ -99593,7 +99593,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -99601,34 +99601,34 @@
       "exam_scope": "BOTH",
       "file_id": "1veVACnLZnCPQxUpUw6KlMBmOYVbOt2kW",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial_Basic_Sol_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Binomial Theorem Genetry/Binomial_Basic_Sol_Genetry.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "1pzito64MmKVfEUenApLeGdmRJLKFfgd9",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial_Basic_DPP_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Binomial Theorem Genetry/Binomial_Basic_DPP_Genetry.pdf"
       ]
