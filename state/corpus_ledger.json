@@ -2392,18 +2392,20 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
+      "chapters": [
+        "emi_ac"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-Do5OlOLvP0FLrm1K-B5HxuP1Kz-8RaE",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Alternating Current Theory.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/PHYSICS/Alternating Current/Alternating Current Theory.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Alternating Current/Alternating Current theory.pdf"
@@ -26824,22 +26826,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "laws_of_motion_friction",
         "general_organic_chemistry",
         "vectors"
       ],
-      "completed_pages": 1,
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "1-BfljDpggV5GkrS44WdwyI3F3xWcl83r",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Nlm hws 2",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Physics/NLM/Nlm hws 2"
@@ -26847,19 +26849,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "laws_of_motion_friction",
+        "com_collisions"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-CQUoyZF62PThNK-b4uz-IjmySffmMtV",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Nlm hws 1",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Physics/NLM/Nlm hws 1"
       ]
@@ -51448,17 +51453,17 @@
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "1-COxJrLNzad32f3LrWikt-gzPaiyHzYa",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Set (1).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Set (1).pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Set.pdf"
@@ -72595,17 +72600,17 @@
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "1-CJU142ATuIf59IZ1L3AbpCuUvtEaRLH",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "02 # Quiz (Answer key)_Rotation.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Rotation/02 # Quiz (Answer key)_Rotation.pdf"
       ]
@@ -130192,19 +130197,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-DivYpOBZCAeky_ukIQUW25DVHMRSJgM",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Question Report (21).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 56,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/12th(Enthuse)/ALLEN PAPERS 2018-2019(Leader+Enthuse)/Question Report (21).pdf"
       ]
@@ -132224,17 +132229,17 @@
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "1-DdLaVDTy3Xx5NqG2USIsrVKtgYn_ebW",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "JEE Advance (Nurture) Unit Test #03 Solutions.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 48,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/ALLEN Nurture DLP (XI) 2022/UNIT TEST 3/JEE Advance (Nurture) Unit Test #03 Solutions.pdf"
       ]
