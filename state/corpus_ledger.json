@@ -6182,7 +6182,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -6190,12 +6190,12 @@
       "exam_scope": "BOTH",
       "file_id": "1_dGnvs92SNdPI7IbPx7aLF69zdFGtuBF",
       "gate": 1,
-      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Thermochemistry_ResoSir_with_ans_XI_6d7lpoL.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 33,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Thermodynamics _ Thermochemistry/Thermochemistry_ResoSir_with_ans_XI_6d7lpoL.pdf"
@@ -6745,7 +6745,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -6753,13 +6753,13 @@
       "exam_scope": "BOTH",
       "file_id": "1ckt47lMFAUTtMDDAU3JUAXHEE6PWlk12",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "4._HLP_KTG__Thermodynamics_7TV0nU9.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/PHYSICS/KTG _ Thermodynamics/4._HLP_KTG__Thermodynamics_7TV0nU9.pdf"
       ]
