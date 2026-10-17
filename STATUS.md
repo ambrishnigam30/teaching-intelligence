@@ -1,5 +1,5 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T09:00:40.230064+00:00
+Last Run UTC: 2026-10-17T09:17:23.089006+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
@@ -15,3 +15,5 @@ Assurance Gate Distribution: G1=7012, G2=91, G3=0, G4=0
 - reused persistent ledger with 7103 files
 - quota pause Chemical Bonding.pdf: HTTPStatusError: provider returned HTTP 429
 - quota pause Chemical Bonding.pdf: HTTPStatusError: provider returned HTTP 429
+- quota pause Chemical Bonding.pdf: HTTPStatusError: provider returned HTTP 429
+- quota exhausted: 3 consecutive pauses; breaking batch for next cycle
