@@ -18,7 +18,11 @@ from src.drive.auth import google_drive_service
 from src.drive.crawler import DriveCrawler, DriveNode, PDF_MIME
 from src.drive.sync import discover_sources, work_items_for
 from src.extraction.dual_path import ExtractionResult, VisionApiExtractor
+from src.extraction.vector_diagrams import extract_page_diagrams
 from src.rotator.key_pool import KeyPool, QuotaExhausted
+from src.stitching.answer_binding import DocumentRelationshipBinder
+from src.stitching.layout_segmenter import LayoutSegmenter
+from src.stitching.passage_buffer import PassageBuffer
 from src.verification.verifiers import rdkit_valid_smiles, sympy_equivalent
 
 
@@ -38,10 +42,30 @@ def _write_action_output(has_more_work: bool) -> None:
             handle.write(f"has_more_work={'true' if has_more_work else 'false'}\n")
 
 
+def _parse_valid_latex(latex_str: str) -> bool:
+    s = str(latex_str).strip()
+    if not s:
+        return False
+    try:
+        from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application
+        cleaned = re.sub(r"\\(?:frac|text|mathrm|left|right|vec|hat|bar|sqrt)", "", s)
+        cleaned = re.sub(r"[{}]", "", cleaned)
+        cleaned = re.sub(r"\^", "**", cleaned)
+        if "=" in cleaned:
+            parts = cleaned.split("=", 1)
+            parse_expr(parts[0], transformations=standard_transformations + (implicit_multiplication_application,), evaluate=False)
+            parse_expr(parts[1], transformations=standard_transformations + (implicit_multiplication_application,), evaluate=False)
+        else:
+            parse_expr(cleaned, transformations=standard_transformations + (implicit_multiplication_application,), evaluate=False)
+        return True
+    except Exception:
+        return False
+
+
 def _verify(extraction: ExtractionResult) -> tuple[int, dict]:
-    latex_valid = [expression for expression in extraction.latex if sympy_equivalent(expression, expression)]
+    latex_valid = [expression for expression in extraction.latex if _parse_valid_latex(expression)]
     smiles_valid = [smiles for smiles in extraction.smiles if rdkit_valid_smiles(smiles)]
-    verified_questions = len(extraction.questions) if (latex_valid or smiles_valid or not (extraction.latex or extraction.smiles)) else 0
+    verified_questions = sum(1 for q in extraction.questions if isinstance(q, dict) and str(q.get("stem", "")).strip())
     return verified_questions, {"latex_verified": latex_valid, "smiles_verified": smiles_valid}
 
 
@@ -59,6 +83,7 @@ def _safe_error(exc: Exception) -> str:
 def _status(now: datetime, stats: dict, ledger: CorpusLedger, recent: list[str], active: str | None) -> str:
     completed = sum(item.status == "EXTRACTED" for item in ledger.items.values())
     pending = [item for item in ledger.next_batch(1)]
+    gates = {g: sum(item.gate == g for item in ledger.items.values()) for g in range(7)}
     lines = [
         "# Mentora Intelligence Factory",
         f"Last Run UTC: {now.isoformat()}",
@@ -69,8 +94,10 @@ def _status(now: datetime, stats: dict, ledger: CorpusLedger, recent: list[str],
         f"Files Completed: {completed}",
         f"Pages Processed This Run: {stats['pages']}",
         f"Questions Verified This Run: {stats['questions']}",
+        f"Diagrams Extracted This Run: {stats.get('diagrams', 0)}",
         f"Active File: {active or 'none'}",
         f"Next File in Queue: {pending[0].name or pending[0].file_id if pending else 'none'}",
+        f"Assurance Gate Distribution: G1={gates[1]}, G2={gates[2]}, G3={gates[3]}, G4={gates[4]}",
         "## Recent Batch Log",
     ]
     lines.extend(f"- {entry}" for entry in recent[-25:])
@@ -156,28 +183,97 @@ def run(
             try:
                 crawler.download_verified(node, pdf_path)
                 import fitz
-                with fitz.open(pdf_path) as document: page_count = len(document)
+                with fitz.open(pdf_path) as document:
+                    page_count = len(document)
                 item.total_pages = page_count
-                for page_number in range(item.completed_pages, page_count):
-                    if stats["pages"] >= max_pages or time.monotonic() - started >= time_budget_seconds: break
-                    page_png, diagrams, text_clue = extractor.render_page(pdf_path, page_number, dpi=300)
-                    extracted = extractor.extract_png(page_png, text_clue=text_clue)
-                    consecutive_quota_pauses = 0
-                    question_count, verification = _verify(extracted)
-                    artifact = {"source_file_id": item.file_id, "page_number": page_number + 1, "engine": extracted.engine, "confidence": extracted.confidence, "markdown": extracted.markdown, "latex": extracted.latex, "smiles": extracted.smiles, "questions": extracted.questions, "verification": verification}
-                    staged_files[_artifact_path(item, page_number)] = (json.dumps(artifact, ensure_ascii=False) + "\n").encode("utf-8")
-                    for diagram_index, diagram in enumerate(diagrams, start=1):
-                        staged_files[f"assets/images/{item.file_id}/page-{page_number + 1:04}-diagram-{diagram_index:02}.png"] = diagram
-                    item.completed_pages += 1; stats["pages"] += 1; stats["questions"] += question_count
-                    item.gate = max(item.gate, 2)
-                    item.status = "EXTRACTED" if item.completed_pages == page_count else "PARTIAL"
-                    item.last_error = None
-                    recent.append(f"extracted {active} page {page_number + 1}/{page_count} via {extracted.engine}")
-                    if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED":
-                        render_status()
-                        if continuous_hf:
-                            checkpoint(staged_files, f"Checkpoint: {stats['pages']} pages processed")
-                            staged_files.clear()
+
+                # Pass 1: Fast structural layout scan
+                segmenter = LayoutSegmenter()
+                smap = segmenter.scan_document(pdf_path)
+                binder = DocumentRelationshipBinder()
+                for comp_path in smap.companion_solution_files:
+                    binder.ingest_companion_solutions(comp_path)
+
+                with fitz.open(pdf_path) as doc_ak:
+                    for ak_page_idx in smap.answer_key_pages:
+                        if ak_page_idx < len(doc_ak):
+                            binder.ingest_answer_keys(doc_ak[ak_page_idx].get_text("text"))
+
+                passage_buffer = PassageBuffer(item.file_id)
+
+                with fitz.open(pdf_path) as document:
+                    for page_number in range(item.completed_pages, page_count):
+                        if stats["pages"] >= max_pages or time.monotonic() - started >= time_budget_seconds:
+                            break
+                        
+                        # Extract both raster and vector diagram assets with 2D bboxes
+                        diagram_assets = extract_page_diagrams(document, page_number, item.file_id, dpi=300)
+                        page = document[page_number]
+                        page_png = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72), alpha=False).tobytes("png")
+                        text_clue = page.get_text("text")
+
+                        extracted = extractor.extract_png(page_png, text_clue=text_clue)
+                        consecutive_quota_pauses = 0
+                        question_count, verification = _verify(extracted)
+
+                        # Pass 2: Question stitching and passage buffering
+                        buffered_questions = passage_buffer.process_page_items(
+                            page_number + 1, extracted.questions, extracted.markdown
+                        )
+                        bound_questions = [binder.bind_question(q) for q in buffered_questions]
+
+                        diagram_meta = [
+                            {
+                                "asset_id": d.asset_id,
+                                "diagram_type": d.diagram_type,
+                                "bounding_box": d.bounding_box,
+                            }
+                            for d in diagram_assets
+                        ]
+
+                        artifact = {
+                            "source_file_id": item.file_id,
+                            "page_number": page_number + 1,
+                            "category": smap.page_categories.get(page_number, "THEORY"),
+                            "engine": extracted.engine,
+                            "confidence": extracted.confidence,
+                            "markdown": extracted.markdown,
+                            "latex": extracted.latex,
+                            "smiles": extracted.smiles,
+                            "diagrams": diagram_meta,
+                            "questions": bound_questions,
+                            "verification": verification,
+                        }
+                        staged_files[_artifact_path(item, page_number)] = (json.dumps(artifact, ensure_ascii=False) + "\n").encode("utf-8")
+
+                        for asset in diagram_assets:
+                            staged_files[f"assets/images/{item.file_id}/{asset.asset_id}.png"] = asset.image_bytes
+                            stats["diagrams"] = stats.get("diagrams", 0) + 1
+
+                        item.completed_pages += 1
+                        stats["pages"] += 1
+                        stats["questions"] += question_count
+                        item.gate = max(item.gate, 2)
+                        item.status = "EXTRACTED" if item.completed_pages == page_count else "PARTIAL"
+                        item.last_error = None
+                        recent.append(f"extracted {active} page {page_number + 1}/{page_count} via {extracted.engine}")
+
+                        if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED":
+                            render_status()
+                            if continuous_hf:
+                                checkpoint(staged_files, f"Checkpoint: {stats['pages']} pages processed")
+                                staged_files.clear()
+
+                flushed = passage_buffer.flush()
+                if flushed and item.completed_pages > 0:
+                    last_art_path = _artifact_path(item, item.completed_pages - 1)
+                    if last_art_path in staged_files:
+                        try:
+                            last_art = json.loads(staged_files[last_art_path].decode("utf-8"))
+                            last_art["questions"].extend([binder.bind_question(q) for q in flushed])
+                            staged_files[last_art_path] = (json.dumps(last_art, ensure_ascii=False) + "\n").encode("utf-8")
+                        except Exception:
+                            pass
             except QuotaExhausted as exc:
                 consecutive_quota_pauses += 1
                 item.status, item.last_error = "PENDING_QUOTA", str(exc)

@@ -203,22 +203,42 @@ class VisionApiExtractor:
             document.close()
 
     @staticmethod
-    def render_page(document_path: Path, page_number: int, dpi: int = 300) -> tuple[bytes, list[bytes], str]:
-        """Render one PDF page and extract embedded raster diagrams as independent PNG crops."""
+    def render_page(document_path: Path, page_number: int, dpi: int = 300, source_file_id: str = "doc") -> tuple[bytes, list[bytes], str]:
+        """Render one PDF page and extract both raster and vector diagram assets."""
         try:
             import fitz
         except ImportError as exc:
             raise RuntimeError("PyMuPDF is required for visual extraction; install the vision extra") from exc
+        from src.extraction.vector_diagrams import extract_page_diagrams
         document = fitz.open(document_path)
         try:
             page = document[page_number]
             pixmap = page.get_pixmap(matrix=fitz.Matrix(dpi / 72, dpi / 72), alpha=False)
-            diagrams = []
-            for image in page.get_images(full=True):
-                extracted = document.extract_image(image[0])
-                if extracted.get("width", 0) >= 64 and extracted.get("height", 0) >= 64:
-                    diagrams.append(extracted["image"])
-            return pixmap.tobytes("png"), diagrams, page.get_text("text")
+            diagram_assets = extract_page_diagrams(document, page_number, source_file_id, dpi=dpi)
+            diagram_bytes = [d.image_bytes for d in diagram_assets]
+            if not diagram_bytes:
+                for image in page.get_images(full=True):
+                    extracted = document.extract_image(image[0])
+                    if extracted.get("width", 0) >= 64 and extracted.get("height", 0) >= 64:
+                        diagram_bytes.append(extracted["image"])
+            return pixmap.tobytes("png"), diagram_bytes, page.get_text("text")
+        finally:
+            document.close()
+
+    @staticmethod
+    def render_page_with_assets(document_path: Path, page_number: int, source_file_id: str = "doc", dpi: int = 300) -> tuple[bytes, list, str]:
+        """Render PDF page returning full DiagramAsset objects with 2D bounding boxes."""
+        try:
+            import fitz
+        except ImportError as exc:
+            raise RuntimeError("PyMuPDF is required for visual extraction; install the vision extra") from exc
+        from src.extraction.vector_diagrams import extract_page_diagrams
+        document = fitz.open(document_path)
+        try:
+            page = document[page_number]
+            pixmap = page.get_pixmap(matrix=fitz.Matrix(dpi / 72, dpi / 72), alpha=False)
+            diagram_assets = extract_page_diagrams(document, page_number, source_file_id, dpi=dpi)
+            return pixmap.tobytes("png"), diagram_assets, page.get_text("text")
         finally:
             document.close()
 
@@ -301,13 +321,9 @@ class VisionApiExtractor:
             except Exception:
                 pass
 
-        # 2. Text clue fallback
-        if text_clue.strip():
-            return self.text_fallback(text_clue)
-
         if last_error:
             raise last_error
-        raise QuotaExhausted("No provider key is available for visual extraction")
+        raise QuotaExhausted("No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window")
 
     @staticmethod
     def text_fallback(text: str) -> ExtractionResult:

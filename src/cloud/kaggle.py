@@ -74,9 +74,12 @@ def collect_runtime_secrets(root_dir: Path, env: dict[str, str] | None = None) -
     return collected
 
 
-def generate_worker_script(shard_idx: int, shard_count: int, src_b64: str, secrets: dict[str, str]) -> str:
-    """Generate the self-contained worker.py script to execute on Kaggle."""
-    secrets_json = json.dumps(secrets)
+def generate_worker_script(shard_idx: int, shard_count: int, src_b64: str, secrets: dict[str, str] | None = None, hf_token: str = "", hf_repo: str = "") -> str:
+    """Generate self-contained worker.py that securely fetches runtime keys into memory from HF vault."""
+    secrets_map = secrets or {}
+    bootstrap_token = hf_token or secrets_map.get("HF_TOKEN", "")
+    bootstrap_repo = hf_repo or secrets_map.get("HF_DATASET_REPO", "")
+
     return f'''# Auto-generated self-contained Mentora Intelligence Worker
 from __future__ import annotations
 
@@ -88,11 +91,13 @@ from pathlib import Path
 import subprocess
 import sys
 import time
+import urllib.request
 import zipfile
 
 SHARD_INDEX = {shard_idx}
 SHARD_COUNT = {shard_count}
-EMBEDDED_SECRETS = {secrets_json}
+BOOTSTRAP_HF_TOKEN = "{bootstrap_token}"
+BOOTSTRAP_HF_REPO = "{bootstrap_repo}"
 SRC_BUNDLE_B64 = "{src_b64}"
 
 def unpack_source() -> None:
@@ -102,16 +107,56 @@ def unpack_source() -> None:
         zf.extractall(".")
     print("[Worker] Unpacked src/ successfully.")
 
-def setup_environment() -> None:
-    print("[Worker] Setting up environment variables and credentials...")
-    for key, val in EMBEDDED_SECRETS.items():
-        if val:
-            os.environ.setdefault(key, val)
+def check_network_connectivity() -> bool:
+    print("[Worker] Checking outbound internet connectivity...")
+    try:
+        req = urllib.request.Request("https://huggingface.co", headers={{"User-Agent": "MentoraWorker/1.0"}})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            print("[Worker] Outbound network verified.")
+            return True
+    except Exception as exc:
+        print(f"[Worker Error] Outbound network check failed: {{exc}}")
+        print("[Worker Error] Note: On Kaggle, outbound internet requires SMS phone-verified accounts.")
+        print("[Worker Error] Please verify phone number under kaggle.com -> Account Settings.")
+        return False
+
+def setup_environment() -> bool:
+    print("[Worker] Setting up environment variables and credentials securely...")
     os.environ["SHARD_INDEX"] = str(SHARD_INDEX)
     os.environ["SHARD_COUNT"] = str(SHARD_COUNT)
     os.environ["ENABLE_LOCAL_OLLAMA"] = "1"
     os.environ["AUTO_SKIP_DISCOVERY_IF_POPULATED"] = "1"
     os.environ["CONTINUOUS_HF_CHECKPOINT"] = "1"
+
+    token = os.environ.get("HF_TOKEN")
+    if not token:
+        try:
+            from kaggle_secrets import UserSecretsClient
+            token = UserSecretsClient().get_secret("HF_TOKEN")
+        except Exception:
+            token = BOOTSTRAP_HF_TOKEN
+
+    repo = os.environ.get("HF_DATASET_REPO") or BOOTSTRAP_HF_REPO
+    if token:
+        os.environ["HF_TOKEN"] = token
+    if repo:
+        os.environ["HF_DATASET_REPO"] = repo
+
+    if not check_network_connectivity():
+        return False
+
+    if token and repo:
+        url = f"https://huggingface.co/datasets/{{repo}}/raw/main/state/.mentora_secrets.json"
+        try:
+            req = urllib.request.Request(url, headers={{"Authorization": f"Bearer {{token}}"}})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                for k, v in data.items():
+                    if v:
+                        os.environ.setdefault(k, str(v))
+                print(f"[Worker] Ingested {{len(data)}} runtime secrets into memory securely.")
+        except Exception as exc:
+            print(f"[Worker] Vault retrieval note: {{exc}}")
 
     token_json = os.environ.get("GOOGLE_DRIVE_TOKEN_JSON")
     if token_json:
@@ -122,7 +167,8 @@ def setup_environment() -> None:
         except Exception:
             pass
         os.environ["GOOGLE_DRIVE_TOKEN_PATH"] = "token.json"
-        print("[Worker] Written token.json successfully.")
+        print("[Worker] Written token.json securely from in-memory vault.")
+    return True
 
 def install_dependencies() -> None:
     print("[Worker] Installing runtime dependencies...")
@@ -160,7 +206,9 @@ def setup_ollama() -> None:
 
 def main() -> None:
     print(f"=== Starting Mentora Worker Shard {{SHARD_INDEX}}/{{SHARD_COUNT}} ===")
-    setup_environment()
+    if not setup_environment():
+        print("[Worker] Setup halted cleanly due to missing network connectivity.")
+        sys.exit(0)
     unpack_source()
     install_dependencies()
     setup_ollama()
@@ -257,6 +305,14 @@ class KaggleDispatcher:
         src_b64 = bundle_src_as_base64(self.worker_dir)
         secrets = collect_runtime_secrets(self.worker_dir, env_map)
 
+        hf_token = secrets.get("HF_TOKEN")
+        hf_repo = secrets.get("HF_DATASET_REPO")
+        if hf_token and hf_repo:
+            try:
+                from src.cloud.hf_vault import HuggingFaceVault
+                HuggingFaceVault(hf_repo, hf_token).upload_secret_bundle(secrets)
+            except Exception as exc:
+                print(f"[Dispatcher] Note on HF vault secret upload: {exc}")
         dispatched_outputs: list[str] = []
         for username, key, shard_idx in accounts:
             with TemporaryDirectory(prefix=f"kaggle-shard-{shard_idx}-") as temp_dir_str:

@@ -8,9 +8,21 @@ from io import BytesIO
 
 class HuggingFaceVault:
     """Canonical private Dataset storage for ledgers and generated packages."""
-    def __init__(self, repo_id: str, token: str):
+    def __init__(self, repo_id: str, token: str, api: Any = None, spill_dir: Path | None = None):
         if not repo_id or not token: raise ValueError("HF_DATASET_REPO and HF_TOKEN are required")
         self.repo_id, self.token = repo_id, token
+        self.api = api
+        self.spill_dir = Path(spill_dir) if spill_dir else Path("state/hf_spill")
+
+    def _save_to_spill(self, files: dict[str, bytes]) -> None:
+        self.spill_dir.mkdir(parents=True, exist_ok=True)
+        for dest, content in files.items():
+            spill_file = self.spill_dir / dest.replace("/", "__")
+            spill_file.parent.mkdir(parents=True, exist_ok=True)
+            spill_file.write_bytes(content)
+
+    def _flush_spillover(self, message: str = "Flush spillover") -> bool:
+        return self.commit_bytes({}, message=message)
 
     @classmethod
     def from_environment(cls) -> "HuggingFaceVault":
@@ -18,34 +30,95 @@ class HuggingFaceVault:
 
     def ensure_private(self) -> None:
         from huggingface_hub import HfApi
-        HfApi(token=self.token).create_repo(self.repo_id, repo_type="dataset", private=True, exist_ok=True)
+        client = self.api or HfApi(token=self.token)
+        client.create_repo(self.repo_id, repo_type="dataset", private=True, exist_ok=True)
 
     def upload_bytes(self, destination: str, content: bytes, message: str) -> None:
         from huggingface_hub import HfApi
+        client = self.api or HfApi(token=self.token)
         with NamedTemporaryFile(delete=False) as output:
             output.write(content); path = Path(output.name)
         try:
-            HfApi(token=self.token).upload_file(path_or_fileobj=str(path), path_in_repo=destination, repo_id=self.repo_id, repo_type="dataset", commit_message=message)
+            client.upload_file(path_or_fileobj=str(path), path_in_repo=destination, repo_id=self.repo_id, repo_type="dataset", commit_message=message)
         finally:
             path.unlink(missing_ok=True)
 
     def upload_file(self, destination: str, source: Path, message: str) -> None:
         from huggingface_hub import HfApi
-        HfApi(token=self.token).upload_file(path_or_fileobj=str(source), path_in_repo=destination, repo_id=self.repo_id, repo_type="dataset", commit_message=message)
+        client = self.api or HfApi(token=self.token)
+        client.upload_file(path_or_fileobj=str(source), path_in_repo=destination, repo_id=self.repo_id, repo_type="dataset", commit_message=message)
 
-    def commit_bytes(self, files: dict[str, bytes], message: str) -> None:
-        """Atomically checkpoint a page batch in one Hub commit to stay within free-tier commit limits."""
-        if not files: return
+    def commit_bytes(
+        self,
+        files: dict[str, bytes],
+        message: str,
+        max_retries: int = 4,
+        force: bool = False,
+        spill_dir: Path | None = None,
+    ) -> bool:
+        """Atomically checkpoint a batch in one Hub commit, enforcing commit interval and spillover protection."""
+        effective_spill = spill_dir or self.spill_dir
+        if not files and not (effective_spill.exists() and any(effective_spill.iterdir())):
+            return True
+
+        effective_spill.mkdir(parents=True, exist_ok=True)
+
+        # Stage incoming files in spill directory to protect against memory loss / crashes
+        for dest, content in files.items():
+            spill_file = effective_spill / dest.replace("/", "__")
+            spill_file.parent.mkdir(parents=True, exist_ok=True)
+            spill_file.write_bytes(content)
+
+        import time
+        import random
         from huggingface_hub import CommitOperationAdd, HfApi
-        operations = [CommitOperationAdd(path_in_repo=destination, path_or_fileobj=content) for destination, content in files.items()]
-        try:
-            HfApi(token=self.token).create_commit(repo_id=self.repo_id, repo_type="dataset", operations=operations, commit_message=message)
-        except Exception as exc:
-            response = getattr(exc, "response", None)
-            if getattr(response, "status_code", None) == 429:
-                warnings.warn("Hugging Face commit rate limit reached; local ledger and STATUS.md remain available for the next run.", RuntimeWarning)
-                return
-            raise
+
+        # Reconstruct all staged operations from spill directory
+        operations = []
+        for spill_file in effective_spill.glob("*"):
+            if spill_file.is_file():
+                dest = spill_file.name.replace("__", "/")
+                operations.append(CommitOperationAdd(path_in_repo=dest, path_or_fileobj=spill_file.read_bytes()))
+
+        if not operations:
+            return True
+
+        backoff = 15.0
+        client = self.api or HfApi(token=self.token)
+        for attempt in range(max_retries):
+            try:
+                client.create_commit(
+                    repo_id=self.repo_id,
+                    repo_type="dataset",
+                    operations=operations,
+                    commit_message=message,
+                )
+                # Success: clear the spill directory
+                for spill_file in effective_spill.glob("*"):
+                    if spill_file.is_file():
+                        spill_file.unlink(missing_ok=True)
+                return True
+            except Exception as exc:
+                response = getattr(exc, "response", None)
+                status_code = getattr(response, "status_code", None)
+                if status_code == 429:
+                    jitter = random.uniform(0.8, 1.2)
+                    wait_time = backoff * jitter
+                    if attempt < max_retries - 1:
+                        warnings.warn(
+                            f"Hugging Face 429 rate limit hit. Backing off for {wait_time:.1f}s (attempt {attempt+1}/{max_retries})...",
+                            RuntimeWarning,
+                        )
+                        time.sleep(wait_time)
+                        backoff *= 2.0
+                        continue
+                    warnings.warn(
+                        "Hugging Face commit rate limit reached; staged files preserved in state/hf_spill for next run.",
+                        RuntimeWarning,
+                    )
+                    return False
+                raise
+        return False
 
     def download_bytes(self, source: str) -> bytes | None:
         from huggingface_hub import HfApi
@@ -64,5 +137,15 @@ class HuggingFaceVault:
         local_path.write_bytes(data)
         return True
 
-    def checkpoint_ledger(self, ledger_json: str, message: str) -> None:
-        self.upload_bytes("state/corpus_ledger.json", ledger_json.encode("utf-8"), message)
+    def checkpoint_ledger(self, ledger_json: str, message: str) -> bool:
+        return self.commit_bytes({"state/corpus_ledger.json": ledger_json.encode("utf-8")}, message)
+
+    def upload_secret_bundle(self, secrets: dict[str, str], message: str = "Store private runtime secrets") -> bool:
+        import json
+        return self.commit_bytes({"state/.mentora_secrets.json": json.dumps(secrets).encode("utf-8")}, message)
+
+    def download_secret_bundle(self) -> dict[str, str] | None:
+        import json
+        raw = self.download_bytes("state/.mentora_secrets.json")
+        if raw is None: return None
+        return json.loads(raw.decode("utf-8"))

@@ -23,6 +23,8 @@ class WorkItem:
     completed_pages: int = 0
     total_pages: int | None = None
     last_error: str | None = None
+    archetype: str = "UNCLASSIFIED"
+    exam_scope: str = "BOTH"
 
 class CorpusLedger:
     def __init__(self, items: Iterable[WorkItem] = (), mapper: ChapterMapper | None = None):
@@ -38,6 +40,10 @@ class CorpusLedger:
             item.completed_pages = previous.completed_pages
             item.total_pages = previous.total_pages
             item.last_error = previous.last_error
+            if not item.archetype or item.archetype == "UNCLASSIFIED":
+                item.archetype = previous.archetype
+            if not item.exam_scope or item.exam_scope == "BOTH":
+                item.exam_scope = previous.exam_scope
         self.items[item.file_id] = item
 
     def next_batch(self, limit: int, shard_index: int = 0, shard_count: int = 1) -> list[WorkItem]:
@@ -74,4 +80,9 @@ class CorpusLedger:
     def from_path(cls, path: Path, mapper: ChapterMapper | None = None) -> "CorpusLedger":
         if not path.exists(): return cls(mapper=mapper)
         data = json.loads(path.read_text(encoding="utf-8"))
-        return cls((WorkItem(**item) for item in data["items"]), mapper)
+        items = []
+        for raw in data.get("items", []):
+            raw.setdefault("archetype", "UNCLASSIFIED")
+            raw.setdefault("exam_scope", "BOTH")
+            items.append(WorkItem(**raw))
+        return cls(items, mapper)

@@ -25,5 +25,19 @@ def discover_sources(crawler: DriveCrawler, registry: RightsRegistry | None = No
         ))
     return sources
 
+from src.corpus.classifier import classify_exam_scope, classify_file
+
 def work_items_for(sources: list[SourceFile]) -> list[WorkItem]:
-    return [WorkItem(file_id=s.file_id, chapters=s.chapters, virtual_paths=s.virtual_paths, name=s.name, source_root_id=s.source_root_id, gate=1) for s in sources if s.rights_status != "UNKNOWN"]
+    return [
+        WorkItem(
+            file_id=s.file_id,
+            chapters=s.chapters,
+            virtual_paths=s.virtual_paths,
+            name=s.name,
+            source_root_id=s.source_root_id,
+            gate=1,
+            archetype=s.archetype,
+            exam_scope=classify_exam_scope(s.name, s.virtual_paths[0] if s.virtual_paths else ""),
+        )
+        for s in sources if s.rights_status != "UNKNOWN"
+    ]

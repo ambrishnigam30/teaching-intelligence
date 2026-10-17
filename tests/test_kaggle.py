@@ -119,3 +119,25 @@ def test_dispatch_fleet_gpu_and_cpu_fallback(tmp_path):
         assert len(results) == 2
         assert "GPU" in results[0] and "Kernel pushed successfully" in results[0]
         assert "CPU Fallback" in results[1] and "Kernel pushed on CPU fallback" in results[1]
+
+
+def test_worker_script_contains_zero_plaintext_credentials():
+    script = generate_worker_script(
+        shard_idx=0,
+        shard_count=3,
+        src_b64="VGVzdA==",
+        secrets={
+            "HF_TOKEN": "mock_hf_token",
+            "HF_DATASET_REPO": "test/vault",
+            "GOOGLE_DRIVE_TOKEN_JSON": '{"token": "ya29.supersecret"}',
+            "GEMINI_API_KEY_1": "AIzaSySecret123",
+            "GROQ_API_KEY_1": "gsk_SecretGroqKey",
+            "OPENROUTER_API_KEY_1": "sk-or-v1-secret",
+        },
+    )
+    assert "ya29.supersecret" not in script
+    assert "AIzaSySecret123" not in script
+    assert "gsk_SecretGroqKey" not in script
+    assert "sk-or-v1-secret" not in script
+    assert "EMBEDDED_SECRETS" not in script
+    assert "BOOTSTRAP_HF_TOKEN" in script
