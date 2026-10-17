@@ -289,14 +289,29 @@ def run(
                     recent.append(f"quota exhausted: 3 consecutive pauses; breaking batch for next cycle")
                     break
             except httpx.HTTPStatusError as exc:
-                item.attempts += 1; item.status = "BLOCKED_PROVIDER"; item.last_error = _safe_error(exc)
-                recent.append(f"blocked {active}: {item.last_error}"); blocked_provider = True
+                if exc.response.status_code in {429, 503}:
+                    consecutive_quota_pauses += 1
+                    item.status, item.last_error = "PENDING_QUOTA", _safe_error(exc)
+                    recent.append(f"quota pause {active}: {item.last_error}")
+                    wait_sec = min(pool.shortest_cooldown_wait(), 45.0)
+                    if wait_sec > 0:
+                        time.sleep(wait_sec)
+                    ollama_enabled = os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}
+                    if consecutive_quota_pauses >= 3 and not ollama_enabled:
+                        recent.append("quota exhausted: 3 consecutive pauses; breaking batch for next cycle")
+                        break
+                else:
+                    item.attempts += 1
+                    item.status = "BLOCKED_PROVIDER"
+                    item.last_error = _safe_error(exc)
+                    recent.append(f"blocked {active}: {item.last_error}")
+                    blocked_provider = True
             except Exception as exc:
                 item.attempts += 1; item.status, item.last_error = "PENDING", _safe_error(exc); recent.append(f"retry {active}: {item.last_error}")
             finally:
                 render_status()
             if blocked_provider: break
-    has_more_work = not blocked_provider and bool(ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count))
+    has_more_work = bool(ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count))
     checkpoint(staged_files, "Final atomic batch checkpoint")
     _write_action_output(has_more_work)
     return has_more_work
