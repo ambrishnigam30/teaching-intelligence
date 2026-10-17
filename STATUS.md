@@ -1,26 +1,15 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T06:55:46.698322+00:00
+Last Run UTC: 2026-10-17T06:57:19.007397+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 78
+Files Completed: 77
 Pages Processed This Run: 50
-Questions Verified This Run: 527
+Questions Verified This Run: 452
 Active File: Exercise_ERzfKcB.pdf
 Next File in Queue: Mole Concept.pdf
 ## Recent Batch Log
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 8/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 9/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 10/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 11/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 12/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 13/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 14/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 15/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 16/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 17/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 18/22 via text_fallback
 - extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 19/22 via text_fallback
 - extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 20/22 via text_fallback
 - extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 21/22 via text_fallback
@@ -35,3 +24,14 @@ Next File in Queue: Mole Concept.pdf
 - extracted Exercise_ERzfKcB.pdf page 8/23 via text_fallback
 - extracted Exercise_ERzfKcB.pdf page 9/23 via text_fallback
 - extracted Exercise_ERzfKcB.pdf page 10/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 11/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 12/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 13/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 14/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 15/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 16/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 17/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 18/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 19/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 20/23 via text_fallback
+- extracted Exercise_ERzfKcB.pdf page 21/23 via text_fallback
