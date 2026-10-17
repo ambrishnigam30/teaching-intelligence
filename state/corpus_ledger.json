@@ -6190,20 +6190,20 @@
       "exam_scope": "BOTH",
       "file_id": "1_dGnvs92SNdPI7IbPx7aLF69zdFGtuBF",
       "gate": 1,
-      "last_error": null,
+      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
       "mime_type": "application/pdf",
       "name": "Thermochemistry_ResoSir_with_ans_XI_6d7lpoL.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 33,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Thermodynamics _ Thermochemistry/Thermochemistry_ResoSir_with_ans_XI_6d7lpoL.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -6211,13 +6211,13 @@
       "exam_scope": "BOTH",
       "file_id": "1YLYoHU5zf55yRQRi3VNhInGwJ6OJRPuY",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "1._TDS_Th_E_F5peMCd.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 41,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Thermodynamics _ Thermochemistry/1._TDS_Th_E_F5peMCd.pdf"
       ]
@@ -65701,7 +65701,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -65709,13 +65709,13 @@
       "exam_scope": "BOTH",
       "file_id": "1XLYYBJCUZpikKPDOn6j4PyY_SvTjhgzf",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "23 # GR (Thermodynamics and KTG)_Eng.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/GRP STAR SCORE 2021/23 # GR (Thermodynamics and KTG)_Eng.pdf"
       ]
@@ -75088,7 +75088,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75096,13 +75096,13 @@
       "exam_scope": "BOTH",
       "file_id": "1XwJiBL-Opq94xcmh-q6dWfRkYO0IS4lf",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "03 # Quiz (Answer key)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/03 # Quiz (Answer key)_KTG & Thermodynamics.pdf"
       ]
@@ -75151,7 +75151,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75159,13 +75159,13 @@
       "exam_scope": "BOTH",
       "file_id": "1WlQMV5oSavFMIhDabOvDwDcclqNWkmgZ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "02 # Quiz (Eng)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/02 # Quiz (Eng)_KTG & Thermodynamics.pdf"
       ]
@@ -116372,7 +116372,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -116380,13 +116380,13 @@
       "exam_scope": "BOTH",
       "file_id": "1W5bGjYvEFeDDc5uz3-LQcJxNmRPNmkkK",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Thermodynamics, Oscillations and Waves.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 520,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/1 Score final adv 2024 \u2b50\u2b50\u2b50/Physics Galaxy PG/Thermodynamics, Oscillations and Waves.pdf"
       ]
