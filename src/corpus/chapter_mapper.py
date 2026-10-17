@@ -71,7 +71,7 @@ TIER_3: frozenset[str] = frozenset({
 # Comprehensive aliases, abbreviations, folder names and coaching codes across all 82 chapters
 ALIASES: dict[str, str] = {
     # Physics
-    "units and dimensions": "units_dimensions", "units & dimensions": "units_dimensions", "units dimensions": "units_dimensions", "unit and dimension": "units_dimensions", "dimensional analysis": "units_dimensions", "error analysis": "units_dimensions", "vernier caliper": "units_dimensions", "screw gauge": "units_dimensions",
+    "units and dimensions": "units_dimensions", "units & dimensions": "units_dimensions", "units dimensions": "units_dimensions", "unit and dimension": "units_dimensions", "unit dimension": "units_dimensions", "unit dimensions": "units_dimensions", "dimensional analysis": "units_dimensions", "error analysis": "units_dimensions", "errors in measurement": "units_dimensions", "significant figures": "units_dimensions", "vernier caliper": "units_dimensions", "screw gauge": "units_dimensions",
     "kinematics": "kinematics", "motion in a straight line": "kinematics", "motion in 1d": "kinematics", "motion in 2d": "kinematics", "projectile motion": "kinematics", "relative motion": "kinematics", "rectilinear": "kinematics", "motion in a plane": "kinematics",
     "laws of motion": "laws_of_motion_friction", "newton s laws": "laws_of_motion_friction", "newtons laws": "laws_of_motion_friction", "nlm": "laws_of_motion_friction", "friction": "laws_of_motion_friction", "pseudo force": "laws_of_motion_friction", "constraint motion": "laws_of_motion_friction",
     "work energy power": "work_energy_power", "work power energy": "work_energy_power", "wep": "work_energy_power", "work and energy": "work_energy_power",
@@ -194,6 +194,14 @@ class ChapterMapper:
             else:
                 if alias in normalized:
                     matches.add(chapter)
+
+        # Contextual subject disambiguation for shared chapter names
+        if "thermodynamics" in normalized or "thermo" in normalized:
+            if any(k in normalized for k in ("physics", "ktg", "carnot", "heat transfer")):
+                matches.add("thermodynamics_physics")
+            if any(k in normalized for k in ("chem", "thermochemistry", "pc e")):
+                matches.add("thermodynamics_chemistry")
+
         return sorted(matches, key=self.syllabus_order)
 
     def map_file(self, file_path: str) -> list[str]:

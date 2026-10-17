@@ -16,7 +16,7 @@ permissions:
 jobs:
   compile:
     runs-on: ubuntu-latest
-    timeout-minutes: 330  # Run for up to 5.5 hours continuously per job
+    timeout-minutes: 90  # Bounded execution limit per cloud marathon
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       HF_DATASET_REPO: ${{ secrets.HF_DATASET_REPO }}
@@ -87,21 +87,44 @@ jobs:
         run: |
           python -c "from src.cloud.kaggle import KaggleDispatcher; from pathlib import Path; KaggleDispatcher(Path('.')).dispatch_fleet({})" || true
 
-      - name: Run Continuous Autonomous Marathon (20 Batches / ~5 Hours)
+      - name: Sync Durable State from Hugging Face Vault
+        run: |
+          python -c "
+          import os, json
+          from pathlib import Path
+          from huggingface_hub import hf_hub_download
+
+          token = os.environ.get('HF_TOKEN')
+          repo = os.environ.get('HF_DATASET_REPO')
+          if token and repo:
+              try:
+                  downloaded = hf_hub_download(repo_id=repo, filename='state/corpus_ledger.json', repo_type='dataset', token=token)
+                  dest = Path('state/corpus_ledger.json')
+                  dest.parent.mkdir(parents=True, exist_ok=True)
+                  dest.write_bytes(Path(downloaded).read_bytes())
+                  print('Successfully synced latest corpus ledger from Hugging Face Vault.')
+              except Exception as exc:
+                  print(f'Using local ledger seed (HF sync note: {exc})')
+          " || true
+
+      - name: Run Bounded Autonomous Marathon (5 Batches / ~30 Mins)
         run: |
           git config user.name "mentora-factory[bot]"
           git config user.email "mentora-factory[bot]@users.noreply.github.com"
 
-          for i in {1..20}; do
-            echo "=== Starting Autonomous Batch $i of 20 ==="
-            python -m src.pipeline --max-pages 50 --time-budget-seconds 900 || true
+          for i in {1..5}; do
+            echo "=== Starting Autonomous Batch $i of 5 ==="
+            python -m src.pipeline --max-pages 15 --time-budget-seconds 300 || true
 
-            # Save & push progress after every single batch
-            git add STATUS.md state/corpus_ledger.json 2>/dev/null || true
+            # Sync reports deterministically
+            python scripts/generate_operational_reports.py || true
+
+            # Push telemetry checkpoint
+            git add STATUS.md state/corpus_ledger.json AUTONOMOUS_EXECUTION_STATUS.md SHUTDOWN_READINESS.md 2>/dev/null || true
             if ! git diff --cached --quiet; then
-              git commit -m "chore: update intelligence factory status (batch $i) [skip ci]"
+              git commit -m "feat(factory): cloud autonomous batch marathon progression (batch $i) [skip ci]" || true
               for retry in {1..5}; do
-                git pull --rebase origin main && git push && break || sleep 5
+                git pull --rebase origin main && git push origin HEAD:main && break || sleep 5
               done
             fi
           done
@@ -113,4 +136,4 @@ jobs:
         run: |
           echo "Marathon complete. Triggering next autonomous run..."
           sleep 10
-          gh workflow run intelligence_factory.yml --ref main || true
+          gh workflow run intelligence_factory.yml --ref main || true

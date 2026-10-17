@@ -96,7 +96,7 @@ import zipfile
 
 SHARD_INDEX = {shard_idx}
 SHARD_COUNT = {shard_count}
-BOOTSTRAP_HF_TOKEN = "{bootstrap_token}"
+BOOTSTRAP_HF_TOKEN = ""
 BOOTSTRAP_HF_REPO = "{bootstrap_repo}"
 SRC_BUNDLE_B64 = "{src_b64}"
 

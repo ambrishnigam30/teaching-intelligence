@@ -80,6 +80,11 @@ class CorpusLedger:
     def to_json(self) -> str:
         return json.dumps({"schema_version": 1, "items": [asdict(x) for x in self.items.values()]}, indent=2, sort_keys=True)
 
+    def save(self, path: Path) -> None:
+        p = Path(path)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(self.to_json(), encoding="utf-8")
+
     @classmethod
     def from_path(cls, path: Path, mapper: ChapterMapper | None = None) -> "CorpusLedger":
         if not path.exists(): return cls(mapper=mapper)
