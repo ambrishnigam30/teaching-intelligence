@@ -2,8 +2,8 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 12:36:13 UTC` (`2026-10-17 18:06:13 IST`)  
-**Git Commit:** `ef3afb9` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 12:40:26 UTC` (`2026-10-17 18:10:26 IST`)  
+**Git Commit:** `e1e32a3` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
@@ -207,6 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `e1e32a3` | 2026-10-17 18:10:22 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:40:22 UTC (batch 8) - 78 files done, 7 p | `origin/main` |
 | `ef3afb9` | 2026-10-17 18:06:08 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:36:08 UTC (batch 7) - 78 files done, 7 p | `origin/main` |
 | `fc25148` | 2026-10-17 18:01:32 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:31:32 UTC (batch 6) - 78 files done, 7 p | `origin/main` |
 | `6f24323` | 2026-10-17 17:57:15 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:27:15 UTC (batch 5) - 78 files done, 7 p | `origin/main` |
@@ -216,7 +217,6 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | `5d0d121` | 2026-10-17 17:40:21 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:10:21 UTC (batch 1) - 78 files done, 7 p | `origin/main` |
 | `d90ff16` | 2026-10-17 17:35:43 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:05:43 UTC (batch 1) - 78 files done, 7 p | `origin/main` |
 | `4fba3a4` | 2026-10-17 17:32:20 | feat(intelligence): implement verification lifecycle, 11 adversarial tests, 8-axis benchmarks, and visual status dashboa | `origin/main` |
-| `98ca8d4` | 2026-10-17 15:14:46 | feat(factory): batch 5 progress - 2026-10-17 09:44:46 UTC - 78 files done, 7 partial, 0 quarantined [skip ci] | `origin/main` |
 
 </details>
 
