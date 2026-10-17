@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-cloud = ["google-api-python-client>=2.0", "google-auth-oauthlib>=1.2", "huggingface_hub>=0.24", "kaggle>=1.6"]
+cloud = ["google-api-python-client>=2.0", "google-auth-oauthlib>=1.2", "huggingface_hub>=0.24", "kaggle>=1.6", "pyyaml>=6.0"]
 vision = ["PyMuPDF>=1.24", "Pillow>=10.0"]
 verify = ["sympy>=1.13", "rdkit>=2024.3"]
 test = ["pytest>=8.0"]

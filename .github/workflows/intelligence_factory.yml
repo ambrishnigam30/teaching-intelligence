@@ -31,6 +31,10 @@ jobs:
       KAGGLE_KEY_2: ${{ secrets.KAGGLE_KEY_2 }}
       KAGGLE_USERNAME_3: ${{ secrets.KAGGLE_USERNAME_3 }}
       KAGGLE_KEY_3: ${{ secrets.KAGGLE_KEY_3 }}
+      KAGGLE_USERNAME_4: ${{ secrets.KAGGLE_USERNAME_4 }}
+      KAGGLE_KEY_4: ${{ secrets.KAGGLE_KEY_4 }}
+      KAGGLE_USERNAME_5: ${{ secrets.KAGGLE_USERNAME_5 }}
+      KAGGLE_KEY_5: ${{ secrets.KAGGLE_KEY_5 }}
       GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
       GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
       GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
@@ -79,9 +83,9 @@ jobs:
           sleep 5
           ollama pull qwen2.5vl:3b || ollama pull moondream || true
 
-      - name: Dispatch Parallel Kaggle GPU Fleet (If Configured)
+      - name: Dispatch Live Kaggle GPU Fleet
         run: |
-          python -c "from src.cloud.kaggle import KaggleDispatcher; from pathlib import Path; KaggleDispatcher(Path('scripts/kaggle_worker')).dispatch_fleet({})" || true
+          python -c "from src.cloud.kaggle import KaggleDispatcher; from pathlib import Path; KaggleDispatcher(Path('.')).dispatch_fleet({})" || true
 
       - name: Run Continuous Autonomous Marathon (20 Batches / ~5 Hours)
         run: |

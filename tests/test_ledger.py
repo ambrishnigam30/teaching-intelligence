@@ -16,3 +16,26 @@ def test_gates_are_monotonic_and_quarantine_blocks_promotion():
     with pytest.raises(ValueError): ledger.transition("a", AssuranceGate.KNOWLEDGE_READY)
     ledger.quarantine("a")
     with pytest.raises(ValueError): ledger.transition("a", AssuranceGate.EVIDENCE_READY)
+
+
+def test_deterministic_sharding_partitions_without_overlap():
+    items = [WorkItem(f"pdf_{i}", ["ray_optics"]) for i in range(60)]
+    ledger = CorpusLedger(items)
+
+    shard_count = 3
+    shards: dict[int, list[str]] = {}
+    for idx in range(shard_count):
+        batch = ledger.next_batch(100, shard_index=idx, shard_count=shard_count)
+        shards[idx] = [item.file_id for item in batch]
+
+    # 1. Shards must be disjoint (zero overlap)
+    set0, set1, set2 = set(shards[0]), set(shards[1]), set(shards[2])
+    assert set0.isdisjoint(set1)
+    assert set1.isdisjoint(set2)
+    assert set0.isdisjoint(set2)
+
+    # 2. Union must cover all 60 items
+    all_sharded = set0 | set1 | set2
+    assert len(all_sharded) == 60
+    assert all_sharded == {f"pdf_{i}" for i in range(60)}
+

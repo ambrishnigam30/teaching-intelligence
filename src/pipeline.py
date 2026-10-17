@@ -143,11 +143,7 @@ def run(
     with tempfile.TemporaryDirectory(prefix="mentora-drive-") as scratch_raw:
         scratch = Path(scratch_raw)
         while stats["pages"] < max_pages and time.monotonic() - started < time_budget_seconds:
-            if shard_count > 1:
-                candidates = ledger.next_batch(100)
-                batch = [i for i in candidates if (int(hashlib.sha256(i.file_id.encode("utf-8")).hexdigest(), 16) % shard_count) == (shard_index % shard_count)]
-            else:
-                batch = ledger.next_batch(1)
+            batch = ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count)
             if not batch: break
             item = batch[0]; active = item.name or item.file_id
             node = node_by_id.get(item.file_id)
@@ -202,7 +198,7 @@ def run(
             finally:
                 render_status()
             if blocked_provider: break
-    has_more_work = not blocked_provider and bool(ledger.next_batch(1))
+    has_more_work = not blocked_provider and bool(ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count))
     checkpoint(staged_files, "Final atomic batch checkpoint")
     _write_action_output(has_more_work)
     return has_more_work
@@ -215,10 +211,21 @@ def main() -> None:
     parser.add_argument("--root-limit", type=int, help="Smoke-test-only limit; omit to crawl all 13 founder roots.")
     parser.add_argument("--skip-discovery", action="store_true", help="Process the durable ledger without recrawling Drive; intended only for recovery/smoke runs.")
     parser.add_argument("--checkpoint-pages", type=int, default=5)
-    parser.add_argument("--shard-index", type=int, default=0, help="Shard index for parallel fleet runners.")
-    parser.add_argument("--shard-count", type=int, default=1, help="Total shards in parallel fleet.")
+    parser.add_argument("--shard-index", type=int, default=int(os.getenv("SHARD_INDEX", "0")), help="Shard index for parallel fleet runners.")
+    parser.add_argument("--shard-count", type=int, default=int(os.getenv("SHARD_COUNT", "1")), help="Total shards in parallel fleet.")
     parser.add_argument("--checkpoint-every-files", type=int, default=1, help="Frequency of file-level checkpoints.")
+    parser.add_argument("--dispatch-kaggle-fleet", action="store_true", help="Dispatch parallel GPU/CPU worker kernels to Kaggle fleet.")
     args = parser.parse_args()
+
+    if args.dispatch_kaggle_fleet:
+        load_env_file()
+        from src.cloud.kaggle import KaggleDispatcher
+        dispatcher = KaggleDispatcher(Path("."))
+        results = dispatcher.dispatch_fleet({})
+        for res in results:
+            print(res)
+        return
+
     if args.max_pages < 1 or args.time_budget_seconds < 1: parser.error("limits must be positive")
     if args.root_limit is not None and args.root_limit < 1: parser.error("root limit must be positive")
     if args.checkpoint_pages < 1: parser.error("checkpoint pages must be positive")

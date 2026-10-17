@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
+import hashlib
 import json
 from pathlib import Path
 from typing import Iterable
@@ -39,8 +40,13 @@ class CorpusLedger:
             item.last_error = previous.last_error
         self.items[item.file_id] = item
 
-    def next_batch(self, limit: int) -> list[WorkItem]:
+    def next_batch(self, limit: int, shard_index: int = 0, shard_count: int = 1) -> list[WorkItem]:
         candidates = [i for i in self.items.values() if i.status in {"PENDING", "PARTIAL", "PENDING_QUOTA"}]
+        if shard_count > 1:
+            candidates = [
+                i for i in candidates
+                if (int(hashlib.sha256(i.file_id.encode("utf-8")).hexdigest(), 16) % shard_count) == (shard_index % shard_count)
+            ]
         incomplete = {c for i in candidates for c in i.chapters}
         def key(item: WorkItem):
             chapter_key = self.mapper.work_key([c for c in item.chapters if c in incomplete])
