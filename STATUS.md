@@ -1,37 +1,37 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T06:39:02.714155+00:00
+Last Run UTC: 2026-10-17T06:40:49.481015+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 62
+Files Completed: 65
 Pages Processed This Run: 50
-Questions Verified This Run: 33
-Active File: 4._HLP_PC_bOG6wPC.pdf
-Next File in Queue: SHM.pdf
+Questions Verified This Run: 247
+Active File: 1-Theory--SHM-E.pdf
+Next File in Queue: 02 # Quiz (Eng)_SHM.pdf
 ## Recent Batch Log
-- extracted SHM.pdf page 26/41 via text_fallback
-- extracted SHM.pdf page 27/41 via text_fallback
-- extracted SHM.pdf page 28/41 via text_fallback
-- extracted SHM.pdf page 29/41 via text_fallback
-- extracted SHM.pdf page 30/41 via text_fallback
-- extracted SHM.pdf page 31/41 via text_fallback
-- extracted SHM.pdf page 32/41 via text_fallback
-- extracted SHM.pdf page 33/41 via text_fallback
-- extracted SHM.pdf page 34/41 via text_fallback
-- extracted SHM.pdf page 35/41 via text_fallback
-- extracted SHM.pdf page 36/41 via text_fallback
-- extracted SHM.pdf page 37/41 via text_fallback
-- extracted SHM.pdf page 38/41 via text_fallback
-- extracted SHM.pdf page 39/41 via text_fallback
-- extracted SHM.pdf page 40/41 via text_fallback
-- extracted SHM.pdf page 41/41 via text_fallback
-- extracted 2._Handout.pdf page 1/6 via text_fallback
-- extracted 2._Handout.pdf page 2/6 via text_fallback
-- extracted 2._Handout.pdf page 3/6 via text_fallback
-- extracted 2._Handout.pdf page 4/6 via text_fallback
-- extracted 2._Handout.pdf page 5/6 via text_fallback
-- extracted 2._Handout.pdf page 6/6 via text_fallback
-- extracted 02 # Quiz (Answer key)_SHM.pdf page 1/1 via text_fallback
-- extracted 4._HLP_PC_bOG6wPC.pdf page 1/4 via text_fallback
-- extracted 4._HLP_PC_bOG6wPC.pdf page 2/4 via text_fallback
+- extracted Shm.pdf page 10/23 via text_fallback
+- extracted Shm.pdf page 11/23 via text_fallback
+- extracted Shm.pdf page 12/23 via text_fallback
+- extracted Shm.pdf page 13/23 via text_fallback
+- extracted Shm.pdf page 14/23 via text_fallback
+- extracted Shm.pdf page 15/23 via text_fallback
+- extracted Shm.pdf page 16/23 via text_fallback
+- extracted Shm.pdf page 17/23 via text_fallback
+- extracted Shm.pdf page 18/23 via text_fallback
+- extracted Shm.pdf page 19/23 via text_fallback
+- extracted Shm.pdf page 20/23 via text_fallback
+- extracted Shm.pdf page 21/23 via text_fallback
+- extracted Shm.pdf page 22/23 via text_fallback
+- extracted Shm.pdf page 23/23 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 1/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 2/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 3/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 4/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 5/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 6/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 7/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 8/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 9/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 10/20 via text_fallback
+- extracted 1-Theory--SHM-E.pdf page 11/20 via text_fallback
