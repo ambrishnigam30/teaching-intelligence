@@ -842,19 +842,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "electrochemistry",
+        "hydrogen"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "103s2L6wY66Gf2GT7oYfqdm4Vn3O5HpdL",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Electrochemistry Exercise.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Electrochemistry Exercise.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/CHEMISTRY/Electrochemistry/Electrochemistry Exercise.pdf"
       ]
@@ -19472,18 +19475,18 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "103fVEqYItj6UwqwhZmrLYKxbgGkOnJOJ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Problems in Physical Chemistry by Narendra Awasthi for JEE (15th edition).pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Problems in Physical Chemistry by Narendra Awasthi for JEE (15th edition).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "ERROR",
       "total_pages": 603,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Chemistry/Problems in Physical Chemistry by Narendra Awasthi for JEE (15th edition).pdf"
