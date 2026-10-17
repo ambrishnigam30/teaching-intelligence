@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > 🟢 `SYSTEM ACTIVE` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 20:13:46 UTC` (`2026-10-18 01:43:46 IST`)  
-**Git Commit:** `959d334` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 20:20:16 UTC` (`2026-10-18 01:50:16 IST`)  
+**Git Commit:** `55dba22` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **78** | **0** | **0** | **0** | **1,333** | **15/82** |
+| **7,103** | **78** | **0** | **0** | **0** | **1,334** | **15/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -21,8 +21,8 @@
 | Lifecycle Stage | File Count | Conversion Rate | Visual Funnel | Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Discovered (G0)** | 7,103 | 100.0% | `██████████ 100.0%` | `DISCOVERED` |
-| **2. Indexed & Sharded (G1)** | 7,010 | 98.7% | `██████████  98.7%` | `INDEXED` |
-| **3. Evidence Ready (G2)** | 93 | 1.3% | `░░░░░░░░░░   1.3%` | `EXTRACTED` |
+| **2. Indexed & Sharded (G1)** | 7,009 | 98.7% | `██████████  98.7%` | `INDEXED` |
+| **3. Evidence Ready (G2)** | 94 | 1.3% | `░░░░░░░░░░   1.3%` | `EXTRACTED` |
 | **4. Knowledge Ready (G3)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `CAS_VERIFIED` |
 | **5. Teacher Ready (G4)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `PACKAGE_READY` |
 
@@ -131,7 +131,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 61 | `quadratic_equations` | Tier 0 | 10 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 62 | `sequences_series` | Tier 1 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 63 | `binomial_theorem` | Tier 1 | 21 | 0 | 1 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 64 | `permutations_combinations` | Tier 1 | 18 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 64 | `permutations_combinations` | Tier 1 | 18 | 0 | 1 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 65 | `mathematical_induction` | Tier 3 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 66 | `matrices_determinants` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 67 | `probability` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
@@ -157,8 +157,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | Gate | Name | Eligible Files | Passed Files | Pass Rate | Visual Gate Health | Gate Criteria |
 | :-: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **G0** | DISCOVERED | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Discovered on founder Drive |
-| **G1** | SOURCE_READY | 7,103 | 7,010 | 98.7% | `████████  98.7%` | Indexed, categorized, chapter-mapped |
-| **G2** | EVIDENCE_READY | 7,103 | 93 | 1.3% | `░░░░░░░░   1.3%` | Extracted + Diagram Assets + 2D BBoxes |
+| **G1** | SOURCE_READY | 7,103 | 7,009 | 98.7% | `████████  98.7%` | Indexed, categorized, chapter-mapped |
+| **G2** | EVIDENCE_READY | 7,103 | 94 | 1.3% | `░░░░░░░░   1.3%` | Extracted + Diagram Assets + 2D BBoxes |
 | **G3** | KNOWLEDGE_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | CAS / SymPy + Cross-family blind solve |
 | **G4** | TEACHER_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | 18 capabilities + 9-point concept standard |
 | **G5** | RUNTIME_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Exported runtime schema verified |
@@ -168,10 +168,10 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
 - **Total Drive Files Discovered: 78**
-- **Pages Processed This Run: 1333**
+- **Pages Processed This Run: 1334**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: P&C [IITian Notes_Kota].pdf**
+- **Next File in Queue: 24. Permutation & Combination DPP.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -205,6 +205,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `55dba22` | 2026-10-17 20:13:46 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 | `959d334` | 2026-10-17 20:07:08 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `5602f0d` | 2026-10-17 19:58:17 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
