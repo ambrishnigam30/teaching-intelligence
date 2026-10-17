@@ -3590,7 +3590,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -3598,13 +3598,13 @@
       "exam_scope": "BOTH",
       "file_id": "1fT0W8783N4oXzTwYMR6wg_cPIeTwfr1n",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Theory_English.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/MATHS/Binomial Theorem/Theory_English.pdf"
       ]
@@ -15506,7 +15506,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -15514,13 +15514,13 @@
       "exam_scope": "BOTH",
       "file_id": "1fQoPPT4PSBurabQKErAFFItoUaqUVKb4",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 2.2.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 2.2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/23 Binomial Theorem/Exercise 2.2.pdf"
       ]
@@ -19591,7 +19591,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -19599,13 +19599,13 @@
       "exam_scope": "BOTH",
       "file_id": "1kZBLOW6GdqyrpyK5vP29xcOtxOhOBPzF",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "26. Binomial Theorem DPP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Motion DPPs/3. Mathematics/26. Binomial Theorem DPP.pdf"
       ]
@@ -91750,7 +91750,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -91758,13 +91758,13 @@
       "exam_scope": "BOTH",
       "file_id": "1i518Ur34tCI9Gx0eGgYcTn8S1xpOPkqt",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-03_Binomial Theorem.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-03_Binomial Theorem.pdf"
       ]
