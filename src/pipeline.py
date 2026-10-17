@@ -86,28 +86,11 @@ def _safe_error(exc: Exception) -> str:
     return f"{type(exc).__name__}: {str(exc).split('?')[0][:240]}"
 
 
+from src.reporting.status_dashboard import render_status_dashboard
+
+
 def _status(now: datetime, stats: dict, ledger: CorpusLedger, recent: list[str], active: str | None) -> str:
-    completed = sum(item.status == "EXTRACTED" for item in ledger.items.values())
-    pending = [item for item in ledger.next_batch(1)]
-    gates = {g: sum(item.gate == g for item in ledger.items.values()) for g in range(7)}
-    lines = [
-        "# Mentora Intelligence Factory",
-        f"Last Run UTC: {now.isoformat()}",
-        f"Total Drive Files Discovered: {stats['files']}",
-        f"Total Drive PDFs Discovered: {stats['pdfs']}",
-        f"Folders Discovered: {stats['folders']}",
-        f"Shortcuts Resolved: {stats['shortcuts']}",
-        f"Files Completed: {completed}",
-        f"Pages Processed This Run: {stats['pages']}",
-        f"Questions Verified This Run: {stats['questions']}",
-        f"Diagrams Extracted This Run: {stats.get('diagrams', 0)}",
-        f"Active File: {active or 'none'}",
-        f"Next File in Queue: {pending[0].name or pending[0].file_id if pending else 'none'}",
-        f"Assurance Gate Distribution: G1={gates[1]}, G2={gates[2]}, G3={gates[3]}, G4={gates[4]}",
-        "## Recent Batch Log",
-    ]
-    lines.extend(f"- {entry}" for entry in recent[-25:])
-    return "\n".join(lines) + "\n"
+    return render_status_dashboard(now, stats, ledger, recent, active)
 
 
 def _artifact_path(item: WorkItem, page_number: int) -> str:
@@ -137,6 +120,14 @@ def _process_file_pages(
     import fitz
     with fitz.open(pdf_path) as document:
         page_count = len(document)
+        # Page 1 Header Fallback: if item has no chapters, inspect first page header text
+        if not item.chapters and page_count > 0:
+            from src.corpus.chapter_mapper import ChapterMapper
+            mapper = ChapterMapper()
+            first_page_text = document[0].get_text("text")[:2500]
+            discovered_ch = mapper.map_text(first_page_text)
+            if discovered_ch:
+                item.chapters = discovered_ch
     item.total_pages = page_count
 
     # Pass 1: Fast structural layout scan

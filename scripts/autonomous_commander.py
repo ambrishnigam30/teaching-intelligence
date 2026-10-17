@@ -34,7 +34,7 @@ def git_commit_and_push(batch_index: int, active_summary: str = "") -> bool:
             return False
 
         # Stage ledger, status, and generated packages
-        run_cmd(["git", "add", "state/corpus_ledger.json", "STATUS.md"])
+        run_cmd(["git", "add", "state/corpus_ledger.json", "STATUS.md", "AUTONOMOUS_EXECUTION_STATUS.md"])
         if Path("generated").exists():
             run_cmd(["git", "add", "generated/"])
         if Path("intelligence").exists():
@@ -48,7 +48,7 @@ def git_commit_and_push(batch_index: int, active_summary: str = "") -> bool:
             return False
 
         now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-        commit_msg = f"feat(factory): batch {batch_index} progress - {now_str}"
+        commit_msg = f"feat(factory): scaled autonomous batch progression — checkpoint {now_str} (batch {batch_index})"
         if active_summary:
             commit_msg += f" - {active_summary}"
         commit_msg += " [skip ci]"
@@ -228,8 +228,8 @@ def autonomous_loop(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--max-batches", type=int, default=50)
-    parser.add_argument("--pages-per-batch", type=int, default=10)
+    parser.add_argument("--max-batches", type=int, default=30)
+    parser.add_argument("--pages-per-batch", type=int, default=15)
     parser.add_argument("--time-budget", type=int, default=300)
     parser.add_argument("--checkpoint-pages", type=int, default=2)
     parser.add_argument("--backoff", type=int, default=60)

@@ -70,6 +70,43 @@ class VerificationRecord(BaseModel):
             raise ValueError("blind solver must be a different provider family")
         return value
 
+
+class QuestionVerificationRecord(BaseModel):
+    question_id: str
+    file_id: str
+    source_hash: str | None = None
+    page_numbers: list[int] = Field(default_factory=list)
+    bounding_box: list[float] | None = None  # [ymin, xmin, ymax, xmax] in 0..1000
+    stem: str
+    options: list[str] = Field(default_factory=list)
+    diagram_ids: list[str] = Field(default_factory=list)
+    passage_id: str | None = None
+    question_type: str = "SINGLE_CHOICE"
+    exam_scope: Literal["JEE_MAIN", "JEE_ADVANCED", "BOTH", "UNKNOWN"] = "UNKNOWN"
+    chapters: list[str] = Field(default_factory=list)
+    candidate_solution: str | None = None
+    final_answer: str | None = None
+    solver_family: str | None = None
+    solver_model: str | None = None
+    verification_family: str | None = None
+    verification_output: str | None = None
+    symbolic_verified: bool = False
+    chemical_verified: bool = False
+    official_key: str | None = None
+    key_source_location: str | None = None
+    status: Literal[
+        "PENDING",
+        "SOLVED_UNVERIFIED",
+        "VERIFIED_CORRECT",
+        "CONFLICTED",
+        "INSUFFICIENT_EVIDENCE",
+        "UNSOLVED",
+        "REQUIRES_EXPERT_REVIEW",
+    ] = "PENDING"
+    transition_history: list[dict[str, Any]] = Field(default_factory=list)
+    quarantine_reason: str | None = None
+
+
 class WorkedSolution5Phase(BaseModel):
     phase_1_dissect: str
     phase_2_select: str
