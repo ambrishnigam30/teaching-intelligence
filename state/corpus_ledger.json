@@ -9356,7 +9356,7 @@
       "mime_type": "application/pdf",
       "name": "Simple Harmonic Motion.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 18,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Physics/Simple Harmonic Motion.pdf"
@@ -9448,7 +9448,7 @@
       "mime_type": "application/pdf",
       "name": "Units & Dimensions.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Physics/Units & Dimensions.pdf"
@@ -9724,7 +9724,7 @@
       "mime_type": "application/pdf",
       "name": "Friction.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Physics/Friction.pdf"
@@ -9924,7 +9924,7 @@
       "mime_type": "application/pdf",
       "name": "Center of Mass.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 30,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Physics/Center of Mass.pdf"
@@ -21899,7 +21899,7 @@
       "mime_type": "application/pdf",
       "name": "Units & Dimensions.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 48,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Physics/Units & Dimensions.pdf"
@@ -22027,7 +22027,7 @@
       "mime_type": "application/pdf",
       "name": "Laws of Motion & Friction.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 85,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Physics/Laws of Motion & Friction.pdf"
@@ -22137,7 +22137,7 @@
       "mime_type": "application/pdf",
       "name": "Centre of Mass & Collision.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 98,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Physics/Centre of Mass & Collision.pdf"
@@ -22845,7 +22845,7 @@
       "mime_type": "application/pdf",
       "name": "General Topics & Mole Concept.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 64,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Chemistry/General Topics & Mole Concept.pdf"
@@ -23837,16 +23837,16 @@
       "chapters": [
         "chemical_bonding"
       ],
-      "completed_pages": 0,
+      "completed_pages": 4,
       "exam_scope": "BOTH",
       "file_id": "1-MaUu1pR_v1X2VCVTM34Vu_pB2wCPA66",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "CB hybridization dpp",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Ioc/Chemical bonding/CB hybridization dpp"
       ]
@@ -23877,16 +23877,16 @@
       "chapters": [
         "chemical_bonding"
       ],
-      "completed_pages": 0,
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "1-ME_Y_0mCkw_CccllS6qCXxCR6a3wiTa",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "CB plane of molecules dpp",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Ioc/Chemical bonding/CB plane of molecules dpp"
       ]
@@ -31581,7 +31581,7 @@
       "mime_type": "application/pdf",
       "name": "3. JM-N-PH-NLM _ Friction_Solution.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 26,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/3. JM-N-PH-NLM _ Friction_Solution.pdf"
@@ -31601,7 +31601,7 @@
       "mime_type": "application/pdf",
       "name": "2. S-N-PH-NLM _ Friction_Solution.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/2. S-N-PH-NLM _ Friction_Solution.pdf"
@@ -31621,7 +31621,7 @@
       "mime_type": "application/pdf",
       "name": "4. JA-N-PH-NLM _ Friction_Solution.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/4. JA-N-PH-NLM _ Friction_Solution.pdf"
@@ -31641,7 +31641,7 @@
       "mime_type": "application/pdf",
       "name": "1. O-N-PH-NLM _ Friction_Solution.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 69,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/1. O-N-PH-NLM _ Friction_Solution.pdf"
@@ -72560,7 +72560,7 @@
       "mime_type": "application/pdf",
       "name": "03 # Assignment SHM (TMAS).pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Assignments/TMAS/03 # Assignment SHM (TMAS).pdf"
@@ -77674,16 +77674,16 @@
       "chapters": [
         "chemical_bonding"
       ],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "10-xkUt91CjHECkc1ELzxRvo9NYlW7YQ7",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "Chemical Bonding 1_2_3_4 Complete.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PARTIAL",
+      "total_pages": 144,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Chemical Bonding 1_2_3_4_Combined_Theory_Exercise_APSP/Chemical Bonding 1_2_3_4 Complete.pdf"
       ]
@@ -78220,7 +78220,7 @@
       "mime_type": "application/pdf",
       "name": "4Mb_Unit & Dimension sheet.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 29,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Units and Dimensions/4Mb_Unit & Dimension sheet.pdf"
@@ -78240,7 +78240,7 @@
       "mime_type": "application/pdf",
       "name": "13Mb_Unit & Dimension sheet.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 29,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Units and Dimensions/13Mb_Unit & Dimension sheet.pdf"
@@ -78314,7 +78314,7 @@
       "mime_type": "application/pdf",
       "name": "8 Mb_SHM Sheet.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 58,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Simple Harmonic Motion/8 Mb_SHM Sheet.pdf"
@@ -78334,7 +78334,7 @@
       "mime_type": "application/pdf",
       "name": "32Mb_SHM Sheet.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 58,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Simple Harmonic Motion/32Mb_SHM Sheet.pdf"
@@ -78698,7 +78698,7 @@
       "mime_type": "application/pdf",
       "name": "Newton's_laws_of_motion_Exercise_1_to_3_&_HLP_solution.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 54,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Newton's Laws of Motion/Newton's_laws_of_motion_Exercise_1_to_3_&_HLP_solution.pdf"
@@ -78718,7 +78718,7 @@
       "mime_type": "application/pdf",
       "name": "Newton's laws of motion_Theory.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 32,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Newton's Laws of Motion/Newton's laws of motion_Theory.pdf"
@@ -78738,7 +78738,7 @@
       "mime_type": "application/pdf",
       "name": "Newton's laws of motion_HLP.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Newton's Laws of Motion/Newton's laws of motion_HLP.pdf"
@@ -78758,7 +78758,7 @@
       "mime_type": "application/pdf",
       "name": "Newton's laws of motion_Exercise.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 27,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Newton's Laws of Motion/Newton's laws of motion_Exercise.pdf"
@@ -78778,7 +78778,7 @@
       "mime_type": "application/pdf",
       "name": "Newton\u2019s laws of Motion sheet.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 71,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Newton's Laws of Motion/Newton\u2019s laws of Motion sheet.pdf"
@@ -79054,7 +79054,7 @@
       "mime_type": "application/pdf",
       "name": "Friction_Exercise_1_to_3_&_HLP hints and solution.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 26,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Friction/Friction_Exercise_1_to_3_&_HLP hints and solution.pdf"
@@ -79074,7 +79074,7 @@
       "mime_type": "application/pdf",
       "name": "Friction_Theory.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 13,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Friction/Friction_Theory.pdf"
@@ -79094,7 +79094,7 @@
       "mime_type": "application/pdf",
       "name": "Friction_Exercise.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Friction/Friction_Exercise.pdf"
@@ -79114,7 +79114,7 @@
       "mime_type": "application/pdf",
       "name": "Friction_HLP.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Friction/Friction_HLP.pdf"
@@ -79350,7 +79350,7 @@
       "mime_type": "application/pdf",
       "name": "Centre Of Mass sheet.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 84,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Centre of Mass/Centre Of Mass sheet.pdf"
