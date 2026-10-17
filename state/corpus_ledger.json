@@ -16213,7 +16213,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -16221,13 +16221,13 @@
       "exam_scope": "BOTH",
       "file_id": "1H7EuP0pV-h8WE7A-7XHwn6d3viqTzqUt",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 2.2.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 2.2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/13 Complex Number/Exercise 2.2.pdf"
       ]
@@ -24303,7 +24303,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -24311,13 +24311,13 @@
       "exam_scope": "BOTH",
       "file_id": "1AqfOQRUEKkEGtvQ6o8Gq1Zgj8OZg2PXd",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex Numbers.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 102,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Mathematics/Complex Numbers.pdf"
       ]
@@ -52548,7 +52548,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -52556,13 +52556,13 @@
       "exam_scope": "BOTH",
       "file_id": "1BoR3BpUwDvNYNwvJzVRnpFdFcPLhcv3C",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex Number (1).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Complex Number (1).pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Complex Number Addln.pdf"
@@ -86051,7 +86051,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -86059,13 +86059,13 @@
       "exam_scope": "BOTH",
       "file_id": "1JSgDEhj99607DlK0iLJbP60M9awrvryP",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-01_Complex Numbers.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_prob/M_Ch-01_Complex Numbers.pdf"
       ]
@@ -100226,7 +100226,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -100234,13 +100234,13 @@
       "exam_scope": "BOTH",
       "file_id": "18qRsBl_KqzPzZGchwHuAXLb6husH9-VP",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex_Adv_DPP_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 15,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Complex Number Genetry/Complex_Adv_DPP_Genetry.pdf"
       ]
