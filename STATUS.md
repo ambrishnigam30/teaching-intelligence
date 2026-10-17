@@ -2,8 +2,8 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 21:06:30 UTC` (`2026-10-18 02:36:30 IST`)  
-**Git Commit:** `ade3203` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 21:13:53 UTC` (`2026-10-18 02:43:53 IST`)  
+**Git Commit:** `3d13c14` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1340**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: Application of Derivatives.pdf**
+- **Next File in Queue: HLP_GYt39SM.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -184,7 +184,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
 - **Quota-Paused Files (1):**
-  - `HLP_GYt39SM.pdf`: HTTPStatusError: provider returned HTTP 429
+  - `HLP_GYt39SM.pdf`: No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window
 - **Unmapped Files Pending Header Fallback:** `6,747` / `7,103`
 
 ---
@@ -205,11 +205,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
-| `ade3203` | 2026-10-17 21:00:59 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
-| `73d735b` | 2026-10-17 20:53:02 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
-| `ce18309` | 2026-10-17 20:47:31 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
-| `7d0447e` | 2026-10-17 20:41:34 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `5f06c18` | 2026-10-17 20:33:10 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
+| `3d13c14` | 2026-10-17 21:06:30 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
 
