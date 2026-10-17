@@ -8,4 +8,5 @@ dist/
 build/
 *.egg-info/
 *.smoke.log
-state/
+state/*
+!state/corpus_ledger.json
