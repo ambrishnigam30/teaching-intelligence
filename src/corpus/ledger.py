@@ -23,6 +23,7 @@ class WorkItem:
     completed_pages: int = 0
     total_pages: int | None = None
     last_error: str | None = None
+    quarantine_reason: str | None = None
     archetype: str = "UNCLASSIFIED"
     exam_scope: str = "BOTH"
 
@@ -40,6 +41,7 @@ class CorpusLedger:
             item.completed_pages = previous.completed_pages
             item.total_pages = previous.total_pages
             item.last_error = previous.last_error
+            item.quarantine_reason = previous.quarantine_reason
             if not item.archetype or item.archetype == "UNCLASSIFIED":
                 item.archetype = previous.archetype
             if not item.exam_scope or item.exam_scope == "BOTH":
@@ -68,9 +70,11 @@ class CorpusLedger:
         item.gate, item.status = int(target), status
         return item
 
-    def quarantine(self, file_id: str) -> WorkItem:
+    def quarantine(self, file_id: str, reason: str | None = None) -> WorkItem:
         item = self.items[file_id]
         item.status = "QUARANTINED"
+        if reason:
+            item.quarantine_reason = reason
         return item
 
     def to_json(self) -> str:
@@ -84,5 +88,6 @@ class CorpusLedger:
         for raw in data.get("items", []):
             raw.setdefault("archetype", "UNCLASSIFIED")
             raw.setdefault("exam_scope", "BOTH")
+            raw.setdefault("quarantine_reason", None)
             items.append(WorkItem(**raw))
         return cls(items, mapper)

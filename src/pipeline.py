@@ -24,6 +24,12 @@ from src.stitching.answer_binding import DocumentRelationshipBinder
 from src.stitching.layout_segmenter import LayoutSegmenter
 from src.stitching.passage_buffer import PassageBuffer
 from src.verification.verifiers import rdkit_valid_smiles, sympy_equivalent
+import concurrent.futures
+
+
+class ExtractionTimeoutError(RuntimeError):
+    """Raised when single-file extraction exceeds the hard execution timeout."""
+    pass
 
 
 def load_env_file(path: Path = Path(".env.keys")) -> None:
@@ -109,6 +115,116 @@ def _artifact_path(item: WorkItem, page_number: int) -> str:
     return f"intelligence/chapters/{chapter}/{item.file_id}/page-{page_number + 1:04}.jsonl"
 
 
+def _process_file_pages(
+    item: WorkItem,
+    node: DriveNode,
+    pdf_path: Path,
+    crawler: DriveCrawler,
+    extractor: VisionApiExtractor,
+    staged_files: dict[str, bytes],
+    stats: dict,
+    recent: list[str],
+    active: str,
+    max_pages: int,
+    time_budget_seconds: int,
+    started: float,
+    checkpoint_pages: int,
+    continuous_hf: bool,
+    checkpoint_func,
+    render_status_func,
+) -> None:
+    crawler.download_verified(node, pdf_path)
+    import fitz
+    with fitz.open(pdf_path) as document:
+        page_count = len(document)
+    item.total_pages = page_count
+
+    # Pass 1: Fast structural layout scan
+    segmenter = LayoutSegmenter()
+    smap = segmenter.scan_document(pdf_path)
+    binder = DocumentRelationshipBinder()
+    for comp_path in smap.companion_solution_files:
+        binder.ingest_companion_solutions(comp_path)
+
+    with fitz.open(pdf_path) as doc_ak:
+        for ak_page_idx in smap.answer_key_pages:
+            if ak_page_idx < len(doc_ak):
+                binder.ingest_answer_keys(doc_ak[ak_page_idx].get_text("text"))
+
+    passage_buffer = PassageBuffer(item.file_id)
+
+    with fitz.open(pdf_path) as document:
+        for page_number in range(item.completed_pages, page_count):
+            if stats["pages"] >= max_pages or time.monotonic() - started >= time_budget_seconds:
+                break
+            
+            diagram_assets = extract_page_diagrams(document, page_number, item.file_id, dpi=300)
+            page = document[page_number]
+            page_png = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72), alpha=False).tobytes("png")
+            text_clue = page.get_text("text")
+
+            extracted = extractor.extract_png(page_png, text_clue=text_clue)
+            question_count, verification = _verify(extracted)
+
+            buffered_questions = passage_buffer.process_page_items(
+                page_number + 1, extracted.questions, extracted.markdown
+            )
+            bound_questions = [binder.bind_question(q) for q in buffered_questions]
+
+            diagram_meta = [
+                {
+                    "asset_id": d.asset_id,
+                    "diagram_type": d.diagram_type,
+                    "bounding_box": d.bounding_box,
+                }
+                for d in diagram_assets
+            ]
+
+            artifact = {
+                "source_file_id": item.file_id,
+                "page_number": page_number + 1,
+                "category": smap.page_categories.get(page_number, "THEORY"),
+                "engine": extracted.engine,
+                "confidence": extracted.confidence,
+                "markdown": extracted.markdown,
+                "latex": extracted.latex,
+                "smiles": extracted.smiles,
+                "diagrams": diagram_meta,
+                "questions": bound_questions,
+                "verification": verification,
+            }
+            staged_files[_artifact_path(item, page_number)] = (json.dumps(artifact, ensure_ascii=False) + "\n").encode("utf-8")
+
+            for asset in diagram_assets:
+                staged_files[f"assets/images/{item.file_id}/{asset.asset_id}.png"] = asset.image_bytes
+                stats["diagrams"] = stats.get("diagrams", 0) + 1
+
+            item.completed_pages += 1
+            stats["pages"] += 1
+            stats["questions"] += question_count
+            item.gate = max(item.gate, 2)
+            item.status = "EXTRACTED" if item.completed_pages == page_count else "PARTIAL"
+            item.last_error = None
+            recent.append(f"extracted {active} page {page_number + 1}/{page_count} via {extracted.engine}")
+
+            if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED":
+                render_status_func()
+                if continuous_hf:
+                    checkpoint_func(staged_files, f"Checkpoint: {stats['pages']} pages processed")
+                    staged_files.clear()
+
+    flushed = passage_buffer.flush()
+    if flushed and item.completed_pages > 0:
+        last_art_path = _artifact_path(item, item.completed_pages - 1)
+        if last_art_path in staged_files:
+            try:
+                last_art = json.loads(staged_files[last_art_path].decode("utf-8"))
+                last_art["questions"].extend([binder.bind_question(q) for q in flushed])
+                staged_files[last_art_path] = (json.dumps(last_art, ensure_ascii=False) + "\n").encode("utf-8")
+            except Exception:
+                pass
+
+
 def run(
     max_pages: int,
     time_budget_seconds: int,
@@ -124,7 +240,6 @@ def run(
     stats = {"files": 0, "pdfs": 0, "folders": 0, "shortcuts": 0, "pages": 0, "questions": 0}
     recent: list[str] = []
     active: str | None = None
-    blocked_provider = False
     consecutive_quota_pauses = 0
     ledger_path = Path("state/corpus_ledger.json")
     vault = HuggingFaceVault.from_environment()
@@ -168,6 +283,7 @@ def run(
     extractor = VisionApiExtractor(pool)
     staged_files: dict[str, bytes] = {}
     continuous_hf = os.getenv("CONTINUOUS_HF_CHECKPOINT", "").lower() in {"1", "true"}
+    file_timeout_seconds = int(os.getenv("FILE_TIMEOUT_SECONDS", "120"))
 
     with tempfile.TemporaryDirectory(prefix="mentora-drive-") as scratch_raw:
         scratch = Path(scratch_raw)
@@ -179,103 +295,36 @@ def run(
             if not node:
                 item.status, item.last_error = "QUARANTINED", "PDF no longer present in Drive discovery"
                 recent.append(f"quarantined {active}: absent from current Drive tree")
+                ledger_path.write_text(ledger.to_json(), encoding="utf-8")
                 render_status()
                 continue
             pdf_path = scratch / f"{item.file_id}.pdf"
             try:
-                crawler.download_verified(node, pdf_path)
-                import fitz
-                with fitz.open(pdf_path) as document:
-                    page_count = len(document)
-                item.total_pages = page_count
-
-                # Pass 1: Fast structural layout scan
-                segmenter = LayoutSegmenter()
-                smap = segmenter.scan_document(pdf_path)
-                binder = DocumentRelationshipBinder()
-                for comp_path in smap.companion_solution_files:
-                    binder.ingest_companion_solutions(comp_path)
-
-                with fitz.open(pdf_path) as doc_ak:
-                    for ak_page_idx in smap.answer_key_pages:
-                        if ak_page_idx < len(doc_ak):
-                            binder.ingest_answer_keys(doc_ak[ak_page_idx].get_text("text"))
-
-                passage_buffer = PassageBuffer(item.file_id)
-
-                with fitz.open(pdf_path) as document:
-                    for page_number in range(item.completed_pages, page_count):
-                        if stats["pages"] >= max_pages or time.monotonic() - started >= time_budget_seconds:
-                            break
-                        
-                        # Extract both raster and vector diagram assets with 2D bboxes
-                        diagram_assets = extract_page_diagrams(document, page_number, item.file_id, dpi=300)
-                        page = document[page_number]
-                        page_png = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72), alpha=False).tobytes("png")
-                        text_clue = page.get_text("text")
-
-                        extracted = extractor.extract_png(page_png, text_clue=text_clue)
+                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                    future = executor.submit(
+                        _process_file_pages,
+                        item, node, pdf_path, crawler, extractor, staged_files, stats, recent, active,
+                        max_pages, time_budget_seconds, started, checkpoint_pages, continuous_hf,
+                        checkpoint, render_status,
+                    )
+                    try:
+                        future.result(timeout=file_timeout_seconds)
                         consecutive_quota_pauses = 0
-                        question_count, verification = _verify(extracted)
-
-                        # Pass 2: Question stitching and passage buffering
-                        buffered_questions = passage_buffer.process_page_items(
-                            page_number + 1, extracted.questions, extracted.markdown
-                        )
-                        bound_questions = [binder.bind_question(q) for q in buffered_questions]
-
-                        diagram_meta = [
-                            {
-                                "asset_id": d.asset_id,
-                                "diagram_type": d.diagram_type,
-                                "bounding_box": d.bounding_box,
-                            }
-                            for d in diagram_assets
-                        ]
-
-                        artifact = {
-                            "source_file_id": item.file_id,
-                            "page_number": page_number + 1,
-                            "category": smap.page_categories.get(page_number, "THEORY"),
-                            "engine": extracted.engine,
-                            "confidence": extracted.confidence,
-                            "markdown": extracted.markdown,
-                            "latex": extracted.latex,
-                            "smiles": extracted.smiles,
-                            "diagrams": diagram_meta,
-                            "questions": bound_questions,
-                            "verification": verification,
-                        }
-                        staged_files[_artifact_path(item, page_number)] = (json.dumps(artifact, ensure_ascii=False) + "\n").encode("utf-8")
-
-                        for asset in diagram_assets:
-                            staged_files[f"assets/images/{item.file_id}/{asset.asset_id}.png"] = asset.image_bytes
-                            stats["diagrams"] = stats.get("diagrams", 0) + 1
-
-                        item.completed_pages += 1
-                        stats["pages"] += 1
-                        stats["questions"] += question_count
-                        item.gate = max(item.gate, 2)
-                        item.status = "EXTRACTED" if item.completed_pages == page_count else "PARTIAL"
-                        item.last_error = None
-                        recent.append(f"extracted {active} page {page_number + 1}/{page_count} via {extracted.engine}")
-
-                        if stats["pages"] % checkpoint_pages == 0 or item.status == "EXTRACTED":
-                            render_status()
-                            if continuous_hf:
-                                checkpoint(staged_files, f"Checkpoint: {stats['pages']} pages processed")
-                                staged_files.clear()
-
-                flushed = passage_buffer.flush()
-                if flushed and item.completed_pages > 0:
-                    last_art_path = _artifact_path(item, item.completed_pages - 1)
-                    if last_art_path in staged_files:
-                        try:
-                            last_art = json.loads(staged_files[last_art_path].decode("utf-8"))
-                            last_art["questions"].extend([binder.bind_question(q) for q in flushed])
-                            staged_files[last_art_path] = (json.dumps(last_art, ensure_ascii=False) + "\n").encode("utf-8")
-                        except Exception:
-                            pass
+                    except concurrent.futures.TimeoutError:
+                        raise ExtractionTimeoutError(f"Processing {active} timed out after {file_timeout_seconds}s")
+            except ExtractionTimeoutError as exc:
+                item.attempts += 1
+                if item.attempts >= 3:
+                    item.status = "QUARANTINED"
+                    item.quarantine_reason = f"Max retries (3) exceeded: {exc}"
+                    recent.append(f"quarantined {active}: {item.quarantine_reason}")
+                else:
+                    item.status = "ERROR"
+                    item.last_error = str(exc)
+                    recent.append(f"timeout {active}: attempt {item.attempts}/3 ({exc})")
+                ledger_path.write_text(ledger.to_json(), encoding="utf-8")
+                render_status()
+                continue
             except QuotaExhausted as exc:
                 consecutive_quota_pauses += 1
                 item.status, item.last_error = "PENDING_QUOTA", str(exc)
@@ -302,15 +351,32 @@ def run(
                         break
                 else:
                     item.attempts += 1
-                    item.status = "BLOCKED_PROVIDER"
-                    item.last_error = _safe_error(exc)
-                    recent.append(f"blocked {active}: {item.last_error}")
-                    blocked_provider = True
+                    if item.attempts >= 3:
+                        item.status = "QUARANTINED"
+                        item.quarantine_reason = f"Max retries (3) exceeded: {_safe_error(exc)}"
+                        recent.append(f"quarantined {active}: {item.quarantine_reason}")
+                    else:
+                        item.status = "BLOCKED_PROVIDER"
+                        item.last_error = _safe_error(exc)
+                        recent.append(f"blocked {active}: {item.last_error}")
+                    ledger_path.write_text(ledger.to_json(), encoding="utf-8")
+                    render_status()
+                    continue
             except Exception as exc:
-                item.attempts += 1; item.status, item.last_error = "PENDING", _safe_error(exc); recent.append(f"retry {active}: {item.last_error}")
+                item.attempts += 1
+                if item.attempts >= 3:
+                    item.status = "QUARANTINED"
+                    item.quarantine_reason = f"Max retries (3) exceeded: {_safe_error(exc)}"
+                    recent.append(f"quarantined {active}: {item.quarantine_reason}")
+                else:
+                    item.status = "ERROR"
+                    item.last_error = _safe_error(exc)
+                    recent.append(f"retry {active}: attempt {item.attempts}/3 ({item.last_error})")
+                ledger_path.write_text(ledger.to_json(), encoding="utf-8")
+                render_status()
+                continue
             finally:
                 render_status()
-            if blocked_provider: break
     has_more_work = bool(ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count))
     checkpoint(staged_files, "Final atomic batch checkpoint")
     _write_action_output(has_more_work)

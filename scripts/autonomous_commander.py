@@ -11,9 +11,11 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import time
 import traceback
 
+from src.corpus.ledger import CorpusLedger
 from src.pipeline import load_env_file, run
 
 
@@ -121,31 +123,78 @@ def autonomous_loop(
     consecutive_pauses = 0
 
     for batch_idx in range(1, max_batches + 1):
-        print(f"\n[{datetime.now().strftime('%H:%M:%S')}] >>> Starting Batch {batch_idx}/{max_batches}...")
+        print(f"\n[{datetime.now().strftime('%H:%M:%S')}] >>> Starting Batch {batch_idx}/{max_batches} (Subprocess Isolation)...")
         started = time.monotonic()
+        hard_timeout = time_budget_per_batch + 45
+
+        batch_cmd = [
+            sys.executable,
+            "-m",
+            "src.pipeline",
+            "--max-pages",
+            str(pages_per_batch),
+            "--time-budget-seconds",
+            str(time_budget_per_batch),
+            "--skip-discovery",
+            "--checkpoint-pages",
+            str(checkpoint_pages),
+        ]
 
         try:
-            has_more = run(
-                max_pages=pages_per_batch,
-                time_budget_seconds=time_budget_per_batch,
-                skip_discovery=True,
-                checkpoint_pages=checkpoint_pages,
+            res = subprocess.run(
+                batch_cmd,
+                timeout=hard_timeout,
+                check=False,
             )
             elapsed = time.monotonic() - started
             metrics = get_current_metrics()
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] Batch {batch_idx} completed in {elapsed:.1f}s.")
-            print(f"Metrics: Extracted: {metrics.get('extracted', 0)}/{metrics.get('total', 0)} | "
-                  f"Partial: {metrics.get('partial', 0)} | Quota Paused: {metrics.get('quota', 0)}")
 
-            consecutive_pauses = 0
+            if res.returncode != 0:
+                print(f"[Commander] Batch {batch_idx} subprocess exited with non-zero code {res.returncode}")
+                consecutive_pauses += 1
+            else:
+                print(f"[{datetime.now().strftime('%H:%M:%S')}] Batch {batch_idx} completed in {elapsed:.1f}s.")
+                consecutive_pauses = 0
+
+            print(
+                f"Metrics: Extracted: {metrics.get('extracted', 0)}/{metrics.get('total', 0)} | "
+                f"Partial: {metrics.get('partial', 0)} | Quarantined: {metrics.get('quarantined', 0)} | "
+                f"Quota Paused: {metrics.get('quota', 0)}"
+            )
+
+            # Check if more work exists in ledger
+            ledger = CorpusLedger.from_path(Path("state/corpus_ledger.json"))
+            has_more = bool(ledger.next_batch(1))
 
             # Commit and push
-            active_info = f"{metrics.get('extracted', 0)} files done, {metrics.get('partial', 0)} partial"
+            active_info = (
+                f"{metrics.get('extracted', 0)} files done, "
+                f"{metrics.get('partial', 0)} partial, "
+                f"{metrics.get('quarantined', 0)} quarantined"
+            )
             git_commit_and_push(batch_idx, active_summary=active_info)
 
             if not has_more:
                 print("\n[Commander] All eligible work items in ledger have been completed!")
                 break
+
+            if res.returncode != 0:
+                if consecutive_pauses >= max_consecutive_pauses:
+                    print(f"\n[Commander] Reached maximum consecutive pauses ({max_consecutive_pauses}).")
+                    break
+                print("[Commander] Pausing 10s before next batch retry...")
+                time.sleep(10)
+
+        except subprocess.TimeoutExpired as exc:
+            elapsed = time.monotonic() - started
+            print(f"[Commander] Batch {batch_idx} timed out after {exc.timeout}s! Terminating child process.")
+            consecutive_pauses += 1
+            metrics = get_current_metrics()
+            git_commit_and_push(batch_idx, active_summary=f"timeout after {exc.timeout}s")
+            if consecutive_pauses >= max_consecutive_pauses:
+                print(f"\n[Commander] Reached maximum consecutive pauses ({max_consecutive_pauses}).")
+                break
+            time.sleep(5)
 
         except Exception as exc:
             elapsed = time.monotonic() - started
@@ -154,7 +203,6 @@ def autonomous_loop(
             traceback.print_exc()
 
             consecutive_pauses += 1
-            # Save any partial progress
             git_commit_and_push(batch_idx, active_summary=f"pause: {type(exc).__name__}")
 
             if "QuotaExhausted" in type(exc).__name__ or "429" in exc_str:

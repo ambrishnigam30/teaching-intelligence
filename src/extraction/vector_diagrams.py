@@ -28,7 +28,7 @@ def normalize_bbox(rect: fitz.Rect, page_rect: fitz.Rect) -> list[int]:
     return [ymin, xmin, ymax, xmax]
 
 
-def cluster_drawings(page: fitz.Page, min_dim: float = 40.0) -> list[fitz.Rect]:
+def cluster_drawings(page: fitz.Page, min_dim: float = 40.0, max_candidates: int = 150) -> list[fitz.Rect]:
     """Group connected vector paths into unified diagram bounding boxes, ignoring borders/rules."""
     page_rect = page.rect
     drawings = page.get_drawings()
@@ -53,6 +53,12 @@ def cluster_drawings(page: fitz.Page, min_dim: float = 40.0) -> list[fitz.Rect]:
     if not candidate_rects:
         return []
 
+    # If too many paths (e.g. dense shading or chemical bond grids), prioritize top candidates by area
+    # to avoid quadratic O(N^2) comparison freeze.
+    if len(candidate_rects) > max_candidates:
+        candidate_rects.sort(key=lambda r: r.get_area(), reverse=True)
+        candidate_rects = candidate_rects[:max_candidates]
+
     # Merge overlapping or touching rectangles within 12pt tolerance
     clusters: list[fitz.Rect] = []
     tolerance = 12.0
@@ -68,7 +74,10 @@ def cluster_drawings(page: fitz.Page, min_dim: float = 40.0) -> list[fitz.Rect]:
             clusters.append(rect)
 
     # Filter clusters by minimum dimensions to ensure they are substantive diagrams
-    return [c for c in clusters if c.width >= min_dim and c.height >= min_dim]
+    valid_clusters = [c for c in clusters if c.width >= min_dim and c.height >= min_dim]
+    # Cap total clusters to avoid excessive rendering
+    valid_clusters.sort(key=lambda c: c.get_area(), reverse=True)
+    return valid_clusters[:10]
 
 
 def extract_page_diagrams(
@@ -76,6 +85,7 @@ def extract_page_diagrams(
     page_number: int,
     source_file_id: str,
     dpi: int = 300,
+    max_vector_diagrams: int = 10,
 ) -> list[DiagramAsset]:
     """Extract both embedded raster images and clustered vector drawing paths with bounding boxes."""
     page = document[page_number]
@@ -109,9 +119,13 @@ def extract_page_diagrams(
         except Exception:
             continue
 
-    # 2. Vector drawing extraction & rasterization
+    # 2. Vector drawing extraction & rasterization (capped at max_vector_diagrams)
     vector_clusters = cluster_drawings(page)
+    vector_count = 0
     for v_idx, cluster in enumerate(vector_clusters, start=1):
+        if vector_count >= max_vector_diagrams:
+            break
+
         # Skip if vector cluster completely overlaps an already extracted raster image
         if any(cluster.intersects(r) and (cluster & r).get_area() > 0.8 * cluster.get_area() for r in seen_bboxes):
             continue
@@ -135,6 +149,7 @@ def extract_page_diagrams(
                 )
             )
             seen_bboxes.append(clip_rect)
+            vector_count += 1
         except Exception:
             continue
 
