@@ -6787,7 +6787,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -6795,13 +6795,13 @@
       "exam_scope": "BOTH",
       "file_id": "1CsRzLMEBV-ggrdYmw8Vz76xrcnCx2bjS",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3._Exercise_-1_to_3_KTG__Thermodynamics_hO4Xo3S.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 32,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/PHYSICS/KTG _ Thermodynamics/3._Exercise_-1_to_3_KTG__Thermodynamics_hO4Xo3S.pdf"
       ]
@@ -12799,7 +12799,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -12807,13 +12807,13 @@
       "exam_scope": "BOTH",
       "file_id": "1DF7Uj-hUN16HhPg-E7g-9MiG4XVwcHBq",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Chemical Thermodynamics - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 111,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Chemistry/Chemical Thermodynamics - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -18512,13 +18512,13 @@
       "exam_scope": "BOTH",
       "file_id": "1H27Bw_YpCSpvNnXtreQ636-Z-52UFLh9",
       "gate": 1,
-      "last_error": null,
+      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
       "mime_type": "application/pdf",
       "name": "Anurag Mishra Heat and Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 332,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Physics/Anurag Mishra/Anurag Mishra Heat and Thermodynamics.pdf"
       ]
@@ -32858,7 +32858,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -32866,13 +32866,13 @@
       "exam_scope": "BOTH",
       "file_id": "1CmYluflkyF10kQSY7wgr-G_iquDmdTcw",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3. S-N-Ph-KTG _ Thermodynamics_Solution.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 31,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/3. S-N-Ph-KTG _ Thermodynamics_Solution.pdf"
       ]
@@ -46236,7 +46236,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -46244,13 +46244,13 @@
       "exam_scope": "BOTH",
       "file_id": "1ESLpfb3X7DDOu957dAuFjsmQGq6d4GTF",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of Sheet_Thermodynamics_(Physical_Chemistry)_JH_Sir-4218.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 60,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of Sheet_Thermodynamics_(Physical_Chemistry)_JH_Sir-4218.pdf"
       ]
@@ -75109,7 +75109,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75117,13 +75117,13 @@
       "exam_scope": "BOTH",
       "file_id": "1BnXQzRPgpq8pGqauweqiZ0MA3HVMVp4Q",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "04 # Quiz (Answer key)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/04 # Quiz (Answer key)_KTG & Thermodynamics.pdf"
       ]
@@ -75298,7 +75298,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75306,20 +75306,20 @@
       "exam_scope": "BOTH",
       "file_id": "1GfeuZMs2mkjlBIPg6KS-YLRPlRme49Tc",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "03 # Quiz (Eng)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/03 # Quiz (Eng)_KTG & Thermodynamics.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75327,13 +75327,13 @@
       "exam_scope": "BOTH",
       "file_id": "1G9SQCb0kiyieIbNF2h6r3uDtFgRm9nnM",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "06 # Quiz (Eng)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/06 # Quiz (Eng)_KTG & Thermodynamics.pdf"
       ]
@@ -80817,7 +80817,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -80825,13 +80825,13 @@
       "exam_scope": "BOTH",
       "file_id": "19K4QhDAkvq-Q43KjjPxDEMMEKeU7quu6",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "THERMODYNAMICS & THERMOCHEMISTRY Complete.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 130,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Thermodynamics&Thermochemistry_Theory_Exercise_APSP/THERMODYNAMICS & THERMOCHEMISTRY Complete.pdf"
       ]
@@ -90170,7 +90170,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -90178,13 +90178,13 @@
       "exam_scope": "BOTH",
       "file_id": "1CdZdvxFJ82mxrtWYk3icoAsUYxRtVBKG",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "P_Ch-13_Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Physics/phy_adv_prob/P_Ch-13_Thermodynamics.pdf"
       ]
@@ -91929,7 +91929,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -91937,13 +91937,13 @@
       "exam_scope": "BOTH",
       "file_id": "1AgvIFa56bc57XNl-pgklooKePxdG6wXu",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "20. THERMODYNAMICS.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/Chemistry/DPP Student copy/20. THERMODYNAMICS.pdf"
       ]
@@ -99256,7 +99256,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -99264,12 +99264,12 @@
       "exam_scope": "BOTH",
       "file_id": "19GlPNCvncDsRf9R3gtk0UGCbGSlxFqhv",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Thermodynamics Questions Level Up Eduniti.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Eduniti Level Up for JEE Advanced 2022/Thermodynamics Questions Level Up Eduniti.pdf"
