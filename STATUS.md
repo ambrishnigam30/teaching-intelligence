@@ -1,37 +1,37 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T05:33:56.965126+00:00
+Last Run UTC: 2026-10-17T05:35:28.872104+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 29
+Files Completed: 34
 Pages Processed This Run: 50
-Questions Verified This Run: 199
-Active File: 2._Exercise_-1_to_3_English.pdf
-Next File in Queue: 2._Exercise_-1_to_3_English.pdf
+Questions Verified This Run: 152
+Active File: Friction ex 2 soln
+Next File in Queue: Friction ex 2 soln
 ## Recent Batch Log
-- extracted Hints__Solutions_of_Friction.pdf page 25/26 via text_fallback
-- extracted Hints__Solutions_of_Friction.pdf page 26/26 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 2/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 3/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 4/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 5/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 6/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 7/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 8/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 9/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 10/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 11/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 12/13 via text_fallback
-- extracted 1._Theory__Friction_E.pdf page 13/13 via text_fallback
-- extracted P_Sol_Ch-03_Laws of Motion.pdf page 2/5 via text_fallback
-- extracted P_Sol_Ch-03_Laws of Motion.pdf page 3/5 via text_fallback
-- extracted P_Sol_Ch-03_Laws of Motion.pdf page 4/5 via text_fallback
-- extracted P_Sol_Ch-03_Laws of Motion.pdf page 5/5 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 2/14 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 3/14 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 4/14 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 5/14 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 6/14 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 7/14 via text_fallback
-- extracted 2._Exercise_-1_to_3_English.pdf page 8/14 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 10/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 11/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 12/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 13/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 14/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 15/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 16/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 17/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 18/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 19/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 20/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 21/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 22/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 23/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 24/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 25/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 26/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 27/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 28/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 29/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 30/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 31/32 via text_fallback
+- extracted 2._Theory_Newtons_laws_of_motion_English.pdf page 32/32 via text_fallback
+- extracted Friction ex 2 soln page 2/4 via text_fallback
+- extracted Friction ex 2 soln page 3/4 via text_fallback
