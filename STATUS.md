@@ -1,20 +1,37 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T06:33:50.840015+00:00
+Last Run UTC: 2026-10-17T06:34:45.783450+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 50
-Pages Processed This Run: 5
-Questions Verified This Run: 40
-Active File: 03 # Assignment SHM (TMAS).pdf
-Next File in Queue: 3._Exercise_-1_to_3_PC_Ge8FXrN.pdf
+Files Completed: 53
+Pages Processed This Run: 50
+Questions Verified This Run: 239
+Active File: Simple Harmonic Motion theory.pdf
+Next File in Queue: 05 Aug # GR (SHM)_Eng.pdf
 ## Recent Batch Log
-- reused persistent ledger with 7103 files
-- extracted 01 # Quiz (Eng)_SHM.pdf page 1/4 via text_fallback
-- extracted 01 # Quiz (Eng)_SHM.pdf page 2/4 via text_fallback
-- extracted 01 # Quiz (Eng)_SHM.pdf page 3/4 via text_fallback
-- extracted 01 # Quiz (Eng)_SHM.pdf page 4/4 via text_fallback
-- extracted 04 # Quiz (Answer key)_SHM.pdf page 1/1 via text_fallback
-- quota pause 03 # Assignment SHM (TMAS).pdf: No provider key is available for visual extraction
-- blocked 03 # Assignment SHM (TMAS).pdf: HTTPStatusError: provider returned HTTP 429
+- extracted GRP # 14 SHM damped oscillation_.pdf page 1/7 via text_fallback
+- extracted GRP # 14 SHM damped oscillation_.pdf page 2/7 via text_fallback
+- extracted GRP # 14 SHM damped oscillation_.pdf page 3/7 via text_fallback
+- extracted GRP # 14 SHM damped oscillation_.pdf page 4/7 via text_fallback
+- extracted GRP # 14 SHM damped oscillation_.pdf page 5/7 via text_fallback
+- extracted GRP # 14 SHM damped oscillation_.pdf page 6/7 via text_fallback
+- extracted GRP # 14 SHM damped oscillation_.pdf page 7/7 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 1/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 2/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 3/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 4/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 5/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 6/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 7/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 8/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 9/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 10/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 11/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 12/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 13/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 14/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 15/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 16/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 17/20 via text_fallback
+- extracted Simple Harmonic Motion theory.pdf page 18/20 via text_fallback
