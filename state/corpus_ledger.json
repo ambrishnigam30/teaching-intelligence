@@ -113,7 +113,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -121,13 +121,13 @@
       "exam_scope": "BOTH",
       "file_id": "1KeMMAqor3AvIrF5-ErO4FIzA_nYFEP1A",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Compelx Number Exercise Solutions.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 114,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/MATHS/Complex Numbers/Compelx Number Exercise Solutions.pdf"
       ]
@@ -19973,7 +19973,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -19981,13 +19981,13 @@
       "exam_scope": "BOTH",
       "file_id": "1KkOsZyjD4VEd4BwLZoQGDtGeSC2sVfV9",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "13. Complex Number.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Motion DPPs/3. Mathematics/13. Complex Number.pdf"
       ]
@@ -28402,7 +28402,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -28410,13 +28410,13 @@
       "exam_scope": "BOTH",
       "file_id": "1SXb0GfKF-kUXMkx2LgLzVgvc4fqy6C7B",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "complex numbers .pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 57,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Maths/complex numbers .pdf",
         "1hGymVX1oNRK6iM1WinIL11-PFnpDxfuc/complex numbers .pdf"
@@ -28424,7 +28424,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -28432,13 +28432,13 @@
       "exam_scope": "BOTH",
       "file_id": "1RL_Gb5XkaFn-XLwHrd3ymIe330I53P3X",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "complex number ak sheet.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Maths/complex number ak sheet.pdf",
         "1hGymVX1oNRK6iM1WinIL11-PFnpDxfuc/complex number ak sheet.pdf"
@@ -51515,7 +51515,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -51523,13 +51523,13 @@
       "exam_scope": "BOTH",
       "file_id": "1PwadnHPduJ5ETybgzf_9HrQtV5j7ZH38",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex number (3).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 13,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Complex number (2).pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Complex number (3).pdf"
@@ -57516,7 +57516,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -57524,13 +57524,13 @@
       "exam_scope": "BOTH",
       "file_id": "1Pv7yPy--vVK15ITp8gwZr6agMAg35_HT",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "16_ra_complex_number_grp_2.0_eng_1625461877.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/16_ra_complex_number_grp_2.0_eng_1625461877.pdf"
       ]
@@ -57689,7 +57689,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -57697,13 +57697,13 @@
       "exam_scope": "BOTH",
       "file_id": "1MBsP3Qb0uI4xTcWkNofjXs_LfmCD2MIp",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "16_ra_complex_number_grp_2.0_only_solution_1625461915.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/16_ra_complex_number_grp_2.0_only_solution_1625461915.pdf"
       ]
@@ -91332,13 +91332,13 @@
       "exam_scope": "BOTH",
       "file_id": "1axJgWHMMb_j36270uaux8DdYEuse6dFS",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-01_Complex Numbers.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_sol/M_Sol_Ch-01_Complex Numbers.pdf"
       ]
@@ -100205,7 +100205,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -100213,13 +100213,13 @@
       "exam_scope": "BOTH",
       "file_id": "1ZR8Fr9jflpG89QVyUEMCMPZT5YMeyUIA",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex_Adv_Sol_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 31,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Complex Number Genetry/Complex_Adv_Sol_Genetry.pdf"
       ]
