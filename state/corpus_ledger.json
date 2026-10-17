@@ -1233,7 +1233,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "hydrogen",
         "general_organic_chemistry",
@@ -1243,12 +1243,12 @@
       "exam_scope": "BOTH",
       "file_id": "1-IOKXgrZu1L4Pytq_g37K8ucxGt3wEYa",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "GOC-III Complete Sheet.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/CHEMISTRY/GOC-III/GOC-III Complete Sheet.pdf",
@@ -1533,18 +1533,22 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
+      "chapters": [
+        "chemical_bonding",
+        "thermodynamics_chemistry",
+        "p_block"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-PIkTUiUb0RtJf_njCJg6HxfXZH_HMdK",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "p-Block Elements (Halogen _ Noble Gases) Exercise.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/CHEMISTRY/p-Block Elements (Halogen _ Noble Gases)/p-Block Elements (Halogen _ Noble Gases) Exercise.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /P Block Elements_Theory_Exercise_APSP/7. p-Block Elements (Halogen & Noble Gases) EXERCISE.pdf"
@@ -1691,19 +1695,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "general_organic_chemistry",
+        "haloalkanes",
+        "aldehydes_ketones_acids"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-P1rYOR6nrqnMbWRZ1x98ZniIzdVZrMg",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3._APSP_PC_E_Jw4jp94.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 18,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/CHEMISTRY/ORM-IV/3._APSP_PC_E_Jw4jp94.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Organic Reaction Mechanism(ORM)_Theory_Exercise_APSP/13. Organic Reaction Mechanisms-IV apsp.pdf"
@@ -8436,19 +8444,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "kinematics",
+        "atomic_structure",
+        "sequences_series"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-KiiwGQIUS8IsHrjv_m4aqYJkKEuQa0z",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "JEE Main Quiz-3 (Student Copy).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/JEE Main Simulation Quizzes/JEE Main Quiz-3 (Student Copy).pdf"
       ]
@@ -19945,19 +19957,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-M2_SwMwyzCFKla8vLi7Y7G_a0G0arby",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "5. Indefinite Integration DPP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 16,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Motion DPPs/3. Mathematics/5. Indefinite Integration DPP.pdf"
       ]
@@ -43258,19 +43270,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "states_of_matter",
+        "thermodynamics_chemistry",
+        "sets_relations"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-Lntjg0O_D6qM1crjFqlINQUNSEVRMSx",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Quiz 06 Student Copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Quiz 06 Student Copy.pdf"
       ]
@@ -62464,19 +62480,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-Ox1b_rY1fnxPnOYmDXrsCrBTOriP-y1",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Error soln.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 24,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/SQB/Error soln.pdf"
       ]
@@ -87839,19 +87855,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "binomial_theorem"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-OsTu6SR7mtAoo9dFv63EEqT6oT6ajDj",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "P_Sol_Ch-26_Nuclei.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Physics/phy_main_sol/P_Sol_Ch-26_Nuclei.pdf"
       ]
@@ -135560,19 +135578,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-JvLgVVBFUnCJ0EdLn-O0CgWZNErJmW4",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "P25.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Nurture Mixed/P25.pdf"
       ]
