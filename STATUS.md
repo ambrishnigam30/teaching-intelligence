@@ -1,37 +1,16 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T06:58:39.055319+00:00
+Last Run UTC: 2026-10-17T07:12:31.875243+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
-Files Completed: 77
-Pages Processed This Run: 50
-Questions Verified This Run: 452
-Active File: Exercise_ERzfKcB.pdf
-Next File in Queue: Mole Concept.pdf
+Files Completed: 76
+Pages Processed This Run: 1
+Questions Verified This Run: 0
+Diagrams Extracted This Run: 1
+Active File: CB covalency, lewis dot struc. dpp
+Next File in Queue: CB overlapping theory dpp
+Assurance Gate Distribution: G1=7017, G2=86, G3=0, G4=0
 ## Recent Batch Log
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 19/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 20/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 21/22 via text_fallback
-- extracted Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf page 22/22 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 1/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 2/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 3/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 4/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 5/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 6/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 7/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 8/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 9/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 10/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 11/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 12/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 13/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 14/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 15/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 16/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 17/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 18/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 19/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 20/23 via text_fallback
-- extracted Exercise_ERzfKcB.pdf page 21/23 via text_fallback
+- reused persistent ledger with 7103 files
+- extracted CB covalency, lewis dot struc. dpp page 1/7 via api:gemini_1

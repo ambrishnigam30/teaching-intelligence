@@ -155,7 +155,9 @@ def run(
         return Path("STATUS.md").read_bytes()
 
     def checkpoint(files: dict[str, bytes], message: str) -> None:
-        files["state/corpus_ledger.json"] = ledger.to_json().encode("utf-8")
+        ledger_json = ledger.to_json()
+        ledger_path.write_text(ledger_json, encoding="utf-8")
+        files["state/corpus_ledger.json"] = ledger_json.encode("utf-8")
         files["state/last_status.md"] = render_status()
         vault.commit_bytes(files, message)
 
