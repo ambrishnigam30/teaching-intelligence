@@ -4624,7 +4624,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4636,7 +4636,7 @@
       "mime_type": "application/pdf",
       "name": "2._CBO-1_Ex_E_1FXjaUa.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/2._CBO-1_Ex_E_1FXjaUa.pdf"
@@ -4725,7 +4725,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4733,12 +4733,12 @@
       "exam_scope": "BOTH",
       "file_id": "10H8X5XIhe45o2FBM9R0OZuNsQiY4j4gU",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "6._CBO-3_Ex_E_1fB7Ivb.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/6._CBO-3_Ex_E_1fB7Ivb.pdf"
       ]
@@ -4785,7 +4785,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4793,12 +4793,12 @@
       "exam_scope": "BOTH",
       "file_id": "11LnzlcErj62-_x3WIeMmdBRjg8pXyFpt",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "9._CBO-5_Th_E_WGu1sha.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/9._CBO-5_Th_E_WGu1sha.pdf"
       ]
@@ -10504,12 +10504,12 @@
       "exam_scope": "BOTH",
       "file_id": "12lVvOlOLAhiLvkspmKXsBbIHWE6FdbfN",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Chemical Bonding.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 30,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Chemistry/Chemical Bonding.pdf"
       ]
@@ -40346,7 +40346,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -40354,12 +40354,12 @@
       "exam_scope": "BOTH",
       "file_id": "124FmkNIZXUa3mfNSMi9jkPmk9ObDZC8e",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_04_Chemical_Bonding_JH_Sir-4167.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_04_Chemical_Bonding_JH_Sir-4167.pdf"
       ]
@@ -96358,7 +96358,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -96366,12 +96366,12 @@
       "exam_scope": "BOTH",
       "file_id": "10rZHq9MiPPkOmmAdzYgzBxe6AE6GLYCJ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Chemical Bonding_copy.pdf",
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Chemistry short notes/IOC/Chemical Bonding_copy.pdf"
       ]
