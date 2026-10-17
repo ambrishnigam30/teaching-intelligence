@@ -185,10 +185,13 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | **Founder Drive Roots** | 13 | 13 | Verified Read-Only OAuth |
 | **Canonical JEE Chapters** | 82 | 82 (Phys: 27, Chem: 30, Math: 25) | 100.0% Spine Covered |
 | **Files Chapter-Mapped** | — | {mapped:,} ({mapped*100/total:.1f}%) | Mapped to 82-chapter spine |
-| **Files Extracted (Complete)** | — | {extracted:,} | Gate 2+ Knowledge-Ready |
+| **Unmapped Files (Unresolved Work)** | — | {total - mapped:,} ({(total - mapped)*100/total:.1f}%) | Pending vision page classification |
+| **Ambiguous Multi-Chapter Files** | — | 257 (3.6%) | Cross-topic mock tests / bundles |
+| **Files Extracted (Complete - Gate 2)** | — | {extracted:,} (1.1%) | Knowledge-Ready raw extraction |
 | **FilesIn-Flight (Partial)** | — | {partial:,} | Resumable from page checkpoint |
 | **Files Quarantined** | — | {quarantined:,} | Poison-pill quarantined with reason |
 | **Files Quota-Paused** | — | {pending_quota:,} | PENDING_QUOTA state |
+| **Teacher / Runtime Ready (Gate 4)** | — | 0 (0.0%) | Pending 100% answer verification |
 | **Total Pages Extracted** | — | {total_pages:,}+ | Verified Vision OCR & LaTeX |
 
 ---
@@ -222,8 +225,8 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 
 ## 5. Cloud Autonomy & Shutdown Readiness
 
-The factory has verified all ten mandatory criteria in `SHUTDOWN_READINESS.md`.
-The founder's laptop is a temporary development environment, not a production dependency. The factory operates autonomously in the cloud.
+The factory is currently verifying post-fix cloud execution in `SHUTDOWN_READINESS.md`.
+Run `39047277779` is queued on commit `6f6552f` to prove production batch HF commits without secret scanner rejection and runner git push synchronization.
 """
 
 
@@ -235,7 +238,7 @@ def generate_shutdown_readiness_md(now: datetime) -> str:
     return f"""# SHUTDOWN READINESS AUDIT — MENTORA INTELLIGENCE FACTORY
 **Audit Timestamp:** {now_utc} ({now_ist})  
 **Verified Commit:** `{head_sha}`  
-**Overall Readiness Verdict:** `READY FOR SHUTDOWN (PASS)`  
+**Overall Readiness Verdict:** `NOT READY (PENDING POST-FIX RUN EXECUTION & SUBSEQUENT RECOVERY PROOF)`  
 
 ---
 
@@ -244,22 +247,25 @@ def generate_shutdown_readiness_md(now: datetime) -> str:
 | # | Criterion | Status | Traceable Evidence |
 | :-: | :--- | :---: | :--- |
 | **1** | **Cloud Scheduling & Orchestration** | **PASS** | GitHub Actions workflow `.github/workflows/intelligence_factory.yml` deployed with cron `*/30 * * * *` and workflow chaining. |
-| **2** | **Real Cloud Execution Verification** | **PASS** | Cloud execution pipeline configured and verified on GitHub Actions (`intelligence_factory.yml`). |
+| **2** | **Real Cloud Execution Verification** | **PENDING** | Post-fix run `39047277779` (commit `6f6552f`) queued behind active run `39047183091`; runner logs and production batch push pending execution. |
 | **3** | **Zero Local Process Dependencies** | **PASS** | No runtime process, local script, cron, or Antigravity session is required for continuous cloud operation. |
-| **4** | **Durable Checkpoint Persistence** | **PASS** | Atomic commits verified to private Hugging Face Vault `ambnig86/mentora-intelligence-vault` (560+ commits, 2,700+ artifacts). |
+| **4** | **Durable Checkpoint Persistence** | **PENDING** | Live API commit/download verified in health check (`state/health_check.json`); production batch commit on `6f6552f` pending runner execution. |
 | **5** | **Interruption Recovery & Resume** | **PASS** | `CorpusLedger` resumes idempotently from `completed_pages` and `status` without duplicating work. |
 | **6** | **Idempotent Processing & Deduplication** | **PASS** | Sharded batch selection (`next_batch`) and content-hash keys ensure zero silent duplicates. |
 | **7** | **Stale Output & Quarantine Handling** | **PASS** | Poison-pill isolation (`3 consecutive failures -> QUARANTINED`) and stale result rejection enforced in `AssuranceEngine`. |
-| **8** | **Subsequent Independent Cloud Runs** | **PASS** | Recurring schedule (`*/30 * * * *`) triggers independently of laptop state. |
-| **9** | **Secret Hygiene & Git Delivery Safety** | **PASS** | Zero plaintext tokens in scripts, notebooks, or commits; all keys ingested from GitHub Secrets / Kaggle User Secrets. |
+| **8** | **Subsequent Independent Cloud Runs** | **PENDING** | Subsequent run recovery proof (Run 1 `39047277779` -> Run 2) pending execution of enqueued marathon. |
+| **9** | **Secret Hygiene & Git Delivery Safety** | **PASS** | Fixed in `6f6552f`: zero plaintext tokens, HF secret bundle upload removed, staged diff audit active in runner script. |
 | **10** | **Operational Telemetry & Observability** | **PASS** | Deterministic telemetry in `STATUS.md`, `AUTONOMOUS_EXECUTION_STATUS.md`, and Hugging Face ledger checkpoints. |
 
 ---
 
 ## Shutdown Decision
 
-> **VERDICT: READY FOR SHUTDOWN**  
-> The founder's laptop may be safely closed or powered off. The cloud factory will continue processing the 7,103-item corpus, rotating provider keys, checkpointing artifacts to Hugging Face, and pushing operational updates according to its cloud schedule.
+> **VERDICT: NOT READY (IN PROGRESS)**  
+> **What remains before shutdown:**  
+> 1. Wait for active pre-fix run `39047183091` to conclude.  
+> 2. Observe execution of post-fix run `39047277779` on commit `6f6552f`: verify production batch commit to Hugging Face Vault without 400 Bad Request error and runner Git push to `origin/main` without rebase failure.  
+> 3. Observe subsequent automatically chained run (Run 2): verify idempotent recovery from `39047277779`'s checkpoint without duplicate processing.  
 """
 
 
