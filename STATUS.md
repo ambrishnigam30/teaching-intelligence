@@ -2,8 +2,8 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 17:41:20 UTC` (`2026-10-17 23:11:20 IST`)  
-**Git Commit:** `29ce6c9` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 17:46:27 UTC` (`2026-10-17 23:16:27 IST`)  
+**Git Commit:** `734d645` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1332**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: C_Ch-05_Thermodynamics.pdf**
+- **Next File in Queue: Thermodynamics Questions Level Up Eduniti.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -184,7 +184,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
 - **Quota-Paused Files (1):**
-  - `C_Ch-05_Thermodynamics.pdf`: HTTPStatusError: provider returned HTTP 429
+  - `Thermodynamics Questions Level Up Eduniti.pdf`: HTTPStatusError: provider returned HTTP 429
 - **Unmapped Files Pending Header Fallback:** `6,747` / `7,103`
 
 ---
@@ -205,6 +205,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `734d645` | 2026-10-17 17:41:20 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 | `29ce6c9` | 2026-10-17 17:36:13 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `a6244f4` | 2026-10-17 22:37:35 | chore(telemetry): update shutdown audit with empirical recovery evidence [skip ci] | `origin/main` |
 
