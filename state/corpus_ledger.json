@@ -3577,13 +3577,13 @@
       "exam_scope": "BOTH",
       "file_id": "1AZaElyu7IZxxSsY3Ss_b2bTog27b-FnJ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Exercise_123_HLP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/MATHS/Binomial Theorem/Exercise_123_HLP.pdf"
       ]
@@ -12223,7 +12223,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "sequences_series"
       ],
@@ -12231,13 +12231,13 @@
       "exam_scope": "BOTH",
       "file_id": "1bLQWCcAfccLHh5XKh-zRBfmIJ0fOhe-n",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Sequences and Series - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 234,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Mathematics/Sequences and Series - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -15401,7 +15401,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -15409,13 +15409,13 @@
       "exam_scope": "BOTH",
       "file_id": "14JB3wuK8g98KBryHC0DCvf_15wvCDbve",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Exercise 1.0.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/23 Binomial Theorem/Exercise 1.0.pdf"
       ]
@@ -21336,7 +21336,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -21344,13 +21344,13 @@
       "exam_scope": "BOTH",
       "file_id": "119ZA_ndiZCRSjLEMcSNvJfeFpnmdiPph",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial Theorem [IITian Notes_Kota].pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 18,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/IITian Notes Kota/Mathematics/Binomial Theorem [IITian Notes_Kota].pdf"
       ]
@@ -61135,7 +61135,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -61143,13 +61143,13 @@
       "exam_scope": "BOTH",
       "file_id": "1vVXZtJhRcOhpgshaKICKYNl9ETUB3_9d",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "02_ra_complex_number_grp_1.0_e_student_copy_1619581901.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/02_ra_complex_number_grp_1.0_e_student_copy_1619581901.pdf"
       ]
@@ -85988,7 +85988,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "sequences_series"
       ],
@@ -85996,13 +85996,13 @@
       "exam_scope": "BOTH",
       "file_id": "1dFGRe_JERIEwnVZ9wfP9U1Q4Z0oCQRvL",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-05_Sequences and Series.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_prob/M_Ch-05_Sequences and Series.pdf"
       ]
@@ -86490,7 +86490,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "sequences_series"
       ],
@@ -86498,13 +86498,13 @@
       "exam_scope": "BOTH",
       "file_id": "1WKqGx3XB4GfTVYLJbcnJQ2QVxqKqa4u3",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-05_Sequences and Series.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_sol/M_Sol_Ch-05_Sequences and Series.pdf"
       ]
@@ -91263,7 +91263,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "sequences_series"
       ],
@@ -91271,13 +91271,13 @@
       "exam_scope": "BOTH",
       "file_id": "1fQWrWPFBkqALsgV0qECB5hFrPVzQxd-4",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-05_Sequences and Series.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_sol/M_Sol_Ch-05_Sequences and Series.pdf"
       ]
@@ -91708,7 +91708,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "sequences_series"
       ],
@@ -91716,13 +91716,13 @@
       "exam_scope": "BOTH",
       "file_id": "1aDRhYgLA8tHkDInTY58ikW5nIuLoKodf",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-05_Sequences and Series.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-05_Sequences and Series.pdf"
       ]
@@ -100247,7 +100247,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -100255,13 +100255,13 @@
       "exam_scope": "BOTH",
       "file_id": "1ziTNSlMWFhzABI7vJNrr6c8WP2nlWj4e",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex_Basic_Sol_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Complex Number Genetry/Complex_Basic_Sol_Genetry.pdf"
       ]
