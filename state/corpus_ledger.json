@@ -11930,7 +11930,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -11938,13 +11938,13 @@
       "exam_scope": "BOTH",
       "file_id": "113bYF2CsRS6yzkLpqq906dGkQL-LocZ0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Complex Numbers - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 182,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Mathematics/Complex Numbers - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -16255,7 +16255,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -16263,13 +16263,13 @@
       "exam_scope": "BOTH",
       "file_id": "16wjhXUZj4MQalQBYx4Mb_m5HhUOa5EIe",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 2.1.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 2.1.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/13 Complex Number/Exercise 2.1.pdf"
       ]
@@ -16297,7 +16297,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -16305,13 +16305,13 @@
       "exam_scope": "BOTH",
       "file_id": "17TlCw0SCdLDh7xVOtNAB57IrIss4MD7l",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 1.2.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 1.2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/13 Complex Number/Exercise 1.2.pdf"
       ]
@@ -86553,7 +86553,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -86561,13 +86561,13 @@
       "exam_scope": "BOTH",
       "file_id": "15leFNopMsJRHWp2WQkPeA7yAo5jnv7es",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-01_Complex Numbers.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_sol/M_Sol_Ch-01_Complex Numbers.pdf"
       ]
@@ -91792,7 +91792,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -91800,13 +91800,13 @@
       "exam_scope": "BOTH",
       "file_id": "13ZcRoP8aJU7xL0Rp-9s0GIVk4SZboHNv",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-01_Complex Numbers.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-01_Complex Numbers.pdf"
       ]
