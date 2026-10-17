@@ -46671,19 +46671,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "rotational_mechanics",
+        "hydrocarbons",
+        "solid_state"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10OIkC4hZxhfrrqWkXBUqXbyu-1ZXudPE",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "PP-1 (1).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/PP-1 (1).pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/12th(Enthuse)/ALLEN PAPERS 2019-2020/PP-1 (1).pdf"
@@ -53826,19 +53830,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10QfTtAJ8ajRUIVtQMEj0koSnXh-kES3f",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Pt 2 soln.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Pt 2 soln.pdf"
       ]
@@ -55424,7 +55428,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "functions"
       ],
@@ -55432,12 +55436,12 @@
       "exam_scope": "BOTH",
       "file_id": "10NlyRHTdvF4NAPAaPpP3uqQSKXsHywW8",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf"
@@ -92616,19 +92620,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10OPLxLKphVrPEhmriUgBjUD8hmLOZwm-",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing CATS-6.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "CATS-6.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/Chemistry/Class PDF Notes/CATS-6.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS-2023/CHEMISTRY/Class PDF Notes/CATS-6.pdf"
@@ -127019,19 +127023,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10Q8c2z3_b3yWUO3BVPPPkQ7ur5dnAuhu",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "88 Class Test (E-TMAS) Student Copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/12th(Enthuse)/Enthus Mixed(2023+Misc.)/E-TMAS/88 Class Test (E-TMAS) Student Copy.pdf"
       ]
@@ -128958,19 +128962,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10ODew3Qz-j4bn6oQvLjlnX4Rfy8Hj5pL",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "PC4.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/12th(Enthuse)/Enthus Mixed(2023+Misc.)/PC4.pdf"
       ]
@@ -136724,19 +136728,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10NsNotDgS7Js7Rp2BkIl_9g0l7eW1bqP",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "[TC43] Soln (Phase 1,2,3) Allen Digital Nurture JM Paper 1 26-05-2024.PDF",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Allen Digital Tests 2024/26-5/[TC43] Soln (Phase 1,2,3) Allen Digital Nurture JM Paper 1 26-05-2024.PDF"
       ]

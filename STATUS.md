@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 23:50:32 UTC` (`2026-10-18 05:20:32 IST`)  
-**Git Commit:** `1621d15` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 23:55:39 UTC` (`2026-10-18 05:25:39 IST`)  
+**Git Commit:** `d7c9bbd` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **79** | **0** | **0** | **4** | **1,379** | **60/82** |
+| **7,103** | **79** | **0** | **0** | **3** | **1,379** | **61/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -66,7 +66,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 04 | `work_energy_power` | Tier 1 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 05 | `circular_motion` | Tier 1 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 06 | `com_collisions` | Tier 1 | 19 | 8 | 269 | 🔄 `IN_PROGRESS` | `███░░░░░  42.1%` |
-| 07 | `rotational_mechanics` | Tier 1 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
+| 07 | `rotational_mechanics` | Tier 1 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 08 | `shm` | Tier 0 | 38 | 31 | 491 | 🔄 `IN_PROGRESS` | `███████░  81.6%` |
 | 09 | `gravitation` | Tier 2 | 6 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 10 | `properties_of_matter` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
@@ -111,14 +111,14 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 45 | `coordination_compounds` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 46 | `environmental_chemistry` | Tier 3 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 47 | `general_organic_chemistry` | Tier 2 | 11 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 48 | `hydrocarbons` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 48 | `hydrocarbons` | Tier 2 | 6 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 49 | `haloalkanes` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 50 | `alcohols_phenols_ethers` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 51 | `aldehydes_ketones_acids` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 52 | `amines` | Tier 2 | 3 | 0 | 1 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 53 | `biomolecules_polymers` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 54 | `chemistry_everyday_life` | Tier 3 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 55 | `solid_state` | Tier 3 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 55 | `solid_state` | Tier 3 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 56 | `purification_analysis` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 57 | `qualitative_analysis` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1379**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: 47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf**
+- **Next File in Queue: OC-TMAS-QUIZ-18-Student-copy.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -183,12 +183,11 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
-- **Quota-Paused Files (4):**
+- **Quota-Paused Files (3):**
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
-  - `47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf`: HTTPStatusError: provider returned HTTP 429
   - `Allen Rank booster Part Syllabus test-1.pdf`: HTTPStatusError: provider returned HTTP 429
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
-- **Unmapped Files Pending Header Fallback:** `6,674` / `7,103`
+- **Unmapped Files Pending Header Fallback:** `6,673` / `7,103`
 
 ---
 ## 📜 Section I — Recent Batch Activity & Git Commit History
@@ -208,6 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `d7c9bbd` | 2026-10-17 23:50:32 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `1621d15` | 2026-10-17 23:42:44 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
