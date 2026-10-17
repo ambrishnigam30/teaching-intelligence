@@ -17830,7 +17830,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -17838,13 +17838,13 @@
       "exam_scope": "BOTH",
       "file_id": "1QD4LSUknFhwlMejd-JAS7LYwoQGcH79-",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 3 (Advanced-Super Tough).pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 3 (Advanced-Super Tough).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/05 Application of Derivatives/Exercise 3 (Advanced-Super Tough).pdf"
       ]
@@ -99509,7 +99509,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -99517,13 +99517,13 @@
       "exam_scope": "BOTH",
       "file_id": "1U1X0DD6bcZiRxCvg_MBprZYCL8S7mKfi",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "AoD _Basic_Sol_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Application of Derivatives Genetry/AoD _Basic_Sol_Genetry.pdf"
       ]
