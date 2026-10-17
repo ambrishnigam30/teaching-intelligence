@@ -211,7 +211,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -219,13 +219,13 @@
       "exam_scope": "BOTH",
       "file_id": "1DEv3a49ETF4I26FhMaPq8R38ZZnCUypZ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Exercise_acc2o1S.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 30,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/MATHS/Application of Derivatives/Exercise_acc2o1S.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/AOD/Application of Derivatives exercise.pdf"
@@ -255,7 +255,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -263,13 +263,13 @@
       "exam_scope": "BOTH",
       "file_id": "1BspAMedsd-Ywr80-YlVMsYeCTsIIXtSU",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Theory_dY1KzZl.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 32,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/MATHS/Application of Derivatives/Theory_dY1KzZl.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/AOD/Application of Derivatives THEORY.pdf"
@@ -11991,7 +11991,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -11999,13 +11999,13 @@
       "exam_scope": "BOTH",
       "file_id": "1JDYCVreTPMSKQ1OwWs_08e3W3lzCCpJR",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Application of Derivatives - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 159,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Mathematics/Application of Derivatives - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -17725,7 +17725,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -17733,13 +17733,13 @@
       "exam_scope": "BOTH",
       "file_id": "1LDA1emIubkUTlKgMzkk9gTdAcym2Td9w",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 2.1 (Advanced).pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 2.1 (Advanced).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/05 Application of Derivatives/Exercise 2.1 (Advanced).pdf"
       ]
@@ -91033,7 +91033,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -91041,13 +91041,13 @@
       "exam_scope": "BOTH",
       "file_id": "1F7bkh4wN50RebsGwPEMns_y2RRF9SVTe",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-17_Application of Derivatives.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_sol/M_Sol_Ch-17_Application of Derivatives.pdf"
       ]
@@ -91478,7 +91478,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "application_of_derivatives"
       ],
@@ -91486,13 +91486,13 @@
       "exam_scope": "BOTH",
       "file_id": "1AxCqbS_KQbzYFT2i3wCabsKG4_q6-555",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-17_Application of Derivatives.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-17_Application of Derivatives.pdf"
       ]
