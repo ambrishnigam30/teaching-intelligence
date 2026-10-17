@@ -4393,7 +4393,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4401,20 +4401,20 @@
       "exam_scope": "BOTH",
       "file_id": "1_apLCWJGGNxhcdy-VP8elps9P3WJMQYO",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "7._DDT-5_to_19_English_ATS_c057iMs.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 17,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/7._DDT-5_to_19_English_ATS_c057iMs.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4422,20 +4422,20 @@
       "exam_scope": "BOTH",
       "file_id": "1_-gkTZ5DKEDzBMU3AbehsefEVl-Dgl8P",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3._APSP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 37,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/3._APSP.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4443,20 +4443,20 @@
       "exam_scope": "BOTH",
       "file_id": "17oi1cmLxjZKk02ZEUs4M9xo0JNkQCdJ2",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Handout_of_Schrodinger_Wave_Model_English.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/Handout_of_Schrodinger_Wave_Model_English.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4464,20 +4464,20 @@
       "exam_scope": "BOTH",
       "file_id": "157skIKP0Cly8rAHdRuHWuuQAVgDqKyPo",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "1._Theory.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 38,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/1._Theory.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4485,20 +4485,20 @@
       "exam_scope": "BOTH",
       "file_id": "1JryqorcUngV8amsPNygK9O3USvwNe4NM",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "9._Work_Sheet_8__9_English_PC.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/9._Work_Sheet_8__9_English_PC.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4506,20 +4506,20 @@
       "exam_scope": "BOTH",
       "file_id": "1cQREawHVl1fdfkZAwuujJU3lnbS_HZP8",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "6._Nuclear_Chemistry_Eng..pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/6._Nuclear_Chemistry_Eng..pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4527,20 +4527,20 @@
       "exam_scope": "BOTH",
       "file_id": "1ML0RY2ULq-0clT98GocrI5yj72kHuEnm",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Handout_of_Spectrum_English.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/Handout_of_Spectrum_English.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4548,20 +4548,20 @@
       "exam_scope": "BOTH",
       "file_id": "1EsgSvxIulcY4xEBSXH-wFbHxQrW8qmJj",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "8._Work_Sheet_4_to_7_English_PC.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/8._Work_Sheet_4_to_7_English_PC.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4569,20 +4569,20 @@
       "exam_scope": "BOTH",
       "file_id": "1US7Ymee8cPRJQTokoGn9lf2JgCRifeVu",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "2._Exercise.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 32,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/2._Exercise.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4590,20 +4590,20 @@
       "exam_scope": "BOTH",
       "file_id": "1HngGy_xshhpluuX25VtVqzu52zWWN7Vk",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "11._ANSWER_KEY_Work_Sheet_ATS.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/11._ANSWER_KEY_Work_Sheet_ATS.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4611,20 +4611,20 @@
       "exam_scope": "BOTH",
       "file_id": "19jpqEuUplMDoEaAVjzexXe7VoMba27AV",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "ATS_Exercise_Sol_E.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 24,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/ATS_Exercise_Sol_E.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -4632,13 +4632,13 @@
       "exam_scope": "BOTH",
       "file_id": "1PH_diFLhe_I7JT67zol_qlJPAPGjI1XU",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "10._Work_sheet-10_to_14_English_PC.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Atomic Structure _ Nuclear Chemistry/10._Work_sheet-10_to_14_English_PC.pdf"
       ]
@@ -5993,7 +5993,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -6001,12 +6001,12 @@
       "exam_scope": "BOTH",
       "file_id": "1yBKyxO8abmMGcHvzbXcPhP5jfniKefXn",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3._MOL_ALPS_PC_E_VDPcPE7.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 31,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Mole Concept/3._MOL_ALPS_PC_E_VDPcPE7.pdf"
@@ -10502,7 +10502,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -10510,13 +10510,13 @@
       "exam_scope": "BOTH",
       "file_id": "1nrIS81EBFu_2X-fLgR3mMaHLEm86fxAs",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Physics/Atomic Structure.pdf"
       ]
@@ -11194,7 +11194,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -11202,13 +11202,13 @@
       "exam_scope": "BOTH",
       "file_id": "13Pdp6_XLs5jUdrJgMH8riA88m65vn1JC",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Chemistry/Atomic Structure.pdf"
       ]
@@ -12607,7 +12607,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -12615,13 +12615,13 @@
       "exam_scope": "BOTH",
       "file_id": "1IlclfYp10no2Y0nbdpV5jsZmA5Tz1soP",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 147,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Chemistry/Atomic Structure - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -20418,7 +20418,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -20426,12 +20426,12 @@
       "exam_scope": "BOTH",
       "file_id": "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0",
       "gate": 2,
-      "last_error": "No provider key is available for visual extraction",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Mole Concept.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 25,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/DexterChem Chemistry Notes/Mole Concept.pdf"
@@ -20629,7 +20629,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -20637,13 +20637,13 @@
       "exam_scope": "BOTH",
       "file_id": "1YUkIonyKNvp9nqFvF4A5NMjo_ITTDh3k",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 49,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/DexterChem Chemistry Notes/Atomic Structure.pdf"
       ]
@@ -23900,7 +23900,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -23908,13 +23908,13 @@
       "exam_scope": "BOTH",
       "file_id": "16bO1a-_Gm2PfnEV2ERB6tN2pv6eBTDdT",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 101,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Chemistry/Atomic Structure.pdf"
       ]
@@ -31062,7 +31062,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -31070,12 +31070,12 @@
       "exam_scope": "BOTH",
       "file_id": "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Mole concept.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 36,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Chemistry[Separate]/Pc/Theory /Mole concept.pdf"
@@ -46716,7 +46716,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -46724,20 +46724,20 @@
       "exam_scope": "BOTH",
       "file_id": "1lq07I3mQpBx1CWHUcI3e7T2qOqdQwjxM",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of Assignment_Atomic_Structure_JH_Sir-2611.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 30,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of Assignment_Atomic_Structure_JH_Sir-2611.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -46745,12 +46745,12 @@
       "exam_scope": "BOTH",
       "file_id": "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_02_Mole_Concept_JH_Sir-3572.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_02_Mole_Concept_JH_Sir-3572.pdf"
@@ -46891,7 +46891,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -46899,12 +46899,12 @@
       "exam_scope": "BOTH",
       "file_id": "1KKKDTleapzxa1usxjyTALDF51J9PZkks",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of Assignment_Mole_Concept_JH_Sir-2607.pdf"
@@ -81353,7 +81353,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -81361,12 +81361,12 @@
       "exam_scope": "BOTH",
       "file_id": "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "1. Mole Concept--Theory.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 25,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Mole Concept_Theory_Exercise_APSP/1. Mole Concept--Theory.pdf"
@@ -82028,7 +82028,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82036,20 +82036,20 @@
       "exam_scope": "BOTH",
       "file_id": "1D3b6bj9KcbvfL2sbpCcqlHWXWwDM4eWY",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Handout@Spectrum.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/Handout@Spectrum.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82057,13 +82057,13 @@
       "exam_scope": "BOTH",
       "file_id": "1mTL8Gel4tKPZKvSXDKtXrtjT1MEtkMov",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "1. Atomic Structure--Theory.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 38,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/1. Atomic Structure--Theory.pdf"
       ]
@@ -82091,7 +82091,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82099,20 +82099,20 @@
       "exam_scope": "BOTH",
       "file_id": "1NO9DKOAHth21S4PjQmU8oJOap5VbyRXH",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3. Atomic Structure--Exercise Solutions.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 24,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/3. Atomic Structure--Exercise Solutions.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82120,20 +82120,20 @@
       "exam_scope": "BOTH",
       "file_id": "1O_v-AsOExeAIbgIrjnUjc3LqVJNnEC68",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure & Nuclear Chemistry_English+Hindi.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 165,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/Atomic Structure & Nuclear Chemistry_English+Hindi.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -82141,13 +82141,13 @@
       "exam_scope": "BOTH",
       "file_id": "1D7ESk6Nnqzwvf4arXaxVRdtSOaQDiulQ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "4. Atomic Structure--APSP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 37,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Atomic Structure and Nuclear Chemistry_Theory_Exercise_Solutions_APSP/4. Atomic Structure--APSP.pdf"
       ]
@@ -91908,7 +91908,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -91916,13 +91916,13 @@
       "exam_scope": "BOTH",
       "file_id": "11GBVIK582FtTlgDm7A5Mkf195rHy_kXi",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "21. ATOMIC STRUCTURE.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/Chemistry/DPP Student copy/21. ATOMIC STRUCTURE.pdf"
       ]
@@ -92596,7 +92596,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -92604,13 +92604,13 @@
       "exam_scope": "BOTH",
       "file_id": "1mzbudXLuomRfr-J_miJVX7EvGBgMaU6Z",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing CATS-21-Atomic structure.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "CATS-21-Atomic structure.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/Chemistry/Class PDF Notes/CATS-21-Atomic structure.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS-2023/CHEMISTRY/Class PDF Notes/CATS-21-Atomic structure.pdf"
@@ -101165,7 +101165,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "atomic_structure"
       ],
@@ -101173,13 +101173,13 @@
       "exam_scope": "BOTH",
       "file_id": "1AVomQKpUKNbYmQhHYPOAB0rNnn2FTb6V",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Atomic Structure_copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Chemistry short notes/PC/Atomic Structure_copy.pdf"
       ]
