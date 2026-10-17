@@ -3611,7 +3611,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -3619,13 +3619,13 @@
       "exam_scope": "BOTH",
       "file_id": "1WjKmindYRXUlVAoykcAhTT2Ptb0Hynn6",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Hints_and_Solution_Binomial_Theorem_UyhgQkh.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 69,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/MATHS/Binomial Theorem/Hints_and_Solution_Binomial_Theorem_UyhgQkh.pdf"
       ]
@@ -15464,7 +15464,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -15472,13 +15472,13 @@
       "exam_scope": "BOTH",
       "file_id": "1TrGX7l-4UP8P_b60juEscBMdGurJdDuY",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 1.2.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 1.2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 13,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/23 Binomial Theorem/Exercise 1.2.pdf"
       ]
@@ -24419,7 +24419,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "binomial_theorem"
       ],
@@ -24427,13 +24427,13 @@
       "exam_scope": "BOTH",
       "file_id": "1QSaf6Sf_KEb7-ePsJkq8RF6J3oBLTXDa",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Binomial Theorem.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 42,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Mathematics/Binomial Theorem.pdf"
       ]
@@ -80500,13 +80500,13 @@
       "exam_scope": "BOTH",
       "file_id": "1Zta9wCvDWDwfuCvPqkK0Z5mDcykbJjv7",
       "gate": 1,
-      "last_error": null,
+      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
       "mime_type": "application/pdf",
       "name": "binomial_theorem_sheet.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 49,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/Binomial Theorem/binomial_theorem_sheet.pdf"
       ]
