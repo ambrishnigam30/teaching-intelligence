@@ -59818,19 +59818,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-lvxBRRZxcA2V1Hv8yJKWkLmaPz8d27V",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "1405_Class Test-116_Math_Ans.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/1405_Class Test-116_Math_Ans.pdf"
       ]
@@ -61668,19 +61668,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "differential_equations",
+        "area_under_curve"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-nIb73uzdwXmHGGnufRtCbhDmpQeYJ4w",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Area DE.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Area DE.pdf"
       ]
@@ -64667,7 +64670,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "com_collisions",
         "gravitation",
@@ -64677,12 +64680,12 @@
       "exam_scope": "BOTH",
       "file_id": "1-kDC2NeEK3VGe8_s3Uloa-pY4bmxw9gC",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "22 # Quiz (TMAS) Electrostatics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TMAS quiz/22 # Quiz (TMAS) Electrostatics.pdf"
@@ -88950,19 +88953,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "units_dimensions",
+        "hydrogen"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-ke4FQ-rieaf-2ZhHNQH_u8N0Pm0WZKU",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "C_Ch-01_Some Basic Concepts of Chemistry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Chemistry/chem_adv_prob/C_Ch-01_Some Basic Concepts of Chemistry.pdf"
       ]
@@ -91655,19 +91661,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "general_organic_chemistry",
+        "circles",
+        "conics"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-l-hL-YyABQrEdEMsV9Ws0vo0Vghma3p",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-12_Conic Sections.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 12,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-12_Conic Sections.pdf"
       ]
@@ -100739,19 +100749,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "com_collisions",
+        "circles",
+        "conics"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-kKj4uSVMIe58XuF6I5d9pRro07UCCHh",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Parabola_Basic_DPP_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 9,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Parabola Genetry/Parabola_Basic_DPP_Genetry.pdf"
       ]
@@ -115154,19 +115168,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "circles"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-kxAOliq1TDtNjMOUmQV8hmqsNsJ0MtW",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Allen Rank Booster Self Evaluation test-7.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/ALLEN_RANK BOOSTER TEST SERIES_2021/Allen Rank Booster Self Evaluation test-7.pdf"
       ]
@@ -128820,13 +128836,13 @@
       "exam_scope": "BOTH",
       "file_id": "1-oWPPo4LoBXoMuL_vGh2indOfoz4pvf2",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "PC6.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/12th(Enthuse)/Enthus Mixed(2023+Misc.)/PC6.pdf"
       ]
