@@ -1,11 +1,11 @@
 # Mentora Intelligence Factory
-Last Run UTC: 2026-10-17T06:11:44.704732+00:00
+Last Run UTC: 2026-10-17T06:12:39.430466+00:00
 Total Drive Files Discovered: 7103
 Total Drive PDFs Discovered: 7103
 Folders Discovered: 0
 Shortcuts Resolved: 0
 Files Completed: 46
-Pages Processed This Run: 9
+Pages Processed This Run: 10
 Questions Verified This Run: 74
 Active File: 32Mb_SHM Sheet.pdf
 Next File in Queue: 12 SHM.pdf
@@ -21,4 +21,5 @@ Next File in Queue: 12 SHM.pdf
 - extracted SHM.pdf page 7/8 via text_fallback
 - extracted SHM.pdf page 8/8 via text_fallback
 - quota pause 32Mb_SHM Sheet.pdf: No provider key is available for visual extraction
-- blocked 32Mb_SHM Sheet.pdf: HTTPStatusError: provider returned HTTP 429
+- extracted 32Mb_SHM Sheet.pdf page 1/58 via api:gemini_1
+- blocked 32Mb_SHM Sheet.pdf: HTTPStatusError: provider returned HTTP 404
