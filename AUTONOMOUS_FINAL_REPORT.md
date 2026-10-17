@@ -1,7 +1,7 @@
 # AUTONOMOUS FINAL REPORT — MENTORA INTELLIGENCE FACTORY
-**Release Date:** 2026-10-17 23:01:57 UTC (2026-10-17 23:01:57 IST)  
+**Release Date:** 2026-10-17 23:07:16 UTC (2026-10-17 23:07:16 IST)  
 **Target Environment:** Autonomous Cloud Pipeline (Laptop Independent)  
-**Repository Branch:** `main` | **Commit:** `cc3f66d`  
+**Repository Branch:** `main` | **Commit:** `4d0db7e`  
 **Authoritative Vault:** Hugging Face Dataset `ambnig86/mentora-intelligence-vault`  
 
 ---
@@ -39,8 +39,8 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | **Discovered Source Files** | 7,103 | 7,103 | 100.0% Accounted |
 | **Founder Drive Roots** | 13 | 13 | Verified Read-Only OAuth |
 | **Canonical JEE Chapters** | 82 | 82 (Phys: 27, Chem: 30, Math: 25) | 100.0% Spine Covered |
-| **Files Chapter-Mapped** | — | 394 (5.5%) | Mapped to 82-chapter spine |
-| **Unmapped Files (Unresolved Work)** | — | 6,709 (94.5%) | Pending vision page classification |
+| **Files Chapter-Mapped** | — | 399 (5.6%) | Mapped to 82-chapter spine |
+| **Unmapped Files (Unresolved Work)** | — | 6,704 (94.4%) | Pending vision page classification |
 | **Ambiguous Multi-Chapter Files** | — | 257 (3.6%) | Cross-topic mock tests / bundles |
 | **Files Extracted (Complete - Gate 2)** | — | 79 (1.1%) | Knowledge-Ready raw extraction |
 | **FilesIn-Flight (Partial)** | — | 0 | Resumable from page checkpoint |
@@ -68,7 +68,7 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | 1. Corpus Coverage | ≥95% | 100.0% | 1.1% | 7,103 files | PASS |
 | 2. Extraction Fidelity | ≥95% | N/A | N/A (Proxy) | 0 records | NOT MEASURED |
 | 3. Relationship Accuracy | ≥95% | N/A | N/A (Proxy) | 0 links | NOT MEASURED |
-| 4. Curriculum Mapping | ≥95% | N/A | 5.5% (Proxy) | 7,103 files | NOT MEASURED |
+| 4. Curriculum Mapping | ≥95% | N/A | 5.6% (Proxy) | 7,103 files | NOT MEASURED |
 | 5. Solution Correctness | ≥95% | N/A | N/A (Proxy) | 0 solutions | INSUFFICIENT SAMPLE |
 | 6. Pedagogical Quality | ≥95% | N/A | N/A (Proxy) | 0 packages | NOT MEASURED |
 | 7. Uncertainty Calibration | ≥95% | N/A | N/A (Proxy) | 0 predictions | INSUFFICIENT SAMPLE |
