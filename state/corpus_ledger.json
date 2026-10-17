@@ -6724,7 +6724,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -6732,13 +6732,13 @@
       "exam_scope": "BOTH",
       "file_id": "1xAc_2BuqSy-6xl6YYyJ0ETpvzcwAN6ZO",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "1._Theory_KTG__Thermodynamics_3kI4dTT.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/PHYSICS/KTG _ Thermodynamics/1._Theory_KTG__Thermodynamics_3kI4dTT.pdf"
       ]
@@ -18407,7 +18407,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -18415,13 +18415,13 @@
       "exam_scope": "BOTH",
       "file_id": "1yCDV6EiLYzhwa16F00fp6WGCqiNgZeMW",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Arihant Waves And Thermodynamics.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Arihant Waves And Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 464,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Physics/DC Pandey/Arihant Waves And Thermodynamics.pdf"
       ]
@@ -21701,7 +21701,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -21709,12 +21709,12 @@
       "exam_scope": "BOTH",
       "file_id": "1vqPvIs1uF6yE6RXW26Qpe9T4sZv96vGY",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Thermodynamics 1 [IITian Notes_Kota].pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 40,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/IITian Notes Kota/Chemistry/Thermodynamics 1 [IITian Notes_Kota].pdf"
@@ -32900,7 +32900,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -32908,13 +32908,13 @@
       "exam_scope": "BOTH",
       "file_id": "1x1pTn322DbekGRWPQbNUpzc9YkE6NELc",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "5. JA-N-Ph-KTG _ Thermodynamics_Solution.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 25,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Solutions/5. JA-N-Ph-KTG _ Thermodynamics_Solution.pdf"
       ]
