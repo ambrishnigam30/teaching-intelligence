@@ -2255,19 +2255,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "solid_state"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10KYr-HRh9PtzV0Lv7dN0rUJVaX-RJ0pU",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Solid State Exercises.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/CHEMISTRY/Solid State/Solid State Exercises.pdf"
       ]
@@ -8974,19 +8976,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "hydrogen",
+        "s_block",
+        "straight_lines"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10KVOIWzkEn3o_mIAXUKODuEsTWD-22R0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "JEE Main Quiz-5 (Solution).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 23,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/JEE Main Simulation Quizzes/JEE Main Quiz-5 (Solution).pdf"
       ]
@@ -37572,19 +37578,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "matrices_determinants"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10LLUS9btiZ-JY644sJ-0dh1yds20b5dc",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "OC-TMAS-QUIZ-10-ANSWER-KEY.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/OC-TMAS-QUIZ-10-ANSWER-KEY.pdf"
       ]
@@ -43708,19 +43716,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "thermal_properties",
+        "thermodynamics_chemistry"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10N2ENh2ilqy6Jji8O8KnqiE1NXCg7pcZ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Class Test-14_Eng.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Class Test-14_Eng.pdf"
       ]
@@ -55414,18 +55425,20 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
+      "chapters": [
+        "functions"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10NlyRHTdvF4NAPAaPpP3uqQSKXsHywW8",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf"
       ]
@@ -62449,19 +62462,25 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "gravitation",
+        "elasticity",
+        "thermal_properties",
+        "capacitors",
+        "straight_lines"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10Ht2B2RIEc5gxUUtIkScrrbwV_G-PXOI",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "ADDITI~1.PDF",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Additionals/ADDITI~1.PDF"
       ]
@@ -62816,19 +62835,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10JICC3XnH5AmkbQk5qMIexWKAjjpk9-5",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Rotation solution_.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 60,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/SQB/Rotation solution_.pdf"
       ]
@@ -69390,19 +69409,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "capacitors"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10LhXdUt4e9pgRV6CDMjOPBOT8900Y6yQ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "GRP # 20 Capacitor soln.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/GRP score 1 /GRP score 1 soln/GRP # 20 Capacitor soln.pdf"
       ]
@@ -72776,19 +72797,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10JzEJdt4C32nTexMlZYg2JXKznHQf3fo",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "05 # Quiz (Answer key)_Rotation.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Rotation/05 # Quiz (Answer key)_Rotation.pdf"
       ]
@@ -84793,19 +84814,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "general_organic_chemistry"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10IrHV9n1L7YehNhPI1pSauUv-EsmjQVA",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Assessment - 160 (P-1) Solution.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Full tests/Assessment - 160 (P-1) Solution.pdf"
       ]
@@ -87435,7 +87458,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "general_organic_chemistry",
         "hydrocarbons"
@@ -87444,12 +87467,12 @@
       "exam_scope": "BOTH",
       "file_id": "10FQGePmS0744ngxvTF8l-BoWkETv41i1",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "C_Ch-22_Hydrocarbons.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 17,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Chemistry/chem_main_prob/C_Ch-22_Hydrocarbons.pdf"
@@ -90049,19 +90072,24 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "circular_motion",
+        "electrostatics",
+        "atomic_structure",
+        "probability"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10LonkqsSVDBxfja8FWgl196onl-M_oe2",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "C_Sol_Ch-02_Structure of Atom.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Chemistry/chem_adv_sol/C_Sol_Ch-02_Structure of Atom.pdf"
       ]
@@ -135594,19 +135622,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10IyOS16cPGx7goy-d8Kpmgv56udOlre7",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "P20.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Nurture Mixed/P20.pdf"
       ]

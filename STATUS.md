@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 23:42:44 UTC` (`2026-10-18 05:12:44 IST`)  
-**Git Commit:** `e31223e` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 23:50:32 UTC` (`2026-10-18 05:20:32 IST`)  
+**Git Commit:** `1621d15` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **79** | **0** | **0** | **3** | **1,379** | **58/82** |
+| **7,103** | **79** | **0** | **0** | **4** | **1,379** | **60/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -46,7 +46,7 @@
 | c | **1. Corpus Coverage** | $\ge 95\%$ | 100.0% | 1.1% | 7,103 | `PASS` | Audited ledger reconciliation against founder Drive roots |
 | e | **2. Extraction Fidelity** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `NOT MEASURED` | No independently adjudicated ground-truth transcription set provided; proxy unavailable. |
 | r | **3. Relationship Accuracy** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `NOT MEASURED` | No ground truth relationship mapping provided. |
-| c | **4. Curriculum Mapping** | $\ge 95\%$ | `NOT MEASURED` | 5.9% | 7,103 | `NOT MEASURED` | Proxy: percentage of files mapped to >= 1 canonical chapter |
+| c | **4. Curriculum Mapping** | $\ge 95\%$ | `NOT MEASURED` | 6.0% | 7,103 | `NOT MEASURED` | Proxy: percentage of files mapped to >= 1 canonical chapter |
 | s | **5. Solution Correctness** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `INSUFFICIENT SAMPLE` | Zero questions with official keys evaluated in this batch. |
 | p | **6. Pedagogical Quality** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `NOT MEASURED` |  |
 | u | **7. Uncertainty Calibration** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `INSUFFICIENT SAMPLE` |  |
@@ -64,20 +64,20 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 02 | `kinematics` | Tier 1 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 03 | `laws_of_motion_friction` | Tier 1 | 57 | 36 | 495 | 🔄 `IN_PROGRESS` | `█████░░░  63.2%` |
 | 04 | `work_energy_power` | Tier 1 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 05 | `circular_motion` | Tier 1 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 05 | `circular_motion` | Tier 1 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 06 | `com_collisions` | Tier 1 | 19 | 8 | 269 | 🔄 `IN_PROGRESS` | `███░░░░░  42.1%` |
 | 07 | `rotational_mechanics` | Tier 1 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 08 | `shm` | Tier 0 | 38 | 31 | 491 | 🔄 `IN_PROGRESS` | `███████░  81.6%` |
-| 09 | `gravitation` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 09 | `gravitation` | Tier 2 | 6 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 10 | `properties_of_matter` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 11 | `elasticity` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 11 | `elasticity` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 12 | `fluid_mechanics` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 13 | `thermal_properties` | Tier 2 | 3 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 13 | `thermal_properties` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 14 | `thermodynamics_physics` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 15 | `kinetic_theory` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 16 | `waves_sound` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 17 | `electrostatics` | Tier 2 | 10 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 18 | `capacitors` | Tier 2 | 1 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 17 | `electrostatics` | Tier 2 | 11 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 18 | `capacitors` | Tier 2 | 3 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 19 | `current_electricity` | Tier 2 | 3 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 20 | `magnetism` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 21 | `emi_ac` | Tier 2 | 4 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -92,11 +92,11 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | # | Canonical Chapter ID | Priority Tier | Files Indexed | Extracted | Pages Done | Status | Progress |
 | :-: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | 28 | `mole_concept` | Tier 1 | 18 | 1 | 56 | 🔄 `IN_PROGRESS` | `░░░░░░░░   5.6%` |
-| 29 | `atomic_structure` | Tier 1 | 30 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 29 | `atomic_structure` | Tier 1 | 31 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 30 | `periodic_properties` | Tier 1 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 31 | `chemical_bonding` | Tier 0 | 42 | 2 | 21 | 🔄 `IN_PROGRESS` | `░░░░░░░░   4.8%` |
 | 32 | `states_of_matter` | Tier 3 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 33 | `thermodynamics_chemistry` | Tier 1 | 67 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 33 | `thermodynamics_chemistry` | Tier 1 | 68 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 34 | `equilibrium` | Tier 2 | 4 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 35 | `redox_reactions` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 36 | `solutions` | Tier 2 | 2 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -104,13 +104,13 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 38 | `chemical_kinetics` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 39 | `surface_chemistry` | Tier 3 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 40 | `metallurgy` | Tier 3 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 41 | `hydrogen` | Tier 3 | 3 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 42 | `s_block` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 41 | `hydrogen` | Tier 3 | 4 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 42 | `s_block` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 43 | `p_block` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 44 | `d_f_block` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 45 | `coordination_compounds` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 46 | `environmental_chemistry` | Tier 3 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 47 | `general_organic_chemistry` | Tier 2 | 10 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 47 | `general_organic_chemistry` | Tier 2 | 11 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 48 | `hydrocarbons` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 49 | `haloalkanes` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 50 | `alcohols_phenols_ethers` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -118,7 +118,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 52 | `amines` | Tier 2 | 3 | 0 | 1 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 53 | `biomolecules_polymers` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 54 | `chemistry_everyday_life` | Tier 3 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 55 | `solid_state` | Tier 3 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
+| 55 | `solid_state` | Tier 3 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 56 | `purification_analysis` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 57 | `qualitative_analysis` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 
@@ -126,19 +126,19 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | # | Canonical Chapter ID | Priority Tier | Files Indexed | Extracted | Pages Done | Status | Progress |
 | :-: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | 58 | `sets_relations` | Tier 1 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 59 | `functions` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 59 | `functions` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 60 | `complex_numbers` | Tier 1 | 29 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 61 | `quadratic_equations` | Tier 0 | 10 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 62 | `sequences_series` | Tier 1 | 6 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 63 | `binomial_theorem` | Tier 1 | 22 | 0 | 1 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 64 | `permutations_combinations` | Tier 1 | 20 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 65 | `mathematical_induction` | Tier 3 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 66 | `matrices_determinants` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 67 | `probability` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
+| 66 | `matrices_determinants` | Tier 2 | 3 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 67 | `probability` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 68 | `statistics` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 69 | `trigonometry` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 70 | `inverse_trigonometry` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
-| 71 | `straight_lines` | Tier 2 | 3 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 71 | `straight_lines` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 72 | `circles` | Tier 2 | 8 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 73 | `conics` | Tier 2 | 6 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 74 | `vectors` | Tier 2 | 2 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1379**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: C_Ch-22_Hydrocarbons.pdf**
+- **Next File in Queue: 47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -183,11 +183,12 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
-- **Quota-Paused Files (3):**
+- **Quota-Paused Files (4):**
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
+  - `47 Class Test (E-TOAS,TNAS,TAAS)_Student copy.pdf`: HTTPStatusError: provider returned HTTP 429
   - `Allen Rank booster Part Syllabus test-1.pdf`: HTTPStatusError: provider returned HTTP 429
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
-- **Unmapped Files Pending Header Fallback:** `6,683` / `7,103`
+- **Unmapped Files Pending Header Fallback:** `6,674` / `7,103`
 
 ---
 ## 📜 Section I — Recent Batch Activity & Git Commit History
@@ -207,11 +208,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
-| `e31223e` | 2026-10-17 23:37:39 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
-| `da251ec` | 2026-10-17 23:32:30 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
-| `bb2db63` | 2026-10-17 23:27:21 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
-| `f815bea` | 2026-10-17 23:19:46 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `aa4e734` | 2026-10-17 23:12:39 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
+| `1621d15` | 2026-10-17 23:42:44 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
 
