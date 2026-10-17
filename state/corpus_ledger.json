@@ -9245,7 +9245,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -9253,13 +9253,13 @@
       "exam_scope": "BOTH",
       "file_id": "1EV4BPexxYU6sEHOjwjMlwN2db0vhnFES",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Permutation and Combination.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Mathematics/Permutation and Combination.pdf"
       ]
@@ -15296,7 +15296,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -15304,13 +15304,13 @@
       "exam_scope": "BOTH",
       "file_id": "1MLlTy7HL9Ku-Psf_Sg8S9rfJcJG6BagL",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 2.1 .pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 2.1 .pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/24 Permutation and Combination/Exercise 2.1 .pdf"
       ]
@@ -52821,7 +52821,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -52829,13 +52829,13 @@
       "exam_scope": "BOTH",
       "file_id": "1CTAHr-oRWkKXeCbqeLP6KHsukKZLgsll",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "15. PERMUTATION AND COMBINATIONS.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/15. PERMUTATION AND COMBINATIONS.pdf"
       ]
@@ -86511,7 +86511,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -86519,13 +86519,13 @@
       "exam_scope": "BOTH",
       "file_id": "1EiEH9oeWurUtiaz8Ob2jZOlgErx2D80-",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-04_Permutations and Combinations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_sol/M_Sol_Ch-04_Permutations and Combinations.pdf"
       ]
@@ -91729,7 +91729,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "permutations_combinations"
       ],
@@ -91737,13 +91737,13 @@
       "exam_scope": "BOTH",
       "file_id": "1IBS-FbxMN4L9rG8pYbyhWXy3dktq9UPg",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-04_Permutations and Combinations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-04_Permutations and Combinations.pdf"
       ]
