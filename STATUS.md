@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-17 16:34:09 UTC` (`2026-10-17 22:04:09 IST`)  
-**Git Commit:** `765dbf3` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-17 17:04:52 UTC` (`2026-10-17 22:34:52 IST`)  
+**Git Commit:** `b745c59` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **78** | **7** | **0** | **2** | **1,332** | **15/82** |
+| **7,103** | **78** | **4** | **0** | **2** | **1,332** | **15/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -171,7 +171,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Pages Processed This Run: 1332**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: 11._CBO_APSP_E.pdf**
+- **Next File in Queue: 3._MOL_ALPS_PC_E_VDPcPE7.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -184,7 +184,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
 - **Quota-Paused Files (2):**
-  - `11._CBO_APSP_E.pdf`: HTTPStatusError: provider returned HTTP 429
+  - `3._MOL_ALPS_PC_E_VDPcPE7.pdf`: HTTPStatusError: provider returned HTTP 429
   - `Mole Concept.pdf`: No provider key is available for visual extraction
 - **Unmapped Files Pending Header Fallback:** `6,747` / `7,103`
 
@@ -206,16 +206,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
-| `765dbf3` | 2026-10-17 16:32:41 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `96070a2` | 2026-10-17 21:37:31 | chore(telemetry): reflect honest unmapped corpus accounting and pending cloud verification status [skip ci] | `origin/main` |
-| `a13d352` | 2026-10-17 21:29:49 | chore(telemetry): update operational reports for commit 6f6552f [skip ci] | `origin/main` |
-| `6f6552f` | 2026-10-17 21:26:06 | fix(cloud): eliminate HF secret bundle upload, filter spill secrets, and harden runner git synchronization | `origin/main` |
-| `0ed24bb` | 2026-10-17 18:57:12 | chore(telemetry): update operational records to reflect commit 5474bab and active cloud runner [skip ci] | `origin/main` |
-| `5474bab` | 2026-10-17 18:52:55 | feat(factory): deploy cloud autonomy, 82-chapter reconciliation, durable HF sync, and shutdown readiness | `origin/main` |
-| `b547ab7` | 2026-10-17 18:26:43 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:56:43 UTC (batch 12) - 78 files done, 7  | `origin/main` |
-| `54225db` | 2026-10-17 18:22:37 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:52:37 UTC (batch 11) - 78 files done, 7  | `origin/main` |
-| `ed2bb76` | 2026-10-17 18:18:31 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:48:31 UTC (batch 10) - 78 files done, 7  | `origin/main` |
-| `054a205` | 2026-10-17 18:14:24 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-17 12:44:24 UTC (batch 9) - 78 files done, 7 p | `origin/main` |
+| `b745c59` | 2026-10-17 22:04:27 | chore(telemetry): record verified batch 1 HF commit 1d0eeb6f and git push 765dbf3 [skip ci] | `origin/main` |
 
 </details>
 

@@ -4094,7 +4094,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -4102,13 +4102,13 @@
       "exam_scope": "BOTH",
       "file_id": "1K5fHlz1GGMrjyn5esBFTt5P17jDuDCU4",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Quadratic_Equation.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 38,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/MATHS/Quadratic Equation/Quadratic_Equation.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/Quadratic Equations/Quadratic_Equation Hints and Solution.pdf"
@@ -4784,7 +4784,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4792,20 +4792,20 @@
       "exam_scope": "BOTH",
       "file_id": "1bF-Kp2Xf5OrSf0AzYYIgWmdaWdBXP0Uc",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CBO-4_ResoSir_qt0q96A.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 33,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/CBO-4_ResoSir_qt0q96A.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4813,20 +4813,20 @@
       "exam_scope": "BOTH",
       "file_id": "1gItSozPGL4y0FfPRxsilRMxrMd5mlAzT",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "8._CBO-4_Ex_E.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 13,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/8._CBO-4_Ex_E.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4834,20 +4834,20 @@
       "exam_scope": "BOTH",
       "file_id": "1ycIqtav7dxuLBTlDO5AYmTSZ_eYw45AB",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CBO-3_ResoSir_Jm8wvtf.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/CBO-3_ResoSir_Jm8wvtf.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4855,13 +4855,13 @@
       "exam_scope": "BOTH",
       "file_id": "1cgp5BWyFe9bxsU2jrz_2u2aaWAqjU658",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CBO-5_ResoSir_UtGVgZr.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 24,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/CBO-5_ResoSir_UtGVgZr.pdf"
       ]
@@ -4910,7 +4910,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -4918,13 +4918,13 @@
       "exam_scope": "BOTH",
       "file_id": "1o_TQI7zZfyOaL71ACzsY_tBcIo1w-mbD",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CBO-1_ResoSir_jCY51zE (1).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 21,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/CBO-1_ResoSir_jCY51zE (1).pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/CBO-1_ResoSir_jCY51zE.pdf"
@@ -4995,7 +4995,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -5003,12 +5003,12 @@
       "exam_scope": "BOTH",
       "file_id": "1b9ym1yiIihC_ABAwt5tpGbmmrLi3iIWX",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "11._CBO_APSP_E.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 37,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/11._CBO_APSP_E.pdf"
@@ -5016,7 +5016,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -5024,13 +5024,13 @@
       "exam_scope": "BOTH",
       "file_id": "1wD_r4xIBrz5KZTrJdXtNY-gAafxuqng0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CBO-2_ResoSir_cUt6Kj9.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 46,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Chemical Bonding/CBO-2_ResoSir_cUt6Kj9.pdf"
       ]
@@ -5972,7 +5972,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -5980,13 +5980,13 @@
       "exam_scope": "BOTH",
       "file_id": "1MB6IdS91XxPQuSe9dBttiMASzyj5-b-c",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Exercise_ERzfKcB.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 23,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Mole Concept/Exercise_ERzfKcB.pdf"
       ]
@@ -6001,20 +6001,20 @@
       "exam_scope": "BOTH",
       "file_id": "1yBKyxO8abmMGcHvzbXcPhP5jfniKefXn",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "3._MOL_ALPS_PC_E_VDPcPE7.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 31,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Mole Concept/3._MOL_ALPS_PC_E_VDPcPE7.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -6022,20 +6022,20 @@
       "exam_scope": "BOTH",
       "file_id": "1snDWp674Z79_ETia-C3qSixntO18XxCR",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Theory_TAdiIJI.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 25,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Mole Concept/Theory_TAdiIJI.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -6043,13 +6043,13 @@
       "exam_scope": "BOTH",
       "file_id": "1h6GQOce8Y2H92-idb7PGCmFcPBdKulUs",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "MOL_Exercise_Sol_E.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/Mole Concept/MOL_Exercise_Sol_E.pdf"
       ]
@@ -9304,7 +9304,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -9312,13 +9312,13 @@
       "exam_scope": "BOTH",
       "file_id": "1Xk7MOXqGpv5pyokqwFqsgLlb6fXNDzMF",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Quadratic Equations.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Quadratic Equations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Mathematics/Quadratic Equations.pdf"
       ]
@@ -10772,7 +10772,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -10780,13 +10780,13 @@
       "exam_scope": "BOTH",
       "file_id": "1_sU5psivt0LHQo_F-plFcH8OScSMskST",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Mole Concept.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 30,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/E-Saral Sheets/Chemistry/Mole Concept.pdf"
       ]
@@ -11852,7 +11852,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -11860,13 +11860,13 @@
       "exam_scope": "BOTH",
       "file_id": "1_UDKLZrOe45UQ0CtPeyCbcp5ytPKRLvB",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Quadratic Equations - JEE Mains PYQ 2020-2022.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Quadratic Equations - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 114,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Mathematics/Quadratic Equations - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -21661,7 +21661,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -21669,13 +21669,13 @@
       "exam_scope": "BOTH",
       "file_id": "1gz62mFMz-j6ezFw0xOtts4tE5-coqz9L",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Chemical Bonding [IITian Notes_Kota].pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 315,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/IITian Notes Kota/Chemistry/Chemical Bonding [IITian Notes_Kota].pdf"
       ]
@@ -23708,7 +23708,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -23716,13 +23716,13 @@
       "exam_scope": "BOTH",
       "file_id": "1dV9m65g5minvI8xId9bfCKWT_E-Gv_yZ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Chemical Bonding.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 134,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Unacademy Iconic JEE Notes/Chemistry/Chemical Bonding.pdf"
       ]
@@ -25086,7 +25086,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -25094,12 +25094,12 @@
       "exam_scope": "BOTH",
       "file_id": "1-H0-JBj0WvKbqQhCho3ZtQYFrbD3g2HK",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CB overlapping theory dpp",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Ioc/Chemical bonding/CB overlapping theory dpp"
@@ -25149,7 +25149,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -25157,12 +25157,12 @@
       "exam_scope": "BOTH",
       "file_id": "1-D3WR-OVsqGAVbSsZVu1e3a3QEE9BBsq",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CB covalency, lewis dot struc. dpp",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Ioc/Chemical bonding/CB covalency, lewis dot struc. dpp"
@@ -28466,7 +28466,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -28474,13 +28474,13 @@
       "exam_scope": "BOTH",
       "file_id": "1hbaQnEluTof4qppoNK572s9KmsGqDGtL",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "03 Brahmastra Quadratic Equations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Maths/Brahmastra/03 Brahmastra Quadratic Equations.pdf"
       ]
@@ -31539,7 +31539,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -31547,13 +31547,13 @@
       "exam_scope": "BOTH",
       "file_id": "1wiz-3KuoE4r2f93zCnNSqQxUXkGdMcOr",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Mole concept_.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 29,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Chemistry[Separate]/Pc/Exercise /Mole concept_.pdf"
       ]
@@ -42042,7 +42042,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -42050,13 +42050,13 @@
       "exam_scope": "BOTH",
       "file_id": "1m55TOH3REQEtHPoLXTfjQNTgRjJsE8nc",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of Assignment_Chemical_Bonding_JH_Sir-4163.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 70,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of Assignment_Chemical_Bonding_JH_Sir-4163.pdf"
       ]
@@ -42234,7 +42234,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -42242,13 +42242,13 @@
       "exam_scope": "BOTH",
       "file_id": "1dZqtomqbsESY6E6OI1ndXQoiJKJzmeN6",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_03_Chemical_Bonding_JH_Sir-4166.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_03_Chemical_Bonding_JH_Sir-4166.pdf"
       ]
@@ -42411,7 +42411,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -42419,13 +42419,13 @@
       "exam_scope": "BOTH",
       "file_id": "1slnKPFRTxhbUNikqOU56u4Nu-1Rgk1SE",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_01_Chemical_Bonding_JH_Sir-4164.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_01_Chemical_Bonding_JH_Sir-4164.pdf"
       ]
@@ -42985,7 +42985,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -42993,13 +42993,13 @@
       "exam_scope": "BOTH",
       "file_id": "1fRt0hq0Pw0Cg1Cm_izf0gXS2Ly3ZWCkB",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_02_Chemical_Bonding_JH_Sir-4165.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_02_Chemical_Bonding_JH_Sir-4165.pdf"
       ]
@@ -46988,7 +46988,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -46996,13 +46996,13 @@
       "exam_scope": "BOTH",
       "file_id": "1h03iag9w80mrt1r2LaAC6tTIh-dts7A7",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Copy of DPP_01_Mole_Concept_JH_Sir-3571.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Copy of DPP_01_Mole_Concept_JH_Sir-3571.pdf"
       ]
@@ -50574,7 +50574,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -50582,13 +50582,13 @@
       "exam_scope": "BOTH",
       "file_id": "1o0KCfuHdpjcripgRrVGJuh0nw-3YFVa0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "N01 - Mole Concept.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/N01 - Mole Concept.pdf"
       ]
@@ -80104,7 +80104,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -80112,20 +80112,20 @@
       "exam_scope": "BOTH",
       "file_id": "1KgKP_8YdxLEsT5V3kXOtgWH5zNCBLPZd",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Quadratic Equation_Theory.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/Quadratic Equations/Quadratic Equation_Theory.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -80133,20 +80133,20 @@
       "exam_scope": "BOTH",
       "file_id": "1thGk-bBfJsveH94LZ0aXKcS5toek8uuJ",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Quadratic Equation_HLP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/Quadratic Equations/Quadratic Equation_HLP.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -80154,13 +80154,13 @@
       "exam_scope": "BOTH",
       "file_id": "1T16IA0HK6Y9p3cSpt0dXblB9iDyhbAr-",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Quadratic Equation_Exercise.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 20,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Maths/Quadratic Equations/Quadratic Equation_Exercise.pdf"
       ]
@@ -81332,7 +81332,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -81340,13 +81340,13 @@
       "exam_scope": "BOTH",
       "file_id": "1gTIqYeYgmk25GHmYRIjCgpD3HB7mmVY9",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Solid State APSP Answer.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Mole Concept_Theory_Exercise_APSP/Solid State APSP Answer.pdf"
       ]
@@ -81374,7 +81374,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -81382,20 +81382,20 @@
       "exam_scope": "BOTH",
       "file_id": "1xv_yMcChO06pGs51MEy1FOdmx4uz2o2O",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "2. Mole Concept--Exercise.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 23,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Mole Concept_Theory_Exercise_APSP/2. Mole Concept--Exercise.pdf"
       ]
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "mole_concept"
       ],
@@ -81403,13 +81403,13 @@
       "exam_scope": "BOTH",
       "file_id": "1bTo5xVcuwxV5FuJiWb9e60JUPzRQzXDA",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "3. Mole Concept--Exercise Solution.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Mole Concept_Theory_Exercise_APSP/3. Mole Concept--Exercise Solution.pdf"
       ]
@@ -81929,7 +81929,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -81937,12 +81937,12 @@
       "exam_scope": "BOTH",
       "file_id": "10-xkUt91CjHECkc1ELzxRvo9NYlW7YQ7",
       "gate": 2,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Chemical Bonding 1_2_3_4 Complete.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 144,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Chemical Bonding 1_2_3_4_Combined_Theory_Exercise_APSP/Chemical Bonding 1_2_3_4 Complete.pdf"
@@ -86030,7 +86030,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -86038,13 +86038,13 @@
       "exam_scope": "BOTH",
       "file_id": "1KGa40heBxjuKWP1FEzBaFJTFR2T6mSqR",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-02_Quadratic Equations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_prob/M_Ch-02_Quadratic Equations.pdf"
       ]
@@ -86532,7 +86532,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -86540,13 +86540,13 @@
       "exam_scope": "BOTH",
       "file_id": "1H8njY9aDM7x1XRC9-6wJ1vfWjh1hp5Pi",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-02_Quadratic Equations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_sol/M_Sol_Ch-02_Quadratic Equations.pdf"
       ]
@@ -89883,7 +89883,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemical_bonding"
       ],
@@ -89891,13 +89891,13 @@
       "exam_scope": "BOTH",
       "file_id": "1g3UjCyPT6clnhGS6nZ5KnBdxe4pm5QKz",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "C_Sol_Ch-03_Chemical Bonding and Molecular Structure.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Chemistry/chem_adv_sol/C_Sol_Ch-03_Chemical Bonding and Molecular Structure.pdf"
       ]
@@ -91771,7 +91771,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "quadratic_equations"
       ],
@@ -91779,13 +91779,13 @@
       "exam_scope": "BOTH",
       "file_id": "1coknakUuCV1kNdMvmkjG5TA5QyFSZ5ci",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-02_Quadratic Equations.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_prob/M_Ch-02_Quadratic Equations.pdf"
       ]
@@ -92273,7 +92273,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "periodic_properties",
         "chemical_bonding"
@@ -92282,13 +92282,13 @@
       "exam_scope": "BOTH",
       "file_id": "1vj7f863rB_ztf-gr8gbWDlPh1O9bBaN9",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "2. Chemical Bonding & Periodic Properties.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/Chemistry/DPP Student copy/2. Chemical Bonding & Periodic Properties.pdf"
       ]
