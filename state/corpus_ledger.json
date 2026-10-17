@@ -20262,7 +20262,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -20270,13 +20270,13 @@
       "exam_scope": "BOTH",
       "file_id": "1S3Le9jKkaMkfs6zGPZYWHk0pBt2bqBEX",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 60,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Handwritten Notes/DexterChem Chemistry Notes/Thermodynamics.pdf"
       ]
@@ -62246,7 +62246,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -62254,13 +62254,13 @@
       "exam_scope": "BOTH",
       "file_id": "1RODPhMTgURun_WTWqCnAYHKiNZbfQROG",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Additional Question (KTG & Thermodynamics) Eng.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Additionals/Additional Question (KTG & Thermodynamics) Eng.pdf"
       ]
@@ -75256,7 +75256,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -75264,12 +75264,12 @@
       "exam_scope": "BOTH",
       "file_id": "1PNCRqME0cTJVYcVWZ2PkzdIKdJJWNzcL",
       "gate": 1,
-      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "02 # Quiz (Answer key)_KTG & Thermodynamics.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Ktg thermo/02 # Quiz (Answer key)_KTG & Thermodynamics.pdf"
@@ -83202,7 +83202,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "thermodynamics_chemistry"
       ],
@@ -83210,13 +83210,13 @@
       "exam_scope": "BOTH",
       "file_id": "1VuGB_3289cUrNglQKjKRfN5VKLEi_MqY",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "45Mb_KTG & Thermodynamics sheet.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 76,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /KTG and Thermodynamics/45Mb_KTG & Thermodynamics sheet.pdf"
       ]
