@@ -16192,7 +16192,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -16200,13 +16200,13 @@
       "exam_scope": "BOTH",
       "file_id": "1fjSjtF5Q-w2QaMaNrzZfwJx8srXAbhYL",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 3.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 3.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/13 Complex Number/Exercise 3.pdf"
       ]
@@ -16234,7 +16234,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -16242,13 +16242,13 @@
       "exam_scope": "BOTH",
       "file_id": "1gzxBXaudZ6-t9DM916COVq810C2bO6rF",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 1.1.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 1.1.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/13 Complex Number/Exercise 1.1.pdf"
       ]
@@ -91324,7 +91324,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "complex_numbers"
       ],
@@ -91332,12 +91332,12 @@
       "exam_scope": "BOTH",
       "file_id": "1axJgWHMMb_j36270uaux8DdYEuse6dFS",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-01_Complex Numbers.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 10,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_sol/M_Sol_Ch-01_Complex Numbers.pdf"
