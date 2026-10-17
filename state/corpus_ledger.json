@@ -30802,19 +30802,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-vM2zPKdkssdJU8o8D3SLS3-eOUE_EN4",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Alcohol ether.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 34,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Chemistry[Separate]/Oc/Exercise /Alcohol ether.pdf"
       ]
@@ -31720,7 +31720,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "elasticity",
         "thermal_properties"
@@ -31729,12 +31729,12 @@
       "exam_scope": "BOTH",
       "file_id": "1-tbyBO_GnaUSl2Lftfu0LxjOcIQ04638",
       "gate": 1,
-      "last_error": "HTTPStatusError: provider returned HTTP 429",
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Elasticity_.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 56,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Physics[Seperate]/Exercise /Elasticity_.pdf"
@@ -45840,19 +45840,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "thermal_properties",
+        "states_of_matter"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-wyRPJgtwiU0ru-68sJfIr8P5x0oMku0",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "PP-16.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/PP-16.pdf"
       ]
@@ -52325,13 +52328,13 @@
       "exam_scope": "BOTH",
       "file_id": "1-ziZPJ6YQT-TKQOQ5EG2rjs6OtYR3AVm",
       "gate": 1,
-      "last_error": null,
+      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
       "mime_type": "application/pdf",
       "name": "Maths_Solutions01.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 16,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/Maths_Solutions01.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/ALLEN_RANK BOOSTER TEST SERIES_2021/Allen JEE Advanced Home Assignment Score/Maths/Maths_Solutions01.pdf",
@@ -63083,19 +63086,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-w92fxA8aIcxEvsmDLVcQZpnlJswLms4",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Ktg thermo.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 15,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/SQB/Ktg thermo.pdf"
       ]
@@ -71448,19 +71451,24 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "thermal_properties",
+        "electrostatics",
+        "magnetism",
+        "electromagnetic_waves"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-uVQi0Yka0euMDv1qJ65h7RK0P-yW43E",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "31_GR (Electromagnetic Waves)_Eng.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/GRP STAR BATCH 2024/31_GR (Electromagnetic Waves)_Eng.pdf"
       ]
@@ -76433,19 +76441,24 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "shm",
+        "gravitation",
+        "electrostatics",
+        "circles"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-zRXTwAkDDqFAL7yCGgFszLCc1Rcvh2h",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "04_Assignment on Electrostatics & Gravitation with ans (Eng).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 46,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Assignments/TNAS revision /04_Assignment on Electrostatics & Gravitation with ans (Eng).pdf"
       ]
@@ -91073,19 +91086,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "conics",
+        "area_under_curve"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-xTZtLGi2K6BPYccvOa22hcWZeBsZIaH",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-20_Area Under Curve.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Advanced/Mathematics/math_adv_sol/M_Sol_Ch-20_Area Under Curve.pdf"
       ]
@@ -100083,19 +100099,24 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "com_collisions",
+        "circles",
+        "conics",
+        "application_of_derivatives"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-zWNmLDy8MBAp-hVmJ8adueJoM0Y16a9",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Ellipse_Hyperbola_Adv_DPP_Genetry.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 14,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/Genetry_MathOnGo_Adv_2022/Ellipse & Hyperbola Genetry/Ellipse_Hyperbola_Adv_DPP_Genetry.pdf"
       ]
@@ -103139,19 +103160,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "shm",
+        "current_electricity"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "1-wAmpBvy8sIj8wyr76IqoJ8onTgzkW8L",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "33(a+b)_sol.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 22,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/Score (Full Syllabus) Test Series 2023/Solutions/33(a+b)_sol.pdf"
       ]
