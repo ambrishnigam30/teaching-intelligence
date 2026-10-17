@@ -1,7 +1,7 @@
 # AUTONOMOUS FINAL REPORT — MENTORA INTELLIGENCE FACTORY
-**Release Date:** 2026-10-17 22:38:02 UTC (2026-10-17 22:38:02 IST)  
+**Release Date:** 2026-10-17 22:43:38 UTC (2026-10-17 22:43:38 IST)  
 **Target Environment:** Autonomous Cloud Pipeline (Laptop Independent)  
-**Repository Branch:** `main` | **Commit:** `f2f9947`  
+**Repository Branch:** `main` | **Commit:** `bc81d0e`  
 **Authoritative Vault:** Hugging Face Dataset `ambnig86/mentora-intelligence-vault`  
 
 ---
@@ -39,13 +39,13 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | **Discovered Source Files** | 7,103 | 7,103 | 100.0% Accounted |
 | **Founder Drive Roots** | 13 | 13 | Verified Read-Only OAuth |
 | **Canonical JEE Chapters** | 82 | 82 (Phys: 27, Chem: 30, Math: 25) | 100.0% Spine Covered |
-| **Files Chapter-Mapped** | — | 381 (5.4%) | Mapped to 82-chapter spine |
-| **Unmapped Files (Unresolved Work)** | — | 6,722 (94.6%) | Pending vision page classification |
+| **Files Chapter-Mapped** | — | 383 (5.4%) | Mapped to 82-chapter spine |
+| **Unmapped Files (Unresolved Work)** | — | 6,720 (94.6%) | Pending vision page classification |
 | **Ambiguous Multi-Chapter Files** | — | 257 (3.6%) | Cross-topic mock tests / bundles |
 | **Files Extracted (Complete - Gate 2)** | — | 79 (1.1%) | Knowledge-Ready raw extraction |
 | **FilesIn-Flight (Partial)** | — | 0 | Resumable from page checkpoint |
 | **Files Quarantined** | — | 0 | Poison-pill quarantined with reason |
-| **Files Quota-Paused** | — | 2 | PENDING_QUOTA state |
+| **Files Quota-Paused** | — | 3 | PENDING_QUOTA state |
 | **Teacher / Runtime Ready (Gate 4)** | — | 0 (0.0%) | Pending 100% answer verification |
 | **Total Pages Extracted** | — | 1,371+ | Verified Vision OCR & LaTeX |
 
