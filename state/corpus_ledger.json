@@ -1041,19 +1041,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "amines",
+        "chemistry_everyday_life"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10CBgVDUZh3nATSkz8G8v-S2T-Hr-K4Pg",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Chemistry in Everyday Life Exercises.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-12 (JP)/CHEMISTRY/Chemistry in Everyday Life/Chemistry in Everyday Life Exercises.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Chemistry /Chemistry in Everyday Life_Physical Properties_POC_Theory_Exercise_APSP/2. Chemistry in Everyday Life exercise.pdf"
@@ -12521,19 +12524,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10EEIXTZbBSafEoHJ6VFQOZtXPte08EN8",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Electrochemistry - JEE Mains PYQ 2020-2022.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 129,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/JEE Main 2020-22 PYQ/Chemistry/Electrochemistry - JEE Mains PYQ 2020-2022.pdf"
       ]
@@ -18952,19 +18955,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "hydrocarbons",
+        "alcohols_phenols_ethers"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10DTlMk-8rcv9hk2RE1j3z1nxqprM5odE",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Kolbe_s Electrolytic Reaction.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Kolbe_s Electrolytic Reaction.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Chemistry/OC ALL NAME REACTION BY Aakash/Kolbe_s Electrolytic Reaction.pdf"
@@ -37471,19 +37477,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10BPHKCdAvWcBFJeZbqfmCvFT_vxZUsp2",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "OC-TMAS-QUIZ-21-Student-copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/OC-TMAS-QUIZ-21-Student-copy.pdf"
       ]
@@ -55139,19 +55145,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "general_organic_chemistry"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10E5gR9WVf1ET1Unyi4U45uzS-QyFtKDP",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "33 Class Test (N-TOPS,TNPS)_Student copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 4,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/33 Class Test (N-TOPS,TNPS)_Student copy.pdf"
       ]
@@ -84308,19 +84316,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "com_collisions"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10EwK3Utl_dwTTQihAiPidBZprBJ7En_I",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "FT 1-5.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 301,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/FIITJEE AITS/Full tests 2019/FT 1-5.pdf"
       ]
@@ -87426,7 +87436,10 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
+      "chapters": [
+        "general_organic_chemistry",
+        "hydrocarbons"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10FQGePmS0744ngxvTF8l-BoWkETv41i1",
@@ -87437,7 +87450,7 @@
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
       "status": "PENDING",
-      "total_pages": null,
+      "total_pages": 17,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Chemistry/chem_main_prob/C_Ch-22_Hydrocarbons.pdf"
       ]
@@ -115883,10 +115896,10 @@
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "10AZyhzZEN9D2Ap_X35UzDFCSATgjLv_q",
-      "gate": 1,
+      "gate": 2,
       "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Allen Rank booster Part Syllabus test-1.pdf",
@@ -117194,19 +117207,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10F7nDDU7aiaVmPWEf9Bz8ZCpQESDJmJb",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "0804_Enthusiast_All Star Batch_Score(Advanced)_Paper_(E)_JA.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 28,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/1 Score final adv 2024 \u2b50\u2b50\u2b50/0804_Enthusiast_All Star Batch_Score(Advanced)_Paper_(E)_JA.pdf"
       ]
@@ -133703,19 +133716,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "10CLOdTtRPP18fuioDxiJ-YwMrENeHxO9",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "PC48.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Nurture Mixed/Solutions/Paper Corrections/PC48.pdf"
       ]
