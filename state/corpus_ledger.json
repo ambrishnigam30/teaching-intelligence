@@ -66662,23 +66662,23 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "electrostatics",
         "capacitors",
         "current_electricity",
         "equilibrium"
       ],
-      "completed_pages": 0,
+      "completed_pages": 7,
       "exam_scope": "BOTH",
       "file_id": "1-APBTbslEN4xpQcWqhVd7XXjflzfan5h",
-      "gate": 1,
-      "last_error": "No visual extraction engine (cloud Vision API or local Ollama) is available; pausing for next quota window",
+      "gate": 2,
+      "last_error": "Processing 0309_JEE(ADVANCED)_ENTHUSE-I(A)_CLASS TEST-63_Phy_PAPER Home Work.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "0309_JEE(ADVANCED)_ENTHUSE-I(A)_CLASS TEST-63_Phy_PAPER Home Work.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING_QUOTA",
+      "status": "ERROR",
       "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Class tests/Class tests 2022/0309_JEE(ADVANCED)_ENTHUSE-I(A)_CLASS TEST-63_Phy_PAPER Home Work.pdf"
