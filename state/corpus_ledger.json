@@ -102639,19 +102639,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 3,
       "exam_scope": "BOTH",
       "file_id": "10c5qP4yzkz9dkl0RN3BEJuNz0mrw1Y6W",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing P2 ANS KEY.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "P2 ANS KEY.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 40,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/ALLEN DLP/REVIEW TEST 2/P2 ANS KEY.pdf"
       ]
