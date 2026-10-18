@@ -5275,19 +5275,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "attempts": 1,
+      "chapters": [
+        "general_organic_chemistry"
+      ],
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing 2._GOC-I_EXB_ResoSir_7bNajfX.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "2._GOC-I_EXB_ResoSir_7bNajfX.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 43,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance Sheets/CLASS-11 (JA)/CHEMISTRY/General Organic Chemistry (GOC)-I/2._GOC-I_EXB_ResoSir_7bNajfX.pdf"
       ]
