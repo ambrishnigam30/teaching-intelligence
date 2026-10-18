@@ -59247,17 +59247,17 @@
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "10ZaaS2NN9An8wnr8MlOsmX4AUGD0f50Q",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "0103_Class Test-97_Math_Answer Keys.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/0103_Class Test-97_Math_Answer Keys.pdf"
       ]
@@ -66425,19 +66425,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 5,
       "exam_scope": "BOTH",
       "file_id": "10Zd94c8zDC0B1z4N3-XNxG5R3rcqTpk2",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing 0303_CT-36_Physics_Student  Copy.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "0303_CT-36_Physics_Student  Copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/Class tests/Class tests 2022/0303_CT-36_Physics_Student  Copy.pdf"
       ]
