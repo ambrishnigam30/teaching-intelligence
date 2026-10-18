@@ -82547,19 +82547,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 5,
       "exam_scope": "BOTH",
       "file_id": "10hddSSO_E5THjk3qo7WhhfLA-jAiUS8p",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing PHYSICS_ANSWER+KEY_01JPA,+02JPA.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "PHYSICS_ANSWER+KEY_01JPA,+02JPA.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /DPPs/PHYSICS_ANSWER+KEY_01JPA,+02JPA.pdf"
       ]
@@ -102340,19 +102340,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "10jJsei2tqmBRC4GmqmlaUMF1kye2Fu4n",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Solution_Report_2025_06_09_22_14_40_72.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Solution_Report_2025_06_09_22_14_40_72.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 55,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/ALLEN DLP/UNIT TEST 6/Solution_Report_2025_06_09_22_14_40_72.pdf"
       ]
