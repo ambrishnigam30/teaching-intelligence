@@ -30698,20 +30698,20 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "chemistry_everyday_life"
       ],
-      "completed_pages": 1,
+      "completed_pages": 11,
       "exam_scope": "BOTH",
       "file_id": "11E1TcfS5yePU2W_iIFcxAPpSfwjAOpxp",
       "gate": 2,
-      "last_error": null,
+      "last_error": "Processing Chem in everyday life.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Chem in everyday life.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "ERROR",
       "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/Allen Latest Modules/Chemistry[Separate]/Oc/Theory/Chem in everyday life.pdf"
