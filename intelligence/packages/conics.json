@@ -1,0 +1,522 @@
+{
+  "chapter": "conics",
+  "evidence_ids": [
+    "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+    "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+    "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+    "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+    "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+    "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+    "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+    "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+    "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+    "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+    "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+    "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+    "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "assessment": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "retention": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "transfer": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "assurance": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p1",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p2",
+        "10bFfnMVmHQRpnRrzYn6NTKQPhTWQfEkE_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p1",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p2",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p3",
+        "1157Pc4nzhm6fAo5AuYUsp4U1Ocka-BNi_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p1",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p2",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p3",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p4",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p5",
+        "11Bv-5VtQ9M10N453cjfm34PP3wznblS0_p6"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 13
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Conics for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Conics.",
+    "governing_equations": [
+      "y = (C_1 + C_2) \\cos(x + C_3) - C_4 e^{x + C_5}",
+      "y = A\\cos(x + C_3) - Be^{x}",
+      "x = my + \\frac{1}{m}",
+      "x = y \\left(\\frac{dy}{dx}\\right) + \\frac{1}{\\left(\\frac{dy}{dx}\\right)}",
+      "y^2 \\left(\\frac{d^2y}{dx^2}\\right)^2 + 3x \\left(\\frac{dy}{dx}\\right)^{1/3} + x^2y^2 = \\sin x",
+      "d\\left(\\frac{y}{x}\\right) = \\frac{\\ln x}{x^2} dx",
+      "y = Ax + A^3",
+      "y = x \\frac{dy}{dx} + \\left(\\frac{dy}{dx}\\right)^3",
+      "\\frac{d^2y}{dx^2} \\cdot \\left(\\frac{dx}{dy}\\right)^3 + \\frac{d^2x}{dy^2} = 0",
+      "{'standard_forms': ['y^2 = 4ax', 'y^2 = -4ax', 'x^2 = 4ay', 'x^2 = -4ay'], 'vertex_shifted_x_axis': '(y-k)^2 = 4a(x-h)', 'vertex_shifted_y_axis': '(x-h)^2 = 4a(y-k)', 'parametric_y2_4ax': 'x = at^2, \\\\quad y = 2at', 'parametric_x2_4ay': 'x = 2at, \\\\quad y = at^2', 'general_conic_question': '2x^2 + 3xy + 7y^2 - 8x - 7y - 1 = 0', 'q_find_all': '4y^2 + 12x - 20y + 67 = 0', 'q_find_all_a': 'x^2 + 2x + 4y = 0', 'q_find_all_b': '4x^2 + 2y = 8x - 7', 'q_focus_directrix': 'focus(1, -1), \\\\quad directrix: x + y - 7 = 0', 'q_vertex_latus_rectum': 'vertex(4, -3), \\\\quad latus\\\\ rectum = 4, \\\\quad axis \\\\parallel x\\\\text{-axis}', 'q_passes_through': 'passes\\\\ through(-4, -7), \\\\quad axis \\\\parallel x\\\\text{-axis}, \\\\quad vertex(4, -3)'}",
+      "y^2 = 4ax",
+      "\\frac{1}{8a} |(y_1 - y_2)(y_2 - y_3)(y_3 - y_1)|",
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad \\text{where} \\quad b^2 = a^2 - c^2",
+      "y = \\frac{x}{t_1+t_2} + \\frac{2at_1t_2}{t_1+t_2}",
+      "C = -at_1t_2",
+      "\\frac{1}{PK^2} + \\frac{1}{QK^2}",
+      "y = \\tan(\\tan^{-1}x)",
+      "\\sin^2x - \\sinx - 2 \\le 0",
+      "\\sinx \\in (-\\infty, -1] \\cup [2, \\infty)",
+      "\\sinx = -1",
+      "x^3 + 4x + 1 = 0",
+      "(\\alpha + \\beta)^{-1} + (\\beta + \\gamma)^{-1} + (\\gamma + \\alpha)^{-1}",
+      "\\alpha + \\beta + \\gamma = 0",
+      "\\Sigma(\\alpha+\\beta)^{-1} = \\Sigma(-\\alpha)^{-1}",
+      "-\\frac{\\Sigma\\alpha\\beta}{\\alpha\\beta\\gamma} = 4",
+      "1 - 4 + 7 - 10 + 13 - 16 + ...",
+      "S = (t_1 + t_2) + (t_3 + t_4) + ..... + (t_{99} + t_{100}) + t_{101}",
+      "S = (-3) + (-3) + (-3) + ..... + (-3) + t_{101}",
+      "S = -3 \\times 50 + (1 + 100 \\times 3) = 151"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Conics State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Conics ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

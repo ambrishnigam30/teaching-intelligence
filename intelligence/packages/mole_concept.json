@@ -1,0 +1,2389 @@
+{
+  "chapter": "mole_concept",
+  "evidence_ids": [
+    "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+    "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+    "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+    "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+    "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+    "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+    "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+    "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+    "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+    "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+    "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+    "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+    "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+    "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+    "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+    "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+    "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "assessment": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "retention": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "transfer": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "assurance": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p1",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p2",
+        "118dxHlU9P8HwXo8I0USCLO0NVIKXlCbu_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p1",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p2",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p3",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p4",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p5",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p6",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p7",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p8",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p9",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p10",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p11",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p12",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p13",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p14",
+        "13Y3DbbXxkW2MpR2pV9ew-YYruMeVaUJ8_p15",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p16",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p17",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p18",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p19",
+        "15aLs2r0c3dXIoXE-9v6g_ZKP2OKj4eHm_p20",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p1",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p2",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p3",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p4",
+        "1DgmcO-QFv0nTEepEcgwJ7Gq_mRErmGIH_p5",
+        "1DZXupbf1W0igOn43cwWEWtOIaKqBsgM0_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p1",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p2",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p3",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p4",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p5",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p6",
+        "1HtnaHwV5Q2ajwKzEc7YCxd2sTUhqNPDQ_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p1",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p2",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p3",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p4",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p5",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p6",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p7",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p8",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p9",
+        "1KKKDTleapzxa1usxjyTALDF51J9PZkks_p10"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 46
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Mole Concept for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Mole Concept.",
+    "governing_equations": [
+      "\\text{pH} = \\text{p}K_a + \\log\\left(\\frac{50 \\times C}{50 \\times 0.2}\\right)",
+      "4 = 5 + \\log\\frac{50 \\times C}{50 \\times 0.2}",
+      "\\log\\frac{C}{0.2} = -1 \\Rightarrow \\frac{C}{0.2} = 0.1 \\Rightarrow C = 0.02\\text{ M}",
+      "\\text{pOH} = 4.74 + \\log\\frac{0.1}{0.1} = 4.74",
+      "\\text{NH}_4^+ + \\text{OH}^- \\longrightarrow \\text{NH}_3 + \\text{H}_2\\text{O}",
+      "\\text{pOH} = 4.74 + \\log\\frac{0.05}{0.15} = 4.26",
+      "\\text{NH}_3 + \\text{H}^+ \\longrightarrow \\text{NH}_4^+",
+      "\\text{pOH} = 4.74 + \\log\\frac{0.15}{0.05} = 5.22"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {
+    "1.": {
+      "phase_1_dissect": "Target parameter identified from stem: 1....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1.1": {
+      "phase_1_dissect": "Target parameter identified from stem: 1.1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 1.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.": {
+      "phase_1_dissect": "Target parameter identified from stem: 2....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.1": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.3": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.3...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.4": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.4...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.5": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.5...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.6": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.6...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.7": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.7...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.": {
+      "phase_1_dissect": "Target parameter identified from stem: 3....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.1": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.2 g CO2 is release": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.2 g CO2 is released into atmosphere. The residue is found to weigh 12.0 g. Sho...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.2.": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.2....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1.2g = 1.5": {
+      "phase_1_dissect": "Target parameter identified from stem: 1.2g = 1.5...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.3.": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.3....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.4": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.4...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.5.": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.5....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "4.": {
+      "phase_1_dissect": "Target parameter identified from stem: 4....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.": {
+      "phase_1_dissect": "Target parameter identified from stem: 5....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.1": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.1.1 ATOMIC MASS UN": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.1.1 ATOMIC MASS UNIT (a.m.u. or u) : The quantity 1/12th mass of an atom of C1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1.992648 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 1.992648 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.022 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 6.022 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.1.2 GRAM ATOMIC MA": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.1.2 GRAM ATOMIC MASS OR MASS OF 1 G-ATOM :...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.1.3 AVERAGE ATOMIC": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.1.3 AVERAGE ATOMIC MASS :...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.022 × 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 6.022 × 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.011 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.011 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "30.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 30.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.2.1 GRAM MOLECULAR": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.2.1 GRAM MOLECULAR MASS (MASS OF 1 G-MOLECULE) :...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "5.2.2 AVERAGE MOLECU": {
+      "phase_1_dissect": "Target parameter identified from stem: 5.2.2 AVERAGE MOLECULAR MASS OF NON-REACTING GAS MIXTURE :...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "Q 6.022 × 1020  mole": {
+      "phase_1_dissect": "Target parameter identified from stem: Q 6.022 × 1020  molecules weighs...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "Q 2.5 × 10–3 gm will": {
+      "phase_1_dissect": "Target parameter identified from stem: Q 2.5 × 10–3 gm will contain...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.5 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.5 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.20": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.20...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.1": {
+      "phase_1_dissect": "Target parameter identified from stem: 6.1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 6.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "22.4L": {
+      "phase_1_dissect": "Target parameter identified from stem: 22.4L...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "3.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 3.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "4.5 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 4.5 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "7.5": {
+      "phase_1_dissect": "Target parameter identified from stem: 7.5...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2.4 10": {
+      "phase_1_dissect": "Target parameter identified from stem: 2.4 10...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "22.4litre": {
+      "phase_1_dissect": "Target parameter identified from stem: 22.4litre...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "22.4 = 0.5": {
+      "phase_1_dissect": "Target parameter identified from stem: 22.4 = 0.5...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "8.21": {
+      "phase_1_dissect": "Target parameter identified from stem: 8.21...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "0.0821 400": {
+      "phase_1_dissect": "Target parameter identified from stem: 0.0821 400...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "164.2 10 litre": {
+      "phase_1_dissect": "Target parameter identified from stem: 164.2 10 litre...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "0.0821 300": {
+      "phase_1_dissect": "Target parameter identified from stem: 0.0821 300...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "22.4 =": {
+      "phase_1_dissect": "Target parameter identified from stem: 22.4 =...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "7.1": {
+      "phase_1_dissect": "Target parameter identified from stem: 7.1...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "7.2": {
+      "phase_1_dissect": "Target parameter identified from stem: 7.2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "8.": {
+      "phase_1_dissect": "Target parameter identified from stem: 8....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1. Oxidation - numbe": {
+      "phase_1_dissect": "Target parameter identified from stem: 1. Oxidation - number change method...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "2. Ion electron meth": {
+      "phase_1_dissect": "Target parameter identified from stem: 2. Ion electron method or half cell method...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "9.": {
+      "phase_1_dissect": "Target parameter identified from stem: 9....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "74.5 g = 2": {
+      "phase_1_dissect": "Target parameter identified from stem: 74.5 g = 2...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "0.5 g of a substance": {
+      "phase_1_dissect": "Target parameter identified from stem: 0.5 g of a substance is dissolved in 25 g of a solvent. Calculate the percentage...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "0.5": {
+      "phase_1_dissect": "Target parameter identified from stem: 0.5...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10.": {
+      "phase_1_dissect": "Target parameter identified from stem: 10....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.": {
+      "phase_1_dissect": "Target parameter identified from stem: 6....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "7.": {
+      "phase_1_dissect": "Target parameter identified from stem: 7....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "11.2 L of a gas at S": {
+      "phase_1_dissect": "Target parameter identified from stem: 11.2 L of a gas at STP weights 14.0 g. The gas could be :...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "0.5 mole": {
+      "phase_1_dissect": "Target parameter identified from stem: 0.5 mole...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1.5 NA atoms": {
+      "phase_1_dissect": "Target parameter identified from stem: 1.5 NA atoms...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "11.2 L of CO2 at STP": {
+      "phase_1_dissect": "Target parameter identified from stem: 11.2 L of CO2 at STP...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "0.5 NA molecules": {
+      "phase_1_dissect": "Target parameter identified from stem: 0.5 NA molecules...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.023 × 1023 atoms o": {
+      "phase_1_dissect": "Target parameter identified from stem: 6.023 × 1023 atoms of Oxygen...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "1.2 gm of Mg (At. ma": {
+      "phase_1_dissect": "Target parameter identified from stem: 1.2 gm of Mg (At. mass 24) will produce MgO equal to -...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "22.4  L at S.T.P.": {
+      "phase_1_dissect": "Target parameter identified from stem: 22.4  L at S.T.P....",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "6.02 × 1023 Ne atoms": {
+      "phase_1_dissect": "Target parameter identified from stem: 6.02 × 1023 Ne atoms...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "": {
+      "phase_1_dissect": "Target parameter identified from stem: Question...",
+      "phase_2_select": "Governing conservation principles for Mole Concept.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    }
+  },
+  "graduated_hints": {
+    "1.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1.1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.3": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.4": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.5": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.6": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.7": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.2 g CO2 is release": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.2.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1.2g = 1.5": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.3.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.4": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.5.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "4.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.1.1 ATOMIC MASS UN": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1.992648 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.022 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.1.2 GRAM ATOMIC MA": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.1.3 AVERAGE ATOMIC": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.022 × 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.011 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "30.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.2.1 GRAM MOLECULAR": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "5.2.2 AVERAGE MOLECU": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "Q 6.022 × 1020  mole": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "Q 2.5 × 10–3 gm will": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.5 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.20": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "22.4L": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "3.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "4.5 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "7.5": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2.4 10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "22.4litre": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "22.4 = 0.5": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "8.21": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "0.0821 400": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "164.2 10 litre": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "0.0821 300": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "22.4 =": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "7.1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "7.2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "8.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1. Oxidation - numbe": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "2. Ion electron meth": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "9.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "74.5 g = 2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "0.5 g of a substance": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "0.5": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "7.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "11.2 L of a gas at S": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "0.5 mole": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1.5 NA atoms": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "11.2 L of CO2 at STP": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "0.5 NA molecules": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.023 × 1023 atoms o": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "1.2 gm of Mg (At. ma": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "22.4  L at S.T.P.": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "6.02 × 1023 Ne atoms": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Mole Concept.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    }
+  },
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Mole Concept State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Mole Concept ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

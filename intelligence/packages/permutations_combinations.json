@@ -1,0 +1,285 @@
+{
+  "chapter": "permutations_combinations",
+  "evidence_ids": [
+    "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+    "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "assessment": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "retention": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "transfer": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "assurance": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "1Q4SYuRGHBHXXhq1zmPi1OJevIu1mK_vU_p1",
+        "1V4OPtxHQCXxj-77O0Qz5fTc17a6rsLfu_p1"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 2
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Permutations Combinations for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Permutations Combinations.",
+    "governing_equations": [
+      "f(Permutations Combinations) = 0"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Permutations Combinations State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Permutations Combinations ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

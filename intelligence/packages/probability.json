@@ -1,0 +1,393 @@
+{
+  "chapter": "probability",
+  "evidence_ids": [
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+    "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "assessment": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "retention": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "transfer": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "assurance": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p1",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p2",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p3",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p4",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p5",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p6",
+        "10jsqfluFDq0fCXzlrrwF7BLXa3kEmXFc_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 7
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Probability for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Probability.",
+    "governing_equations": [
+      "$3^{\\text{rd}}$",
+      "$S = \\{\\text{H,T}\\}$",
+      "$S = \\{1,2,3,4,.....\\}$",
+      "$\\{even\\ number,\\ odd\\ number\\}$",
+      "$\\{a\\ number\\ less\\ than\\ 3,\\ a\\ number\\ equal\\ to\\ 3,\\ a\\ number\\ greater\\ than\\ 3\\}$",
+      "$\\{1,2,3,4,5,6\\}$",
+      "S = \\{HB_1, HB_2, HB_3, HW_1, HW_2, HW_3, HW_4, T1, T2, T3, T4, T5, T6\\}",
+      "S = \\{H, TH, TTH, TTTH, TTTTH, ...\\}",
+      "S = \\{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\\}",
+      "A = \\{TTT\\}",
+      "B = \\{HTT, THT, TTH\\}",
+      "C = \\{HHT, HTH, THH, HHH\\}",
+      "A \\cup B \\cup C = \\{ TTT, HTT, THT, TTH,HHT,HTH,THH,HHH\\} = S",
+      "A \\cap B = \\phi, A \\cap C = \\phi \\text{ and } B \\cap C = \\phi"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Probability State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Probability ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

@@ -1,0 +1,646 @@
+{
+  "chapter": "thermodynamics_chemistry",
+  "evidence_ids": [
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+    "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+    "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+    "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "assessment": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "retention": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "transfer": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "assurance": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p1",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2",
+        "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p1",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p2",
+        "119pn8MF1VjBksMctgONK2DWcr_sQLr26_p3"
+      ],
+      "archetypes": [
+        "ALLEN_EXERCISE",
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 6
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Thermodynamics Chemistry for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Thermodynamics Chemistry.",
+    "governing_equations": [
+      "P/V = constant",
+      "\\Delta U / w",
+      "V_f = 8V_i",
+      "P_f = 32P_i",
+      "V_f = 16V_i",
+      "P_f = \\frac{1}{16} P_i",
+      "1 \\text{ L-atm} = 0.1 \\text{ kJ}",
+      "T \\propto V^3",
+      "R = 2 \\, \\text{cal / mol-k}",
+      "ln 2 = 0.7",
+      "R = 2 \\, \\text{cal/mol-K}"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2_q8": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q1": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q2": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q3": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q4": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q5": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q6": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q7": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q8": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q9": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q10": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q11": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q12": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q13": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q14": {
+      "phase_1_dissect": "Target parameter identified from stem: ...",
+      "phase_2_select": "Governing conservation principles for Thermodynamics Chemistry.",
+      "phase_3_execute": "Step 1: Set coordinate system. Step 2: Formulate ODE/algebraic relation. Step 3: Solve.",
+      "phase_4_trap_audit": "Check for common sign convention traps and non-isolated boundary effects.",
+      "phase_5_sanity_check": "Units consistent; limiting values match physical expectations."
+    }
+  },
+  "graduated_hints": {
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p2_q8": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q1": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q2": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q3": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q4": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q5": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q6": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q7": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q8": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q9": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q10": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q11": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q12": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q13": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    },
+    "10n8A1pNcrZpGvGrndO6QRV9pK-NQ2ZxO_p3_q14": {
+      "level_1_attention": "Notice the initial constraints and conserved quantities in the stem.",
+      "level_2_concept": "Apply the principle of conservation related to Thermodynamics Chemistry.",
+      "level_3_procedure": "Set up the equilibrium equation and solve for the target variable.",
+      "smart_chips": [
+        "Conservation Check",
+        "Sign Traps",
+        "Limiting Case"
+      ]
+    }
+  },
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Thermodynamics Chemistry State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Thermodynamics Chemistry ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

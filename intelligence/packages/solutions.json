@@ -1,0 +1,537 @@
+{
+  "chapter": "solutions",
+  "evidence_ids": [
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+    "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+    "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "assessment": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "retention": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "transfer": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "assurance": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p1",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p2",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p3",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p4",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p5",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p6",
+        "1-ApbME2epnrcO5a6NuVLhzCqLZIvdspu_p7",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p1",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p2",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p3",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p4",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p5",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p6",
+        "111WmVBJrPkSEGaovcfX_HPn7mlK4nh-0_p7"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 14
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Solutions for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Solutions.",
+    "governing_equations": [
+      "A(l) \\rightleftharpoons A(g)",
+      "K_p = P",
+      "\\log\\left(\\frac{Kp_2}{Kp_1}\\right) = \\frac{-\\Delta H}{2.303 R} \\left[\\frac{1}{T_2} - \\frac{1}{T_1}\\right] = \\log\\left(\\frac{P_2}{P_1}\\right)",
+      "T \\uparrow \\Rightarrow V.P \\uparrow",
+      "P_A \\propto X_A \\implies P_A = P^\\circ_A X_A",
+      "P_B = P^\\circ_B X_B",
+      "P_T = P_A + P_B",
+      "P_T = P^\\circ_A X_A + P^\\circ_B X_B",
+      "Y_A \\times P_T = P_A",
+      "Y_A = \\frac{P^\\circ_A X_A}{P^\\circ_A X_A + P^\\circ_B X_B}",
+      "Y_B = 1 - Y_A",
+      "P_A = P_A^\\circ X_A",
+      "P_T = P_A^\\circ X_A + P_B^\\circ X_B",
+      "P_T = P_B^\\circ + (P_A^\\circ - P_B^\\circ) X_A",
+      "r_e = Ke X_A",
+      "r_c = Kc P_A",
+      "Kc P_A = Ke X_A",
+      "P_A = \\left( \\frac{Ke}{Kc} \\right) X_A",
+      "\\left( \\frac{Ke}{Kc} \\right) = P_A^\\circ",
+      "\\frac{P^\\circ_B - P_B}{P_B} = \\frac{P^\\circ_B - P^\\circ_B X_B}{P^\\circ_B X_B} = \\frac{X_A}{X_B} = \\frac{n_A}{n_B}",
+      "\\frac{P^\\circ_B - P_B}{P_B} = \\left(\\frac{n_A}{n_B}\\right)",
+      "X_A = \\text{mole fraction of solute}",
+      "n_A = X_A \\Rightarrow n_B = (1-X_A)",
+      "\\text{molality} = \\frac{1000 X_A}{(1-X_A) M}",
+      "M = \\text{molar mass of solvent}"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Solutions State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Solutions ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

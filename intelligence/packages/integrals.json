@@ -1,0 +1,343 @@
+{
+  "chapter": "integrals",
+  "evidence_ids": [
+    "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+    "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+    "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "assessment": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "retention": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "transfer": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "assurance": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p1",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p2",
+        "111l1L9DqyPyNiPAJZQKOwkaZc88Skcfo_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Integrals for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Integrals.",
+    "governing_equations": [
+      "\\int \\tan^3 x \\, d(\\tan x)",
+      "\\int \\frac{d(1+x^2)}{\\sqrt{1+x^2}}",
+      "\\int \\frac{dx}{(2x-3)^5}",
+      "\\int 2x\\sqrt{x^2+1} \\, dx",
+      "\\int \\frac{\\cos x \\, dx}{\\sqrt[3]{\\sin^2 x}}",
+      "\\int \\cos^3 x \\sin 2x \\, dx",
+      "\\int \\frac{\\sqrt{\\ell nx}}{x} \\, dx",
+      "\\int \\frac{(\\arctan x)^2 dx}{1+x^2}",
+      "\\int \\frac{dx}{(\\arcsin x)^3 \\sqrt{1-x^2}}",
+      "\\int \\frac{dx}{\\cos^2 x \\sqrt{1+\\tan x}}",
+      "\\int \\frac{d(1+\\ell nx)}{\\cos^2(1+\\ell nx)}",
+      "\\int \\left[\\cos\\left(2x-\\frac{\\pi}{4}\\right)\\right]^{-2} dx",
+      "\\int \\frac{(2x-3)dx}{x^2-3x+8}",
+      "\\int \\frac{\\sin 2x}{1+\\cos^2 x} \\, dx",
+      "\\int \\frac{(\\ell nx)^m}{x} \\, dx",
+      "\\int e^{-x^3} x^2 \\, dx",
+      "\\int \\frac{d(x/3)}{\\sqrt{1-(x/3)^2}}",
+      "\\int \\frac{2^x \\, dx}{\\sqrt{1-4^x}}",
+      "\\int (e^x+1)^3 dx",
+      "\\int \\frac{1+x}{\\sqrt{1-x^2}} \\, dx",
+      "\\int \\frac{3x-1}{x^2+9} \\, dx",
+      "\\int \\sqrt{\\frac{1-x}{1+x}} \\, dx",
+      "\\int \\frac{x(1-x^2)}{1+x^4} \\, dx",
+      "\\int \\frac{1+x-x^2}{\\sqrt{(1-x^2)^3}} \\, dx",
+      "\\int \\frac{dx}{(x+\\sqrt{x^2-1})^2}",
+      "\\int \\frac{2x - \\arcsin x}{\\sqrt{1-x^2}} \\, dx",
+      "\\int \\frac{x + (\\arccos 3x)^2}{\\sqrt{1-9x^2}} \\, dx",
+      "\\int \\frac{(1+x)^2}{x^2+1} \\, dx",
+      "\\int \\frac{x^4}{1-x} \\, dx",
+      "\\int \\frac{x^4 \\, dx}{x^2+1}",
+      "\\int \\frac{dx}{(x+1)(2x-3)}",
+      "\\int \\frac{dx}{x^2+2x+3}",
+      "\\int \\frac{dx}{4x^2+4x+5}",
+      "\\int \\frac{dx}{\\sqrt{2-6x-9x^2}}",
+      "\\int \\frac{dx}{1+\\sin x}",
+      "\\int \\frac{1+\\sin x}{1-\\sin x} \\, dx",
+      "\\int (\\tan^2 x + \\tan^4 x) dx",
+      "\\int \\frac{\\cos 2x \\, dx}{1+\\sin x \\cos x}",
+      "\\int \\cos x \\cos 2x \\cos 3x \\, dx",
+      "\\int \\frac{1-\\sin x}{\\cos x} \\, dx"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Integrals State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Integrals ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

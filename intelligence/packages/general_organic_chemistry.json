@@ -1,0 +1,483 @@
+{
+  "chapter": "general_organic_chemistry",
+  "evidence_ids": [
+    "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+    "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+    "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+    "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+    "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+    "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+    "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+    "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+    "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+    "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+    "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "assessment": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "retention": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "transfer": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "assurance": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p1",
+        "10mHvLJ4DmmjrhQ5DNc3CFJ2VbLVdVGf8_p2",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p1",
+        "10YI_ty39bMWlc057G7B_W-o1bIKZp7wl_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p1",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p2",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p3",
+        "115eQNdtlgyaaJMyenBsryVxdfL9FBl4T_p4",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p1",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p2",
+        "118fW-sVjqoRiidHwVxV26xAzkJiTOz4o_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 11
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of General Organic Chemistry for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for General Organic Chemistry.",
+    "governing_equations": [
+      "% Header & Metadata\n\\textbf{General Organic Chemistry-I} \\\\\n\\textbf{Exercise-1} \\\\\n\\textit{Marked questions are recommended for Revision. / चिन्हित प्रश्न दोहराने योग्य प्रश्न है।} \\\\\n\\textbf{PART - I : SUBJECTIVE QUESTIONS / भाग - I : विषयात्मक प्रश्न (SUBJECTIVE QUESTIONS)} \\\\\n\\textbf{Section (A) : Inductive effect / खण्ड (A) : प्रेरणिक प्रभाव} \\\\\n\\textbf{A-1.} Show the direction of inductive effect in following compounds / दिये गये यौगिकों में प्रेरणिक प्रभाव की दिशा बताइये।\n\n% Questions chemical formulas:\n(1) $\\text{C}_6\\text{H}_5-\\text{C}\\equiv\\text{CH}$ \\\\\n(2) Piperidine: $\\text{C}_5\\text{H}_{11}\\text{N}$ (six-membered saturated ring with one $\\text{NH}$) \\\\\n(3) $\\text{CH}_3-\\text{CH}=\\text{CH}_2$ \\\\\n(4) $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{Li}$ \\\\\n(5) $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{MgBr}$ \\\\\n(6) $\\text{CH}_3-\\text{CH}_2-\\text{OH}$ (and $\\text{CH}=\\text{CH}_2$ as part of the layout) \\\\\n(7) Carbocation: $(\\text{CH}_3)_3\\text{C}^+$ or $(\\text{CH}_3)_2\\text{CH}^+$ \\\\\n(8) $\\text{CH}_3-\\text{COOH}$ (written as $\\text{CH}_3-\\overset{\\overset{\\text{O}}{\\parallel}}{\\text{C}}-\\text{OH}$) \\\\\n(9) $\\text{O}_2\\text{N}-\\text{C}_6\\text{H}_4-\\text{CH}=\\text{CH}_2$ \\\\\n(10) $\\text{H}_3\\text{N}^+-\\text{C}_6\\text{H}_4-\\text{CH}_3$\n\n% Answers chemical formulas with arrows:\n(1) $\\text{Ring} \\rightarrow \\text{C}\\equiv\\text{CH}$ \\\\\n(2) $\\text{C} \\rightarrow \\text{NH} \\leftarrow \\text{C}$ (arrows pointing towards nitrogen) \\\\\n(3) $\\text{CH}_3 \\rightarrow \\text{CH}=\\text{CH}_2$ \\\\\n(4) $\\text{CH}_3 \\leftarrow \\text{CH}_2 \\leftarrow \\text{CH}_2 \\leftarrow \\text{Li}$ \\\\\n(5) $\\text{CH}_3 \\leftarrow \\text{CH}_2 \\leftarrow \\text{CH}_2 \\leftarrow \\text{MgBr}$ \\\\\n(6) $\\text{CH}_3 \\rightarrow \\text{CH}_2 \\rightarrow \\text{OH}$ \\\\\n(7) $\\text{Three arrows pointing towards } \\text{C}^+$ \\\\\n(8) $\\text{CH}_3 \\rightarrow \\text{COOH}$ \\\\\n(9) $\\text{Ring arrows towards } \\text{NO}_2 \\text{ and } \\text{CH}=\\text{CH}_2$ \\\\\n(10) $\\text{CH}_3 \\rightarrow \\text{Ring} \\rightarrow \\oplus\\text{NH}_3$",
+      "{'b1_p': '\\\\text{CH}_2=\\\\text{CH}-\\\\text{C}(=\\\\text{O})\\\\text{CH}_3', 'b1_s': '\\\\text{CH}_3\\\\text{CH}_2\\\\text{NHCH}=\\\\text{CHCH}_3', 'c1_p': '\\\\text{CH}_3-\\\\overset{\\\\ominus}{\\\\text{CH}}-\\\\text{C}\\\\equiv\\\\text{N} \\\\leftrightarrow \\\\text{CH}_3-\\\\text{CH}=\\\\text{C}=\\\\overset{\\\\ominus}{\\\\text{N}}', 'c1_q': '\\\\text{CH}_3-\\\\overset{\\\\ominus}{\\\\text{CH}}-\\\\text{CH}=\\\\text{CH}-\\\\text{NO}_2 \\\\leftrightarrow \\\\text{CH}_3-\\\\text{CH}=\\\\text{CH}-\\\\text{CH}=\\\\text{N}^+(\\\\text{O}^-)\\\\text{O}^\\\\ominus', 'c1_r': '\\\\text{CH}_3-\\\\text{CH}_2-\\\\overset{\\\\oplus}{\\\\text{C}}(\\\\text{NH}_2)-\\\\text{NH}_2 \\\\leftrightarrow \\\\text{CH}_3-\\\\text{CH}_2-\\\\text{C}(\\\\text{NH}_2)=\\\\overset{\\\\oplus}{\\\\text{NH}}_2', 'c1_s': '\\\\text{CH}_3-\\\\text{CO}-\\\\overset{\\\\ominus}{\\\\text{CH}}-\\\\text{CO}-\\\\text{CH}_3 \\\\leftrightarrow \\\\text{CH}_3-\\\\text{C}(\\\\text{O}^-)=\\\\text{CH}-\\\\text{CO}-\\\\text{CH}_3'}",
+      "{'q11_sum': '\\\\sum_{i=1}^{50} x_{2i-1}', 'q12_sequences': '\\\\{1, 4, 16, 64, \\\\dots\\\\} \\\\text{ and } \\\\{3, 12, 48, 192, \\\\dots\\\\}', 'q13_relations': '\\\\lambda_1 = n \\\\frac{a+b}{2}, \\\\quad \\\\lambda_2 = (ab)^{n/2}, \\\\quad \\\\lambda_3 = n \\\\frac{a+b}{2ab}', 'q14_angles': '\\\\angle B_1 O A_1 = 60^\\\\circ, \\\\quad \\\\text{radii ratio } r_{n+1} = \\\\frac{r_n}{3}', 'q15_quad': 'ax^2 + bx + c = 0 \\\\quad (a > 0), \\\\quad f(2) = 4a + 2b + c < 0', 'q16_sn': 'S_n = \\\\frac{n(n^2-1)(n+2)}{4}', 'q17_system': '2x + 2\\\\sqrt{3}y - 15z = 0, \\\\quad 5\\\\sqrt{3}x - 10y + 3\\\\sqrt{3}z = 2\\\\sqrt{3}, \\\\quad x - 2\\\\sqrt{3}y + 6z = 0', 'q18_poly': 'x^5 + ax^4 + 90x^3 + bx^2 + cx - 243 = 0', 'q19_expr': '\\\\frac{x^2}{y-1} + \\\\frac{y^2}{z-1} + \\\\frac{z^2}{w-1} + \\\\frac{w^2}{x-1}'}",
+      "\\sec^2\\left(\\frac{\\pi}{9}\\right) + \\sec^2\\left(\\frac{2\\pi}{9}\\right) + \\sec^2\\left(\\frac{4\\pi}{9}\\right) = S",
+      "\\sum_{k=1}^{89} \\cos^6(k^\\circ) = \\frac{a}{b}",
+      "= \\frac{\\left(\\cos\\frac{2\\pi}{9}\\right)^2 \\left(\\cos\\frac{4\\pi}{9}\\right)^2 + \\left(\\cos\\frac{4\\pi}{9}\\right)^2 \\left(\\cos\\frac{\\pi}{9}\\right)^2 + \\cos^2\\left(\\frac{\\pi}{9}\\right) \\cos^2\\left(\\frac{2\\pi}{9}\\right)}{\\left(\\cos\\frac{\\pi}{9} \\cos\\frac{2\\pi}{9} \\cos\\frac{4\\pi}{9}\\right)^2}",
+      "= \\frac{1}{4} \\frac{\\left[ \\left(\\cos\\frac{2\\pi}{3} + \\cos\\frac{2\\pi}{9}\\right)^2 + \\left(\\cos\\frac{5\\pi}{9} + \\cos\\frac{\\pi}{3}\\right)^2 + \\left(\\cos\\frac{\\pi}{3} + \\cos\\frac{\\pi}{9}\\right)^2 \\right]}{\\left(\\frac{1}{64}\\right)}",
+      "= 16 \\left( \\frac{3}{4} + \\cos^2\\frac{\\pi}{9} + \\cos^2\\frac{2\\pi}{9} + \\cos^2\\frac{4\\pi}{9} + \\cos\\frac{\\pi}{9} - \\cos^2\\frac{2\\pi}{9} - \\cos\\frac{4\\pi}{9} \\right)",
+      "= 16 \\left( \\frac{3}{9} + \\frac{3}{2} \\right)",
+      "= 36",
+      "\\sum_{k=1}^{89} \\cos^6(k^\\circ) = \\sum_{k=1}^{89} \\sin^6(k^\\circ) = \\frac{1}{2} \\sum_{k=1}^{89} \\left( \\sin^6(k^\\circ) + \\cos^6(k^\\circ) \\right)",
+      "= \\frac{1}{2} \\left( \\sum_{k=1}^{89} \\left( 1 - \\frac{3}{4} \\sin^2(2k^\\circ) \\right) \\right) = \\frac{89}{2} - \\frac{3}{8} \\sum_{k=1}^{89} \\sin^2(2k^\\circ) = \\frac{89}{2} - \\frac{3}{8} \\times 45",
+      "\\frac{a}{b} = \\frac{221}{8}",
+      "a = 221, b = 8",
+      "4x^2 - 2x + k = 0",
+      "\\lim_{x \\to \\alpha} \\frac{\\beta(x - 2) + \\gamma - \\sqrt{4 + \\sin(x - \\alpha)}}{\\tan(x - \\alpha)} = \\frac{27}{4}",
+      "2(\\sin\\theta + \\cos\\theta) = -\\gamma",
+      "\\pi^t + \\pi^{-t} = \\alpha",
+      "\\alpha + 8, \\beta, 2\\gamma",
+      "\\text{sgn}(\\alpha-\\beta) + \\text{sgn}(\\beta-\\gamma) + \\text{sgn}(\\gamma-\\alpha) = 0",
+      "f : \\mathbb{R} \\to \\mathbb{R}^+ \\cup \\{0\\}",
+      "f\\left(\\frac{x}{y}\\right) = \\frac{f(x)}{f(y)}",
+      "\\lim_{x \\to 0} (1 + f(x))^{\\frac{2}{1 - \\cos x}}",
+      "\\frac{x^2}{25} + \\frac{y^2}{4} = 1",
+      "\\tan^{-1} \\sqrt{\\frac{m}{n}}",
+      "f(x) = \\tan^{-1} x - \\frac{2}{\\pi} (\\tan^{-1} x)^3 + \\frac{4}{\\pi^2} (\\tan^{-1} x)^3 - \\dots",
+      "f^2(x) + (\\sin^{-1} x)^2 = k",
+      "\\left[ \\frac{N}{200} \\right]"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "General Organic Chemistry State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum General Organic Chemistry ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}

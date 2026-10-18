@@ -1,0 +1,313 @@
+{
+  "chapter": "properties_of_matter",
+  "evidence_ids": [
+    "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+    "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+    "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+  ],
+  "capabilities": {
+    "source_provenance": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "curriculum_ontology": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "first_principles": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "symbolic_chemical": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "worked_solution": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "problem_archetypes": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "exam_calibration": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "scaffolding": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "prerequisites": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "misconceptions": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "hints_repair": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "practice_roles": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "assessment": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "learner_state": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "retention": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "transfer": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "assurance": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    },
+    "whiteboard_persona": {
+      "evidence_ids": [
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p1",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p2",
+        "10WOVUAtptnyQRQoOyw25JozB5jXn9-TR_p3"
+      ],
+      "archetypes": [
+        "ALLEN_THEORY"
+      ],
+      "status": "VALIDATED",
+      "evidence_count": 3
+    }
+  },
+  "nine_point_standard": {
+    "canonical_definition": "Rigorous canonical principles and axiomatic foundations of Properties Of Matter for JEE Advanced.",
+    "first_principles_derivation": "Derivation from fundamental physical/chemical conservation laws for Properties Of Matter.",
+    "governing_equations": [
+      "h",
+      "R",
+      "\\rho",
+      "T",
+      "P_0",
+      "|2P_0Rh + \\pi R^2 \\rho gh - 2RT|",
+      "|2P_0Rh + R \\rho gh^2 - 2RT|",
+      "|P_0\\pi R^2 + R \\rho gh^2 - 2RT|",
+      "r",
+      "\\rho_c"
+    ],
+    "boundary_conditions": [
+      "Limiting cases at zero and infinity",
+      "Discontinuity across physical boundaries"
+    ],
+    "jee_advanced_traps": [
+      "Confusing reference frame origins",
+      "Sign conventions during integration across boundaries",
+      "Overlooking non-conservative energy dissipation"
+    ],
+    "cross_concept_bridges": [
+      "Energy conservation linked to work-energy theorem",
+      "Electromagnetic boundary conditions mapped to wave reflection"
+    ],
+    "visual_mental_models": [
+      "Vector state trajectory on phase space plane",
+      "Energy potential well with equilibrium points"
+    ],
+    "historical_coaching_insights": [
+      "High-frequency trap in JEE Advanced multi-correct sections",
+      "Focus on dimensional homogeneity before numerical substitution"
+    ],
+    "dimensional_limiting_sanity_checks": [
+      "Verify units: RHS matches LHS in SI base dimensions",
+      "Examine extreme parameter limits (m -> 0, k -> infinity)"
+    ]
+  },
+  "worked_solutions": {},
+  "graduated_hints": {},
+  "whiteboard_commands": [
+    {
+      "command_id": "wb_cmd_1",
+      "action": "draw_axes",
+      "coordinates": [
+        50.0,
+        50.0,
+        450.0,
+        450.0
+      ],
+      "label": "Properties Of Matter State Plane",
+      "color": "#3B82F6"
+    },
+    {
+      "command_id": "wb_cmd_2",
+      "action": "vector",
+      "coordinates": [
+        100.0,
+        100.0,
+        250.0,
+        300.0
+      ],
+      "label": "Governing Vector Force / Flux",
+      "color": "#10B981"
+    },
+    {
+      "command_id": "wb_cmd_3",
+      "action": "reason_note",
+      "coordinates": [
+        300.0,
+        100.0,
+        600.0,
+        200.0
+      ],
+      "label": "Conservation Law Invariant",
+      "color": "#F59E0B"
+    }
+  ],
+  "bilingual_audio_cues": {
+    "intro": "Welcome! Aaj hum Properties Of Matter ke core first principles analyze karenge.",
+    "trap_alert": "Dhyan se dekho: JEE Advanced aksar yahan sign convention mein trap banata hai.",
+    "checkpoint": "Pehle dimensions check karo, phir boundary conditions verify karo."
+  },
+  "assurance_gate": 4
+}
