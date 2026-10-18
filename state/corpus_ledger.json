@@ -109799,19 +109799,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 6,
       "exam_scope": "BOTH",
       "file_id": "10hMN_9Fx_GMUKB9Tr-OdCbs2G2rwABgo",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Question_Report_176.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Question_Report_176.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 44,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/JEE Advanced Leader 2024 Test/MT - 06/Question_Report_176.pdf"
       ]
