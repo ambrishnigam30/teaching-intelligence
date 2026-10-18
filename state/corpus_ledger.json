@@ -109318,19 +109318,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 3,
       "exam_scope": "BOTH",
       "file_id": "11-J6cujMYo5Ez8lX90ARsM1Rwgz8Fyyb",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Solution_Report_139.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Solution_Report_139.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 16,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/JEE Advanced Leader 2024 Test/RT - 04/Solution_Report_139.pdf"
       ]
