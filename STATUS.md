@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-18 04:21:37 UTC` (`2026-10-18 09:51:37 IST`)  
-**Git Commit:** `7a84790` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-18 04:27:16 UTC` (`2026-10-18 09:57:16 IST`)  
+**Git Commit:** `92a5f99` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **85** | **0** | **0** | **3** | **1,556** | **75/82** |
+| **7,103** | **85** | **0** | **0** | **3** | **1,560** | **75/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.2%`
 
@@ -21,8 +21,8 @@
 | Lifecycle Stage | File Count | Conversion Rate | Visual Funnel | Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Discovered (G0)** | 7,103 | 100.0% | `██████████ 100.0%` | `DISCOVERED` |
-| **2. Indexed & Sharded (G1)** | 6,948 | 97.8% | `██████████  97.8%` | `INDEXED` |
-| **3. Evidence Ready (G2)** | 155 | 2.2% | `░░░░░░░░░░   2.2%` | `EXTRACTED` |
+| **2. Indexed & Sharded (G1)** | 6,947 | 97.8% | `██████████  97.8%` | `INDEXED` |
+| **3. Evidence Ready (G2)** | 156 | 2.2% | `░░░░░░░░░░   2.2%` | `EXTRACTED` |
 | **4. Knowledge Ready (G3)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `CAS_VERIFIED` |
 | **5. Teacher Ready (G4)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `PACKAGE_READY` |
 
@@ -110,7 +110,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 44 | `d_f_block` | Tier 2 | 1 | 1 | 1 | ✅ `COMPLETE` | `████████ 100.0%` |
 | 45 | `coordination_compounds` | Tier 2 | 1 | 0 | 4 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 46 | `environmental_chemistry` | Tier 3 | 2 | 1 | 3 | 🔄 `IN_PROGRESS` | `████░░░░  50.0%` |
-| 47 | `general_organic_chemistry` | Tier 2 | 16 | 0 | 13 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 47 | `general_organic_chemistry` | Tier 2 | 17 | 0 | 17 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 48 | `hydrocarbons` | Tier 2 | 10 | 0 | 11 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 49 | `haloalkanes` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 50 | `alcohols_phenols_ethers` | Tier 2 | 2 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -139,7 +139,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 69 | `trigonometry` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 70 | `inverse_trigonometry` | Tier 2 | 1 | 0 | 4 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 71 | `straight_lines` | Tier 2 | 6 | 1 | 1 | 🔄 `IN_PROGRESS` | `█░░░░░░░  16.7%` |
-| 72 | `circles` | Tier 2 | 13 | 1 | 7 | 🔄 `IN_PROGRESS` | `█░░░░░░░   7.7%` |
+| 72 | `circles` | Tier 2 | 14 | 1 | 11 | 🔄 `IN_PROGRESS` | `█░░░░░░░   7.1%` |
 | 73 | `conics` | Tier 2 | 9 | 1 | 8 | 🔄 `IN_PROGRESS` | `█░░░░░░░  11.1%` |
 | 74 | `vectors` | Tier 2 | 2 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 75 | `three_dimensional_geometry` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -157,8 +157,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | Gate | Name | Eligible Files | Passed Files | Pass Rate | Visual Gate Health | Gate Criteria |
 | :-: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **G0** | DISCOVERED | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Discovered on founder Drive |
-| **G1** | SOURCE_READY | 7,103 | 6,948 | 97.8% | `████████  97.8%` | Indexed, categorized, chapter-mapped |
-| **G2** | EVIDENCE_READY | 7,103 | 155 | 2.2% | `░░░░░░░░   2.2%` | Extracted + Diagram Assets + 2D BBoxes |
+| **G1** | SOURCE_READY | 7,103 | 6,947 | 97.8% | `████████  97.8%` | Indexed, categorized, chapter-mapped |
+| **G2** | EVIDENCE_READY | 7,103 | 156 | 2.2% | `░░░░░░░░   2.2%` | Extracted + Diagram Assets + 2D BBoxes |
 | **G3** | KNOWLEDGE_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | CAS / SymPy + Cross-family blind solve |
 | **G4** | TEACHER_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | 18 capabilities + 9-point concept standard |
 | **G5** | RUNTIME_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Exported runtime schema verified |
@@ -168,10 +168,10 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
 - **Total Drive Files Discovered: 85**
-- **Pages Processed This Run: 1556**
+- **Pages Processed This Run: 1560**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: 65 Class Test (E-TOAS,TNAS,TAAS)_Solution copy.pdf**
+- **Next File in Queue: CAPS-8.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -187,7 +187,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
   - `Allen Rank booster Part Syllabus test-1.pdf`: HTTPStatusError: provider returned HTTP 429
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
-- **Unmapped Files Pending Header Fallback:** `6,644` / `7,103`
+- **Unmapped Files Pending Header Fallback:** `6,643` / `7,103`
 
 ---
 ## 📜 Section I — Recent Batch Activity & Git Commit History
@@ -207,6 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `92a5f99` | 2026-10-18 04:21:37 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 | `7a84790` | 2026-10-18 04:14:43 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `edf9f3f` | 2026-10-18 04:06:42 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
