@@ -28792,19 +28792,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 3,
       "exam_scope": "BOTH",
       "file_id": "10jni-uwNmoSCYPESYnEJ5GOnfZ0-jUYZ",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Ellipse_ex_1__1645696092008.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Ellipse_ex_1__1645696092008.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 17,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Maths/Ellipse_ex_1__1645696092008.pdf",
         "1hGymVX1oNRK6iM1WinIL11-PFnpDxfuc/Ellipse_ex_1__1645696092008.pdf"
@@ -39066,18 +39066,20 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "chapters": [
+        "matrices_determinants"
+      ],
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "10jiH_vnpA4dEZZPR6w7xbGoWKNndpNSO",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "OC-TAPS -QUIZ-5-Answer-key.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/OC-TAPS -QUIZ-5-Answer-key.pdf"
       ]
@@ -45648,19 +45650,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 3,
       "exam_scope": "BOTH",
       "file_id": "10jYmt5frHcaqVDogU6d-ZxqCheHIAyA1",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing HT-02.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "HT-02.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/HT-02.pdf"
       ]
