@@ -15005,19 +15005,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "three_dimensional_geometry"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11NJ0iplEhaq9X18yLV6CB49aMo8lpQlv",
       "gate": 1,
-      "last_error": null,
+      "last_error": "Processing Exercise 2.2.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Exercise 2.2.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 15,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Mohit Tyagi Digital Book/22 Progression and Series/Exercise 2.2.pdf"
       ]
@@ -48518,19 +48520,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11M-8pxYEOeIKzf1_DWS0s0tchUGgoVRz",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "5 soln.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 13,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/5 soln.pdf"
       ]
@@ -68266,19 +68268,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11MQNcmlOdxTG4eGF1e9PgH4UWddl0GdS",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "26 wave optics soln.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 11,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/GRP Score 2 normal/26 wave optics soln.pdf"
       ]
@@ -86610,7 +86612,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [
         "circles",
         "conics",
@@ -86620,12 +86622,12 @@
       "exam_scope": "BOTH",
       "file_id": "11L3GbyjugFLVYHeSzsPBR_RNFKz5T_rf",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Sol_Ch-12_Conic+Sections+(Parabola+Ellipse+and+Hyperbola).pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "BLOCKED_PROVIDER",
       "total_pages": 40,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_sol/M_Sol_Ch-12_Conic+Sections+(Parabola+Ellipse+and+Hyperbola).pdf"
