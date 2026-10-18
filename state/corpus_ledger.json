@@ -83855,19 +83855,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "attempts": 1,
+      "chapters": [
+        "current_electricity"
+      ],
+      "completed_pages": 5,
       "exam_scope": "BOTH",
       "file_id": "10yV2WyfUbKYMqMwWErIkn6vTbUpmVZ52",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing current electricty HLP.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "current electricty HLP.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 6,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Resonance sheets (main + adv)/Physics /Current Electricity/current electricty HLP.pdf"
       ]
