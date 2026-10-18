@@ -2,8 +2,8 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-18 05:45:33 UTC` (`2026-10-18 11:15:33 IST`)  
-**Git Commit:** `6a83f08` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-18 06:03:48 UTC` (`2026-10-18 11:33:48 IST`)  
+**Git Commit:** `efb66b6` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
@@ -208,6 +208,9 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `efb66b6` | 2026-10-18 11:33:35 | perf(extraction): optimize vision caller with 25s timeout and fast-fail on 429/401/403 | `origin/main` |
+| `1038d16` | 2026-10-18 11:20:09 | fix(extraction): gate Ollama on ENABLE_LOCAL_OLLAMA flag for test compatibility | `origin/main` |
+| `6bbe5b4` | 2026-10-18 11:15:14 | feat(factory): stop green CI theatre, wire QuestionLedger, synthesize Gate 4 packages, enforce forward progress gate | `origin/main` |
 | `6a83f08` | 2026-10-18 11:13:35 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-18 05:43:35 UTC (batch 1) - timeout after 105. | `origin/main` |
 | `def2a33` | 2026-10-18 05:41:27 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 | `fe8c4f5` | 2026-10-18 05:33:53 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
@@ -215,9 +218,6 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | `62d714e` | 2026-10-18 05:23:24 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 | `e1a8609` | 2026-10-18 05:17:47 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `53fffe4` | 2026-10-18 05:10:39 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
-| `a2001aa` | 2026-10-18 05:03:52 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
-| `afca483` | 2026-10-18 04:58:16 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
-| `7c024fc` | 2026-10-18 04:51:57 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 
 </details>
 
