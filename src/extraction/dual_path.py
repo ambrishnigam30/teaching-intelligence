@@ -149,18 +149,22 @@ class HttpVisionCaller:
         for dynamic in (False, True):
             for model in models:
                 try:
-                    response = httpx.post(f"{base}/models/{model}:generateContent", headers=headers, json=payload, timeout=90)
+                    response = httpx.post(f"{base}/models/{model}:generateContent", headers=headers, json=payload, timeout=25)
                     last_response = response
-                    if response.status_code in retryable_codes: continue
+                    if response.status_code in {429, 401, 403}:
+                        # Account-level quota exhaustion or auth: rotate key immediately
+                        break
+                    if response.status_code in retryable_codes:
+                        continue
                     response.raise_for_status()
                     candidate_text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
                     return _parse_json_payload(candidate_text)
                 except (httpx.TransportError, json.JSONDecodeError, KeyError, IndexError):
                     continue
-            if dynamic:
+            if dynamic or (last_response is not None and last_response.status_code in {429, 401, 403}):
                 break
             try:
-                models = [self._choose_dynamic_model(httpx.get(f"{base}/models", headers=headers, timeout=30), "gemini")]
+                models = [self._choose_dynamic_model(httpx.get(f"{base}/models", headers=headers, timeout=20), "gemini")]
             except Exception:
                 break
         if last_response is not None:
@@ -177,17 +181,23 @@ class HttpVisionCaller:
         for dynamic in (False, True):
             for model in candidates:
                 try:
-                    response = httpx.post(endpoint, headers=headers, json={**payload, "model": model}, timeout=90)
+                    response = httpx.post(endpoint, headers=headers, json={**payload, "model": model}, timeout=25)
                     last_response = response
-                    if response.status_code in retryable_codes: continue
+                    if response.status_code in {429, 401, 403}:
+                        # Account-level quota exhaustion or auth: rotate key immediately
+                        break
+                    if response.status_code in retryable_codes:
+                        continue
                     response.raise_for_status()
                     message_text = response.json()["choices"][0]["message"]["content"]
                     return _parse_json_payload(message_text)
                 except (httpx.TransportError, json.JSONDecodeError, KeyError, IndexError):
                     continue
-            if dynamic: break
+            if dynamic or (last_response is not None and last_response.status_code in {429, 401, 403}):
+                break
             try:
-                listing = httpx.get(models_endpoint, headers=headers, timeout=30); listing.raise_for_status()
+                listing = httpx.get(models_endpoint, headers=headers, timeout=20)
+                listing.raise_for_status()
                 candidates = [self._choose_dynamic_model(listing, family)]
             except Exception:
                 break
