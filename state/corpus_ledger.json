@@ -44461,19 +44461,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "attempts": 1,
+      "chapters": [
+        "thermodynamics_chemistry"
+      ],
+      "completed_pages": 3,
       "exam_scope": "BOTH",
       "file_id": "119pn8MF1VjBksMctgONK2DWcr_sQLr26",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Class Test-12_Eng.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Class Test-12_Eng.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/Class Test-12_Eng.pdf"
       ]
@@ -135596,19 +135598,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 3,
       "exam_scope": "BOTH",
       "file_id": "11BCEnaoYg3rLvCf-3Nxn72YP90YxZF_J",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing P9.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "P9.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 24,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Nurture Mixed/P9.pdf"
       ]
