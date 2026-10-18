@@ -61502,19 +61502,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 4,
       "exam_scope": "BOTH",
       "file_id": "10cHxtmDv_Kw4mmX52X_zk2XhxpAjuNcu",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing HA#2_Part-2.pdf.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "HA#2_Part-2.pdf.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/HA#2_Part-2.pdf.pdf"
       ]
