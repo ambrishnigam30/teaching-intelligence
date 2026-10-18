@@ -262,9 +262,6 @@ class VisionApiExtractor:
             document.close()
 
     def extract_ollama(self, png: bytes, text_clue: str = "") -> ExtractionResult | None:
-        # Safeguard 2: Never run CPU Ollama inside GitHub Actions CI runners
-        if os.getenv("CI", "").lower() in {"1", "true"} or os.getenv("GITHUB_ACTIONS", "").lower() == "true":
-            return None
         if os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() not in {"1", "true", "yes"}:
             return None
         host = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434").rstrip("/")
@@ -334,12 +331,8 @@ class VisionApiExtractor:
                 last_error = exc
                 self.pool.cooldown(key, seconds=60)
 
-        # 1. Server-installed local Ollama fallback if enabled (and not running in CI)
-        if (
-            os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}
-            and os.getenv("CI", "").lower() not in {"1", "true"}
-            and os.getenv("GITHUB_ACTIONS", "").lower() != "true"
-        ):
+        # 1. Server-installed local Ollama fallback if enabled
+        if os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}:
             try:
                 ollama_result = self.extract_ollama(png, text_clue)
                 if ollama_result is not None:
