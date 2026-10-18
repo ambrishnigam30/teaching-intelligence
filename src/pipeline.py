@@ -378,9 +378,15 @@ def run(
 
     with tempfile.TemporaryDirectory(prefix="mentora-drive-") as scratch_raw:
         scratch = Path(scratch_raw)
+        session_paused_files: set[str] = set()
         while stats["pages"] < max_pages and time.monotonic() - started < time_budget_seconds:
-            batch = ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count)
-            if not batch: break
+            batch = ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count, exclude_ids=session_paused_files)
+            if not batch:
+                if session_paused_files and pool.shortest_cooldown_wait() <= 0:
+                    session_paused_files.clear()
+                    batch = ledger.next_batch(1, shard_index=shard_index, shard_count=shard_count)
+                if not batch:
+                    break
             item = batch[0]; active = item.name or item.file_id
             node = node_by_id.get(item.file_id)
             if not node:
@@ -427,6 +433,7 @@ def run(
                 continue
             except QuotaExhausted as exc:
                 consecutive_quota_pauses += 1
+                session_paused_files.add(item.file_id)
                 # Safeguard 1: Rollback attempts on transient quota exhaustion
                 item.attempts = max(0, item.attempts - 1)
                 item.status, item.last_error = "PENDING_QUOTA", str(exc)
@@ -444,6 +451,7 @@ def run(
             except httpx.HTTPStatusError as exc:
                 if exc.response.status_code in {429, 503}:
                     consecutive_quota_pauses += 1
+                    session_paused_files.add(item.file_id)
                     # Safeguard 1: Rollback attempts on transient 429/503 rate limits
                     item.attempts = max(0, item.attempts - 1)
                     item.status, item.last_error = "PENDING_QUOTA", _safe_error(exc)

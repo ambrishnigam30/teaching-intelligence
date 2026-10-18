@@ -73492,7 +73492,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 1,
+      "attempts": 0,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
@@ -73503,7 +73503,7 @@
       "name": "01 # Quiz (Eng)_Heat Transfer.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PARTIAL",
+      "status": "PENDING",
       "total_pages": null,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Heat transfer/01 # Quiz (Eng)_Heat Transfer.pdf"
@@ -84033,9 +84033,9 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 1,
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "11EszxRE6K1z2_M64JCcxVVxwSuCyORcq",
       "gate": 2,
@@ -133599,18 +133599,18 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 1,
+      "attempts": 0,
       "chapters": [],
-      "completed_pages": 1,
+      "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11OrRcl1pnIX9l_6KwAJTzLl-0qlR9a1z",
-      "gate": 2,
-      "last_error": null,
+      "gate": 1,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "PC79.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "EXTRACTED",
+      "status": "PENDING_QUOTA",
       "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Nurture Mixed/Solutions/Paper Corrections/PC79.pdf"

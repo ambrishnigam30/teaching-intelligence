@@ -39,3 +39,18 @@ def test_deterministic_sharding_partitions_without_overlap():
     assert len(all_sharded) == 60
     assert all_sharded == {f"pdf_{i}" for i in range(60)}
 
+
+def test_next_batch_status_ranking_and_exclude_ids():
+    item_quota = WorkItem("doc-quota", ["ray_optics"], status="PENDING_QUOTA")
+    item_pending = WorkItem("doc-pending", ["ray_optics"], status="PENDING")
+    item_partial = WorkItem("doc-partial", ["ray_optics"], status="PARTIAL")
+    ledger = CorpusLedger([item_quota, item_pending, item_partial])
+
+    # Rank priority: PARTIAL -> PENDING -> PENDING_QUOTA
+    batch = ledger.next_batch(3)
+    assert [x.file_id for x in batch] == ["doc-partial", "doc-pending", "doc-quota"]
+
+    # Exclude IDs filter
+    batch_excluded = ledger.next_batch(3, exclude_ids={"doc-partial", "doc-pending"})
+    assert [x.file_id for x in batch_excluded] == ["doc-quota"]
+

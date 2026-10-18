@@ -48,17 +48,22 @@ class CorpusLedger:
                 item.exam_scope = previous.exam_scope
         self.items[item.file_id] = item
 
-    def next_batch(self, limit: int, shard_index: int = 0, shard_count: int = 1) -> list[WorkItem]:
-        candidates = [i for i in self.items.values() if i.status in {"PENDING", "PARTIAL", "PENDING_QUOTA"}]
+    def next_batch(self, limit: int, shard_index: int = 0, shard_count: int = 1, exclude_ids: set[str] | None = None) -> list[WorkItem]:
+        candidates = [
+            i for i in self.items.values()
+            if i.status in {"PENDING", "PARTIAL", "PENDING_QUOTA"}
+            and (exclude_ids is None or i.file_id not in exclude_ids)
+        ]
         if shard_count > 1:
             candidates = [
                 i for i in candidates
                 if (int(hashlib.sha256(i.file_id.encode("utf-8")).hexdigest(), 16) % shard_count) == (shard_index % shard_count)
             ]
         incomplete = {c for i in candidates for c in i.chapters}
+        status_rank = {"PARTIAL": 0, "PENDING": 1, "PENDING_QUOTA": 2}
         def key(item: WorkItem):
             chapter_key = self.mapper.work_key([c for c in item.chapters if c in incomplete])
-            return (chapter_key, item.gate, item.file_id)
+            return (status_rank.get(item.status, 3), chapter_key, item.gate, item.file_id)
         return sorted(candidates, key=key)[:limit]
 
     def transition(self, file_id: str, target: AssuranceGate, status: str = "PENDING") -> WorkItem:

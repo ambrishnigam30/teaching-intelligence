@@ -39,3 +39,16 @@ def test_shortest_cooldown_wait():
     # shortest cooldown wait should be 30.0s
     assert abs(pool.shortest_cooldown_wait(now) - 30.0) < 0.01
 
+
+def test_from_environment_loads_base_unnumbered_keys():
+    env = {
+        "GEMINI_API_KEY": "base_gemini",
+        "GROQ_API_KEY": "base_groq",
+        "GEMINI_API_KEY_1": "g1",
+    }
+    pool = KeyPool.from_environment(env)
+    labels = [k.label for k in pool.keys]
+    assert "gemini_0" in labels
+    assert "groq_0" in labels
+    assert pool.keys[0].value == "base_gemini"
+

@@ -2,17 +2,17 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-18 06:03:48 UTC` (`2026-10-18 11:33:48 IST`)  
-**Git Commit:** `efb66b6` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-18 06:22:36 UTC` (`2026-10-18 11:52:36 IST`)  
+**Git Commit:** `fbc8b17` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **89** | **2** | **0** | **4** | **1,619** | **75/82** |
+| **7,103** | **88** | **1** | **0** | **5** | **1,619** | **75/82** |
 
-**Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.3%`
+**Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.2%`
 
 ---
 ## 🔄 Section C — Lifecycle Verification Funnels
@@ -21,18 +21,18 @@
 | Lifecycle Stage | File Count | Conversion Rate | Visual Funnel | Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Discovered (G0)** | 7,103 | 100.0% | `██████████ 100.0%` | `DISCOVERED` |
-| **2. Indexed & Sharded (G1)** | 6,929 | 97.6% | `██████████  97.6%` | `INDEXED` |
-| **3. Evidence Ready (G2)** | 174 | 2.4% | `░░░░░░░░░░   2.4%` | `EXTRACTED` |
+| **2. Indexed & Sharded (G1)** | 6,930 | 97.6% | `██████████  97.6%` | `INDEXED` |
+| **3. Evidence Ready (G2)** | 173 | 2.4% | `░░░░░░░░░░   2.4%` | `EXTRACTED` |
 | **4. Knowledge Ready (G3)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `CAS_VERIFIED` |
 | **5. Teacher Ready (G4)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `PACKAGE_READY` |
 
 ### 2. Question Verification Funnel
 | Question Stage | Count | Ratio | Visual Funnel | Operational Invariant |
 | :--- | :---: | :---: | :---: | :--- |
-| **1. Discovered Questions** | 281 | 100.0% | `██████████ 100.0%` | Gate 2 Transcribed |
-| **2. Reconstructed & Bound** | 281 | 100.0% | `██████████ 100.0%` | BBoxes + Diagrams + Non-empty Stems |
-| **3. Candidate Solved** | 281 | 100.0% | `██████████ 100.0%` | 5-phase step-by-step reasoning |
-| **4. Independently Verified** | 34 | 12.1% | `█░░░░░░░░░  12.1%` | Separate model family verification |
+| **1. Discovered Questions** | 283 | 100.0% | `██████████ 100.0%` | Gate 2 Transcribed |
+| **2. Reconstructed & Bound** | 283 | 100.0% | `██████████ 100.0%` | BBoxes + Diagrams + Non-empty Stems |
+| **3. Candidate Solved** | 283 | 100.0% | `██████████ 100.0%` | 5-phase step-by-step reasoning |
+| **4. Independently Verified** | 36 | 12.7% | `█░░░░░░░░░  12.7%` | Separate model family verification |
 | **5. VERIFIED_CORRECT** | 22 | 7.8% | `█░░░░░░░░░   7.8%` | **100% Acceptance Invariant** |
 
 ---
@@ -49,8 +49,8 @@
 | c | **4. Curriculum Mapping** | $\ge 95\%$ | 100.0% | `N/A` | 5 | `PASS` |  |
 | s | **5. Solution Correctness** | $\ge 95\%$ | 64.7% | `N/A` | 34 | `FAIL` | Cross-family solving with SymPy CAS / RDKit validation against official keys |
 | p | **6. Pedagogical Quality** | $\ge 95\%$ | 100.0% | `N/A` | 3 | `PASS` |  |
-| u | **7. Uncertainty Calibration** | $\ge 95\%$ | 100.0% | `N/A` | 281 | `PASS` | Audited invariant verification: no conflicted item promoted to VERIFIED_CORRECT |
-| p | **8. Provenance & Reproducibility** | $\ge 95\%$ | 100.0% | `N/A` | 281 | `PASS` | Cryptographic and audit log trail verification |
+| u | **7. Uncertainty Calibration** | $\ge 95\%$ | 100.0% | `N/A` | 283 | `PASS` | Audited invariant verification: no conflicted item promoted to VERIFIED_CORRECT |
+| p | **8. Provenance & Reproducibility** | $\ge 95\%$ | 100.0% | `N/A` | 283 | `PASS` | Cryptographic and audit log trail verification |
 
 ---
 ## 🗺️ Section E — 82-Chapter Canonical Spine Heatmap
@@ -157,8 +157,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | Gate | Name | Eligible Files | Passed Files | Pass Rate | Visual Gate Health | Gate Criteria |
 | :-: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **G0** | DISCOVERED | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Discovered on founder Drive |
-| **G1** | SOURCE_READY | 7,103 | 6,929 | 97.6% | `████████  97.6%` | Indexed, categorized, chapter-mapped |
-| **G2** | EVIDENCE_READY | 7,103 | 174 | 2.4% | `░░░░░░░░   2.4%` | Extracted + Diagram Assets + 2D BBoxes |
+| **G1** | SOURCE_READY | 7,103 | 6,930 | 97.6% | `████████  97.6%` | Indexed, categorized, chapter-mapped |
+| **G2** | EVIDENCE_READY | 7,103 | 173 | 2.4% | `░░░░░░░░   2.4%` | Extracted + Diagram Assets + 2D BBoxes |
 | **G3** | KNOWLEDGE_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | CAS / SymPy + Cross-family blind solve |
 | **G4** | TEACHER_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | 18 capabilities + 9-point concept standard |
 | **G5** | RUNTIME_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Exported runtime schema verified |
@@ -167,11 +167,11 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ---
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
-- **Total Drive Files Discovered: 89**
+- **Total Drive Files Discovered: 88**
 - **Pages Processed This Run: 1619**
 - **Questions Verified This Run: 22**
 - **Active File: none**
-- **Next File in Queue: 01 # Quiz (Eng)_Heat Transfer.pdf**
+- **Next File in Queue: AYJR-MAINS-2025-PAPER-SHIFT2.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -183,11 +183,12 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 - **Quarantined Files (0):**
   - `None. Zero poison pills currently quarantined.`
-- **Quota-Paused Files (4):**
+- **Quota-Paused Files (5):**
   - `Comprehensive Algebra I for JEE by Vinay Kumar.pdf`: HTTPStatusError: provider returned HTTP 429
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
   - `Allen Rank booster Part Syllabus test-1.pdf`: HTTPStatusError: provider returned HTTP 429
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
+  - `PC79.pdf`: HTTPStatusError: provider returned HTTP 429
 - **Unmapped Files Pending Header Fallback:** `6,626` / `7,103`
 
 ---
@@ -208,6 +209,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `fbc8b17` | 2026-10-18 11:34:00 | docs(reports): update STATUS.md and operational handoff reports with real intelligence telemetry | `origin/main` |
 | `efb66b6` | 2026-10-18 11:33:35 | perf(extraction): optimize vision caller with 25s timeout and fast-fail on 429/401/403 | `origin/main` |
 | `1038d16` | 2026-10-18 11:20:09 | fix(extraction): gate Ollama on ENABLE_LOCAL_OLLAMA flag for test compatibility | `origin/main` |
 | `6bbe5b4` | 2026-10-18 11:15:14 | feat(factory): stop green CI theatre, wire QuestionLedger, synthesize Gate 4 packages, enforce forward progress gate | `origin/main` |
@@ -217,7 +219,6 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | `ab706ea` | 2026-10-18 05:28:48 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
 | `62d714e` | 2026-10-18 05:23:24 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 | `e1a8609` | 2026-10-18 05:17:47 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `53fffe4` | 2026-10-18 05:10:39 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
 

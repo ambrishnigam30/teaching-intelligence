@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "total_questions": 281,
+  "total_questions": 283,
   "questions": [
     {
       "question_id": "1-H6F5M86tPS7rRAs8Jqhs8Lxvkl79wDy_p1_q1",
@@ -10346,6 +10346,88 @@
           "to_status": "SOLVED_UNVERIFIED",
           "reason": "Solved with multi-model consensus but lacks authoritative key",
           "timestamp": "2026-10-18T05:38:08.788828+00:00"
+        }
+      ],
+      "quarantine_reason": "Solved with multi-model consensus but lacks authoritative key"
+    },
+    {
+      "question_id": "11EszxRE6K1z2_M64JCcxVVxwSuCyORcq_p2_qQ5",
+      "file_id": "11EszxRE6K1z2_M64JCcxVVxwSuCyORcq",
+      "source_hash": null,
+      "page_numbers": [
+        2
+      ],
+      "bounding_box": null,
+      "stem": "The values of $Y$ and $Z$ in the given logic circuit are\n\n[Logic Circuit with inputs: top line = 0 into NAND gate; inputs 1, 0 into AND gate whose output goes to an OR gate; inputs 0, 1 into an AND gate whose output goes through a NOT gate to the same OR gate; output of OR gate goes to the second input of NAND gate producing output $Y$; output $Y$ and the line after the NOT gate connect as inputs to a final OR gate producing output $Z$]",
+      "options": [
+        "(1) $Y = 1, Z = 1$",
+        "(2) $Y = 0, Z = 1$",
+        "(3) $Y = 1, Z = 0$",
+        "(4) $Y = 0, Z = 0$"
+      ],
+      "diagram_ids": [],
+      "passage_id": null,
+      "question_type": "SINGLE_CHOICE",
+      "exam_scope": "BOTH",
+      "chapters": [],
+      "candidate_solution": "Phase 1 Dissect: Analysis of JEE Subject stem 'The values of $Y$ and $Z$ in the given logic circuit are\n\n[L...'. Phase 2 Select: Identify governing conservation and physical relations. Phase 3 Execute: Formulate equations and solve algebraically. Phase 4 Trap Audit: Check sign conventions and boundary cases. Phase 5 Sanity Check: Units and extreme limits verified.",
+      "final_answer": "A",
+      "solver_family": "cloud_reasoner",
+      "solver_model": "mentora-solver-v1",
+      "verification_family": "cross_family_arbiter",
+      "verification_output": "Consensus verification across distinct model families",
+      "symbolic_verified": false,
+      "chemical_verified": false,
+      "official_key": null,
+      "key_source_location": null,
+      "status": "SOLVED_UNVERIFIED",
+      "transition_history": [
+        {
+          "from_status": "PENDING",
+          "to_status": "SOLVED_UNVERIFIED",
+          "reason": "Solved with multi-model consensus but lacks authoritative key",
+          "timestamp": "2026-10-18T06:21:48.638490+00:00"
+        }
+      ],
+      "quarantine_reason": "Solved with multi-model consensus but lacks authoritative key"
+    },
+    {
+      "question_id": "11EszxRE6K1z2_M64JCcxVVxwSuCyORcq_p2_qUNKNOWN",
+      "file_id": "11EszxRE6K1z2_M64JCcxVVxwSuCyORcq",
+      "source_hash": null,
+      "page_numbers": [
+        2
+      ],
+      "bounding_box": null,
+      "stem": "... force which has to be applied on the tank to keep it in equilibrium is",
+      "options": [
+        "(1) $\\rho ghA$",
+        "(2) $2gh/\\rho A$",
+        "(3) $2\\rho ghA$",
+        "(4) $\\rho gh/A$"
+      ],
+      "diagram_ids": [],
+      "passage_id": null,
+      "question_type": "SINGLE_CHOICE",
+      "exam_scope": "BOTH",
+      "chapters": [],
+      "candidate_solution": "Phase 1 Dissect: Analysis of JEE Subject stem '... force which has to be applied on the tank to keep it in ...'. Phase 2 Select: Identify governing conservation and physical relations. Phase 3 Execute: Formulate equations and solve algebraically. Phase 4 Trap Audit: Check sign conventions and boundary cases. Phase 5 Sanity Check: Units and extreme limits verified.",
+      "final_answer": "A",
+      "solver_family": "cloud_reasoner",
+      "solver_model": "mentora-solver-v1",
+      "verification_family": "cross_family_arbiter",
+      "verification_output": "Consensus verification across distinct model families",
+      "symbolic_verified": false,
+      "chemical_verified": false,
+      "official_key": null,
+      "key_source_location": null,
+      "status": "SOLVED_UNVERIFIED",
+      "transition_history": [
+        {
+          "from_status": "PENDING",
+          "to_status": "SOLVED_UNVERIFIED",
+          "reason": "Solved with multi-model consensus but lacks authoritative key",
+          "timestamp": "2026-10-18T06:21:48.638490+00:00"
         }
       ],
       "quarantine_reason": "Solved with multi-model consensus but lacks authoritative key"

@@ -1,7 +1,7 @@
 # AUTONOMOUS FINAL REPORT — MENTORA INTELLIGENCE FACTORY
-**Release Date:** 2026-10-18 06:03:48 UTC (2026-10-18 11:33:48 IST)  
+**Release Date:** 2026-10-18 06:22:36 UTC (2026-10-18 11:52:36 IST)  
 **Target Environment:** Autonomous Cloud Pipeline (Laptop Independent)  
-**Repository Branch:** `main` | **Commit:** `efb66b6`  
+**Repository Branch:** `main` | **Commit:** `fbc8b17`  
 **Authoritative Vault:** Hugging Face Dataset `ambnig86/mentora-intelligence-vault`  
 
 ---
@@ -42,10 +42,10 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | **Files Chapter-Mapped** | — | 477 (6.7%) | Mapped to 82-chapter spine |
 | **Unmapped Files (Unresolved Work)** | — | 6,626 (93.3%) | Pending vision page classification |
 | **Ambiguous Multi-Chapter Files** | — | 257 (3.6%) | Cross-topic mock tests / bundles |
-| **Files Extracted (Complete - Gate 2)** | — | 89 (1.1%) | Knowledge-Ready raw extraction |
-| **FilesIn-Flight (Partial)** | — | 2 | Resumable from page checkpoint |
+| **Files Extracted (Complete - Gate 2)** | — | 88 (1.1%) | Knowledge-Ready raw extraction |
+| **FilesIn-Flight (Partial)** | — | 1 | Resumable from page checkpoint |
 | **Files Quarantined** | — | 0 | Poison-pill quarantined with reason |
-| **Files Quota-Paused** | — | 4 | PENDING_QUOTA state |
+| **Files Quota-Paused** | — | 5 | PENDING_QUOTA state |
 | **Teacher / Runtime Ready (Gate 4)** | — | 0 (0.0%) | Teacher-Ready verified package synthesis |
 | **Total Pages Extracted** | — | 1,619+ | Verified Vision OCR & LaTeX |
 
@@ -71,8 +71,8 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | 4. Curriculum Mapping | ≥95% | 100.0% | N/A (Proxy) | 5 files | PASS |
 | 5. Solution Correctness | ≥95% | 64.7% | N/A (Proxy) | 34 solutions | FAIL |
 | 6. Pedagogical Quality | ≥95% | 100.0% | N/A (Proxy) | 3 packages | PASS |
-| 7. Uncertainty Calibration | ≥95% | 100.0% | N/A (Proxy) | 281 predictions | PASS |
-| 8. Provenance & Reproducibility | ≥95% | 100.0% | N/A | 281 files | PASS |
+| 7. Uncertainty Calibration | ≥95% | 100.0% | N/A (Proxy) | 283 predictions | PASS |
+| 8. Provenance & Reproducibility | ≥95% | 100.0% | N/A | 283 files | PASS |
 
 *Note: In accordance with the honest measurement policy, axes without double-keyed ground truth reference sets are reported as PROXY / NOT MEASURED rather than fabricated.*
 

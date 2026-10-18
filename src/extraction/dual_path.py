@@ -22,10 +22,17 @@ For any questions found on the page, include them in 'questions' with:
 - 'options': array of full option strings (e.g. ['(A) option 1', '(B) option 2', ...]) if multiple choice
 - 'question_type': 'SINGLE_CHOICE' | 'MULTIPLE_CHOICE' | 'NUMERICAL' | 'SUBJECTIVE'
 Never invent unreadable content; use UNKNOWN only if completely illegible."""
-GEMINI_VISION_MODELS = ("gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-3.8-flash", "gemini-2.5-pro")
+GEMINI_VISION_MODELS = ("gemini-3.8-flash", "gemini-2.5-flash", "gemini-2.0-flash")
 GROQ_VISION_MODELS = ("meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct")
 GROQ_TEXT_MODELS = ("llama-3.3-70b-versatile", "qwen/qwen3-32b")
-OPENROUTER_VISION_MODELS = ("qwen/qwen2.5-vl-72b-instruct:free", "qwen/qwen2.5-vl-32b-instruct:free", "google/gemma-3-27b-it:free", "mistralai/mistral-small-3.1-24b-instruct:free", "google/gemma-4-31b-it:free", "openrouter/free")
+OPENROUTER_VISION_MODELS = (
+    "google/gemma-4-31b-it:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "nvidia/nemotron-3.5-super-vl:free",
+    "dots-studio/dots-3-note-preview:free",
+    "qwen/qwen2.5-vl-72b-instruct:free",
+    "openrouter/free",
+)
 
 def _prepare_image_bytes(png: bytes, max_bytes: int = 3_000_000) -> tuple[str, str]:
     if len(png) <= max_bytes:
@@ -149,7 +156,7 @@ class HttpVisionCaller:
         for dynamic in (False, True):
             for model in models:
                 try:
-                    response = httpx.post(f"{base}/models/{model}:generateContent", headers=headers, json=payload, timeout=25)
+                    response = httpx.post(f"{base}/models/{model}:generateContent", headers=headers, json=payload, timeout=75)
                     last_response = response
                     if response.status_code in {429, 401, 403}:
                         # Account-level quota exhaustion or auth: rotate key immediately
@@ -181,7 +188,7 @@ class HttpVisionCaller:
         for dynamic in (False, True):
             for model in candidates:
                 try:
-                    response = httpx.post(endpoint, headers=headers, json={**payload, "model": model}, timeout=25)
+                    response = httpx.post(endpoint, headers=headers, json={**payload, "model": model}, timeout=75)
                     last_response = response
                     if response.status_code in {429, 401, 403}:
                         # Account-level quota exhaustion or auth: rotate key immediately

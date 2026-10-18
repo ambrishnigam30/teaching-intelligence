@@ -30,6 +30,11 @@ class KeyPool:
     def from_environment(cls, env: dict[str, str] | None = None) -> "KeyPool":
         env = env or os.environ
         keys: list[ProviderKey] = []
+        # Base unnumbered keys first
+        for family in ("gemini", "groq", "openrouter"):
+            val = env.get(f"{family.upper()}_API_KEY")
+            if val:
+                keys.append(ProviderKey(family, 0, val))
         for ordinal in range(1, 21):
             for family in ("gemini", "groq", "openrouter"):
                 val = env.get(f"{family.upper()}_API_KEY_{ordinal}")
