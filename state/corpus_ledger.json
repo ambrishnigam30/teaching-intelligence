@@ -116519,19 +116519,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 4,
       "exam_scope": "BOTH",
       "file_id": "10kEDugaG6mUJMBaHN-a5sHoVKD5tq7U7",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing Solutions (Paper 1 + Paper 2) 19th November.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "Solutions (Paper 1 + Paper 2) 19th November.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 19,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/2 Score - I 2023/Solutions (Paper 1 + Paper 2) 19th November.pdf"
       ]
