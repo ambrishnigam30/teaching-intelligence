@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-18 00:45:50 UTC` (`2026-10-18 06:15:50 IST`)  
-**Git Commit:** `7fc073c` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-18 00:52:45 UTC` (`2026-10-18 06:22:45 IST`)  
+**Git Commit:** `ca810c2` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **80** | **0** | **0** | **3** | **1,403** | **64/82** |
+| **7,103** | **81** | **0** | **0** | **3** | **1,411** | **64/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.1%`
 
@@ -21,8 +21,8 @@
 | Lifecycle Stage | File Count | Conversion Rate | Visual Funnel | Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Discovered (G0)** | 7,103 | 100.0% | `██████████ 100.0%` | `DISCOVERED` |
-| **2. Indexed & Sharded (G1)** | 6,988 | 98.4% | `██████████  98.4%` | `INDEXED` |
-| **3. Evidence Ready (G2)** | 115 | 1.6% | `░░░░░░░░░░   1.6%` | `EXTRACTED` |
+| **2. Indexed & Sharded (G1)** | 6,986 | 98.4% | `██████████  98.4%` | `INDEXED` |
+| **3. Evidence Ready (G2)** | 117 | 1.6% | `░░░░░░░░░░   1.6%` | `EXTRACTED` |
 | **4. Knowledge Ready (G3)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `CAS_VERIFIED` |
 | **5. Teacher Ready (G4)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `PACKAGE_READY` |
 
@@ -72,7 +72,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 10 | `properties_of_matter` | Tier 2 | 1 | 0 | 3 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 11 | `elasticity` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 12 | `fluid_mechanics` | Tier 2 | 2 | 0 | 3 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 13 | `thermal_properties` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 13 | `thermal_properties` | Tier 2 | 6 | 1 | 1 | 🔄 `IN_PROGRESS` | `█░░░░░░░  16.7%` |
 | 14 | `thermodynamics_physics` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 15 | `kinetic_theory` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 16 | `waves_sound` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
@@ -157,8 +157,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | Gate | Name | Eligible Files | Passed Files | Pass Rate | Visual Gate Health | Gate Criteria |
 | :-: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **G0** | DISCOVERED | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Discovered on founder Drive |
-| **G1** | SOURCE_READY | 7,103 | 6,988 | 98.4% | `████████  98.4%` | Indexed, categorized, chapter-mapped |
-| **G2** | EVIDENCE_READY | 7,103 | 115 | 1.6% | `░░░░░░░░   1.6%` | Extracted + Diagram Assets + 2D BBoxes |
+| **G1** | SOURCE_READY | 7,103 | 6,986 | 98.4% | `████████  98.4%` | Indexed, categorized, chapter-mapped |
+| **G2** | EVIDENCE_READY | 7,103 | 117 | 1.6% | `░░░░░░░░   1.6%` | Extracted + Diagram Assets + 2D BBoxes |
 | **G3** | KNOWLEDGE_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | CAS / SymPy + Cross-family blind solve |
 | **G4** | TEACHER_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | 18 capabilities + 9-point concept standard |
 | **G5** | RUNTIME_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Exported runtime schema verified |
@@ -167,11 +167,11 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ---
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
-- **Total Drive Files Discovered: 80**
-- **Pages Processed This Run: 1403**
+- **Total Drive Files Discovered: 81**
+- **Pages Processed This Run: 1411**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: 01 # Quiz (Answer key)_Heat Transfer.pdf**
+- **Next File in Queue: X-ray.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -187,7 +187,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
   - `Allen Rank booster Part Syllabus test-1.pdf`: HTTPStatusError: provider returned HTTP 429
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
-- **Unmapped Files Pending Header Fallback:** `6,664` / `7,103`
+- **Unmapped Files Pending Header Fallback:** `6,663` / `7,103`
 
 ---
 ## 📜 Section I — Recent Batch Activity & Git Commit History
@@ -207,11 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
-| `7fc073c` | 2026-10-18 00:40:19 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
-| `215ab9d` | 2026-10-18 00:34:33 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
-| `f3e17b7` | 2026-10-18 00:28:55 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
-| `3b745ee` | 2026-10-18 00:23:27 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `c339102` | 2026-10-18 00:15:38 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
+| `ca810c2` | 2026-10-18 00:45:50 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
 
