@@ -58740,19 +58740,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "attempts": 1,
+      "chapters": [
+        "circles",
+        "application_of_derivatives"
+      ],
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "10kiU5fbW70xtPhD8Hf0RFwGbr41CCdlV",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "Processing 2301_Class Test-86_Student copy.pdf timed out after 120s",
       "mime_type": "application/pdf",
       "name": "2301_Class Test-86_Student copy.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "ERROR",
+      "total_pages": 3,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Maths/2301_Class Test-86_Student copy.pdf"
       ]

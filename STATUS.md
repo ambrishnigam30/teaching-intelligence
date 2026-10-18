@@ -2,15 +2,15 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-18 02:31:44 UTC` (`2026-10-18 08:01:44 IST`)  
-**Git Commit:** `d814bf1` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-18 02:39:53 UTC` (`2026-10-18 08:09:53 IST`)  
+**Git Commit:** `bd36967` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **82** | **0** | **0** | **3** | **1,477** | **64/82** |
+| **7,103** | **82** | **0** | **0** | **3** | **1,479** | **64/82** |
 
 **Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.2%`
 
@@ -21,8 +21,8 @@
 | Lifecycle Stage | File Count | Conversion Rate | Visual Funnel | Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Discovered (G0)** | 7,103 | 100.0% | `██████████ 100.0%` | `DISCOVERED` |
-| **2. Indexed & Sharded (G1)** | 6,969 | 98.1% | `██████████  98.1%` | `INDEXED` |
-| **3. Evidence Ready (G2)** | 134 | 1.9% | `░░░░░░░░░░   1.9%` | `EXTRACTED` |
+| **2. Indexed & Sharded (G1)** | 6,968 | 98.1% | `██████████  98.1%` | `INDEXED` |
+| **3. Evidence Ready (G2)** | 135 | 1.9% | `░░░░░░░░░░   1.9%` | `EXTRACTED` |
 | **4. Knowledge Ready (G3)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `CAS_VERIFIED` |
 | **5. Teacher Ready (G4)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `PACKAGE_READY` |
 
@@ -139,12 +139,12 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | 69 | `trigonometry` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 70 | `inverse_trigonometry` | Tier 2 | 0 | 0 | 0 | ⏳ `PENDING` | `░░░░░░░░   0.0%` |
 | 71 | `straight_lines` | Tier 2 | 5 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 72 | `circles` | Tier 2 | 11 | 0 | 4 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 72 | `circles` | Tier 2 | 12 | 0 | 6 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 73 | `conics` | Tier 2 | 7 | 0 | 3 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 74 | `vectors` | Tier 2 | 2 | 0 | 2 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 75 | `three_dimensional_geometry` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 76 | `limits_continuity_differentiability` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
-| 77 | `application_of_derivatives` | Tier 3 | 19 | 0 | 5 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
+| 77 | `application_of_derivatives` | Tier 3 | 20 | 0 | 7 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 78 | `integrals` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 79 | `differential_equations` | Tier 2 | 1 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
 | 80 | `area_under_curve` | Tier 2 | 2 | 0 | 0 | 📋 `INDEXED` | `░░░░░░░░   0.0%` |
@@ -157,8 +157,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | Gate | Name | Eligible Files | Passed Files | Pass Rate | Visual Gate Health | Gate Criteria |
 | :-: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **G0** | DISCOVERED | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Discovered on founder Drive |
-| **G1** | SOURCE_READY | 7,103 | 6,969 | 98.1% | `████████  98.1%` | Indexed, categorized, chapter-mapped |
-| **G2** | EVIDENCE_READY | 7,103 | 134 | 1.9% | `░░░░░░░░   1.9%` | Extracted + Diagram Assets + 2D BBoxes |
+| **G1** | SOURCE_READY | 7,103 | 6,968 | 98.1% | `████████  98.1%` | Indexed, categorized, chapter-mapped |
+| **G2** | EVIDENCE_READY | 7,103 | 135 | 1.9% | `░░░░░░░░   1.9%` | Extracted + Diagram Assets + 2D BBoxes |
 | **G3** | KNOWLEDGE_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | CAS / SymPy + Cross-family blind solve |
 | **G4** | TEACHER_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | 18 capabilities + 9-point concept standard |
 | **G5** | RUNTIME_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Exported runtime schema verified |
@@ -168,10 +168,10 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
 - **Total Drive Files Discovered: 82**
-- **Pages Processed This Run: 1477**
+- **Pages Processed This Run: 1479**
 - **Questions Verified This Run: 0**
 - **Active File: none**
-- **Next File in Queue: 2301_Class Test-86_Student copy.pdf**
+- **Next File in Queue: Conic-Parabola-EX-I__1645696100330.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -187,7 +187,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
   - `Set (1).pdf`: HTTPStatusError: provider returned HTTP 429
   - `Allen Rank booster Part Syllabus test-1.pdf`: HTTPStatusError: provider returned HTTP 429
   - `JEE Advance (Nurture) Unit Test #03 Solutions.pdf`: HTTPStatusError: provider returned HTTP 429
-- **Unmapped Files Pending Header Fallback:** `6,658` / `7,103`
+- **Unmapped Files Pending Header Fallback:** `6,657` / `7,103`
 
 ---
 ## 📜 Section I — Recent Batch Activity & Git Commit History
@@ -207,11 +207,7 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
-| `d814bf1` | 2026-10-18 02:24:33 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
-| `eee439c` | 2026-10-18 02:19:01 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
-| `8c0002d` | 2026-10-18 02:13:15 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
-| `c8bdd29` | 2026-10-18 02:07:44 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
-| `c61ecb3` | 2026-10-18 01:58:15 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
+| `bd36967` | 2026-10-18 02:31:44 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 
 </details>
 
