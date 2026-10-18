@@ -10,3 +10,5 @@ build/
 *.smoke.log
 state/*
 !state/corpus_ledger.json
+!state/question_ledger.json
+!state/batch_history.json

@@ -74,6 +74,7 @@ def render_status_dashboard(
     git_commits: list[dict[str, str]] | None = None,
     benchmarks: dict[str, BenchmarkAxisResult] | None = None,
     previous_snapshot: dict[str, Any] | None = None,
+    question_ledger: Any | None = None,
 ) -> str:
     """Renders the executive-grade STATUS.md dashboard across all required sections."""
     mapper = ChapterMapper()
@@ -89,10 +90,36 @@ def render_status_dashboard(
     pending = ledger.next_batch(1)
     next_name = (pending[0].name or pending[0].file_id) if pending else "none"
 
+    # Load QuestionLedger for live question metrics
+    q_records = []
+    q_counts: dict[str, int] = {}
+    if question_ledger is not None:
+        q_counts = question_ledger.counts()
+        q_records = list(question_ledger.questions.values())
+    else:
+        try:
+            from src.corpus.question_ledger import QuestionLedger
+            ql = QuestionLedger.from_path(Path("state/question_ledger.json"))
+            q_counts = ql.counts()
+            q_records = list(ql.questions.values())
+        except Exception:
+            q_counts = {}
+
+    # Load compiled concept packages if present
+    packages = []
+    pkg_dir = Path("intelligence/packages")
+    if pkg_dir.exists():
+        for pfile in pkg_dir.glob("*.json"):
+            try:
+                from src.models.contracts import ConceptPackage
+                packages.append(ConceptPackage.model_validate_json(pfile.read_text(encoding="utf-8")))
+            except Exception:
+                pass
+
     # Compute benchmarks if not supplied
     if not benchmarks:
         suite = BenchmarkSuite()
-        benchmarks = suite.run_all(ledger, [])
+        benchmarks = suite.run_all(ledger, q_records, packages)
 
     # Gate distribution
     gates = {g: sum(1 for it in items if it.gate == g) for g in range(7)}
@@ -172,16 +199,26 @@ def render_status_dashboard(
         f"| **5. Teacher Ready (G4)** | {gates[4]:,} | {gates[4]/total_files*100.0 if total_files else 0:.1f}% | {render_progress_bar(gates[4]/total_files*100.0 if total_files else 0, 10)} | `PACKAGE_READY` |",
         "",
         "### 2. Question Verification Funnel",
-        "| Question Stage | Count | Ratio | Acceptance Criteria | Operational Invariant |",
-        "| :--- | :---: | :---: | :--- | :--- |",
-        f"| **Discovered Questions** | {stats.get('questions', 0):,} | 100.0% | Transcribed from page pixmaps | Gate 2 |",
-        "| **Reconstructed & Bound** | In-flight | Pending | BBoxes + Diagrams + Stems | Zero truncation |",
-        "| **Candidate Solved** | In-flight | Pending | 5-phase step-by-step reasoning | Non-empty derivation |",
-        "| **Independently Verified** | In-flight | Pending | Separate model family verification | Zero self-verification |",
-        r"| **VERIFIED_CORRECT** | In-flight | Target: $\ge 95\%$ | Official answer match + CAS check | **100% Acceptance Invariant** |",
+        "| Question Stage | Count | Ratio | Visual Funnel | Operational Invariant |",
+        "| :--- | :---: | :---: | :---: | :--- |",
+    ])
+
+    disc_q = max(stats.get("questions", 0), q_counts.get("total", 0))
+    recon_q = q_counts.get("reconstructed", 0)
+    solved_q = q_counts.get("solved", 0)
+    indep_q = q_counts.get("independently_verified", 0)
+    verif_correct_q = q_counts.get("verified_correct", 0)
+
+    lines.extend([
+        f"| **1. Discovered Questions** | {disc_q:,} | 100.0% | {render_progress_bar(100.0, 10)} | Gate 2 Transcribed |",
+        f"| **2. Reconstructed & Bound** | {recon_q:,} | {recon_q/disc_q*100.0 if disc_q else 0:.1f}% | {render_progress_bar(recon_q/disc_q*100.0 if disc_q else 0, 10)} | BBoxes + Diagrams + Non-empty Stems |",
+        f"| **3. Candidate Solved** | {solved_q:,} | {solved_q/disc_q*100.0 if disc_q else 0:.1f}% | {render_progress_bar(solved_q/disc_q*100.0 if disc_q else 0, 10)} | 5-phase step-by-step reasoning |",
+        f"| **4. Independently Verified** | {indep_q:,} | {indep_q/disc_q*100.0 if disc_q else 0:.1f}% | {render_progress_bar(indep_q/disc_q*100.0 if disc_q else 0, 10)} | Separate model family verification |",
+        f"| **5. VERIFIED_CORRECT** | {verif_correct_q:,} | {verif_correct_q/disc_q*100.0 if disc_q else 0:.1f}% | {render_progress_bar(verif_correct_q/disc_q*100.0 if disc_q else 0, 10)} | **100% Acceptance Invariant** |",
         "",
         "---",
     ])
+
 
     # =========================================================================
     # SECTION D — BENCHMARK & ANSWER-QUALITY SCORECARDS
@@ -292,7 +329,8 @@ def render_status_dashboard(
         "",
         f"- **Total Drive Files Discovered: {stats.get('files', total_files)}**",
         f"- **Pages Processed This Run: {stats.get('pages', 0)}**",
-        f"- **Questions Verified This Run: {stats.get('questions', 0)}**",
+        f"- **Questions Verified This Run: {stats.get('questions_verified', stats.get('questions', verif_correct_q))}**",
+
         f"- **Active File: {escape_markdown(active or 'none')}**",
         f"- **Next File in Queue: {escape_markdown(next_name)}**",
         f"- **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`",

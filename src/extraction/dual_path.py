@@ -14,7 +14,14 @@ import re
 import httpx
 from src.rotator.key_pool import KeyPool, QuotaExhausted
 
-VISION_PROMPT = """Transcribe this JEE/NEET teaching page faithfully. Return JSON with markdown, latex, smiles, questions, diagrams. Reconcile the supplied PDF text clue with the page image. Never invent unreadable content; use UNKNOWN for uncertain fields."""
+VISION_PROMPT = """Transcribe this JEE/NEET teaching page faithfully. Return JSON with markdown, latex, smiles, questions, diagrams.
+Always provide the complete page text in 'markdown' with proper LaTeX for math formulas ($...$ or $$...$$).
+For any questions found on the page, include them in 'questions' with:
+- 'question_number': string (e.g. '1', 'Q.2')
+- 'stem': string containing the complete question text, conditions, and formulas
+- 'options': array of full option strings (e.g. ['(A) option 1', '(B) option 2', ...]) if multiple choice
+- 'question_type': 'SINGLE_CHOICE' | 'MULTIPLE_CHOICE' | 'NUMERICAL' | 'SUBJECTIVE'
+Never invent unreadable content; use UNKNOWN only if completely illegible."""
 GEMINI_VISION_MODELS = ("gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-3.8-flash", "gemini-2.5-pro")
 GROQ_VISION_MODELS = ("meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct")
 GROQ_TEXT_MODELS = ("llama-3.3-70b-versatile", "qwen/qwen3-32b")
@@ -79,14 +86,26 @@ def _parse_json_payload(raw_text: str) -> dict:
             confidence = float(conf)
         except (ValueError, TypeError):
             confidence = 0.85
+    valid_q = [q for q in questions if isinstance(q, dict)]
+    # Safeguard 3: If questions are missing or all stems are empty, reconstruct from markdown
+    if markdown and markdown != "UNKNOWN" and (not valid_q or all(not str(q.get("stem", "")).strip() for q in valid_q)):
+        try:
+            from src.extraction.question_parser import parse_questions_from_text
+            reconstructed = parse_questions_from_text(str(markdown))
+            if reconstructed:
+                valid_q = reconstructed
+        except Exception:
+            pass
+
     return {
         "markdown": str(markdown),
         "latex": [str(x) for x in latex],
         "smiles": [str(x) for x in smiles],
-        "questions": [q for q in questions if isinstance(q, dict)],
+        "questions": valid_q,
         "diagrams": diagrams,
         "confidence": confidence,
     }
+
 
 @dataclass(frozen=True)
 class ExtractionResult:
@@ -243,6 +262,9 @@ class VisionApiExtractor:
             document.close()
 
     def extract_ollama(self, png: bytes, text_clue: str = "") -> ExtractionResult | None:
+        # Safeguard 2: Never run CPU Ollama inside GitHub Actions CI runners
+        if os.getenv("CI", "").lower() in {"1", "true"} or os.getenv("GITHUB_ACTIONS", "").lower() == "true":
+            return None
         if os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() not in {"1", "true", "yes"}:
             return None
         host = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434").rstrip("/")
@@ -312,8 +334,12 @@ class VisionApiExtractor:
                 last_error = exc
                 self.pool.cooldown(key, seconds=60)
 
-        # 1. Server-installed local Ollama fallback if enabled
-        if os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}:
+        # 1. Server-installed local Ollama fallback if enabled (and not running in CI)
+        if (
+            os.getenv("ENABLE_LOCAL_OLLAMA", "").lower() in {"1", "true", "yes"}
+            and os.getenv("CI", "").lower() not in {"1", "true"}
+            and os.getenv("GITHUB_ACTIONS", "").lower() != "true"
+        ):
             try:
                 ollama_result = self.extract_ollama(png, text_clue)
                 if ollama_result is not None:
@@ -331,7 +357,14 @@ class VisionApiExtractor:
         latex = re.findall(r"\$([^$]+)\$|\\\(([^)]+)\\\)", text)
         expressions = [a or b for a, b in latex]
         questions = [{"stem": line.strip()} for line in text.splitlines() if re.match(r"^\s*(?:Q(?:uestion)?\s*)?\d+[.)]", line, re.I)]
+        if not questions:
+            try:
+                from src.extraction.question_parser import parse_questions_from_text
+                questions = parse_questions_from_text(text)
+            except Exception:
+                questions = []
         return ExtractionResult(markdown=readable or "UNKNOWN", latex=expressions, smiles=[], questions=questions, confidence=0.55, engine="text_fallback")
+
 
 class KaggleBatchDispatcher(Protocol):
     def dispatch(self, input_manifest: dict) -> str: ...

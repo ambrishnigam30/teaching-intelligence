@@ -161,5 +161,22 @@ class HuggingFaceVault:
         local_path.write_bytes(data)
         return True
 
+    def restore_question_ledger(self, local_path: Path) -> bool:
+        data = self.download_bytes("state/question_ledger.json")
+        if data is None: return False
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+        local_path.write_bytes(data)
+        return True
+
     def checkpoint_ledger(self, ledger_json: str, message: str) -> bool:
         return self.commit_bytes({"state/corpus_ledger.json": ledger_json.encode("utf-8")}, message)
+
+    def checkpoint_ledgers(self, corpus_json: str, question_json: str, message: str) -> bool:
+        return self.commit_bytes({
+            "state/corpus_ledger.json": corpus_json.encode("utf-8"),
+            "state/question_ledger.json": question_json.encode("utf-8"),
+        }, message)
+
+
+HFVault = HuggingFaceVault
+

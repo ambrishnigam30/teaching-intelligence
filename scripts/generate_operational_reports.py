@@ -28,16 +28,47 @@ def run_cmd(cmd: list[str]) -> str:
 
 
 def generate_status_md(now: datetime, ledger: CorpusLedger) -> str:
+    from src.corpus.question_ledger import QuestionLedger
+    q_ledger = QuestionLedger.from_path(Path("state/question_ledger.json"))
+    q_counts = q_ledger.counts()
+    q_records = list(q_ledger.questions.values())
+
+    # Load compiled packages if present
+    packages = []
+    pkg_dir = Path("intelligence/packages")
+    if pkg_dir.exists():
+        for pfile in pkg_dir.glob("*.json"):
+            try:
+                from src.models.contracts import ConceptPackage
+                packages.append(ConceptPackage.model_validate_json(pfile.read_text(encoding="utf-8")))
+            except Exception:
+                pass
+
+    suite = BenchmarkSuite()
+    benchmarks = suite.run_all(ledger, q_records, packages)
+
+    # Load batch history for live execution logs and session stats
     recent_logs = [
         "reused persistent ledger with 7103 files across 13 Drive roots",
         "82 canonical JEE chapters reconciled (Physics: 27, Chemistry: 30, Math: 25)",
         "cross-family blind solving and SymPy symbolic verification active",
         "durable atomic commits synced to private Hugging Face Vault (ambnig86/mentora-intelligence-vault)",
     ]
+    batch_hist_file = Path("state/batch_history.json")
+    if batch_hist_file.exists():
+        try:
+            b_data = json.loads(batch_hist_file.read_text(encoding="utf-8"))
+            b_events = b_data.get("recent_events", [])
+            if b_events:
+                recent_logs.extend(b_events[-20:])
+        except Exception:
+            pass
+
     commits = get_git_recent_commits(limit=10)
     stats = {
         "pages": sum(it.completed_pages for it in ledger.items.values()),
-        "questions": 0,
+        "questions": q_counts.get("total", 0),
+        "questions_verified": q_counts.get("verified_correct", 0),
         "files": sum(1 for it in ledger.items.values() if it.status == "EXTRACTED"),
     }
     return render_status_dashboard(
@@ -47,7 +78,10 @@ def generate_status_md(now: datetime, ledger: CorpusLedger) -> str:
         recent=recent_logs,
         active=None,
         git_commits=commits,
+        benchmarks=benchmarks,
+        question_ledger=q_ledger,
     )
+
 
 
 def generate_execution_status_md(now: datetime, ledger: CorpusLedger) -> str:
@@ -134,9 +168,24 @@ def generate_final_report_md(now: datetime, ledger: CorpusLedger) -> str:
     pending_quota = sum(1 for it in items if it.status == "PENDING_QUOTA")
     mapped = sum(1 for it in items if it.chapters)
     total_pages = sum(it.completed_pages for it in items)
+    gate4_count = sum(1 for it in items if it.gate >= 4)
+    from src.corpus.question_ledger import QuestionLedger
+    q_ledger = QuestionLedger.from_path(Path("state/question_ledger.json"))
+    q_records = list(q_ledger.questions.values())
+
+    packages = []
+    pkg_dir = Path("intelligence/packages")
+    if pkg_dir.exists():
+        for pfile in pkg_dir.glob("*.json"):
+            try:
+                from src.models.contracts import ConceptPackage
+                packages.append(ConceptPackage.model_validate_json(pfile.read_text(encoding="utf-8")))
+            except Exception:
+                pass
 
     suite = BenchmarkSuite()
-    benchmarks = suite.run_all(ledger, [])
+    benchmarks = suite.run_all(ledger, q_records, packages)
+
 
     def fmt_score(score: float | None) -> str:
         if score is None:
@@ -191,7 +240,7 @@ All 7,103 discovered source items across the 13 founder-authorized Google Drive 
 | **FilesIn-Flight (Partial)** | — | {partial:,} | Resumable from page checkpoint |
 | **Files Quarantined** | — | {quarantined:,} | Poison-pill quarantined with reason |
 | **Files Quota-Paused** | — | {pending_quota:,} | PENDING_QUOTA state |
-| **Teacher / Runtime Ready (Gate 4)** | — | 0 (0.0%) | Pending 100% answer verification |
+| **Teacher / Runtime Ready (Gate 4)** | — | {gate4_count:,} ({gate4_count*100/total:.1f}%) | Teacher-Ready verified package synthesis |
 | **Total Pages Extracted** | — | {total_pages:,}+ | Verified Vision OCR & LaTeX |
 
 ---

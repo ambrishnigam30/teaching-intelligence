@@ -35,6 +35,9 @@ jobs:
       KAGGLE_KEY_4: ${{ secrets.KAGGLE_KEY_4 }}
       KAGGLE_USERNAME_5: ${{ secrets.KAGGLE_USERNAME_5 }}
       KAGGLE_KEY_5: ${{ secrets.KAGGLE_KEY_5 }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
       GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
       GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
@@ -50,8 +53,7 @@ jobs:
       OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
       OPENROUTER_API_KEY_4: ${{ secrets.OPENROUTER_API_KEY_4 }}
       OPENROUTER_API_KEY_5: ${{ secrets.OPENROUTER_API_KEY_5 }}
-      ENABLE_LOCAL_OLLAMA: "1"
-      OLLAMA_VISION_MODELS: "qwen2.5vl:3b,moondream"
+      ENABLE_LOCAL_OLLAMA: "0"
       AUTO_SKIP_DISCOVERY_IF_POPULATED: "1"
       CONTINUOUS_HF_CHECKPOINT: "1"
     steps:
@@ -76,12 +78,6 @@ jobs:
             echo "::error::GOOGLE_DRIVE_TOKEN_JSON secret is empty."
             exit 1
           fi
-      - name: Install & Start Server-Side Local Vision AI (Ollama)
-        run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-          nohup ollama serve > /tmp/ollama.log 2>&1 &
-          sleep 5
-          ollama pull qwen2.5vl:3b || ollama pull moondream || true
 
       - name: Dispatch Live Kaggle GPU Fleet
         run: |
@@ -90,37 +86,47 @@ jobs:
       - name: Sync Durable State from Hugging Face Vault
         run: |
           python -c "
-          import os, json
+          import os
           from pathlib import Path
           from huggingface_hub import hf_hub_download
 
           token = os.environ.get('HF_TOKEN')
           repo = os.environ.get('HF_DATASET_REPO')
           if token and repo:
-              try:
-                  downloaded = hf_hub_download(repo_id=repo, filename='state/corpus_ledger.json', repo_type='dataset', token=token)
-                  dest = Path('state/corpus_ledger.json')
-                  dest.parent.mkdir(parents=True, exist_ok=True)
-                  dest.write_bytes(Path(downloaded).read_bytes())
-                  print('Successfully synced latest corpus ledger from Hugging Face Vault.')
-              except Exception as exc:
-                  print(f'Using local ledger seed (HF sync note: {exc})')
+              for f in ['state/corpus_ledger.json', 'state/question_ledger.json', 'state/batch_history.json']:
+                  try:
+                      downloaded = hf_hub_download(repo_id=repo, filename=f, repo_type='dataset', token=token)
+                      dest = Path(f)
+                      dest.parent.mkdir(parents=True, exist_ok=True)
+                      dest.write_bytes(Path(downloaded).read_bytes())
+                      print(f'Successfully synced {f} from Hugging Face Vault.')
+                  except Exception as exc:
+                      print(f'Using local fallback for {f} (note: {exc})')
           " || true
+
+      - name: Snapshot Initial Progress Metrics
+        run: python scripts/assert_forward_progress.py --snapshot || true
 
       - name: Run Bounded Autonomous Marathon (5 Batches / ~30 Mins)
         run: |
           git config user.name "mentora-factory[bot]"
           git config user.email "mentora-factory[bot]@users.noreply.github.com"
 
+          # Harvest any completed Kaggle outputs before batch processing
+          python scripts/harvest_kaggle_outputs.py || true
+
           for i in {1..5}; do
             echo "=== Starting Autonomous Batch $i of 5 ==="
             python -m src.pipeline --max-pages 15 --time-budget-seconds 300 || true
 
+            # Harvest any newly completed Kaggle artifacts
+            python scripts/harvest_kaggle_outputs.py || true
+
             # Sync reports deterministically
             python scripts/generate_operational_reports.py || true
 
-            # Stage only verified reports and ledger; verify no secret files staged
-            git add STATUS.md AUTONOMOUS_EXECUTION_STATUS.md AUTONOMOUS_FINAL_REPORT.md SHUTDOWN_READINESS.md state/corpus_ledger.json 2>/dev/null || true
+            # Stage only verified reports, ledgers, and packages; verify no secret files staged
+            git add STATUS.md AUTONOMOUS_EXECUTION_STATUS.md AUTONOMOUS_FINAL_REPORT.md SHUTDOWN_READINESS.md state/corpus_ledger.json state/question_ledger.json state/batch_history.json intelligence/packages/ 2>/dev/null || true
 
             # Ensure zero secret/token files are accidentally staged
             for staged_f in $(git diff --cached --name-only); do
@@ -157,11 +163,14 @@ jobs:
             fi
           done
 
+      - name: Enforce Forward Progress (Ban Fake-Green CI)
+        run: python scripts/assert_forward_progress.py --assert
+
       - name: Trigger next autonomous marathon immediately
-        if: always()
+        if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Marathon complete. Triggering next autonomous run..."
+          echo "Marathon complete with positive forward progress. Triggering next autonomous run..."
           sleep 10
           gh workflow run intelligence_factory.yml --ref main || true

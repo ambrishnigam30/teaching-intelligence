@@ -115,6 +115,9 @@ class AssuranceEngine:
         # 5. Unkeyed items cannot be marked VERIFIED_CORRECT solely on model consensus
         return self._transition_q(q_record, "SOLVED_UNVERIFIED", "Solved with multi-model consensus but lacks authoritative key", now_ts)
 
+    # Alias for contract naming consistency
+    evaluate_question_verification = evaluate_question_record
+
     @staticmethod
     def _transition_q(record: QuestionVerificationRecord, new_status: str, reason: str, timestamp: str) -> QuestionVerificationRecord:
         history = list(record.transition_history)

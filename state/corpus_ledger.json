@@ -73492,7 +73492,7 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
@@ -73503,7 +73503,7 @@
       "name": "01 # Quiz (Eng)_Heat Transfer.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
+      "status": "PARTIAL",
       "total_pages": null,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Heat transfer/01 # Quiz (Eng)_Heat Transfer.pdf"
@@ -133599,19 +133599,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "11OrRcl1pnIX9l_6KwAJTzLl-0qlR9a1z",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "PC79.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/11th(Nurture)/Nurture Mixed/Solutions/Paper Corrections/PC79.pdf"
       ]

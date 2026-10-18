@@ -33,14 +33,25 @@ def git_commit_and_push(batch_index: int, active_summary: str = "") -> bool:
             print(f"[Git] No local changes detected after batch {batch_index}.")
             return False
 
-        # Stage ledger, status, and generated packages
-        run_cmd(["git", "add", "state/corpus_ledger.json", "STATUS.md", "AUTONOMOUS_EXECUTION_STATUS.md"])
+        # Stage ledger, status, question ledger, and generated packages
+        run_cmd([
+            "git", "add",
+            "state/corpus_ledger.json",
+            "state/question_ledger.json",
+            "state/batch_history.json",
+            "data/benchmarks/adjudicated_reference_set.json",
+            "STATUS.md",
+            "AUTONOMOUS_EXECUTION_STATUS.md",
+            "AUTONOMOUS_FINAL_REPORT.md",
+            "SHUTDOWN_READINESS.md",
+        ])
         if Path("generated").exists():
             run_cmd(["git", "add", "generated/"])
         if Path("intelligence").exists():
             run_cmd(["git", "add", "intelligence/"])
         if Path("assets").exists():
             run_cmd(["git", "add", "assets/"])
+
 
         diff_check = run_cmd(["git", "diff", "--cached", "--quiet"])
         if diff_check.returncode == 0:
@@ -75,6 +86,29 @@ def git_commit_and_push(batch_index: int, active_summary: str = "") -> bool:
     except Exception as exc:
         print(f"[Git] Exception during commit/push: {exc}")
         return False
+
+
+def record_batch_history(batch_idx: int, elapsed: float, returncode: int, summary: str) -> None:
+    history_file = Path("state/batch_history.json")
+    data = {"recent_events": [], "batches": []}
+    if history_file.exists():
+        try:
+            data = json.loads(history_file.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    event = f"Batch {batch_idx}: {summary} ({elapsed:.1f}s, code {returncode})"
+    data.setdefault("recent_events", []).append(event)
+    data.setdefault("batches", []).append({
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "batch": batch_idx,
+        "elapsed_seconds": round(elapsed, 1),
+        "returncode": returncode,
+        "summary": summary,
+    })
+    data["recent_events"] = data["recent_events"][-50:]
+    data["batches"] = data["batches"][-50:]
+    history_file.parent.mkdir(parents=True, exist_ok=True)
+    history_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
 def get_current_metrics() -> dict:
@@ -127,8 +161,15 @@ def autonomous_loop(
         started = time.monotonic()
         hard_timeout = time_budget_per_batch + 45
 
+        sub_env = os.environ.copy()
+        # Safeguard 2: Disable CPU Ollama in CI
+        if sub_env.get("CI", "").lower() in {"1", "true"} or sub_env.get("GITHUB_ACTIONS", "").lower() == "true":
+            sub_env["ENABLE_LOCAL_OLLAMA"] = "0"
+
+        sub_env["PYTHONUNBUFFERED"] = "1"
         batch_cmd = [
             sys.executable,
+            "-u",
             "-m",
             "src.pipeline",
             "--max-pages",
@@ -145,9 +186,13 @@ def autonomous_loop(
                 batch_cmd,
                 timeout=hard_timeout,
                 check=False,
+                env=sub_env,
             )
             elapsed = time.monotonic() - started
             metrics = get_current_metrics()
+            summary = f"{metrics.get('extracted', 0)} files done, {metrics.get('partial', 0)} partial, {metrics.get('quarantined', 0)} quarantined"
+            record_batch_history(batch_idx, elapsed, res.returncode, summary)
+
 
             if res.returncode != 0:
                 print(f"[Commander] Batch {batch_idx} subprocess exited with non-zero code {res.returncode}")

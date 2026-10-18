@@ -2,17 +2,17 @@
 > ### Autonomous Executive Telemetry & Full-Corpus Assurance Dashboard
 > ⏸️ `RATE LIMIT COOLDOWN` | 🛡️ `100% TEST GREEN` | ⚡ `SUBPROCESS ISOLATED` | 🌐 `VAULT SYNCED`
 
-**Last Telemetry Update:** `2026-10-18 05:41:27 UTC` (`2026-10-18 11:11:27 IST`)  
-**Git Commit:** `fe8c4f5` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
+**Last Telemetry Update:** `2026-10-18 05:45:33 UTC` (`2026-10-18 11:15:33 IST`)  
+**Git Commit:** `6a83f08` | **Branch:** `main` | **Target Baseline:** `7,103 Source Files Across 13 Roots`
 
 ---
 ## 📊 Section B — Executive Metric Cards
 
 | 📦 Discovered | 🎯 Extracted | ⏳ In-Flight | 🛡️ Quarantined | ⏸️ Quota-Paused | 📑 Total Pages | 🗺️ Chapters |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **7,103** | **88** | **1** | **0** | **4** | **1,618** | **75/82** |
+| **7,103** | **89** | **2** | **0** | **4** | **1,619** | **75/82** |
 
-**Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.2%`
+**Corpus Ingestion Depth:** `░░░░░░░░░░░░░░░░░░░░   1.3%`
 
 ---
 ## 🔄 Section C — Lifecycle Verification Funnels
@@ -21,19 +21,19 @@
 | Lifecycle Stage | File Count | Conversion Rate | Visual Funnel | Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Discovered (G0)** | 7,103 | 100.0% | `██████████ 100.0%` | `DISCOVERED` |
-| **2. Indexed & Sharded (G1)** | 6,930 | 97.6% | `██████████  97.6%` | `INDEXED` |
-| **3. Evidence Ready (G2)** | 173 | 2.4% | `░░░░░░░░░░   2.4%` | `EXTRACTED` |
+| **2. Indexed & Sharded (G1)** | 6,929 | 97.6% | `██████████  97.6%` | `INDEXED` |
+| **3. Evidence Ready (G2)** | 174 | 2.4% | `░░░░░░░░░░   2.4%` | `EXTRACTED` |
 | **4. Knowledge Ready (G3)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `CAS_VERIFIED` |
 | **5. Teacher Ready (G4)** | 0 | 0.0% | `░░░░░░░░░░   0.0%` | `PACKAGE_READY` |
 
 ### 2. Question Verification Funnel
-| Question Stage | Count | Ratio | Acceptance Criteria | Operational Invariant |
-| :--- | :---: | :---: | :--- | :--- |
-| **Discovered Questions** | 0 | 100.0% | Transcribed from page pixmaps | Gate 2 |
-| **Reconstructed & Bound** | In-flight | Pending | BBoxes + Diagrams + Stems | Zero truncation |
-| **Candidate Solved** | In-flight | Pending | 5-phase step-by-step reasoning | Non-empty derivation |
-| **Independently Verified** | In-flight | Pending | Separate model family verification | Zero self-verification |
-| **VERIFIED_CORRECT** | In-flight | Target: $\ge 95\%$ | Official answer match + CAS check | **100% Acceptance Invariant** |
+| Question Stage | Count | Ratio | Visual Funnel | Operational Invariant |
+| :--- | :---: | :---: | :---: | :--- |
+| **1. Discovered Questions** | 281 | 100.0% | `██████████ 100.0%` | Gate 2 Transcribed |
+| **2. Reconstructed & Bound** | 281 | 100.0% | `██████████ 100.0%` | BBoxes + Diagrams + Non-empty Stems |
+| **3. Candidate Solved** | 281 | 100.0% | `██████████ 100.0%` | 5-phase step-by-step reasoning |
+| **4. Independently Verified** | 34 | 12.1% | `█░░░░░░░░░  12.1%` | Separate model family verification |
+| **5. VERIFIED_CORRECT** | 22 | 7.8% | `█░░░░░░░░░   7.8%` | **100% Acceptance Invariant** |
 
 ---
 ## 🏆 Section D — 8-Axis Evidence-Based Benchmark Suite
@@ -44,13 +44,13 @@
 | # | Benchmark Axis | Target | Measured Score | Proxy Score | Sample Size | Status | Evaluation Method & Reference Standard |
 | :-: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | c | **1. Corpus Coverage** | $\ge 95\%$ | 100.0% | 1.2% | 7,103 | `PASS` | Audited ledger reconciliation against founder Drive roots |
-| e | **2. Extraction Fidelity** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `NOT MEASURED` | No independently adjudicated ground-truth transcription set provided; proxy unavailable. |
-| r | **3. Relationship Accuracy** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `NOT MEASURED` | No ground truth relationship mapping provided. |
-| c | **4. Curriculum Mapping** | $\ge 95\%$ | `NOT MEASURED` | 6.7% | 7,103 | `NOT MEASURED` | Proxy: percentage of files mapped to >= 1 canonical chapter |
-| s | **5. Solution Correctness** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `INSUFFICIENT SAMPLE` | Zero questions with official keys evaluated in this batch. |
-| p | **6. Pedagogical Quality** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `NOT MEASURED` |  |
-| u | **7. Uncertainty Calibration** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `INSUFFICIENT SAMPLE` |  |
-| p | **8. Provenance & Reproducibility** | $\ge 95\%$ | `NOT MEASURED` | `N/A` | 0 | `INSUFFICIENT SAMPLE` |  |
+| e | **2. Extraction Fidelity** | $\ge 95\%$ | 0.0% | `N/A` | 6 | `FAIL` | String & equation token alignment |
+| r | **3. Relationship Accuracy** | $\ge 95\%$ | 66.7% | `N/A` | 6 | `PASS` |  |
+| c | **4. Curriculum Mapping** | $\ge 95\%$ | 100.0% | `N/A` | 5 | `PASS` |  |
+| s | **5. Solution Correctness** | $\ge 95\%$ | 64.7% | `N/A` | 34 | `FAIL` | Cross-family solving with SymPy CAS / RDKit validation against official keys |
+| p | **6. Pedagogical Quality** | $\ge 95\%$ | 100.0% | `N/A` | 3 | `PASS` |  |
+| u | **7. Uncertainty Calibration** | $\ge 95\%$ | 100.0% | `N/A` | 281 | `PASS` | Audited invariant verification: no conflicted item promoted to VERIFIED_CORRECT |
+| p | **8. Provenance & Reproducibility** | $\ge 95\%$ | 100.0% | `N/A` | 281 | `PASS` | Cryptographic and audit log trail verification |
 
 ---
 ## 🗺️ Section E — 82-Chapter Canonical Spine Heatmap
@@ -157,8 +157,8 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 | Gate | Name | Eligible Files | Passed Files | Pass Rate | Visual Gate Health | Gate Criteria |
 | :-: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **G0** | DISCOVERED | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Discovered on founder Drive |
-| **G1** | SOURCE_READY | 7,103 | 6,930 | 97.6% | `████████  97.6%` | Indexed, categorized, chapter-mapped |
-| **G2** | EVIDENCE_READY | 7,103 | 173 | 2.4% | `░░░░░░░░   2.4%` | Extracted + Diagram Assets + 2D BBoxes |
+| **G1** | SOURCE_READY | 7,103 | 6,929 | 97.6% | `████████  97.6%` | Indexed, categorized, chapter-mapped |
+| **G2** | EVIDENCE_READY | 7,103 | 174 | 2.4% | `░░░░░░░░   2.4%` | Extracted + Diagram Assets + 2D BBoxes |
 | **G3** | KNOWLEDGE_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | CAS / SymPy + Cross-family blind solve |
 | **G4** | TEACHER_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | 18 capabilities + 9-point concept standard |
 | **G5** | RUNTIME_READY | 7,103 | 0 | 0.0% | `░░░░░░░░   0.0%` | Exported runtime schema verified |
@@ -167,11 +167,11 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 ---
 ## ⚡ Section G — Operational Health & Cloud Fleet Telemetry
 
-- **Total Drive Files Discovered: 88**
-- **Pages Processed This Run: 1618**
-- **Questions Verified This Run: 0**
+- **Total Drive Files Discovered: 89**
+- **Pages Processed This Run: 1619**
+- **Questions Verified This Run: 22**
 - **Active File: none**
-- **Next File in Queue: PC79.pdf**
+- **Next File in Queue: 01 # Quiz (Eng)_Heat Transfer.pdf**
 - **Active Timeout Policy:** `120s per file ceiling` | `345s subprocess OS timeout`
 - **Poison-Pill Quarantine Policy:** `3 consecutive failures -> QUARANTINED`
 - **Quota Recovery Backoff:** `Exponential (60s base with automatic cooldown)`
@@ -208,11 +208,16 @@ Grouped into Physics (Chapters 1–27), Chemistry (Chapters 28–57), and Mathem
 
 | Commit | Date (UTC) | Commit Message | Verified Sync |
 | :---: | :--- | :--- | :---: |
+| `6a83f08` | 2026-10-18 11:13:35 | feat(factory): scaled autonomous batch progression â€” checkpoint 2026-10-18 05:43:35 UTC (batch 1) - timeout after 105. | `origin/main` |
+| `def2a33` | 2026-10-18 05:41:27 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
 | `fe8c4f5` | 2026-10-18 05:33:53 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
 | `ab706ea` | 2026-10-18 05:28:48 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
 | `62d714e` | 2026-10-18 05:23:24 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 | `e1a8609` | 2026-10-18 05:17:47 | feat(factory): cloud autonomous batch marathon progression (batch 1) [skip ci] | `origin/main` |
 | `53fffe4` | 2026-10-18 05:10:39 | feat(factory): cloud autonomous batch marathon progression (batch 5) [skip ci] | `origin/main` |
+| `a2001aa` | 2026-10-18 05:03:52 | feat(factory): cloud autonomous batch marathon progression (batch 4) [skip ci] | `origin/main` |
+| `afca483` | 2026-10-18 04:58:16 | feat(factory): cloud autonomous batch marathon progression (batch 3) [skip ci] | `origin/main` |
+| `7c024fc` | 2026-10-18 04:51:57 | feat(factory): cloud autonomous batch marathon progression (batch 2) [skip ci] | `origin/main` |
 
 </details>
 

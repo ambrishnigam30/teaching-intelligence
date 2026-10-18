@@ -73,7 +73,18 @@ class PassageBuffer:
         if new_passage:
             self.active_passage = new_passage
 
+        # Safeguard 3: If raw_questions is empty or has only empty stems, reconstruct from page_markdown
+        if page_markdown and page_markdown != "UNKNOWN" and (not raw_questions or all(not str(it.get("stem", "")).strip() for it in raw_questions)):
+            try:
+                from src.extraction.question_parser import parse_questions_from_text
+                parsed = parse_questions_from_text(page_markdown, page_number=page_number, source_file_id=self.source_file_id)
+                if parsed:
+                    raw_questions = parsed
+            except Exception:
+                pass
+
         emitted: list[dict[str, Any]] = []
+
 
         for item in raw_questions:
             stem = str(item.get("stem", "")).strip()

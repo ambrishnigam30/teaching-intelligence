@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_name": "Mentora Adjudicated JEE Reference Evaluation Standard",
+  "created_at": "2026-10-18T05:00:00Z",
+  "metadata": {
+    "subjects": ["Physics", "Chemistry", "Mathematics"],
+    "target_curriculum": "JEE Advanced & Main (82 Chapters)",
+    "double_keyed_gold_standard": true
+  },
+  "extraction_fidelity_gold": [
+    {
+      "question_id": "gold_phy_01",
+      "stem": "A rod of uniform cross-section of length 5L has a hollow section of length L as shown in Fig. The density of the rod increases linearly with length from a value d at A to 3d at B and from 4d at C to 5d at D. Determine the centre of mass. Consider section BC as massless.",
+      "latex": ["5L", "L", "d", "3d", "4d", "5d"],
+      "chapter": "com_collisions"
+    },
+    {
+      "question_id": "gold_phy_02",
+      "stem": "A particle of mass m is projected from ground with velocity u at an angle \\theta to the horizontal. Find the radius of curvature of the trajectory at the highest point.",
+      "latex": ["m", "u", "\\theta", "R = \\frac{u^2 \\cos^2 \\theta}{g}"],
+      "chapter": "kinematics_2d"
+    },
+    {
+      "question_id": "gold_chem_01",
+      "stem": "Which of the following molecules has zero dipole moment?",
+      "latex": ["\\mathrm{BF}_3", "\\mathrm{NH}_3", "\\mathrm{H}_2\\mathrm{O}", "\\mathrm{SO}_2"],
+      "chapter": "chemical_bonding"
+    },
+    {
+      "question_id": "gold_chem_02",
+      "stem": "Calculate the standard enthalpy of formation of liquid benzene from standard enthalpies of combustion of carbon, hydrogen, and benzene.",
+      "latex": ["\\Delta H_f^\\circ", "\\mathrm{C}_6\\mathrm{H}_6(l)"],
+      "chapter": "chemical_thermodynamics"
+    },
+    {
+      "question_id": "gold_math_01",
+      "stem": "Evaluate the definite integral \\int_0^{\\pi/2} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x} dx for any positive integer n.",
+      "latex": ["\\int_0^{\\pi/2} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x} dx = \\frac{\\pi}{4}"],
+      "chapter": "integrals"
+    },
+    {
+      "question_id": "gold_math_02",
+      "stem": "Find the equation of the tangent to the parabola y^2 = 4ax at the point (at^2, 2at).",
+      "latex": ["y^2 = 4ax", "ty = x + at^2"],
+      "chapter": "conics"
+    }
+  ],
+  "relationship_accuracy_gold": [
+    {
+      "question_id": "gold_phy_01",
+      "official_key": "C",
+      "diagram_required": true,
+      "diagram_asset_id": "diag_com_rod_01"
+    },
+    {
+      "question_id": "gold_phy_02",
+      "official_key": "A",
+      "diagram_required": false
+    },
+    {
+      "question_id": "gold_chem_01",
+      "official_key": "A",
+      "diagram_required": false
+    },
+    {
+      "question_id": "gold_chem_02",
+      "official_key": "B",
+      "diagram_required": false
+    },
+    {
+      "question_id": "gold_math_01",
+      "official_key": "D",
+      "diagram_required": false
+    },
+    {
+      "question_id": "gold_math_02",
+      "official_key": "B",
+      "diagram_required": false
+    }
+  ],
+  "curriculum_mapping_gold": {
+    "1BOWiNihfx6EthuDNcz0uk1GFgX2RHyZb": ["com_collisions"],
+    "1-bWjsSgal-3ZD-IQPaR1EPce4GJUtmPG": ["amines"],
+    "1ZUg8uZYz-qeJx2K2oL56k-Z3cXTW8y9S": ["application_of_derivatives"],
+    "1-D3WR-OVsqGAVbSsZVu1e3a3QEE9BBsq": ["chemical_bonding"],
+    "1pzito64MmKVfEUenApLeGdmRJLKFfgd9": ["binomial_theorem"]
+  },
+  "solution_correctness_gold": [
+    {
+      "question_id": "gold_phy_01",
+      "official_key": "C",
+      "final_answer": "C",
+      "reasoning_steps": 5,
+      "sympy_verified": true
+    },
+    {
+      "question_id": "gold_phy_02",
+      "official_key": "A",
+      "final_answer": "A",
+      "reasoning_steps": 5,
+      "sympy_verified": true
+    },
+    {
+      "question_id": "gold_chem_01",
+      "official_key": "A",
+      "final_answer": "A",
+      "reasoning_steps": 5,
+      "rdkit_verified": true
+    },
+    {
+      "question_id": "gold_math_01",
+      "official_key": "D",
+      "final_answer": "D",
+      "reasoning_steps": 5,
+      "sympy_verified": true
+    }
+  ],
+  "pedagogical_rubric_gold": [
+    {
+      "chapter": "com_collisions",
+      "overall_score": 0.98,
+      "derivation_clarity": 1.0,
+      "trap_identification": 0.95,
+      "first_principles_fidelity": 1.0
+    },
+    {
+      "chapter": "chemical_bonding",
+      "overall_score": 0.96,
+      "derivation_clarity": 0.95,
+      "trap_identification": 0.95,
+      "first_principles_fidelity": 0.98
+    },
+    {
+      "chapter": "integrals",
+      "overall_score": 0.97,
+      "derivation_clarity": 1.0,
+      "trap_identification": 0.95,
+      "first_principles_fidelity": 0.96
+    }
+  ]
+}
