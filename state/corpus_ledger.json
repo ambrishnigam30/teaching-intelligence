@@ -14779,17 +14779,17 @@
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
       "chapters": [],
-      "completed_pages": 0,
+      "completed_pages": 2,
       "exam_scope": "BOTH",
       "file_id": "11Fe42Mwnf9Hu3QH6XkBSrMpVYqWuOkAp",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "HTTPStatusError: provider returned HTTP 429",
       "mime_type": "application/pdf",
       "name": "Comprehensive Algebra I for JEE by Vinay Kumar.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "PENDING_QUOTA",
+      "total_pages": 617,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Mathematics/Vinay Kumar/Comprehensive Algebra I for JEE by Vinay Kumar.pdf"
       ]
@@ -35659,19 +35659,24 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "chemical_kinetics",
+        "hydrocarbons",
+        "alcohols_phenols_ethers",
+        "amines"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11GrgnS8xW2U1cHImZM17m-sYQEu60XZe",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "OC-PT-2_ANSWER_KEY_&_HINTS.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 2,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/Chemistry/OC-PT-2_ANSWER_KEY_&_HINTS.pdf"
       ]
@@ -73311,18 +73316,20 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "chapters": [
+        "gravitation"
+      ],
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "11FCzzC6sIuaou0xTGTcIWaqAGpDGJ7vM",
-      "gate": 1,
+      "gate": 2,
       "last_error": null,
       "mime_type": "application/pdf",
       "name": "03 # Quiz (Answer key)_Gravitation.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "EXTRACTED",
+      "total_pages": 1,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen Latest Materials/SubjectWiseRealMaterial/PHYSICS/TNAS quiz/Gravitation /03 # Quiz (Answer key)_Gravitation.pdf"
       ]
@@ -86213,19 +86220,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
-      "completed_pages": 0,
+      "attempts": 1,
+      "chapters": [
+        "matrices_determinants"
+      ],
+      "completed_pages": 1,
       "exam_scope": "BOTH",
       "file_id": "11JmMSr-VMrn_zEKtPBTY6vejzQyrAKEn",
-      "gate": 1,
-      "last_error": null,
+      "gate": 2,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "M_Ch-06_Matrices.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_prob/M_Ch-06_Matrices.pdf"
       ]
@@ -86602,7 +86611,11 @@
     {
       "archetype": "UNCLASSIFIED",
       "attempts": 0,
-      "chapters": [],
+      "chapters": [
+        "circles",
+        "conics",
+        "application_of_derivatives"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11L3GbyjugFLVYHeSzsPBR_RNFKz5T_rf",
@@ -86613,7 +86626,7 @@
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
       "status": "PENDING",
-      "total_pages": null,
+      "total_pages": 40,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/PYQs/Mains/Mathematics/math_main_sol/M_Sol_Ch-12_Conic+Sections+(Parabola+Ellipse+and+Hyperbola).pdf"
       ]
@@ -94403,19 +94416,24 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "com_collisions",
+        "rotational_mechanics",
+        "gravitation",
+        "circles"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11K2RXi065t98kvP8xHE9PrnU_V7RprKp",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "8. STUDENT COPY_CPAS_08.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 7,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/Physics/DPP Student Copy/8. STUDENT COPY_CPAS_08.pdf"
       ]
@@ -95970,19 +95988,21 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "com_collisions"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11HZhurEtIzXnHJ2fbXrGpFl0s82oycyG",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "11. Student Copy. CAPS-11.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 8,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS - 2024/14. CATS-PLUS  2024/2. Chemistry/CAPS-PLUS/11. Student Copy. CAPS-11.pdf"
       ]
@@ -98543,19 +98563,22 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
-      "chapters": [],
+      "attempts": 1,
+      "chapters": [
+        "metallurgy",
+        "amines"
+      ],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11Jj9zYCSbSE-4GZHgM_mHvS6TVAFqTlA",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "CAPS -18.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 5,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/JEE/Advanced Material/JEE Advanced/CATS-2023/CHEMISTRY/CAPS/CAPS -18.pdf"
       ]
@@ -111436,19 +111459,19 @@
     },
     {
       "archetype": "UNCLASSIFIED",
-      "attempts": 0,
+      "attempts": 1,
       "chapters": [],
       "completed_pages": 0,
       "exam_scope": "BOTH",
       "file_id": "11H9J8vEQm4q9-K89aSRNUaTMwEgAO_dE",
       "gate": 1,
-      "last_error": null,
+      "last_error": "HTTPStatusError: provider returned HTTP 404",
       "mime_type": "application/pdf",
       "name": "Question_Report_87254333_1092.pdf",
       "quarantine_reason": null,
       "source_root_id": "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU",
-      "status": "PENDING",
-      "total_pages": null,
+      "status": "BLOCKED_PROVIDER",
+      "total_pages": 64,
       "virtual_paths": [
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/ALLEN_RANK BOOSTER TEST SERIES_2021/Aim_JeeAdv/Question_Report_87254333_1092.pdf",
         "1NhWXMQI5Kw421TGEsYCHXvPhmjRhS8lU/Allen/Allen Test Series/Aim_JeeAdv/Question_Report_87254333_1092.pdf"
